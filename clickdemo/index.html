@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Click Demo</title>
+<!--base href="http://localhost/" /-->
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/configurator.css" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+<div class="page">
+	<div class="language">
+		<div class="change" style="margin-top:-285px;">点击页面任何部分</div>
+		<div class="select">
+			<div class="select-left"> 
+				<!-- 用户 --> 
+			</div>
+			<div class="select-right"> 
+				<script type="text/javascript">
+                            // <![CDATA[
+                            document.write('<div class="selector"><a href="javascript:void(0);">show me</a></div>');
+                            // ]]>
+                            
+                        </script> 
+			</div>
+		</div>
+	</div>
+	<!-- language --> 
+</div>
+<!-- page --> 
+<script>
+            jQuery(function() {
+                if (!window.locallang) window.locallang = {};
+                if (!window.twitter_loading) window.twitter_loading = locallang.tweet_loading;
+                if (!window.follow_text) window.follow_text = locallang.tweet_fallow;
+                jQuery("body").removeClass("no-js").addClass("js");
+                jQuery.fn.orphans = function() {
+                    var a = [];
+                    this.each(function() {
+                        jQuery.each(this.childNodes,
+                        function() {
+                            this.nodeType == 3 && (this.nodeValue.match(/^[\n\s]*$/) || a.push(this))
+                        })
+                    });
+                    return jQuery(a)
+                };
+                jQuery.fn.innerWrap = function() {
+                    var a, c = arguments;
+                    return this.each(function() {
+                        a || (a = jQuery.clean(c, this.ownerDocument));
+                        for (var d = a[0].cloneNode(true), f = d; d.firstChild;) d = d.firstChild;
+                        jQuery.each(this.childNodes,
+                        function(a, c) {
+                            d.appendChild(c)
+                        });
+                        jQuery(this).empty().append(f)
+                    })
+                };
+
+                jQuery("DIV.language UL.regions > LI").orphans().wrap('<a href="javascript:void(0);"></a>');
+                jQuery("DIV.language UL.regions > LI > A").click(function() {
+                    jQuery("DIV.language UL.regions > LI > UL").hide().parent().removeClass("cur");
+                    jQuery(this).next().show().parent().addClass("cur")
+                });
+                jQuery("DIV.language DIV.select").css({
+                    height: "23px",
+                    opacity: 1
+                });
+                jQuery("DIV.language DIV.change").css({
+                    "margin-top": "-285px",
+                    opacity: 0
+                });
+                jQuery("DIV.language DIV.selector A").click(function() {
+                    jQuery("DIV.language DIV.change").animate({
+                        "margin-top": "0px",
+                        opacity: 1
+                    },
+                    "slow");
+                    jQuery("DIV.language DIV.select").animate({
+                        height: "0px",
+                        opacity: 0
+                    },
+                    "slow");
+                    return true
+                });
+                jQuery("DIV.language DIV.change DIV.submit INPUT").click(function() {
+                    jQuery("DIV.language DIV.change").animate({
+                        "margin-top": "-285px",
+                        opacity: 1
+                    },
+                    "slow");
+                    jQuery("DIV.language DIV.select").animate({
+                        height: "23px",
+                        opacity: 1
+                    },
+                    "slow");
+                    return true
+                });
+                jQuery("BODY").click(function(a) {
+                    jQuery(a.target).parents("DIV.language:first").length == 0 && (jQuery("DIV.language DIV.change").animate({
+                        "margin-top": "-285px",
+                        opacity: 1
+                    },
+                    "slow"), jQuery("DIV.language DIV.select").animate({
+                        height: "23px",
+                        opacity: 1
+                    },
+                    "slow"));
+                    return true
+                });
+            });
+        </script>
+</body>
+</html>

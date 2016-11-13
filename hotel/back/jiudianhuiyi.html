@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<title>酒店会议</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale = 1.0" >
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/iehack.css">
+<![endif]-->
+</head>
+
+<body>
+<h3 class="tips"> <a href="index.html">首页</a> <a href="login.html">登录</a> <a href="reg.html">注册</a> <a href="getpwd.html">找回密码</a> <a href="zaixiandingfang.html">在线订房</a> <a href="jiudianhuiyi.html">酒店会议</a> <a href="kefangyuding.html">开放预订</a> <a href="weiwanchengdingdan.html">未付款订单</a> <a href="yiwanchengdingdan.html">已完成订单</a> <a href="huodejiangli.html">获得的奖励</a> <a href="gerenshezhi.html">个人设置</a> <a href="xiugaimima.html">修改密码</a> <a href="other.html">关于我们模板</a> <a href="fangjiangoumai.html">房间购买</a> <a href="querenxinxi.html">确认信息</a> <a href="chakandingdan.html">查看订单</a></h3>
+<div class="header">
+	<div class="container">
+		<div class="logo big" id="logo">
+			<h1><a href="index.html"><img src="images/logo01.jpg" alt="Logo"></a></h1>
+		</div>
+		<div class="logo small" id="logo" style="display:none;">
+			<h1><a href="index.html"><img src="images/s_logo.png" alt="Logo"></a></h1>
+		</div>
+		<div class="info">
+			<ul>
+				<li class="info-i user-name has-pulldown"> <em class="f-icon pull-arrow"></em> <a class="identity" href="javascript:viod(0);" target="_blank" title="头像"><img src="images/photo.jpg" alt=""></a> <span node-type="username" class="name top-username">Toby Wu</span>
+					<div class="pulldown user-info"> </div>
+				</li>
+				<li class="info-i search-box">
+					<form class="search-form clearfix" action="javascript: void(0)" method="get">
+						<input style="width: 110px" autocomplete="off" class="search-query" name="q" onblur="if(this.value=='') this.value = this.defaultValue;" onfocus="this.value='';" value="关键词" spellchecking="off" type="text">
+						<input class="search-button" type="submit" value="">
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="main">
+	<div class="container">
+		<div class="aside">
+			<div class="aside-search">
+				<div class="hd">
+					<ul>
+						<li class="soItems_01 on"><label><input type="radio" name="soItems" value="0" id="soItems_01">客房预订</label></li>
+						<li class="soItems_02"><label><input type="radio" name="soItems" value="1" id="soItems_02">美食臻选</label></li>
+						<li class="soItems_03"><label><input type="radio" name="soItems" value="2" id="soItems_02">康体健身</label></li>
+						<li class="soItems_04"><label><input type="radio" name="soItems" value="3" id="soItems_02">美容SPA</label></li>
+						<li class="soItems_05"><label><input type="radio" name="soItems" value="4" id="soItems_02">会议会展</label></li>
+						<li class="soItems_06"><label><input type="radio" name="soItems" value="5" id="soItems_02">特惠优选</label></li>
+					</ul>
+				</div>
+				<div class="bd">
+					<div class="soItems soItems_01_1 on">
+						<div class="controls-date">
+							<div class="controls input-append date form_date">
+								<label>入住</label>
+								<input size="16" id="starttime" class="input" name="starttime" type="text" value="11-7-28">
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="controls-date">
+							<div class="controls">
+								<label>离开</label>
+								<input size="16" id="starttime" class="input" name="starttime" type="text" value="11-7-28">
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="soItems-btn">
+							<input type="button" class=" btn soso-btn" value="搜索">
+						</div>
+					</div>
+					<div class="soItems soItems_02_1">
+						<ul>
+							<li class="on">1-50 元<input type="radio" name="price" value="0" id="price_01"></li>
+							<li>50-200 元<input type="radio" name="price" value="1" id="price_01"></li>
+							<li>200-500 元<input type="radio" name="price" value="2" id="price_01"></li>
+							<li>500以上<input type="radio" name="price" value="3" id="price_01"></li>
+						</ul>
+						<div class="soItems-btn">
+							<input type="button" class=" btn soso-btn" value="搜索">
+						</div>
+					</div>
+					<div class="soItems soItems_03_1">
+						<ul>
+							<li class="on">1-50 元<input type="radio" name="price" value="0" id="price_01"></li>
+							<li>50-200 元<input type="radio" name="price" value="1" id="price_01"></li>
+							<li>200-500 元<input type="radio" name="price" value="2" id="price_01"></li>
+							<li>500以上<input type="radio" name="price" value="3" id="price_01"></li>
+						</ul>
+						<div class="soItems-btn">
+							<input type="button" class=" btn soso-btn" value="搜索">
+						</div>
+					</div>
+					<div class="soItems soItems_04_1">
+						<ul>
+							<li class="on">1-50 元<input type="radio" name="price" value="0" id="price_01"></li>
+							<li>50-200 元<input type="radio" name="price" value="1" id="price_01"></li>
+							<li>200-500 元<input type="radio" name="price" value="2" id="price_01"></li>
+							<li>500以上<input type="radio" name="price" value="3" id="price_01"></li>
+						</ul>
+						<div class="soItems-btn">
+							<input type="button" class=" btn soso-btn" value="搜索">
+						</div>
+					</div>
+					<div class="soItems soItems_05_1">
+						<div class="controls-date">
+							<div class="controls input-append date form_date">
+								<label>会议开始</label>
+								<input size="16" id="starttime" class="input" name="starttime" type="text" value="11-7-28">
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+							<P class="radio">
+								<label><input type="radio" name="time01" value="0" id="time_01">上午</label><br>
+								<label><input type="radio" name="time01" value="1" id="time_01">下午</label>
+							</P>
+						</div>
+						<div class="controls-date">
+							<div class="controls">
+								<label>会议结束</label>
+								<input size="16" id="starttime" class="input" name="starttime" type="text" value="11-7-28">
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+							<P class="radio">
+								<label><input type="radio" name="time" value="0" id="time_02">上午</label><br>
+								<label><input type="radio" name="time" value="1" id="time_02">下午</label>
+							</P>
+						</div>
+						<div class="soItems-btn">
+							<input type="button" class=" btn soso-btn" value="搜索">
+						</div>
+					</div>
+					<div class="soItems soItems_06_1">
+						<ul>
+							<li class="on">1-50 元<input type="radio" name="price" value="0" id="price_01"></li>
+							<li>50-200 元<input type="radio" name="price" value="1" id="price_01"></li>
+							<li>200-500 元<input type="radio" name="price" value="2" id="price_01"></li>
+							<li>500以上<input type="radio" name="price" value="3" id="price_01"></li>
+						</ul>
+						<div class="soItems-btn">
+							<input type="button" class=" btn soso-btn" value="搜索">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aside-service"><img src="images/big_tel.jpg" alt="服务热线：400-8888-888"></div>
+		</div>
+		<div class="content">
+			<div class="navigation">
+				<!--
+					选中 状态  <a> 标签 添加 class = “ active ”
+				-->
+				<ul id="nav" class="nav">
+					<li class="nav-li-01 nav-Reservation"><a href="#" class=" active" title="客房预订">客房预订</a></li>
+					<li class="nav-li-02 nav-FoodChoice"><a href="#" title="美食臻选">美食臻选</a></li>
+					<li class="nav-li-03 nav-SportsFitness"><a href="#" title="康体健身">康体健身</a></li>
+					<li class="nav-li-04 nav-Spa"><a href="#" title="美容、SPA">美容、SPA</a></li>
+					<li class="nav-li-05 nav-Meeting"><a href="#" title="会议会展">会议会展</a></li>
+					<li class="nav-li-06 nav-SpecialPreferred"><a href="#" title="特惠优选">特惠优选</a></li>
+				</ul>
+			</div>
+			<p class="price-sort">
+				<a href="javascript:viod(0)" class="btn btn-price-sort">价格排序</a>
+			</p>
+			<div class="h-list">
+				<div class="h-list-pic fl">
+					<img src="images/jiudian_10.png" alt="">
+				</div>
+				<div class="h-list-infos fr">
+					<div class="h-i-des">
+						<p><span class="h3">北京饭店</span><i class="i-start i-start5" title="五星级酒店"></i></p>
+						<p class="add">北京 东城区 东长安街33号 ( 天安门、王府井地区 近王府井大街 ) </p>
+						<p><i class="i-s i-s-beauty" title="美容SPA"></i><i class="i-s i-s-wifi" title="Wifi热点"></i><i class="i-s i-s-fitness" title="健身"></i><i class="i-s i-s-dining" title="餐饮"></i><i class="i-s i-s-meeting" title="会议"></i><i class="i-s i-s-parking" title="停车厂"></i></p>
+					</div>
+					<div class="h-i-tel">
+						<i class="h-i-tel-icon"></i><p class="h-i-tel-txt">详情请拨打热线电话</p><p class="h-i-tel-num">400-8504-158</p>
+					</div>
+				</div>
+			</div>
+			<div class="h-list">
+				<div class="h-list-pic fl">
+					<img src="images/jiudian_10.png" alt="">
+				</div>
+				<div class="h-list-infos fr">
+					<div class="h-i-des">
+						<p><span class="h3">北京饭店</span><i class="i-start i-start5" title="五星级酒店"></i></p>
+						<p class="add">北京 东城区 东长安街33号 ( 天安门、王府井地区 近王府井大街 ) </p>
+						<p><i class="i-s i-s-beauty" title="美容SPA"></i><i class="i-s i-s-wifi" title="Wifi热点"></i><i class="i-s i-s-fitness" title="健身"></i><i class="i-s i-s-dining" title="餐饮"></i><i class="i-s i-s-meeting" title="会议"></i><i class="i-s i-s-parking" title="停车厂"></i></p>
+					</div>
+					<div class="h-i-tel">
+						<i class="h-i-tel-icon"></i><p class="h-i-tel-txt">详情请拨打热线电话</p><p class="h-i-tel-num">400-8504-158</p>
+					</div>
+				</div>
+			</div>
+			<div class="h-list">
+				<div class="h-list-pic fl">
+					<img src="images/jiudian_10.png" alt="">
+				</div>
+				<div class="h-list-infos fr">
+					<div class="h-i-des">
+						<p><span class="h3">北京饭店</span><i class="i-start i-start5" title="五星级酒店"></i></p>
+						<p class="add">北京 东城区 东长安街33号 ( 天安门、王府井地区 近王府井大街 ) </p>
+						<p><i class="i-s i-s-beauty" title="美容SPA"></i><i class="i-s i-s-wifi" title="Wifi热点"></i><i class="i-s i-s-fitness" title="健身"></i><i class="i-s i-s-dining" title="餐饮"></i><i class="i-s i-s-meeting" title="会议"></i><i class="i-s i-s-parking" title="停车厂"></i></p>
+					</div>
+					<div class="h-i-tel">
+						<i class="h-i-tel-icon"></i><p class="h-i-tel-txt">详情请拨打热线电话</p><p class="h-i-tel-num">400-8504-158</p>
+					</div>
+				</div>
+			</div>
+			<div class="h-list">
+				<div class="h-list-pic fl">
+					<img src="images/jiudian_10.png" alt="">
+				</div>
+				<div class="h-list-infos fr">
+					<div class="h-i-des">
+						<p><span class="h3">北京饭店</span><i class="i-start i-start5" title="五星级酒店"></i></p>
+						<p class="add">北京 东城区 东长安街33号 ( 天安门、王府井地区 近王府井大街 ) </p>
+						<p><i class="i-s i-s-beauty" title="美容SPA"></i><i class="i-s i-s-wifi" title="Wifi热点"></i><i class="i-s i-s-fitness" title="健身"></i><i class="i-s i-s-dining" title="餐饮"></i><i class="i-s i-s-meeting" title="会议"></i><i class="i-s i-s-parking" title="停车厂"></i></p>
+					</div>
+					<div class="h-i-tel">
+						<i class="h-i-tel-icon"></i><p class="h-i-tel-txt">详情请拨打热线电话</p><p class="h-i-tel-num">400-8504-158</p>
+					</div>
+				</div>
+			</div>
+			<div class="pagination">
+				<ul class="pages">
+					<li class="prev"><a href="#">上一页</a></li>
+					<li class="active"><a href="javasvript:viod(0)">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li><a href="#">11</a></li>
+					<li><a href="#">12</a></li>
+					<li><a href="#">13</a></li>
+					<li class="next"><a href="#">下一页</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footinfo">
+	<div class="container">
+		<div class="divNum div-1"><img src="images/app.png" alt="手机客户端"></div>
+		<div class="divNum div-2"><img src="images/weixin.png" alt="官方微信"></div>
+		<div class="divNum div-3"><img src="images/hezuo.png" alt="寻求合作"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footGrid about">
+			<h4><i></i><a href="#">关于酒店酒店</a></h4>
+			<ul>
+				<li><a href="#">我们的服务</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">网站声明</a></li>
+			</ul>
+		</div>
+		<div class="footGrid partners">
+			<h4><i></i><a href="#">渠道合作</a></h4>
+			<ul>
+				<li><a href="#">我们的合作酒店</a></li>
+				<li><a href="#">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="footGrid help">
+			<h4><i></i><a href="#">帮助中心</a></h4>
+			<ul>
+				<li><a href="#">如何使用酒店酒店</a></li>
+				<li><a href="#">酒店秘书服务介绍</a></li>
+			</ul>
+		</div>
+		<div class="footGrid sitemap">
+			<h4><i></i><a href="#">网站地图</a></h4>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+		<div class="footGrid service">
+			<h4><i></i>酒店秘书</h4>
+			<ul>
+				<li class="tel">400-8888-888</li>
+				<li>周一至周日09:00-18:00</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<p class="copyright">Copyright 2003-2013, 版权所有 <a href="http://jiudianjiudian.com/">jiudianjiudian.com</a></p>
+</div>
+</body>
+</html>

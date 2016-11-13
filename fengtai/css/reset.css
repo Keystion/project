@@ -1,0 +1,39 @@
+@charset "utf-8";
+/**
+ * @fileOverview CSS Reset
+ * @author Keystion <i@syantao.com>
+ * @version 1.0
+ */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body,button,input,select,textarea{ font:12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif }
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:12px;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+input[type="button"],input[type="submit"]{-webkit-appearance:none;}
+input[type="text"]{border-radius:0;}
+
+/**
+ * 清除浮动
+ */
+.clearfix:after{content:"\0020";display:block;height:0;clear:both;}
+.clearfix{*zoom:1;}
+
+/**
+ * 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体  默认字体设置，边距设置 -ms -webkit
+ */
+html{ color:#000; background:#fff;  -ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+
+/**
+ * ie 防抖动
+ */
+*html, *html body { background-image:url(about:blank); background-attachment:fixed }

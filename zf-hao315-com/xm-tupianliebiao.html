@@ -1,0 +1,504 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>项目-图片列表</title>
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<h3 class="tips">
+	<div class="container">
+		<a href="index.html">首页</a>
+		<a href="xm-index.html">项目首页</a>
+		<a href="xm-jieshao.html">项目页_介绍_优势_政策</a>
+		<a href="xm-chanpinzhanshi.html">项目页_产品展示页</a>
+		<a href="xm-liebiao.html">项目页_项目列表</a>
+		<a href="xm-tupianliebiao.html">项目页_项目图片列表</a>
+		<a href="xm-tupianzhanshi.html">项目页_项目图片展示页面</a>
+		<a href="xm-xinwenliebiao.html">项目页_新闻列表页</a>
+		<a href="xm-xinwenye.html">项目页_新闻页</a>
+		<a href="xm-zhaoshanghaibao.html">项目页_招商海报</a>
+		<a href="xm-zhaoshangshipin.html">项目页_招商视频</a>
+		<a href="xm-zhifuwendaliebiao.html">项目页_致富问答列表</a>
+		<a href="xm-zhuanjiadianping.html">项目页_专家点评</a>
+		<a href="ask_index.html">问答首页</a>
+		<a href="wenti.html">问题页</a>
+		<a href="question.html">提问页</a>
+		<a href="ask_class.html">问答一级分类</a>
+	</div>
+</h3>
+<div class="topbar">
+	<div class="container">
+		<div class="pull-left"><a href="#">首页</a> <a href="#">经销</a> <a href="#">代理</a> <a href="#">加盟</a> <a href="#">商机</a> <a href="#">资讯</a> <a href="#">问答</a> <a href="#">专家</a> <a href="#">专题</a> <a href="#">行业 </a></div>
+		<div class="pull-right" style="overflow:inherit">
+			<ul class="u-list">
+				<li id="u-login">
+					<form id="form" method="get" name="form">
+						<label for="uname">用户名
+							<input type="text" class="inp-t" name="uname" id="uname">
+						</label>
+						<label for="upwd">密码
+							<input type="text" class="inp-t" name="upwd" id="upwd">
+						</label>
+						<input type="button" class="inp-btn" value="登录" title="登录">
+					</form>
+				</li>
+				<li id="u-weixin"> <img src="images/weixin.gif" alt="" class="weixin">
+					<div class="weixin_pic"><img src="images/weixin2.gif" width="63" height="62"><em>微信二维码扫一扫</em></div>
+				</li>
+				<li id="u-txweibo"> 
+					<iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&appkey=801491111&sign=ebee3646&v=2&name=keystion&style=5&t=1395886910466&f=0" frameborder="0" scrolling="auto" width="57" height="24" marginwidth="0" marginheight="0" allowtransparency="true"></iframe> 
+				</li>
+				<li id="u-weibo"> 
+					<wb:follow-button uid="2991975565" type="gray_1" width="67" height="24" ></wb:follow-button> 
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="header subhead clearfix">
+	<div class="container">
+		<div class="head-wrap clearfix">
+			<div class="m-subnav">
+				<div class="m-subnav-wrap">
+					<div class="subnav-item-01"> <a href="#">服装</a> <a href="#">餐饮</a> <a href="#">饰品</a> <a href="#">家居</a> <a href="#">美容</a> <a href="#">建材</a> <a href="#">环保</a> <a href="#">教育</a> <a href="#">保健</a> <a href="#">环保</a> <a href="#">教育</a> <a href="#">保健</a> </div>
+					<div class="subnav-item-02"> <a href="#">80后创业</a> <a href="#">白领兼职</a> <a href="#">大学生创</a> <a href="#">二性创业</a> <a href="#">女性投资</a> <a href="#">农民工致富</a> </div>
+					<div class="subnav-item-03"> <a href="#">致富商机</a> <a href="#">如何创业</a> <a href="#">开店指南</a> <a href="#">农村致富</a> <a href="#">小本创业</a> <a href="#">融资技巧</a> </div>
+					<div class="subnav-item-04"> <a href="#">创业故事</a> <a href="#">创业指南</a> <a href="#">投资参考</a> <a href="#">经验交流</a> <a href="#">开店筹备</a> <a href="#">店铺经营</a> <a href="#">人员管理</a> <a href="#">市场行情</a> </div>
+				</div>
+			</div>
+			<div class="m-logo">
+				<div class="m-logo-img">
+					<h1><a href="index.html" title="好315网 致富频道"><img src="images/logo.png" alt="Logo"></a></h1>
+				</div>
+				<div class="m-logo-subtitle">致富<em>频道</em></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="m-subsearch clearfix">
+	<div class="container">
+		<div class="m-subsearch-wrap">
+			<div class="item lt"> <span class="item-label">商机搜索：</span>
+				<form method="post" action="">
+					<select name="prov" id="J_Province" data-key="province" data-available="true" style="">
+						<option value="">餐饮</option>
+						<option value="">餐饮</option>
+						<option value="">餐饮</option>
+						<option value="">餐饮</option>
+						<option value="">餐饮</option>
+						<option value="">餐饮</option>
+					</select>
+					<select name="city" id="J_City" data-key="city" data-available="true" style="">
+						<option value="">投资分类</option>
+					</select>
+					<select name="town" id="J_Town" data-key="town" data-available="true" style="">
+						<option value="">投资额度</option>
+					</select>
+					<input type="text" class="inp-t">
+					<input type="submit" class="inp-btn" value="项目搜索">
+					<input type="button" class="inp-btn" value="品牌直达">
+				</form>
+			</div>
+			<div class="m-subsearch-keywords rt"> <span>热门搜索：</span> <a href="#">关键词</a> <a href="#">关键词</a> <a href="#">关键词</a> <a href="#">关键词</a> <a href="#">关键词</a> </div>
+		</div>
+	</div>
+</div>
+<div class="sub-crumbs clearfix">
+	<div class="container">
+		<ul>
+			<li><a target="_black" title="服装服饰" href="#">首页</a></li>
+			<li>&gt;</li>
+			<li><a target="_black" title="服装服饰" href="#">商机市场</a></li>
+			<li>&gt;</li>
+			<li><a target="_black" title="服装服饰" href="#">服装服饰</a></li>
+			<li>&gt;</li>
+			<li><a target="_black" title="女装" href="#"> 女装 </a></li>
+			<li>&gt;</li>
+			<li><a target="_black" title="休闲女装" href="#"> 休闲女装 </a></li>
+			<li>&gt;</li>
+			<li><a> Q之一族女装 </a></li>
+		</ul>
+	</div>
+</div>
+<div class="xm-summary clearfix">
+	<div class="container">
+		<div class="xm-name clearfix">
+			<h1> Q之一族女装 </h1>
+			<p class="sj-certification"> </p>
+		</div>
+		<p class="adv-title"> 顶级时尚牛仔女装 </p>
+		<p class="main-range"> <span>总浏览人数：<em>5821</em></span>| <span>本周展示：<em>568</em></span>| <span>行业排行：<em>430</em></span>| <span>关注度：<em>25</em></span></p>
+	</div>
+</div>
+<div class="xm-mainnav clearfix">
+	<div class="container">
+		<div class="linebg lt"></div>
+		<ul id="xmNav">
+			<li><a href="#">项目首页</a></li>
+			<li><a href="#">项目介绍</a></li>
+			<li><a href="#">产品展示</a></li>
+			<li><a href="#">加盟优势</a></li>
+			<li><a href="#">加盟政策</a></li>
+			<li><a href="#">媒体报道</a></li>
+			<li><a href="#">致富问答</a></li>
+			<li><a href="#">专家点评</a>&lt;</li>
+			<li><a href="#">在线咨询</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">招商视频</a></li>
+			<li class="current"><a href="#">招商海报</a></li>
+		</ul>
+		<div class="linebg rt"></div>
+	</div>
+</div>
+<div class="xm-content">
+	<div class="container">
+		<div class="xm-content-wrap clearfix">
+			<div class="xm-main">
+				<div class="xm-main-wrap">
+					<div class="m-article clearfix">
+						<div class="m-article-hd">
+							
+						</div>
+						<div class="m-article-bd">
+							<div class="pro_picshow">
+								<div class="hd">清道夫家庭垃圾处理器产品展示</div>
+								<div class="bd">
+									<ul class="p_i_show pro_p_s">
+										<li class="pro_p_li1"><a href="#" target="_blank"><img src="images/nopic2.png" alt=""><p>清道夫家庭垃圾处理器加盟</p></a></li>
+										<li class="pro_p_li2"><a href="#" target="_blank"><img src="images/nopic2.png" alt=""><p>清道夫家庭垃圾处理器加盟</p></a></li>
+										<li class="pro_p_li3"><a href="#" target="_blank"><img src="images/nopic2.png" alt=""><p>清道夫家庭垃圾处理器加盟</p></a></li>
+										<li class="pro_p_li4"><a href="#" target="_blank"><img src="images/nopic2.png" alt=""><p>清道夫家庭垃圾处理器加盟</p></a></li>
+										<li class="pro_p_li5"><a href="#" target="_blank"><img src="images/nopic2.png" alt=""><p>清道夫家庭垃圾处理器加盟</p></a></li>
+										<li class="pro_p_li6"><a href="#" target="_blank"><img src="images/nopic2.png" alt=""><p>清道夫家庭垃圾处理器加盟</p></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="unit-block mt10">
+						<div class="unit-block-hd"> <span>项目名产品展示</span> </div>
+						<div class="unit-block-bd">
+							<div class="picshow01">
+								<div class="bd">
+									<ul class="picList">
+										<li>
+											<div class="pic"><a href="#" target="_blank"><img src="images/nopic2.png" /></a></div>
+											<div class="title"><a href="#" target="_blank">效果图1</a></div>
+										</li>
+										<li>
+											<div class="pic"><a href="#" target="_blank"><img src="images/nopic2.png" /></a></div>
+											<div class="title"><a href="#" target="_blank">效果图2</a></div>
+										</li>
+										<li>
+											<div class="pic"><a href="#" target="_blank"><img src="images/nopic2.png" /></a></div>
+											<div class="title"><a href="#" target="_blank">效果图3</a></div>
+										</li>
+										<li>
+											<div class="pic"><a href="#" target="_blank"><img src="images/nopic2.png" /></a></div>
+											<div class="title"><a href="#" target="_blank">效果图4</a></div>
+										</li>
+										<li>
+											<div class="pic"><a href="#" target="_blank"><img src="images/nopic2.png" /></a></div>
+											<div class="title"><a href="#" target="_blank">效果图5</a></div>
+										</li>
+										<li>
+											<div class="pic"><a href="#" target="_blank"><img src="images/nopic2.png" /></a></div>
+											<div class="title"><a href="#" target="_blank">效果图6</a></div>
+										</li>
+									</ul>
+									<a class="next"></a> <a class="prev"></a> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xm-message mt10">
+					<div class="message_bt"> 对该项目感兴趣请填写留言，我们的招商经理会在第一时间与您取得联系并为您提供更详细的资料 </div>
+					<div class="message_nr">
+						<div class="message_left">
+							<div class="msg-list" style="margin:0 auto">
+								<div id="miniNewsRegion">
+									<ul>
+										<li>
+											<div class="name_pic"> <img src="images/name_pic.jpg" />王先生 </div>
+											<div class="meass_text">
+												<p class="p1"><span>IP:114.249.198.94</span><em>留言时间：2013-05-04 19:13:54</em></p>
+												<p class="p2"><span>对</span><strong>阿童木童装</strong>留言：请尽快联系我</p>
+												<p class="p3">联系方式：********</p>
+											</div>
+										</li>
+										<li>
+											<div class="name_pic"> <img src="images/name_pic.jpg" />王先生 </div>
+											<div class="meass_text">
+												<p class="p1"><span>IP:114.249.198.94</span><em>留言时间：2013-05-04 19:13:54</em></p>
+												<p class="p2"><span>对</span><strong>阿童木童装</strong>留言：请尽快联系我</p>
+												<p class="p3">联系方式：********</p>
+											</div>
+										</li>
+										<li>
+											<div class="name_pic"> <img src="images/name_pic.jpg" />王先生 </div>
+											<div class="meass_text">
+												<p class="p1"><span>IP:114.249.198.94</span><em>留言时间：2013-05-04 19:13:54</em></p>
+												<p class="p2"><span>对</span><strong>阿童木童装</strong>留言：请尽快联系我</p>
+												<p class="p3">联系方式：********</p>
+											</div>
+										</li>
+										<li>
+											<div class="name_pic"> <img src="images/name_pic.jpg" />王先生 </div>
+											<div class="meass_text">
+												<p class="p1"><span>IP:114.249.198.94</span><em>留言时间：2013-05-04 19:13:54</em></p>
+												<p class="p2"><span>对</span><strong>阿童木童装</strong>留言：请尽快联系我</p>
+												<p class="p3">联系方式：********</p>
+											</div>
+										</li>
+										<li>
+											<div class="name_pic"> <img src="images/name_pic.jpg" />王先生 </div>
+											<div class="meass_text">
+												<p class="p1"><span>IP:114.249.198.94</span><em>留言时间：2013-05-04 19:13:54</em></p>
+												<p class="p2"><span>对</span><strong>阿童木童装</strong>留言：请尽快联系我</p>
+												<p class="p3">联系方式：********</p>
+											</div>
+										</li>
+										<li>
+											<div class="name_pic"> <img src="images/name_pic.jpg" />王先生 </div>
+											<div class="meass_text">
+												<p class="p1"><span>IP:114.249.198.94</span><em>留言时间：2013-05-04 19:13:54</em></p>
+												<p class="p2"><span>对</span><strong>阿童木童装</strong>留言：请尽快联系我</p>
+												<p class="p3">联系方式：********</p>
+											</div>
+										</li>
+										<li>
+											<div class="name_pic"> <img src="images/name_pic.jpg" />王先生 </div>
+											<div class="meass_text">
+												<p class="p1"><span>IP:114.249.198.94</span><em>留言时间：2013-05-04 19:13:54</em></p>
+												<p class="p2"><span>对</span><strong>阿童木童装</strong>留言：请尽快联系我</p>
+												<p class="p3">联系方式：********</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="message_right"> <strong>对这个项目感兴趣，请在这里留言</strong>
+							<form onsubmit="return check(this)" method="POST" action="" name="form">
+								<div class="meass_nr">
+									<p>
+										<label>姓名：</label>
+										<input type="text" class="name" id="name" />
+										<span><em>*</em>您的真实姓名</span> </p>
+									<p>
+										<label>手机：</label>
+										<input type="text" class="tel" id="tel" />
+										<span><em>*</em>重要联系方式</span> </p>
+									<p>
+										<label>邮箱：</label>
+										<input type="text" class="emall" id="emall" />
+									</p>
+									<p>
+										<label>地址：</label>
+										<input type="text" class="address" id="address" />
+										<span><em>*</em>详细填写您的地址</span> </p>
+									<p>
+										<label>留言：</label>
+										<textarea id="text_content"></textarea>
+										<span><em>*</em>必填</span> </p>
+									<div class="clearfix"></div>
+									<input class="meass_but" type="submit" value="提交" name="">
+								</div>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="m-peerleads mt10">
+					<div class="m-peerleads-hd">
+						<h2>除了 <a href="#">项目名</a> 你或许喜欢</h2>
+					</div>
+					<div class="m-peerleads-bd">
+						<ul class="otherlikeitem">
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<script>
+							for( var n = 2; n < 19; n++){
+								document.write('<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>');
+							}
+							</script>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="xm-aside">
+				<div class="unit-block">
+					<div class="unit-block-hd"> <span>项目加盟参数</span> </div>
+					<div class="unit-block-bd param">
+						<div class="param-warp">
+							<div class="param-head">
+								<ul class="param-list">
+									<li>
+										<p> <em class="ico ico01"></em> <span class="gray6">日咨询量：</span><strong class="red">74</strong> </p>
+									</li>
+									<li>
+										<p> <em class="ico ico02"></em> <span class="gray6">本月访问：</span><strong class="red">2592</strong> </p>
+									</li>
+									<li>
+										<p> <em class="ico ico03"></em> <span class="gray6">本周展示：</span><strong class="red">3183</strong> </p>
+									</li>
+									<li>
+										<p> <em class="ico ico04"></em> <span class="gray6">本月展示：</span><strong class="red">13189</strong> </p>
+									</li>
+								</ul>
+							</div>
+							<div class="param-body">
+								<dl>
+									<dt> <a title="" href="#"> <img height="75" width="100" alt="" src="images/nopic2.png"> <span>徽和户外加盟</span> </a> </dt>
+									<dd>
+										<div class="join-warp"> <a href="javascript:void(0);" class="link link01">直接联系公司</a> <a href="#" class="btn btn01" target="_blank">咨询加盟细节</a> <a href="javascript:void(0);" class="link link02">成功加盟者状况</a> <a href="#" class="btn btn02" target="_blank">查看成功案例</a> </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="param-foot">
+								<ul class="param-list">
+									<li> <em class="ico ico05"></em> <span class="gray6">品牌名称：</span><span>徽和户外</span> </li>
+									<li> <em class="ico ico06"></em> <span class="gray6">投资金额：</span><span>1-5万元</span> </li>
+									<li> <em class="ico ico07"></em> <span class="gray6">主营产品：</span><span>登山鞋、旅行背包、露营帐篷、登</span> </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="unit-block mt10">
+					<div class="unit-block-hd"> <span>项目加盟快讯</span> </div>
+					<div class="unit-block-bd">
+						<ul class="unit-txt">
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+							<li class="dot"> <a title="" href="#">标题信息文本</a> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="unit-block mt10">
+					<div class="unit-block-hd"> <span>同一级分类</span> </div>
+					<div class="unit-block-bd">
+						<div class="samecate-block">
+							<ul>
+								<li> <a href="#" title="标题信息" target="_blank"> 标题信息 </a> </li>
+								<li> <a href="#" title="标题信息" target="_blank"> 标题信息 </a> </li>
+								<li> <a href="#" title="标题信息" target="_blank"> 标题信息 </a> </li>
+								<li> <a href="#" title="标题信息" target="_blank"> 标题信息 </a> </li>
+								<li> <a href="#" title="标题信息" target="_blank"> 标题信息 </a> </li>
+								<li> <a href="#" title="标题信息" target="_blank"> 标题信息 </a> </li>
+								<li> <a href="#" title="标题信息" target="_blank"> 标题信息 </a> </li>
+								<li> <a href="#" title="标题信息" target="_blank"> 标题信息 </a> </li>
+								1
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--广告-->
+				<div class="m-aside-adpic mt10"> <a href="#"><img src="images/pic1_4.gif" alt=""></a> <a href="#"><img src="images/pic1_4.gif" alt=""></a> <a href="#"><img src="images/pic1_4.gif" alt=""></a> </div>
+				<!--广告-->
+				<div class="unit-block">
+					<div class="unit-block-hd"> <span>热门招商地区</span> </div>
+					<div class="unit-block-bd">
+						<ul class="hotArea">
+							<li> <a href="#" title="北京" target="_blank"> 地区名 </a> </li>
+							<script>
+							for(var n = 2; n < 33; n++){
+								document.write('<li> <a href="#" title="北京" target="_blank"> 地区名 </a> </li>');
+							}
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="unit-block mt10">
+					<div class="unit-block-hd"> <span>同类商机加盟排行榜</span> </div>
+					<div class="unit-block-bd">
+						<ul class="itemTop-list">
+							<li> <a href="#" title="山地阳光饮料"><img alt="" src="images/nopic2.png"></a>
+								<div class="itemTop-cont">
+									<p class="itemTop-title"><a href="#" title="山地阳光饮料">山地阳光饮料</a></p>
+									<p> </p>
+									<p class="itemTop-money">投资金额：1-5万元</p>
+									<p class="itemTop-xm">市场分析：山地阳光饮料是一种保健饮品...<a href="#" title="项目详情">[详细]</a></p>
+								</div>
+							</li>
+						</ul>
+						<ul class="itemTop-list-01">
+							<li> 1 | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+							<script>
+							for(var n = 2; n < 11; n++){
+							document.write('<li> '+n+' | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>')
+							}
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="unit-block mt10">
+					<div class="unit-block-hd"> <span>浏览项目名的用户还浏览了</span> </div>
+					<div class="unit-block-bd">
+						<div class="userhistory-list">
+							<ul class="userhistory-list-01">
+								<!--6 条数据-->
+								<li><a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a></li>
+								<script>
+								for( var n = 2; n < 7; n++){
+									document.write('<li><a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a></li>');
+								}
+								</script>
+							</ul>
+							<ul class="userhistory-list-02">
+								<!--8 条数据-->
+								<li><a href="#" target="_blank">标题信息标题信息标题信息</a></li>
+								<script>
+								for( var n = 2; n < 9; n++){
+									document.write('<li><a href="#" target="_blank">标题信息标题信息标题信息</a></li>');
+								}
+								</script>
+							</ul>
+							<ul class="userhistory-list-02">
+								<!--8 条数据-->
+								<li><a href="#" target="_blank">标题信息标题信息标题信息</a></li>
+								<script>
+								for( var n = 2; n < 9; n++){
+									document.write('<li><a href="#" target="_blank">标题信息标题信息标题信息</a></li>');
+								}
+								</script>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+</style>
+<div class="linkbox clearfix"> 
+	<!--友情链接-->
+	<div class="container"> <span>友情链接：<em>权重相当，内容健康；联系QQ：<a target="_blank"  style=" cursor:pointer;" href="http://wpa.qq.com/msgrd?v=3&uin=790062246&site=qq&menu=yes" title="友情链接服务">790062246</a></em></span>
+		<div class="link"> <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> </div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footer-warp"> <a href="#" target="_blank">网站首页</a> | <a href="" target="_blank" >关于我们</a> | <a href="#" target="_blank">联系我们</a> | <a href="#" target="_blank">法律声明</a> | <a href="http://open.qq.com/" target="_blank">查看留言</a> <br>
+			<span style="line-height:30px;"><a href="#" target="_blank">ICP备案号：京ICP备12003963号-1</a> </span><br>
+			<span style="font-family:Arial;">Copyright © 2003 - 2014 hao315.com All right rederved. </span> </div>
+	</div>
+</div>
+<script src="js/base.js"></script>
+</body>
+</html>

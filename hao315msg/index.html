@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style>
+
+*{ margin:0px;}
+h3{text-align: center;margin: 1em 0;}
+
+.hao315_msg {width:100%; height:auto; background:#f1f1f1; font-size:14px; font-family:"Microsoft YaHei",Tahoma,Helvetica,Georgia,Arial,"sans serif"; margin:0 auto; padding:5px 0;}
+.hao315_msg .msg_line{ line-height:24px; margin:10px 0; padding: 0 0.8em}
+.hao315_msg .msg_line.msg_line_submit{ text-align:center;}
+.hao315_msg .msg_line label{width: 40px;text-align: left;height: 24px;line-height: 24px;font-size: 12px;display: inline;float: left;}
+.hao315_msg .msg_line span { font-size:12px; display: inline-block;}
+.hao315_msg .msg_line span.msg_line_tips{ float:right; min-width:100px; _width:100px; text-align:left;}
+.hao315_msg .msg_line span.msg_line_tips em{ font-style:normal; color:#F00;height:24px; width:12px;float: left;}
+
+</style>
+</head>
+
+<body>
+<h3><a href="m.html">微信公众版</a></h3>
+<div class="hao315_msg">
+<form onsubmit="return check(this)" target="_blank" method="POST" action="/ly.php" name="form">
+	<input name="uid" type="hidden" id="uid" value="<? echo $cid;?>"/>
+	<input name="web" type="hidden" id="web" value="<? echo $web;?>"/>
+	<input name="sid" type="hidden" id="sid" value="<? echo $sid;?>"/>
+	<input name="forms" id="forms" type="hidden" value="" />
+	<div class="msg_line">
+		<span class="msg_line_tips"> <em>*</em> 姓名 </span>
+		<label>姓名：</label>
+		<input id="names" class="an1" type="text" value="" name="names">
+		
+	</div>
+	<div class="msg_line">
+		<span class="msg_line_tips"> <em>*</em> 手机号码 </span>
+		<label>手机：</label>
+		<input id="tel" class="an1" type="text" value="" name="tel">
+	</div>
+	<div class="msg_line">
+		<span class="msg_line_tips"><em> </em>回访时间</span>
+		<label>回访：</label>
+		<span class="msg_radio">
+			<input class="m_dq" type="radio" checked="" value="0" name="m_dq"> 随时
+			<input class="m_dq" type="radio" value="1" name="m_dq"> 上班时间
+			<input class="m_dq" type="radio" value="2" name="m_dq"> 下班时间
+		</span>
+	</div>
+	<div class="msg_line">
+		<label>邮箱：</label>
+		<input id="email" class="an1" type="text" value="" name="email">
+	</div>
+	<div class="msg_line">
+		<label>地址：</label>
+		<input id="addr" class="an1" type="text" value="" name="addr">
+	</div>
+	<div class="msg_line">
+		<label class="msg_label_msg">留言：</label>
+		<textarea id="text_content" rows="4" cols="35" name="text_content"></textarea>
+	</div>
+	<div class="msg_line msg_line_submit">
+		<input class="p-sub" type="submit" value="提交" name="">
+	</div>
+</form>
+</div>
+</body>
+</html>

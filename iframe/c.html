@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script> 
+function choseItem() {
+    var v = "";
+    var check_item = document.frm.item;
+    for (i = 0; i < check_item.length; i++) {
+        if (check_item[i].checked) {
+            v += "," + check_item[i].value;
+        }
+        document.frm.txt.value = v.replace(/^,{1}/, "");
+    }
+}
+function foo() {
+    window.close();
+    window.opener.document.getElementById("txt0").value = document.getElementById("txt").value
+}
+</script>
+<body>
+<form name=frm>
+	<input type="checkbox" name="item" value="体育运动" onClick="choseItem();">
+	体育运动 <br>
+	<input type="checkbox" name="item" value="休闲娱乐" onClick="choseItem();">
+	休闲娱乐 <br>
+	<input type="checkbox" name="item" value="看书读报" onClick="choseItem();">
+	看书读报 <br>
+	<input type="checkbox" name="item" value="琴棋书画" onClick="choseItem();">
+	琴棋书画
+	<input type=text name="txt" id="txt">
+</form>
+<input type=button value="关闭" onclick="foo();">
+</body>
+</body>
+</html>

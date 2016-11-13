@@ -1,0 +1,1004 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>搜索页&amp;列表页</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/news_roller.js"></script>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/search.js"></script>
+<script type="text/javascript">
+
+var a="";
+var b="";
+function skip()
+{
+	var pageNum=$("#skippage").val();
+	if(isNaN(pageNum))
+	{
+		alert("请输入数字！");
+		$("#skippage").val("");
+	}
+	else
+	{
+		window.location.href ="/0-0-0-1-"+pageNum+".htm";
+		return;
+	}
+}
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+        //$("#scroll-news").Scroll({line:5,speed:2000,timer:5000});
+});
+</script>
+<script type="text/javascript">
+	$(function(){
+           // setTimeout('showTopic()',500)
+			$("#closeTopicAd").click(function(){
+			$("#topicAd99060").hide()
+			})
+		})	
+		function showTopic(){
+			//$("#topicAd99060").slideDown();
+		}
+</script>
+<style>
+#topicAd99060 {
+	background: #fff;
+	overflow: hidden;
+	padding: 3px 0
+}
+</style>
+</head>
+
+<body>
+<h3 class="tips">
+	<a href="index.html">首页</a>
+    <a href="xm_index.html">项目加盟首页</a>
+    <a href="xm_shop.html">项目加盟店</a>
+    <a href="xm_news.html">项目加盟资讯</a>
+    <a href="xm_ask.html">项目加盟问答</a>
+    <a href="xm_pic.html">项目加盟图库</a>
+    <a href="xm_pic_show.html">项目加盟图库展示</a>
+    <a href="news.html">加盟资讯列表</a>
+    <a href="news_show.html">资讯展示页面</a>
+    <a href="ask.html">问答页面</a>
+	<a href="so.html">搜索页 列表页</a>
+    <a href="top.html">加盟店排行榜</a>
+    <a href="zt.html">专题项目</a>
+    <a href="404.html">404页面</a>
+    <a href="map.html">网站地图</a>
+</h3>
+<div id="topbar">
+	<div class="layout">
+		<div id="sd-nav" class="topbar-nav fr">
+			<ul>
+				<li><a href="#" id="" class="first">91加盟网</a></li>
+				<li><a href="#" id="site-btn-qqlog" rel="nofollow" class="" title="使用QQ帐号登录" target="_blank">QQ登录</a></li>
+				<li><a href="#" id="site-btn-weibolog" rel="nofollow" class="" title="使用微博帐号登录" target="_blank">新浪微博登录</a></li>
+				<li style="display:none"><a href="#" id="site-btn-rss" class="menu-slider"><i></i>订阅</a></li>
+				<li style="display:none"><a href="#" id="site-btn-weibo" class="menu-slider"><i></i>关注</a></li>
+				<li style="display:none"><a href="#" id="site-btn-help">联系客服</a></li>
+				<li><a style="padding-right:0" href="#" class="menu-slider" target="_blank">网站导航</a></li>
+			</ul>
+		</div>
+		<div id="site-nav" class="topbar-nav fl">
+			<input type="hidden" id="hd_brand_lname" value=""/>
+			<input type="hidden" id="hd_user_lname" value=""/>
+			<p class="login-info"> 您好，欢迎来91加盟网！ <span class="log-out"> <a href="#">请登录</a> <a href="#">免费注册</a> <a href="#">品牌商入口</a> </span> </p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<!--end--> 
+<!-- topicAd -->
+<div id="topicAd99060" style="background: #fff; overflow:hidden; padding:3px 0">
+	<div class="layout" style=" position:relative"> <a href="#" target="_blank"> <img src="images/990x60.jpg" alt="2013赚钱项目" /> </a> </div>
+</div>
+<!-- end --> 
+<!--header-->
+<div id="header">
+	<div class="layout">
+		<div id="jm-logo" class="fl pl10 mr10"><a href="#" title="就要加盟网"><img src="images/logo-v2.png" alt="就要加盟网" /></a></div>
+		<div id="jm-slogan" class="fl "><!--广告语update--></div>
+		<div id="jm-search" class="fl ">
+			<div class="jmsearch-switchable-nav"> 
+				<!--jmsearch-switchable-nav--> 
+			</div>
+			<div class="jmsearch-container">
+				<div class="jmsearch-screen fl"> <span class="btn-screen">综合<i></i></span>
+					<div class="curtlist" style="display:none">
+						<ul>
+							<li><a href="#">项 目</a></li>
+							<li><a href="#">项 目</a></li>
+							<li><a href="#">项 目</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="jmsearch-keywords fl">
+					<input type="text" id="txtKeyword" name="txtKeyword" class="ui-autocomplete-input" autofocus="true" value="请输入品牌关键字..." onkeydown="return enterSearchTop()" />
+				</div>
+				<div class="jmsearch-action fl">
+					<button type="button" onclick="WordSearch()"></button>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="hot-keyword-success">
+				<ul class="hot-keyword-list">
+					<li>热门搜索：</li>
+					<li><a href="#" data-searchtrace="化妆品" class="highlight">化妆品</a></li>
+					<li><a href="#" data-searchtrace="床上用品">床上用品</a></li>
+					<li><a href="#" data-searchtrace="火锅">火锅</a></li>
+					<li><a href="#" data-searchtrace="冰淇淋">冰淇淋</a></li>
+					<li><a href="#" data-searchtrace="时尚饰品">时尚饰品</a></li>
+					<li><a href="#" class="more">更多</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<!--end--> 
+<!--main-nav-->
+<div id="max-nav" class="">
+	<div class="layout"> 
+		<!--main-nav-->
+		<div id="jm-nav" class="" style="position:relative">
+			<div class="sert-show fl" style=" position:relative">
+				<h2 class="sert-btn" title="加盟项目分类">加盟项目分类<i></i></h2>
+				<!--全部分类展开-->
+				<div class="jm_menu_t2" style="display:none">
+					<ul class="j_t2-col fl first">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="餐饮项目">餐饮项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="母婴项目">母婴项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="服装项目">服装项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="/0-9-0-1.htm" target="_blank" title="建材项目">建材项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="美容项目">美容项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="食品项目">食品项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="家居项目">家居项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="商务项目">商务项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="教育项目">教育项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="汽车服务项目">汽车服务项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="饰品项目">饰品项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="干洗项目">干洗项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="珠宝项目">珠宝项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="酒水项目">酒水项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<div class=" clear"></div>
+				</div>
+				<!--end--> 
+			</div>
+			<div class="jm-nav-list fl">
+				<ul>
+					<li class="first"><a href="#" style="cursor:hand" class="currented">首页</a></li>
+					<li><a href="#" title="餐饮">餐饮</a></li>
+					<li><a href="#" title="服装">服装</a></li>
+					<li><a href="#" title="家纺">家纺</a></li>
+					<li><a href="#" title="美容">美容</a></li>
+					<li><a href="#" title="家居">家居</a></li>
+					<li class="subnav"> <i></i> 
+						<a href="#" title="加盟店排行榜" class="first" target="_blank">加盟店排行榜</a> 
+						<a href="#" title="加盟资讯" target="_blank">加盟资讯</a> 
+						<a href="#" title="就要问答" class="last" target="_blank">就要问答</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--end--> 
+	</div>
+</div>
+<!--end--> 
+<!--content-->
+<div id="content">
+	<div class="layout cf"> 
+		<!--{sart:mod-crumbs-->
+		<div id="mod-crumbs"> <a href="#">首页</a> <em>&gt;</em>所有行业 </div>
+		<!--}end:mod-crumbs--> 
+		<!--{start:industry-left-->
+		<div class="industry-left fl"> 
+			<!--{start:mod-hotitem-->
+			<div class="mod-hotitem bde2e2e2">
+				<h3 class="hottit">热门项目推荐</h3>
+				<ul class="cf p10 hot-item-list">
+					<!--  -->
+					<li class="first"> <a class="hotimage bde2e2e2" href="#" target="_blank" title="【罗莱家纺】罗莱全国火爆招商！"> <img src="images/94x94.jpg" height="94" width="94" title="【罗莱家纺】罗莱全国火爆招商！" alt="罗莱家纺加盟" /></a>
+						<h4><a href="#" target="_blank" title="【罗莱家纺】罗莱全国火爆招商！">罗莱家纺</a></h4>
+						<p><a href="#">家居</a> > <a href="#">家纺</a></p>
+						<p>加盟店：<span>2000</span> 家</p>
+						<p>加盟金：<span>20-50</span> 万</p>
+					</li>
+					<li class=""> <a class="hotimage bde2e2e2" href="#" target="_blank" title="【罗莱家纺】罗莱全国火爆招商！"> <img src="images/94x94.jpg" height="94" width="94" title="【罗莱家纺】罗莱全国火爆招商！" alt="罗莱家纺加盟" /></a>
+						<h4><a href="#" target="_blank" title="【罗莱家纺】罗莱全国火爆招商！">罗莱家纺</a></h4>
+						<p><a href="#">家居</a> > <a href="#">家纺</a></p>
+						<p>加盟店：<span>2000</span> 家</p>
+						<p>加盟金：<span>20-50</span> 万</p>
+					</li>
+					<li class=""> <a class="hotimage bde2e2e2" href="#" target="_blank" title="【罗莱家纺】罗莱全国火爆招商！"> <img src="images/94x94.jpg" height="94" width="94" title="【罗莱家纺】罗莱全国火爆招商！" alt="罗莱家纺加盟" /></a>
+						<h4><a href="#" target="_blank" title="【罗莱家纺】罗莱全国火爆招商！">罗莱家纺</a></h4>
+						<p><a href="#">家居</a> > <a href="#">家纺</a></p>
+						<p>加盟店：<span>2000</span> 家</p>
+						<p>加盟金：<span>20-50</span> 万</p>
+					</li>
+				</ul>
+			</div>
+			<!--}end:mod-hotitem--> 
+			<!--{start:mod-catschoose-->
+			<div class="mod-catschoose bde2e2e2 cf mt10 p10">
+				<dl class="label-list fore cf">
+					<dt>行业：</dt>
+					<dd>
+						<a class="cur" href="#">全部</a> 
+						<a class="" href="#">餐饮(2841)</a> 
+						<a class="" href="#">服装(6338)</a> 
+						<a class="" href="#">美容(399)</a> 
+						<a class="" href="#">家居(2167)</a> 
+						<a class="" href="#">教育(1367)</a> 
+						<a class="" href="#">饰品(961)</a> 
+						<a class="" href="#">珠宝(43)</a> 
+						<a class="" href="#">母婴(728)</a> 
+						<a class="" href="#">建材(661)</a> 
+						<a class="" href="#">食品(111)</a> 
+						<a class="" href="#">商务(191)</a> 
+						<a class="" href="#">汽车服务(298)</a> 
+						<a class="" href="#">干洗(480)</a> 
+						<a class="" href="#">酒水(298)</a> 
+						<a class="" href="#">零售(307)</a> 
+						<a class="" href="#">新奇特(5402)</a> 
+					</dd>
+				</dl>
+				<dl class="label-list cf">
+					<dt>投资金额：</dt>
+					<dd> 
+						<a class="cur" href="#">全部</a> 
+						<a class="" href="#">0-1万(1094)</a> 
+						<a class="" href="#">1-5万(3096)</a> 
+						<a class="" href="#">5-10万(4379)</a> 
+						<a class="" href="#">10-20万(5239)</a> 
+						<a class="" href="#">20-50万(3486)</a> 
+						<a class="" href="#">50-100万(2781)</a> 
+						<a class="" href="#">100万(2437)</a> 
+					</dd>
+				</dl>
+				<dl class="label-list cf">
+					<dt>热门地区：</dt>
+					<dd> 
+						<a class="cur" href="#">全部</a> 
+						<a class="" href="#">北京市(960)</a> 
+						<a class="" href="#">广州市(849)</a> 
+						<a class="" href="#">上海市(838)</a> 
+						<a class="" href="#">深圳市(588)</a> 
+						<a class="" href="#">杭州市(391)</a> 
+						<a class="" href="#">东莞市(252)</a> 
+						<a class="" href="#">重庆市(198)</a> 
+						<a class="" href="#">佛山市(183)</a> 
+						<a class="" href="#">成都市(159)</a> 
+						<a class="" href="#">厦门市(159)</a> 
+						<a class="" href="#">武汉市(136)</a> 
+						<a class="" href="#">长沙市(119)</a> 
+						<a class="" href="#">汕头市(116)</a> 
+						<a class="" href="#">泉州市(109)</a> 
+						<a class="" href="#">嘉兴市(106)</a> 
+					</dd>
+				</dl>
+			</div>
+			<!--}end:mod-catschoose--> 
+			<!--{start:mod_order-->
+			<div class="mod_sort cf bde2e2e2 mt10">
+				<dl class="order-list fl">
+					<dt>排序：</dt>
+					<dd><em class="cur"></em><a href="#">人气排序</a></dd>
+					<dd><em class="cur"></em><a href="#">咨询量</a></dd>
+					<dd><em class="cur"></em><a href="#">加盟店数</a></dd>
+				</dl>
+				<ul class="pagin-list fr">
+					<li class="yema">1/150</li>
+					<li><a class="pev" href=""><em class="le"></em></a></li>
+					<li><a class="" href="#">下一页<em class="net"></em></a></li>
+					<li>到
+						<input id="skippage" type="text" class="pg" />
+						页</li>
+					<li><a href="javascript:void(0)" onclick="skip()">跳转</a></li>
+				</ul>
+			</div>
+			<!--}end:mod_order--> 
+			<!--{start:mod-ev-list-->
+			<div class="mod-ev-list cf mt10">
+				<div class="ev-list">
+					<ul class="cf">
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<span class="tip-hot"></span>  
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+					</ul>
+					<ul class="cf">
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+					</ul>
+					<ul class="cf">
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+					</ul>
+					<ul class="cf">
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+					</ul>
+					<ul class="cf">
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->  
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+						<li>
+							<input type="hidden" id="brandinfo" value='' />
+							<a class="p-img bde2e2e2" onclick="SetCookies(this)" target="_blank" href="#" title="惟客特披萨火爆招商" target="_blank"> <img src="images/158x158.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="158" width="158" title="【惟客特披萨】惟客特披萨火爆招商" alt="惟客特披萨加盟" /></a>
+							<p class="p-name"><a target="_blank" onclick="SetCookies(this)" href="#"  target="_blank"> <span>【惟客特披萨】</span>惟客特披萨火爆招商</a></p>
+							<p>加盟费用：<strong class="fs14 fw f60">10-20</strong>万</p>
+							<p>所属行业：<a href='#'>餐饮</a> > <a href='#'>西餐</a></p>
+							<p>店面数量：20家</p>
+							<p><em class="red">1002</em>人咨询，<em class="red">91</em>人意向加盟</p>
+							<div class="nostore" style="display:none"> <a class="btn" target="_blank" onclick="SetCookies(this)" href="#"  target="_blank">立即咨询</a> <a href="">加入对比</a> </div>
+							<!--<span class="tip-hot"></span>-->
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--}end:mod-ev-list--> 
+			<!--{start:pagin-->
+			<div class="yahoo2"> 
+				<!-- <span class="disabled">&lt; Prev</span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2">&gt;</a> --> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>首页</a></span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>上一页</a></span> 
+				<span style='color:red;font-weight:bold;'>1</span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>2</a></span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>3</a></span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>4</a></span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>5</a></span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>6</a></span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>7</a></span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>8</a></span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>9</a></span> 
+				<span style='color:#696969;font-weight:normal;'><a href='#'>10</a></span> 
+				<a href='#'>下一页</a> <a href='#'>尾页</a> 
+			</div>
+			<!--}end:pagin--> 
+		</div>
+		<!--}end:industry-left--> 
+		<!--{start:industry-right-->
+		<div class="industry-right fl ml10"> 
+			<!--{start:col-jmnews-->
+			<div class="col-jmnews">
+				<div class="title bde2e2e2">
+					<h3>优惠活动</h3>
+				</div>
+				<ul class="container-list topnews-list bde2e2e2 p10">
+					<li><a href="http://hxyyc.91jm.com/" title="【华祥苑茗茶】 文明始于卓越 创国际茶品牌" target="_blank">【华祥苑茗茶】 文明始于卓越 创国</a></li>
+					<li><a href="http://nuoqi.91jm.com/" title="【诺奇】 快时尚提升生活品质" target="_blank">【诺奇】 快时尚提升生活品质</a></li>
+					<li><a href="http://nuoqi.91jm.com/" title="【诺奇】 快时尚提升生活品质" target="_blank">【诺奇】 快时尚提升生活品质</a></li>
+					<li><a href="http://15839.91jm.com/" title="【八马茶业】 韵自成 心造极" target="_blank">【八马茶业】 韵自成 心造极</a></li>
+					<li><a href="http://afontane.91jm.com/" title="【雅芳婷】 用心呵护您的全家" target="_blank">【雅芳婷】 用心呵护您的全家</a></li>
+				</ul>
+			</div>
+			<!--}end:col-jmnews--> 
+			<!--{start:recom-list-->
+			<div class="col-acc-eve bde2e2e2 mt10">
+				<h3 class="all-title">推荐加盟项目</h3>
+				<ul class="recom-list p10 ">
+					<li> <a class="p-img bde2e2e2" target="_blank" href="#" title="【艾米索女装】打造完美女人 享受优雅人生"> <img src="images/94x94.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="94" width="94" title="【艾米索女装】打造完美女人 享受优雅人生" alt="艾米索女装加盟" /></a>
+						<p><a title="【艾米索女装】打造完美女人 享受优雅人生" target="_blank" href="#" >艾米索女装加盟</a></p>
+						<p>费用：10-20万</p>
+						<p>店数：120家</p>
+						<p><em class="red">51207</em>人咨询</p>
+						<p><em class="red">4655</em>人意向加盟</p>
+					</li>
+					<li> <a class="p-img bde2e2e2" target="_blank" href="#" title="【艾米索女装】打造完美女人 享受优雅人生"> <img src="images/94x94.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="94" width="94" title="【艾米索女装】打造完美女人 享受优雅人生" alt="艾米索女装加盟" /></a>
+						<p><a title="【艾米索女装】打造完美女人 享受优雅人生" target="_blank" href="#" >艾米索女装加盟</a></p>
+						<p>费用：10-20万</p>
+						<p>店数：120家</p>
+						<p><em class="red">51207</em>人咨询</p>
+						<p><em class="red">4655</em>人意向加盟</p>
+					</li>
+					<li> <a class="p-img bde2e2e2" target="_blank" href="#" title="【艾米索女装】打造完美女人 享受优雅人生"> <img src="images/94x94.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="94" width="94" title="【艾米索女装】打造完美女人 享受优雅人生" alt="艾米索女装加盟" /></a>
+						<p><a title="【艾米索女装】打造完美女人 享受优雅人生" target="_blank" href="#" >艾米索女装加盟</a></p>
+						<p>费用：10-20万</p>
+						<p>店数：120家</p>
+						<p><em class="red">51207</em>人咨询</p>
+						<p><em class="red">4655</em>人意向加盟</p>
+					</li>
+					<li> <a class="p-img bde2e2e2" target="_blank" href="#" title="【艾米索女装】打造完美女人 享受优雅人生"> <img src="images/94x94.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="94" width="94" title="【艾米索女装】打造完美女人 享受优雅人生" alt="艾米索女装加盟" /></a>
+						<p><a title="【艾米索女装】打造完美女人 享受优雅人生" target="_blank" href="#" >艾米索女装加盟</a></p>
+						<p>费用：10-20万</p>
+						<p>店数：120家</p>
+						<p><em class="red">51207</em>人咨询</p>
+						<p><em class="red">4655</em>人意向加盟</p>
+					</li>
+					<!--<p class="moer"><a class="fr" href="">更多推荐加盟项目&gt;&gt;</a></p>-->
+				</ul>
+			</div>
+			<!--}end:recom-list--> 
+			<!--{start:recom-list-->
+			<div id="ranking-all" class="industry-tab bde2e2e2 mt10">
+				<h3 class="all-title">排行榜</h3>
+				<div class="industry-con bd pt0  so-rank">
+					<ul class="ranking-list">
+						<li><em class="n1"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+						<li><em class="n2"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+						<li><em class="n3"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+						<li><em class="n4"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+						<li><em class="n5"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+						<li><em class="n6"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+						<li><em class="n7"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+						<li><em class="n8"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+						<li><em class="n9"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+						<li><em class="n10"></em><a href="#" title="【童泰】机不可失、时不再来、精益求精、品质至上"><span>10-20万</span>童泰</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--}end:recom-list--> 
+			<!--{start:recom-list-->
+			<div id="ranking-all" class="industry-tab bde2e2e2 mt10">
+				<h3 class="all-title">最新入驻品牌</h3>
+				<div class="industry-con bd pt0 news-ev  so-rank" id="scroll-news" style="height:300px; overflow:hidden">
+					<ul class="ranking-list">
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+						<li> <em></em> <a target="_blank" href="#" title="【乐昂箱包】LYOUL乐昂箱包连锁加盟"> <span>20-50万</span>乐昂箱包</a> </li>
+					</ul>
+				</div>
+			</div>
+			<!--}end:recom-list--> 
+			<!--{start:hot-tags-->
+			<div id="ranking-all" class="industry-tab bde2e2e2 mt10" style="display:none">
+				<h3 class="all-title">热门标签</h3>
+				<div class="hot-tags bd p10 pt0"> 
+					<strong><a class="blf16" href="#">时尚女装</a></strong> 
+					<strong><a class="blf12" href="#">韩式烧烤</a></strong> 
+					<strong><a class="blf18" href="#">10元店</a></strong> 
+					<strong><a class="blf14" href="#">猫人内衣</a></strong> 
+					<strong><a class="blf12" href="#">女人心内衣</a></strong> 
+					<strong><a class="blf16" href="#">罗莱</a></strong> 
+					<strong><a class="blf12" href="#">咖啡</a></strong> 
+					<strong><a class="blf18" href="#">灯饰加盟</a></strong> 
+					<strong><a class="blf14" href="#">选址</a></strong> 
+					<strong><a class="blf18" href="#">创业故事</a></strong> 
+					<strong><a class="blf16" href="#">昂立教育</a></strong> 
+				</div>
+			</div>
+			<!--}end:hot-tags--> 
+			<!--{start:recom-list-->
+			<div class="col-history-eve bde2e2e2 mt10">
+				<h3 class="all-title">最近浏览过的项目</h3>
+				<ul class="recom-list p10 ">
+					<li><a class="p-img bde2e2e2" target="_blank" href="#" title="琪可尔首饰"> <img src="images/94x94.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="94" width="94" title="琪可尔首饰" alt="琪可尔首饰加盟" /></a>
+						<p><a title="琪可尔首饰" target="_blank" href="#">琪可尔首饰</a></p>
+						<p>费用：10-20万</p>
+						<p>店数：100家</p>
+						<p><em class="red">21</em>人咨询</p>
+						<p><em class="red">0</em>人已加盟</p>
+					</li>
+					<li><a class="p-img bde2e2e2" target="_blank" href="#" title="琪可尔首饰"> <img src="images/94x94.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="94" width="94" title="琪可尔首饰" alt="琪可尔首饰加盟" /></a>
+						<p><a title="琪可尔首饰" target="_blank" href="#">琪可尔首饰</a></p>
+						<p>费用：10-20万</p>
+						<p>店数：100家</p>
+						<p><em class="red">21</em>人咨询</p>
+						<p><em class="red">0</em>人已加盟</p>
+					</li>
+					<li><a class="p-img bde2e2e2" target="_blank" href="#" title="琪可尔首饰"> <img src="images/94x94.jpg" onerror="javascript:this.src='images/ad_company.jpg';" height="94" width="94" title="琪可尔首饰" alt="琪可尔首饰加盟" /></a>
+						<p><a title="琪可尔首饰" target="_blank" href="#">琪可尔首饰</a></p>
+						<p>费用：10-20万</p>
+						<p>店数：100家</p>
+						<p><em class="red">21</em>人咨询</p>
+						<p><em class="red">0</em>人已加盟</p>
+					</li>
+				</ul>
+			</div>
+			<!--}end:recom-list--> 
+		</div>
+		<!--{start:industry-right--> 
+	</div>
+</div>
+<!--end--> 
+<!-- add links-->
+<div id="adLinks">
+	<div class="layout"> <span>友情链接：</span> <a href="#" target="_blank" title="就要加盟网">就要加盟网</a> <a href="#" target="_blank" title="加盟项目">加盟项目</a> <a href="#" target="_blank" title="加盟项目">加盟店排行榜</a> <a href="#" target="_blank" title="加盟资讯">加盟资讯</a> <a href="#" target="_blank" title="就要问答">就要问答</a> </div>
+</div>
+<!-- end --> 
+<!--footer-->
+<div id="footer" style="">
+	<div class="layout" style="position:relative"> 
+		<!--<div style=" width:86px; height:126px; position:absolute; left:0;top:110px;"> <img src="images/codeWeixin.jpg"> </div>-->
+		<div class="footer-container-tip">
+			<div class="ft_list ml7">
+				<h5>加盟保障</h5>
+				<ul>
+					<li><!--<a href="#">--><em>选择加盟好项目</em><!--</a>--></li>
+					<li style=""><!--<a href="#">--><em>免费提供咨询</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌诚信档案</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>新手上路</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费注册会员</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>在线联系感兴趣的项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌商和您沟通</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="icon_xl"> 
+				<!--信任标题--> 
+			</div>
+			<div class="ft_list ml35">
+				<h5>特色服务</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费帮你看项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>加盟组团优惠中</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>申请诚信担保</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>商家入驻</h5>
+				<ul>
+					<li><!--<a href="#">--><em>立即加入</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>诚信认证</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>和投资者洽谈合作</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="footer-container mt10">
+			<div class="footer-jm-pages"> <a href="#" title="关于我们" target="_blank">关于我们</a> | <a href="#" title="会员服务" target="_blank">会员服务</a> | <a href="#" title="诚邀加盟" target="_blank">诚邀加盟</a> | <a href="#" title="免责声明" target="_blank">免责声明</a> | <a href="#" title="招聘信息" target="_blank">招聘信息</a> | <a href="#" title="联系我们" target="_blank">联系我们</a> | <a href="#" title="广告服务" target="_blank">广告服务</a></div>
+			<div class="footer-jm-copyright">
+				<p>Copyright@2011-2021 版权所有 www.91jm.com All Rights Reserved 沪ICP备12030781号-3</p>
+			</div>
+			<div class="footer-jm-tips">
+				<p> 友情提示：多打电话、多咨询、实地考察，可降低连锁加盟，创业投资风险。 全国服务热线：400-168-0091（免长途费） </p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end--> 
+<script type="text/javascript" src="js/slider.js"></script> 
+<script type="text/javascript" src="js/attr_tab.js"></script> 
+<script type="text/javascript">
+		$(".sert-btn , .jm_menu_t2 , .subCategory").hover(function(){		
+			$(".jm_menu_t2").show();
+			},function(){
+					$(".jm_menu_t2").hide()
+				})
+	</script> 
+
+<!-- topicAd css js -->
+<style>
+#closeTopicAd{ position:absolute; right:0px; top:5px;}
+</style>
+<!-- end -->
+</body>
+</html>

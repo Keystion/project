@@ -1,0 +1,1138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>首页</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<h3 class="tips">
+	<div class="container">
+		<a href="index.html">首页</a>
+		<a href="xm-index.html">项目首页</a>
+		<a href="xm-jieshao.html">项目页_介绍_优势_政策</a>
+		<a href="xm-chanpinzhanshi.html">项目页_产品展示页</a>
+		<a href="xm-liebiao.html">项目页_项目列表</a>
+		<a href="xm-tupianliebiao.html">项目页_项目图片列表</a>
+		<a href="xm-tupianzhanshi.html">项目页_项目图片展示页面</a>
+		<a href="xm-xinwenliebiao.html">项目页_新闻列表页</a>
+		<a href="xm-xinwenye.html">项目页_新闻页</a>
+		<a href="xm-zhaoshanghaibao.html">项目页_招商海报</a>
+		<a href="xm-zhaoshangshipin.html">项目页_招商视频</a>
+		<a href="xm-zhifuwendaliebiao.html">项目页_致富问答列表</a>
+		<a href="xm-zhuanjiadianping.html">项目页_专家点评</a>
+		<a href="ask_index.html">问答首页</a>
+		<a href="wenti.html">问题页</a>
+		<a href="question.html">提问页</a>
+		<a href="ask_class.html">问答一级分类</a>
+	</div>
+</h3>
+<div class="topbar">
+	<div class="container">
+		<div class="pull-left"><a href="#">首页</a> <a href="#">经销</a> <a href="#">代理</a> <a href="#">加盟</a> <a href="#">商机</a> <a href="#">资讯</a> <a href="#">问答</a> <a href="#">专家</a> <a href="#">专题</a> <a href="#">行业 </a></div>
+		<div class="pull-right" style="overflow:inherit">
+			<ul class="u-list">
+				<li id="u-login">
+					<form id="form" method="get" name="form">
+						<label for="uname">用户名<input type="text" class="inp-t" name="uname" id="uname"></label>
+						<label for="upwd">密码<input type="text" class="inp-t" name="upwd" id="upwd"></label>
+						<input type="button" class="inp-btn" value="登录" title="登录">
+					</form>
+				</li>
+				<li id="u-weixin"> <img src="images/weixin.gif" alt="" class="weixin">
+					<div class="weixin_pic"><img src="images/weixin2.gif" width="63" height="62"><em>微信二维码扫一扫</em></div>
+				</li>
+				<li id="u-txweibo">
+					<iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&appkey=801491111&sign=ebee3646&v=2&name=keystion&style=5&t=1395886910466&f=0" frameborder="0" scrolling="auto" width="57" height="24" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+				</li>
+				<li id="u-weibo">
+					<wb:follow-button uid="2991975565" type="gray_1" width="67" height="24" ></wb:follow-button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="header clearfix">
+	<div class="container">
+		<div class="head-wrap">
+			<div class="m-search">
+				<div class="m-search-wrap">
+					<div class="m-search-bd">
+						<form action="/serch" method="post">
+							<div class="m-search-button">
+								<button class="btn-search" type="submit">搜索</button>
+							</div>
+							<div class="m-search-panel">
+								<input id="q" name="q" class="inp-t" type="text" aria-label="请输入搜索文字" accesskey="s" autocomplete="off" aria-haspopup="true" aria-combobox="list" role="combobox" x-webkit-grammar="builtin:translate" onblur="if(this.value=='') this.value = this.defaultValue;" onfocus="this.value='';" value="想找什么项目？">
+							</div>
+						</form>
+					</div>
+					<div class="m-search-ft">
+						<div class="search-hots"> <a href="#">招商加盟</a> <a href="">项目品牌</a> <a href="">连锁加盟</a> <a href="">商机排行榜</a> <a href="">创业加盟论</a> </div>
+					</div>
+				</div>
+			</div>
+			<div class="m-logo">
+				<div class="m-logo-img">
+					<h1><a href="index.html" title="好315网 致富频道"><img src="images/logo.png" alt="Logo"></a></h1>
+				</div>
+				<div class="m-logo-subtitle">致富<em>频道</em></div>
+			</div>
+			<div class="m-top-hot">
+				<dl class="hd_hot">
+					<dt>创业热点</dt>
+					<dd><a href="#">网店代理</a> <a href="#">冰淇淋加盟</a> <a href="#">童装加盟</a> <a href="#">家居用品</a> </dd>
+					<dt>投资热点</dt>
+					<dd> <a href="#">环保机械</a> <a href="#">教育加盟</a> <a href="#">天麻种植</a> <a href="#">农村致富</a> </dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="nav clearfix">
+	<div class="container">
+		<div class="nav-warp">
+			<dl class="nav-first">
+				<dt>热门行业</dt>
+				<dd><a href="#" title="">服装</a> <a href="#" title="">餐饮</a> <a href="#" title="">饰品</a> <a href="#" title="">教育</a> <a href="#" title="">建材</a> <a href="#" title="">机械</a></dd>
+			</dl>
+			<dl class="nav-second">
+				<dt>潜力行业</dt>
+				<dd><a href="#" title="">服装</a> <a href="#" title="">餐饮</a> <a href="#" title="">饰品</a> <a href="#" title="">教育</a> <a href="#" title="">建材</a> <a href="#" title="">机械</a></dd>
+			</dl>
+			<dl class="nav-third">     
+				<dt>创业人群</dt>
+				<dd><a href="#" title="">80后创业</a> <a href="#" title="">白领兼职</a> <a href="#" title="">大学生创业</a> <a href="#" title="">二次创业</a> <a href="#" title="">女性投资</a> <a href="#" title="">农民工</a></dd>
+			</dl>
+			<dl class="nav-fourth">
+				<dt>特色栏目</dt>
+				<dd><a href="#" title="">致富商机</a> <a href="#" title="">如何创业</a> <a href="#" title="">开店指南</a> <a href="#" title="">农村致富</a> <a href="#" title="">小本创业</a> <a href="#" title="">融资技巧</a></dd>
+			</dl>
+			<dl class="nav-fifth">
+				<dt>致富学院</dt>
+				<dd><a href="#" title="">创业故事</a> <a href="#" title="">创业指南</a> <a href="#" title="">投资参考</a> <a href="#" title="">经验交流</a> <a href="#" title="">开店筹备</a> <a href="#" title="">店铺经营</a> <a href="#" title="">人员管理</a> <a href="#" title="">市场行情</a></dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<div class="hot-items clearfix">
+	<div class="container">
+		<ul>
+			<li class="hot-items-li-1"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-2"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-3"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-4"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-5"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-6"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-7"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-8"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-9"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-10"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+		</ul>
+	</div>
+</div>
+<div class="ishow-one clearfix">   
+	<!-- 排行榜展示 -->
+	<div class="container">
+		<em></em>
+    	<ul>
+			<li><a href="#" target="_blank"><img src="images/nopic4.png" alt=""></a></li>
+			<script>
+                for( var o = 2; o < 11; o++){
+                    document.write('<li><a href="#" target="_blank"><img src="images/nopic4.png" alt=""></a></li>');
+                }
+            </script>
+		</ul>
+	</div> 
+</div>
+<div class="m-focus clearfix">
+	<div class="container">
+		<div class="m-focus-wrap">
+			<div class="pull-left">
+				<div class="m-ppbzb">
+					<div class="ppbzb-hd">
+						<h2> <a href=""><span>品牌</span>榜中榜</a> </h2>
+						<div class="yj_left"></div>
+						<div class="yj_right"></div>
+					</div>
+					<ul class="ppbzb-list">
+						<li class="ppbzb-list-li-1"> <a href="#">时尚银饰</a> </li>
+						<script>
+						for( var n = 2; n < 34; n++){
+							document.write('<li class="ppbzb-list-li-'+n+'"> <a href="#">时尚银饰</a> </li>');
+						}
+						</script>
+					</ul>
+					<ul class="ppbzb-list-pic">
+						<li><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+						<li><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+						<li><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+						<li><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="oppor_tab" id="oppor_tab">
+					<strong><font color="#ca120a">商机</font>排行榜</strong>
+					<div class="opportab_left lt">
+						<a href="#" class="on">精品</a>
+						<a href="#">服饰</a>
+						<a href="#">餐饮</a>
+						<a href="#">美容</a>
+						<a href="#">家居</a>
+						<a href="#">饰品</a>
+						<a href="#">环保</a>
+						<a href="#">酒水</a>
+						<a href="#">玩具</a>
+						<a href="#">汽车</a>
+					</div>
+					<div class="opportab_right lt">
+						<ul style="display: block;">
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+						<ul>
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+						<ul>
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+						<ul>
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+						<ul>
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+						<ul>
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+				
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+						<ul>
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+						<ul>
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+						<ul>
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+						<ul>
+							<li><em>1</em><a href="#">百客家特色招牌饭</a><span>1万-3万</span></li>
+							<li><em>2</em><a href="#">联智纵科商城网店代理</a><span>1万—4万</span></li>
+							<li><em>3</em><a href="#">柠檬工坊鲜果茶饮</a><span>5千—3万</span></li>
+							<li><em>4</em><a href="#">美美猪童装市场</a><span>5千—2万</span></li>
+							<li><em>5</em><a href="#">科比迪智能家居</a><span>1万—3万</span></li>
+							<li><em>6</em><a href="#">西面来风扯面</a><span>1万-5万</span></li>
+							<li><em>7</em><a href="#">雅顺电动车</a><span>2万—3万</span></li>
+							<li><em>8</em><a href="#">酥麻辣锅</a><span>5千—2万</span></li>
+							<li><em>9</em><a href="#">润莎卫浴家居</a><span>3万—8万</span></li>
+							<li><em>10</em><a href="#">万航商旅机票加盟</a><span>1万—3万</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="pull-center">
+				<div class="m-focuspic pull_left">
+					<ul class="pic">
+						<li><a href="#" target="_blank"><img src="images/nopic1.png"/></a></li>
+						<li><a href="#" target="_blank"><img src="images/nopic1.png"/></a></li>
+						<li><a href="#" target="_blank"><img src="images/nopic1.png"/></a></li>
+						<li><a href="#" target="_blank"><img src="images/nopic1.png"/></a></li>
+					</ul>
+					<div class="txt-bg"></div>
+					<div class="txt">
+						<ul>
+							<li><a href="#">1、标题信息</a></li>
+							<li><a href="#">2、标题信息</a></li>
+							<li><a href="#">3、标题信息</a></li>
+							<li><a href="#">4、标题信息</a></li>
+						</ul>
+					</div>
+					<ul class="num">
+						<li><a></a><span></span></li>
+						<li><a></a><span></span></li>
+						<li><a></a><span></span></li>
+						<li><a></a><span></span></li>
+					</ul>
+				</div>
+				<div class="focusinfo">
+					<div class="focusinfo-hd"><strong class="strong">致富聚焦</strong></div>
+					<div class="finfotitle"><a href="#" target="_blank">怎样经营礼品店更赚钱? 吐血分享！！</a></div>
+					<ul class="finfolist">
+						<li><em> · </em><a href="#" target="_blank">佰车吉打造掘金新热点 安全产品优势多</a></li>
+						<li><em> · </em><a href="#" target="_blank">佰车吉打造掘金新热点 安全产品优势多</a></li>
+						<li><em> · </em><a href="#" target="_blank">佰车吉打造掘金新热点 安全产品优势多</a></li>
+					</ul>
+					<ul class="finfolist-two">
+						<li><a href="#" target="_blank" title="">标题信息标题信息标题信息标题信息</a></li>
+						<script>
+						for( var n = 2; n < 13; n++){
+							document.write('<li><a href="#" target="_blank" title="">标题信息标题信息标题信息标题信息</a></li>');
+						}
+						</script>
+					</ul>
+				</div>
+				<div class="slideTxtBox">
+					<div class="hd">
+						<ul><li>创业人群</li><li>80后创业</li><li>白领兼职</li><li>二次创业</li><li>女性创业</li><li>农村致富</li><li>大学生致富</li></ul>
+					</div>
+					<div class="bd">
+						<ul>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						</ul>
+						<ul>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+							<li><a href="#"><img src="http://127.0.0.1/zf.hao315.com/images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="pull-right">
+				<div class="hot-touzi"> <strong>热点投资</strong>
+					<dl>
+						<dt class="dtstyle1">投资</dt>
+						<dd><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a></dd>
+					</dl>
+					<dl>
+						<dt class="dtstyle2">招商</dt>
+						<dd><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a></dd>
+					</dl>
+					<dl>
+						<dt class="dtstyle3">创业</dt>
+						<dd><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a></dd>
+					</dl>
+					<dl>
+						<dt class="dtstyle4">问答</dt>
+						<dd><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a></dd>
+					</dl>
+				</div>
+				<div class="hot_item_pic"><a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a></div>
+				<div class="m-info-reader">
+					<div class="m-info-reader-hd">
+						<h2><a href="#">致富信息播报</a></h2>
+					</div>
+					<div class="m-info-reader-bd">
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+					</div>
+					<div class="m-info-reader-ft">
+						<ul>
+							<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+							<script>
+								for( var o = 2; o < 9; o++){
+									document.write('<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>');
+								}
+							</script>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="m-sec clearfix">
+	<div class="container">
+		<div class="m-sec-wrap">
+			<div class="m-main zfsj">
+				<div class="m-main-hd"><h3><a href="0">最新致富商机</a></h3></div>
+				<div class="m-rhzf">
+					<div class="m-rhzf-hd">如何致富</div>
+					<div class="m-rhzf-bd">
+						<ul>
+							<li><a href="#">标题信息标题信息</a></li>
+							<li><a href="#">标题信息标题信息</a></li>
+							<li><a href="#">标题信息标题信息</a></li>
+							<li><a href="#">标题信息标题信息</a></li>
+							<li><a href="#">标题信息标题信息</a></li>
+							<li class="line"></li>
+							<li><a href="#">标题信息标题信息</a></li>
+							<li><a href="#">标题信息标题信息</a></li>
+							<li><a href="#">标题信息标题信息</a></li>
+							<li><a href="#">标题信息标题信息</a></li>
+							<li><a href="#">标题信息标题信息</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="m-ssdp">
+					<h3 class="m-ssdp-hd"><a target="_blank" href="#">时尚美搭</a></h3>
+					<div class="m-ssdp-bd">
+						<dl class="item">
+							<dt><img src="images/nopic4.png" alt=""></dt>
+							<dd>
+								<strong>标题信息</strong>
+								<p>身兼超模&amp;主持人&amp;演员多重身份的气质女神李艾美搭大片...<a class="a_more" target="_blank" href="#">[详细]</a></p>
+							</dd>
+						</dl>
+						<dl class="item">
+							<dt><img src="images/nopic4.png" alt=""></dt>
+							<dd>
+								<strong>标题信息</strong>
+								<p>身兼超模&amp;主持人&amp;演员多重身份的气质女神李艾美搭大片...<a class="a_more" target="_blank" href="#">[详细]</a></p>
+							</dd>
+						</dl>
+						<dl class="item">
+							<dt><img src="images/nopic4.png" alt=""></dt>
+							<dd>
+								<strong>标题信息</strong>
+								<p>身兼超模&amp;主持人&amp;演员多重身份的气质女神李艾美搭大片...<a class="a_more" target="_blank" href="#">[详细]</a></p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="m-rt-box">
+					<ul class="m-rt-box-list01">
+						<li class="m-rt-box-list1"><a href="#">标题信息标题信息标题信息</a></li>
+						<li class="m-rt-box-list2"><a href="#">[标题信息标题信息]</a></li>
+						<li class="m-rt-box-list3"><a href="#">[标题信息标题信息]</a></li>
+						<li class="m-rt-box-list4"><a href="#">标题信息标题信息标题信息</a></li>
+						<li class="m-rt-box-list5"><a href="#">[标题信息标题信息]</a></li>
+						<li class="m-rt-box-list6"><a href="#">[标题信息标题信息]</a></li>
+						<li class="m-rt-box-list7"><a href="#">标题信息标题信息标题信息</a></li>
+						<li class="m-rt-box-list8"><a href="#">[标题信息标题信息]</a></li>
+						<li class="m-rt-box-list9"><a href="#">[标题信息标题信息]</a></li>
+					</ul>
+					<ul class="m-rt-box-list02">
+						<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+						<li><a href="#">标题信息标题信息</a></li>
+						<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+						<li><a href="#">标题信息标题信息</a></li>
+						<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+					</ul>
+				</div>
+				<div class="m-ft-box">
+					<ul class="m-ft-list">
+						<li class="m-ft-list-1"><a href="#">标题信息标题信息标题信息</a></li>
+						<script>
+						for(var n = 2; n < 19; n++){
+						document.write('<li class="m-ft-list-'+n+'"><a href="#">标题信息标题信息标题信息</a></li>')
+						}
+						</script>
+					</ul>
+				</div>
+			</div>
+			<div class="m-aside">
+				<div class="m-tab-01">
+					<div class="hd">
+						<ul><li>分类</li><li>分类</li><li>分类</li></ul>
+					</div>
+					<div class="bd">
+						<div class="m-tab-pic">
+							<ul class="m-tab-list-01">
+								<li class="m-tab-list-li-1"><img src="images/nopic2.png" alt=""></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+							</ul>
+							<ul class="m-tab-list-02">
+								<li> 1 | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+								<script>
+								for(var n = 2; n < 12; n++){
+								document.write('<li> '+n+' | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>')
+								}
+								</script>
+							</ul>
+						</div>
+						<div class="m-tab-pic">
+							<ul class="m-tab-list-01">
+								<li class="m-tab-list-li-1"><img src="images/nopic2.png" alt=""></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+							</ul>
+							<ul class="m-tab-list-02">
+								<li> 1 | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+								<script>
+								for(var n = 2; n < 12; n++){
+								document.write('<li> '+n+' | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>')
+								}
+								</script>
+							</ul>
+						</div>
+						<div class="m-tab-pic">
+							<ul class="m-tab-list-01">
+								<li class="m-tab-list-li-1"><img src="images/nopic2.png" alt=""></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+							</ul>
+							<ul class="m-tab-list-02">
+								<li> 1 | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+								<script>
+								for(var n = 2; n < 12; n++){
+								document.write('<li> '+n+' | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>')
+								}
+								</script>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+
+</style>
+<div class="ishow-two clearfix"> 
+	<!-- 排行榜展示 -->
+	<div class="container">
+		<ul class="itemshow">
+			<li><a href="#" target="_blank"><img src="images/nopic4.png" alt=""></a></li>
+			<script>
+                for( var o = 2; o < 25; o++){
+                    document.write('<li><a href="#" target="_blank"><img src="images/nopic4.png" alt=""></a></li>');
+                }
+            </script>
+		</ul>
+	</div>
+</div>
+<div class="m-sec clearfix">
+	<div class="container">
+		<div class="m-sec-wrap">
+			<div class="m-main hyzx">
+				<div class="m-main-hd"><h3>行业资讯<i class="icon-titel icon-title-n"></i></h3></div>
+				<div class="m-lt-box-one lt">
+					<div class="m-lt-box-one-hd h2"><a href="#">小本创业指导</a></div>
+					<div class="m-lt-box-one-bd">
+						<div class="hyzxTopDiv clearfix">
+							<h3><a href="#" title="加盟新奇特小本创业动漫前景看涨" target="_blank">加盟新奇特小本创业动漫前...</a></h3>
+							<div class="pic"><a href="#" title="加盟新奇特小本创业动漫前景看涨" target="_blank"><img width="100" height="85" src="images/nopic2.png" alt="加盟新奇特小本创业动漫前景看涨"></a></div>
+							<div class="text">说到招商加盟，大家基本上会想到服装啊、餐饮…...<a href="#" title="" target="_blank" class="red">[详细]</a></div>
+						</div>
+						<ul class="ul1">
+							<li><a href="#" title="标题文字 " target="_blank">标题文字标题文字标题文字...</a></li>
+							<li><a href="#" title="标题文字 " target="_blank">标题文字标题文字标题文字...</a></li>
+							<li><a href="#" title="标题文字 " target="_blank">标题文字标题文字标题文字...</a></li>
+							<li><a href="#" title="标题文字 " target="_blank">标题文字标题文字标题文字...</a></li>
+						</ul>
+					</div>
+					<div class="m-lt-box-one-hd h2"><a href="#">小本创业专题</a></div>
+					<div class="m-lt-box-one-bd">
+						<ul class="ul2">
+							<li><a href="#" title="标题文字 " target="_blank">标题文字标题文字标题文字...</a></li>
+							<li><a href="#" title="标题文字 " target="_blank">标题文字标题文字标题文字...</a></li>
+							<li><a href="#" title="标题文字 " target="_blank">标题文字标题文字标题文字...</a></li>
+							<li><a href="#" title="标题文字 " target="_blank">标题文字标题文字标题文字...</a></li>
+							<li><a href="#" title="标题文字 " target="_blank">标题文字标题文字标题文字...</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="hyzxMiddle lt">
+					<div class="inHyzxBox"> 
+						<!--循环-->
+						<div class="hyzx-minCont lt">
+							<div class="hyzx-minTitle">
+								<h2>热门行业</h2>
+								<p> <a href="#" target="_blank" title="服装">服装</a>| <a href="#" target="_blank" title="餐饮">餐饮</a>| <a href="#" target="_blank" title="家居">家居</a> </p>
+							</div>
+							<ul>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+							</ul>
+							<div class="hotsoDiv">
+								<p> <a href="#" target="_blank" title="鞋代理">鞋代理</a> <a href="#" target="_blank" title="鞋">鞋</a> <a href="#" target="_blank" title="照明连">照明连</a> <a href="#" target="_blank" title="干果">干果</a> <a href="#" target="_blank" title="烤翅">烤翅</a> <a href="#" target="_blank" title="电热水">电热水</a> </p>
+							</div>
+						</div>
+						<!--循环end--> 
+						
+						<!--循环-->
+						<div class="hyzx-minCont lt">
+							<div class="hyzx-minTitle">
+								<h2>潜力行业</h2>
+								<p> <a href="#" target="_blank" title="婴孕童">婴孕童</a>| <a href="#" target="_blank" title="教育">教育</a>| <a href="#" target="_blank" title="汽车">汽车</a> </p>
+							</div>
+							<ul>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+							</ul>
+							<div class="hotsoDiv">
+								<p> <a href="#" target="_blank" title="鞋代理">鞋代理</a> <a href="#" target="_blank" title="鞋">鞋</a> <a href="#" target="_blank" title="照明连">照明连</a> <a href="#" target="_blank" title="干果">干果</a> <a href="#" target="_blank" title="烤翅">烤翅</a> <a href="#" target="_blank" title="电热水">电热水</a> </p>
+							</div>
+						</div>
+						<!--循环end--> 
+						
+						<!--循环-->
+						<div class="hyzx-minCont lt">
+							<div class="hyzx-minTitle">
+								<h2>传统行业</h2>
+								<p> <a href="#" target="_blank" title="建材">建材</a>| <a href="#" target="_blank" title="家纺">家纺</a>| <a href="#" target="_blank" title="珠宝">珠宝</a> </p>
+							</div>
+							<ul>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+							</ul>
+							<div class="hotsoDiv">
+								<p> <a href="#" target="_blank" title="鞋代理">鞋代理</a> <a href="#" target="_blank" title="鞋">鞋</a> <a href="#" target="_blank" title="照明连">照明连</a> <a href="#" target="_blank" title="干果">干果</a> <a href="#" target="_blank" title="烤翅">烤翅</a> <a href="#" target="_blank" title="电热水">电热水</a> </p>
+							</div>
+						</div>
+						<!--循环end--> 
+						
+						<!--循环-->
+						<div class="hyzx-minCont lt">
+							<div class="hyzx-minTitle">
+								<h2>新兴行业</h2>
+								<p> <a href="#" target="_blank" title="环保">环保</a>| <a href="#" target="_blank" title="干洗">干洗</a>| <a href="#" target="_blank" title="礼品">礼品</a> </p>
+							</div>
+							<ul>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+								<li><a href="#" target="_blank" title="标题信息">标题信息</a></li>
+							</ul>
+							<div class="hotsoDiv">
+								<p> <a href="#" target="_blank" title="鞋代理">鞋代理</a> <a href="#" target="_blank" title="鞋">鞋</a> <a href="#" target="_blank" title="照明连">照明连</a> <a href="#" target="_blank" title="干果">干果</a> <a href="#" target="_blank" title="烤翅">烤翅</a> <a href="#" target="_blank" title="电热水">电热水</a> </p>
+							</div>
+						</div>
+						<!--循环end--> 
+					</div>
+				</div>
+			</div>
+			<div class="m-aside">
+				<div class="m-tab-01">
+					<div class="hd">
+						<ul><li>分类</li><li>分类</li><li>分类</li></ul>
+					</div>
+					<div class="bd">
+						<div class="m-tab-pic">
+							<ul class="m-tab-list-01">
+								<li class="m-tab-list-li-1"><img src="images/nopic2.png" alt=""></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+							</ul>
+							<ul class="m-tab-list-02">
+								<li> 1 | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+								<script>
+								for(var n = 2; n < 9; n++){
+								document.write('<li> '+n+' | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>')
+								}
+								</script>
+							</ul>
+						</div>
+						<div class="m-tab-pic">
+							<ul class="m-tab-list-01">
+								<li class="m-tab-list-li-1"><img src="images/nopic2.png" alt=""></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+							</ul>
+							<ul class="m-tab-list-02">
+								<li> 1 | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+								<script>
+								for(var n = 2; n < 9; n++){
+								document.write('<li> '+n+' | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>')
+								}
+								</script>
+							</ul>
+						</div>
+						<div class="m-tab-pic">
+							<ul class="m-tab-list-01">
+								<li class="m-tab-list-li-1"><img src="images/nopic2.png" alt=""></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息标题信息标题信息标题信息标题信息</a></li>
+								<li><a href="#">标题信息标题信息</a></li>
+							</ul>
+							<ul class="m-tab-list-02">
+								<li> 1 | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+								<script>
+								for(var n = 2; n < 9; n++){
+								document.write('<li> '+n+' | <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>')
+								}
+								</script>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="m-aside-adpic">
+					<a href="#"><img src="images/pic1_4.gif" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="m-sec clearfix">
+	<div class="container">
+		<div class="m-sec-wrap">
+			<div class="m-main cfxy">
+				<div class="m-main-hd"><h3>创富学院<i class="icon-titel icon-title-k"></i></h3></div>
+				<div class="cfxyLeftbar lt">
+					<dl>
+						<dt><a class="blue" href="#">创业政策</a></dt>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+					</dl>
+					<dl>
+						<dt><a class="blue" href="http://cy.qudao.com/cycs/cybb.shtml">必备知识</a></dt>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+					</dl>
+					<dl>
+						<dt><a class="blue" href="http://cy.qudao.com/cycs/fxyfp.shtml">风险防骗</a></dt>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+					</dl>
+					<dl>
+						<dt><a class="blue" href="http://cy.qudao.com/cycs/qwcy.shtml">趣味创业</a></dt>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+						<dd><a href="#" title="标题信息标题信息">标题信息标题信息</a></dd>
+					</dl>
+				</div>
+				<div class="cfxyCenter lt">
+					<div class="cfxyCenter-inbox"> 
+						<!--循环-->
+						<div class="cfxyMinDiv">
+							<h2>项目选择</h2>
+							<h3><a href="#" title="标题信息">标题信息标题信息标题信息</a></h3>
+							<div class="pic"><a href="#"><img src="images/nopic2.png"></a></div>
+							<div class="text">冬天做什么生意好呢？冬天什么美食最受欢迎呢？去自助火锅连锁店看看就知道...<span class="more">[<a href="#">详细</a>]</span></div>
+							<div class="clearfix"></div>
+							<ul>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+							</ul>
+						</div>
+						<!--循环end--> 
+						
+						<!--循环-->
+						<div class="cfxyMinDiv">
+							<h2>开店准备</h2>
+							<h3><a href="#" title="标题信息">标题信息标题信息标题信息</a></h3>
+							<div class="pic"><a href="#"><img src="images/nopic2.png"></a></div>
+							<div class="text">冬天做什么生意好呢？冬天什么美食最受欢迎呢？去自助火锅连锁店看看就知道...<span class="more">[<a href="#">详细</a>]</span></div>
+							<div class="clearfix"></div>
+							<ul>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+							</ul>
+						</div>
+						<!--循环end--> 
+						
+						<!--循环-->
+						<div class="cfxyMinDiv">
+							<h2>经营管理</h2>
+							<h3><a href="#" title="标题信息">标题信息标题信息标题信息</a></h3>
+							<div class="pic"><a href="#"><img src="images/nopic2.png"></a></div>
+							<div class="text">冬天做什么生意好呢？冬天什么美食最受欢迎呢？去自助火锅连锁店看看就知道...<span class="more">[<a href="#">详细</a>]</span></div>
+							<div class="clearfix"></div>
+							<ul>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+							</ul>
+						</div>
+						<!--循环end--> 
+						
+						<!--循环-->
+						<div class="cfxyMinDiv">
+							<h2>人员管理</h2>
+							<h3><a href="#" title="标题信息">标题信息标题信息标题信息</a></h3>
+							<div class="pic"><a href="#"><img src="images/nopic2.png"></a></div>
+							<div class="text">冬天做什么生意好呢？冬天什么美食最受欢迎呢？去自助火锅连锁店看看就知道...<span class="more">[<a href="#">详细</a>]</span></div>
+							<div class="clearfix"></div>
+							<ul>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息标题信息标题信息">标题信息标题信息标题信息</a></li>
+							</ul>
+						</div>
+						<!--循环end--> 
+					</div>
+				</div>
+			</div>
+			<div class="m-aside">
+				<div class="m-info-reader">
+					<div class="m-info-reader-hd">
+						<h2><a href="#">致富信息播报</a></h2>
+					</div>
+					<div class="m-info-reader-bd">
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+					</div>
+					<div class="m-info-reader-ft">
+						<ul>
+							<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+							<script>
+								for( var o = 2; o < 6; o++){
+									document.write('<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>');
+								}
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="m-info-reader">
+					<div class="m-info-reader-hd">
+						<h2><a href="#">致富信息播报</a></h2>
+					</div>
+					<div class="m-info-reader-bd">
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+					</div>
+					<div class="m-info-reader-ft">
+						<ul>
+							<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+							<script>
+								for( var o = 2; o < 6; o++){
+									document.write('<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>');
+								}
+							</script>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pinpai-show clearfix">
+	<div class="container">
+		<ul>
+			<!--10条数据-->
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+			<li> <a href="#" title="标题信息"><img src="images/nopic2.png"></a> <span><a href="http://zf.qudao.com/xm/54860.html" title="标题信息">标题信息</a></span> </li>
+		</ul>
+	</div>
+</div>
+<div class="m-sec clearfix">
+	<div class="container">
+		<div class="m-sec-wrap">
+			<div class="m-main cyrq">
+				<div class="m-main-hd"><h3>创业人群<i class="icon-titel icon-title-p"></i></h3></div>
+				<div class="cyrqleftbar">
+					<ul class="toppiclist">
+						<li><a href="#"><img src="images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						<li><a href="#"><img src="images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						<li><a href="#"><img src="images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+						<li><a href="#"><img src="images/nopic2.png" alt=""><span class="title">标题信息</span></a></li>
+					</ul>
+					<div class="blk12">
+						<h3 class="hd"> <a class="link">热点排行</a> </h3>
+						<div class="bd">
+							<ul class="blk12-list">
+							<!--8条数据-->
+								<li><a href="#" title="标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息">标题信息标题信息标题信息</a></li>
+								<li><a href="#" title="标题信息">标题信息标题信息标题信息</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cyrqcenterbar rt">
+					<!--
+						循环 6 个
+					-->
+					<!--开始-->
+					<div class="item-list">
+						<div class="item-list-hd"><h3 class="h3">标题文本</h3><a class="a_more" href="#">更多&gt;&gt;</a></div>
+						<div class="item-list-bd">
+							<ul>
+								<!--5条数据-->
+								<li><a href="#">标题文本信息标题文本信息</a></li>
+								<li><a href="#">标题文本信息标题文本信息</a></li>
+								<li><a href="#">标题文本信息标题文本信息</a></li>
+								<li><a href="#">标题文本信息标题文本信息</a></li>
+								<li><a href="#">标题文本信息标题文本信息</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--结束-->
+					<script>
+					for(var n = 2; n < 7; n++){
+						document.write('<div class="item-list">						<div class="item-list-hd"><h3 class="h3">标题文本</h3><a class="a_more" href="#">更多&gt;&gt;</a></div>						<div class="item-list-bd">							<ul>								<li><a href="#">标题文本信息标题文本信息</a></li>								<li><a href="#">标题文本信息标题文本信息</a></li>								<li><a href="#">标题文本信息标题文本信息</a></li>								<li><a href="#">标题文本信息标题文本信息</a></li>								<li><a href="#">标题文本信息标题文本信息</a></li>							</ul>						</div>					</div>');
+					}
+					</script>
+				</div>
+			</div>
+			<div class="m-aside">
+				<div class="m-aside-adpic">
+					<a href="#"><img src="images/pic1_4.gif" alt=""></a>
+					<a href="#"><img src="images/pic1_4.gif" alt=""></a>
+					<a href="#"><img src="images/pic1_4.gif" alt=""></a>
+					<a href="#"><img src="images/pic1_4.gif" alt=""></a>
+				</div>
+				<div class="m-info-reader">
+					<div class="m-info-reader-hd">
+						<h2><a href="#">致富信息播报</a></h2>
+					</div>
+					<div class="m-info-reader-ft">
+						<ul>
+							<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+							<script>
+								for( var o = 2; o < 10; o++){
+									document.write('<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>');
+								}
+							</script>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="m-sec clearfix">
+	<div class="container">
+		<div class="m-sec-wrap">
+			<div class="m-main zfjtj">
+				<div class="m-main-hd"><h3 class="h3"><a href="#">致富经专题推荐</a></h3></div>
+				<div class="m-main-bd">
+					<div class="imgitembox">
+						<div class="imgitem"><a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a></div>
+						<script>
+						for(var n = 2; n < 8; n++){
+							document.write('<div class="imgitem"><a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a></div>');
+						}
+						</script>
+					</div>
+					<ul class="txtitem">
+						<li class="txtitem-li-1"><a href="#">服装加盟排行榜</a></li>
+						<script>
+						for(var n = 2; n < 15; n++){
+							document.write('<li class="txtitem-li-'+n+'"><a href="#">服装加盟排行榜</a></li>');
+						}
+						</script>
+					</ul>
+				</div>
+			</div>
+			<div class="m-aside">
+				<div class="m-info-reader">
+					<div class="m-info-reader-hd">
+						<h2><a href="#">致富信息播报</a></h2>
+					</div>
+					<div class="m-info-reader-bd" style="padding-top:9px; padding-bottom:0;">
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+						<div class="imgitem"> <a href="#" target="_blank"><img alt="" src="images/nopic4.png"><span class="mask"></span><span class="title">标题信息</span></a> </div>
+					</div>
+					<div class="m-info-reader-ft" style="padding-top:0;">
+						<ul>
+							<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+							<li> <a href="#" target="_blank">分类</a> | <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> <a href="#" target="_blank" class="qm_c_2">最正常显示多10个字</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="inads clearfix"> 
+	<!-- 广告位 -->
+	<div class="container">
+		<div class="adsline"> <a href="#" target="_blank" title="广告位"><img src="images/pic1_1.gif" alt="广告位"></a> </div>
+	</div>
+</div>
+<div class="linkbox clearfix"> 
+	<!--友情链接-->
+	<div class="container"> <span>友情链接：<em>权重相当，内容健康；联系QQ：<a target="_blank"  style=" cursor:pointer;" href="http://wpa.qq.com/msgrd?v=3&uin=790062246&site=qq&menu=yes" title="友情链接服务">790062246</a></em></span>
+		<div class="link"> <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> </div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footer-warp"> <a href="#" target="_blank">网站首页</a> | <a href="" target="_blank" >关于我们</a> | <a href="#" target="_blank">联系我们</a> | <a href="#" target="_blank">法律声明</a> | <a href="http://open.qq.com/" target="_blank">查看留言</a> <br>
+			<span style="line-height:30px;"><a href="#" target="_blank">ICP备案号：京ICP备12003963号-1</a> </span><br>
+			<span style="font-family:Arial;">Copyright © 2003 - 2014 hao315.com All right rederved. </span> </div>
+	</div>
+</div>
+<script src="js/base.js"></script>
+</body>
+</html>

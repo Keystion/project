@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script> 
+function show_child() {
+    var child = window.open("c.html", "child", "height=200,width=400,status=yes,toolbar=no,menubar=no,location=no");
+    /*if (!child.closed) {
+        if (!window.close()) {
+            var textValue = frm.txt.value;
+            parent.frm0.txt0.value = textValue;
+        } else {
+            window.close();
+            child.close();
+        }
+    }*/
+}
+</script> 
+<a href="javascript:show_child();">打开子窗口</a>
+<form name=frm0>
+	<input type="text" name="txt0" id="txt0">
+	//注意这里一定要写ID属性不然FF下取不到值
+</form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<script src="js/base.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.close').click(function(){
+		$("#ajax").animate({top:855,height:0},350,function(){ window.scrollTo(0,0);});
+		setTimeout(function(){
+			$("#ajax").html("<div class='loading'></div>");
+			$(".footer").css({"position":"inherit","bottom":"auto"});	
+		},350)
+		
+	});
+});
+</script>
+<div class="banner about">
+	<div class="container">
+		<div class="mainBox">
+			<div class="goLogin">
+				触动商机<a class="goButton close" title="登录"><i class="goicon"></i> 登 录 </a>
+			</div>
+			<!--[if !IE]><!--><div class="light"></div><!--<![endif]-->
+			
+			<div class="tree"></div>
+			<div class="jsj"></div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="content">
+	<div class="container">
+		<div class="contBox">
+			<div class="hd"><h4 class="gsjj" title="公司简介 About Us">公司简介 About Us</h4></div>
+			<div class="bd">
+				<p>&nbsp;</p>
+				<p>2010年北京商务地带信息技术有限公司（简称“北京商务地带”）整合了成立于2004年的91创业网（www.91cy.cn）、商告网（www.shgao.com）等国内最早的连锁加盟平台之后，又成功打造了好315网（旗下的三个新的招商平台www.hao315.com、www.hao315.cn、www.hao315.cc），形成了目前以武大招商平台为中心的网络传媒矩阵。</p><br>
+				<p>聚商机，服务创业人群。北京商务地带自成立依赖，先后与百度、谷歌、搜搜等搜索引擎达成了战略合作框架，最大限度的覆盖连锁加盟行业的搜索人群，成为新浪、腾讯等各大门户网站的招商广告核心合作伙伴，并先后与CCTV、广东卫视以及河南卫视等达成战略合作协议，形成了线上线下立体交叉推广的营销格局。成为最全面、最快捷、最有效的招商平台，也是招商领域唯一一个进行综合交叉、多渠道资源整合的超大型网络传媒矩阵。</p><br>
+				<p>北京商务地带自成立以来，实现跨越式发展，2011年10月当月销售业绩突破800万。同时，在团队的建设上，北京商务地带目前已经形成超过200人的团队规模。其中技术开发、搜索优化专业人员更是占到80%以上，通过定期的拓展培训，目前已经形成一个技术水平过硬、服务意识超前的推广团队。</p><br>
+				<p>着眼未来，北京商务地带以为企业提供高效推广为宗旨，全力为合作伙伴提供广告推广、品牌维护、搜索优化等服务，着力完善旗下91创业网、招商帮、商告网以及好315网等9大招商平台的技术与服务。同时，在搜索优化、无线传媒等领域继续开展技术开发，会当凌绝顶，一览众山小，北京商务地带立志打造成连锁加盟行业第一平台！</p>
+			</div>
+		</div>
+	</div>
+</div>

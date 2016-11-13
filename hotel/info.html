@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>浏览页面</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.js"></script>
+<style>
+html { overflow-y:auto;}
+</style>
+</head>
+
+<body>
+<div id="t">
+	<iframe frameborder="0" id="frmleft" name="frmleft" src="tips.html" width="100%" height="150" scrolling="no" allowtransparency="true"></iframe>
+</div>
+<div id="m">
+	<iframe frameborder="0" id="frmright" name="frmright" scrolling="yes" width="100%" height="100%" src="index.html"></iframe>
+</div>
+<script>
+$(function() {
+	$(window).bind("scroll",function(){showload()});
+	function sH(){
+		var h = $(document).height()-160;
+		$("#frmright").height(h);
+		$("#m").height(h);
+	};sH();
+});
+</script>
+</body>
+</html>

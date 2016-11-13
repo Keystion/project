@@ -1,0 +1,22 @@
+/**=Reset	    @name ：reset   @type ：全局
+---------------------------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;}
+/**=清除浮动	    @name ：bd      @type ：全局
+---------------------------------------------------------*/
+.clearfix:before, .clearfix:after{ content: ""; display: table; }
+.clearfix{clear: both;}
+
+/**
+ *  项目上线之后可以删除
+ */
+h3.tips{ text-align:center; padding:10px 0; background:#D6D6D6;}
+h3.tips a{ display:inline-block; height:20px; line-height:20px; border:1px solid #C0C0C0; color:#000000; padding:0 5px; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);}
+h3.tips a:hover{ background:#FFFFFF; color:#000000; text-decoration:none;}

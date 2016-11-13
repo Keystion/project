@@ -1,0 +1,94 @@
+/*	IE Global	*/
+.siteShow .prev, .siteShow .next {
+	background: url(../images/prve.png) 0 -210px;
+	outline: none;
+}
+.siteShow .next {
+	left: auto;
+	right: 0;
+	background-position: 0 -140px;
+}
+.goLogin {
+	background: url(../images/goLogin.png) 0 0 no-repeat transparent;
+}
+.goButton {
+	background: url(../images/goLoginbtn.png) 0 0 no-repeat;
+}
+.goButton:hover {
+	background-color: none;
+	background-position: 0px -35px;
+}
+.time_line i {
+	background-color: none;
+	background: url(../images/on.png) -3px 0 no-repeat;
+	border: none;
+}
+.time_line .on {
+	background-color: none;
+	background-position: 0 -18px;
+}
+.time_line .on a {
+	background-color: none;
+	background: url(../images/on.png) -3px -21px;
+}
+/*	IE 6 Hack	*/
+.login {
+	_margin-left: 20px;
+	_margin-right: 0px;
+}
+.control-group {
+	_margin-right: 30px;
+	_padding: 0px;
+	_width: 265px;
+	_overflow: hidden;
+}
+.input {
+	_margin-left: 30px;
+	_width: 225px;
+	_display: inline;
+}
+.control-group input.login-ma{
+	+margin-left:30px;
+	+width:130px;
+}
+.button {
+	_margin-left: 15px;
+	_line-height: 24px;
+}
+.siteShow LI .item .siteMask {
+	_background: none;
+}
+.siteShow a:hover .item .siteInfo {
+	_top: 0px;
+}
+.tree {
+	_background: url(../images/tree.gif) bottom center no-repeat transparent;
+	_bottom: 0px;
+}
+.jsj {
+	_background: url(../images/jsj.gif) top center no-repeat transparent;
+}
+.goLogin {
+	_background: none url(../images/goLogin.gif);
+	_left: 45%;
+}
+.case_show .case_show_cont .ia {
+	_background: url(../images/time-cur.gif) 0px 0px no-repeat;
+}
+.case_show .case_show_cont .ib {
+	_background: url(../images/time-cur.gif) 0px -15px no-repeat;
+}
+.time_show a i {
+	_background-color: none;
+	_border-width: 0px;
+	_height: 12px;
+	_width: 12px;
+	_background: url(../images/time-cur2.gif) 0px 0px no-repeat;
+	_top: 31px;
+}
+.time_line I {
+	_background: url(../images/on.gif) -3px 2px no-repeat;
+}
+.goLogin .goButton .goicon {
+	_background: url(../images/goicon.gif) 0 0 no-repeat;
+}

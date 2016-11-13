@@ -1,0 +1,32 @@
+@charset "gb2312";
+/* reset */
+
+.fl { float: left }
+.fr { float: right; }
+.pr { position: relative }
+.pa { position: absolute; }
+.ml5 { margin-left: 5px; }
+.ml10 { margin-left: 10px; }
+.layout{ width:990px; margin: 0 auto}
+/*
+---t-css---
+*/
+body{ text-align:center; }
+#topic{background:url(../images/b.jpg) no-repeat center 0;}
+.topic-wrapper{ width:990px; margin:0 auto; text-align:left}
+.t-slogan{ height:438px; background: url(../images/b.jpg) no-repeat center top}
+.t-box{ padding-bottom:27px;}
+.list{ padding-left:20px; padding-top:27px; height:319px}
+.list *{ font-family:microsoft yahei; font-size:12px; text-align:center}
+.list li{ float:left; width:178px; padding-left:10px; height:319px;}
+.list li span{ display:block}
+.list li span.img{ border:1px solid #e4e3e0; border-bottom:none; padding:1px; padding-bottom:0; background:#fff}
+.list li span.img a{ display:block;}
+.list li div.link{ background:#b89a73; height:56px;}
+.list li span.href a{ line-height:28px; color:#fff; font-size:14px;}
+.list li span.href a:hover{ color:#ff0}
+.list li span.con { line-height:20px; color:#fff;}
+.list li b{ display:block; line-height:36px; color:#f00; font-weight:bold; font-size:14px;}
+.t-history{}
+.t-history .hd{ line-height:24px; padding-top:10px; text-align:left; color:#333; font-family:microsoft yahei}
+.t-history a{ display:block; padding:5px 0}

@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.header .soso_form .soso_form_input { height: 26px; line-height: 26px; margin: 5px 0; }
+.navlist li a i { top: 40px !important; top: 22px; }
+.topbar .mini_sharebox { width: 268px !important; height: 20px; width: 198px; }
+.topbar .mini_login { _height: 28px !important; _padding: 5px 0 0 0 !important; }
+
+.footer{ *margin-top:10px; _margin-top:0;}
+
+.focusbox .focushd .pull_center .focusinfo{ _height:88px;}
+
+ul.p_i_show.h_c2 li{ margin:0 7px 10px; _margin:0 6px 10px;}
+
+ul.p_i_show.i_c1 li,
+ul.p_i_show.a_l_c1 li,
+ul.p_i_show.a_n_c1 li,
+ul.p_i_show.a_n_c2 li,
+ul.p_i_show.a_n_c3 li{ *margin:0 5px 10px 5px; _margin:0 4px 10px;}
+ul.p_i_show.c_c1{ _width:1200px;}
+ul.p_i_show.c_c1 li{ margin: 0 9px 9px 9px;}
+ul.hdzq_picitem li	{ _margin:0 6px 6px 4px;}
+
+.a_n_show.xm_c1 ul{ height:310px;}
+.a_n_show.xm_c2 ul{ height:280px;}
+.a_n_show.a_c1 ul{ float:left;}
+.a_n_show.a_c1 ul li{ margin:0; _margin:2px 0;}
+
+.a_n_show.xm_l_ac3{ height:325px; width:294px; float:left;}
+
+/* 留言板*/
+.message .MessageVip11{ padding-left:0px; padding-right:0px;}
+.message.msg2 .msg_left_box ul li{ margin:0 2px !important; width:80px !important;  _margin:0 2px; _width:80px;}
+
+/* 分页 */
+.pagination ul{ width:650px;}
+.pagination ul li { float: left; }
+.pagination ul li a { display: inline-block; }
+.pagination ul li span { width: 30px; text-align: center; }
+
+.pro_infos .pro_info_img{ _margin:9px 3px;}
+
+.zsgzcywt .bd ul li{ _margin:0 2px;}
+
+.resolved .resolved_hd .lt span i{ width:5px !important;}
+.resolved .resolved_hd .lt span i.wjj,
+.resolved .resolved_hd .lt span i.yjj{ width:35px !important;}
+.zxzx{ background:url(../images/zxzx_bd.gif) 0 0 repeat-y;}
+.best_answer .best_answer_hd .lt i{ left:10px !important;}
+.ask_question.tiwen .tiwen_bd .tiwen_line input{ padding:4px !important;}
+.ask_question.tiwen .tiwen_bd .tiwen_line input.submit{ text-indent:0px; padding-top:0px; padding-bottom:0px;}
+
+.ask_class_list .hd ul li span{ display:block; height:24px; width:145px;}
+
+.fenzhan{ background:url(../images/fezhan_bd_bg.gif) 0 0 repeat-y; }
+.fenzhan .fenzhan_body{ _margin-top:-12px;}
+.cydh .bd ul.cydh_list{ _width:886px;}
+.error_inbox{ _margin:0 10%;}

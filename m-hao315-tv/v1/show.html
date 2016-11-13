@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-cn" class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale = 1.0" >
+<!--	不允许用户缩放比例 
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale = 1.0" >-->
+<title>内容展示页</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/base/jquery.js"></script>
+<script src="js/base/modernizr-2.6.2.min.js"></script>
+<script src="js/TouchSlide.1.0.js"></script>
+</head>
+
+<body>
+<div class="content" id="content"> 
+	<!--Header Box Start-->
+	<header class="hd"  role="banner">
+		<h1 class="logo"><a href="index.html"><img src="images/logo.png" title="78.cn创业商机网"></a></h1>
+		<!--Search Box-->
+		<div class="search-form" style="border:0;">
+		<!-- action为URL+?from=index -->
+			<form action="" id="searchForm">
+				<div class="search-bar">
+					<div class="text"><input id="searchText" type="search" value=""></div>
+					<div class="btn"><input type="button" id="searchBtn" value=" " class="olp-bg-search"></div>
+				</div>
+			</form>
+		</div>
+	</header>
+	<!--Navigation Box Start-->
+	<nav class="site" role="navigation">
+		<ul id="header_nav">
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+		</ul>
+	</nav>
+	<section role="region">
+		<ul class="breadcrumb">
+			<li><a href="index.html"><i></i>首页</a><span class="divider">&gt;</span></li>
+			<li><a href="list.html">餐饮小吃</a><span class="divider">&gt;</span></li>
+			<li class="active">澳德士快餐</li>
+		</ul>
+	</section>
+	<!--内容区域-->
+	<section role="contentinfo">
+		<!--多图滚动 2-->
+		<div id="focus" class="focus">
+			<div class="hd">
+				<span class="prev">&lt;</span>
+				<ul></ul>
+				<span class="next">&gt;</span>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><img _src="images/pic1.jpg" src="images/blank.png" /></li>
+					<li><img _src="images/pic1.jpg" src="images/blank.png" /></li>
+					<li><img _src="images/pic1.jpg" src="images/blank.png" /></li>
+					<li><img _src="images/pic1.jpg" src="images/blank.png" /></li>
+					<li><img _src="images/pic1.jpg" src="images/blank.png" /></li>
+					<li><img _src="images/pic1.jpg" src="images/blank.png" /></li>
+					<li><img _src="images/pic1.jpg" src="images/blank.png" /></li>
+					<li><img _src="images/pic1.jpg" src="images/blank.png" /></li>
+				</ul>
+			</div>
+		</div>
+		<div class="info">
+			<h2 class="infotit">10元快餐 四季客满 火速挣钱！</h2>
+			<ul class="infoul">
+				<li class="current">投资额度：<b>1万—3万</b></li>
+				<li>所属区域：<b>安徽省 合肥</b></li>
+				<li>公司名称：<b>合肥市新力餐饮管理有限公司</b></li>
+			</ul>
+			<div class="contTxt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;澳德式，快餐 中西式快餐.在澳德士，西餐、中餐样样俱全，方便快捷。全家老小各取所需，甚至可以一边吃汉堡一边喝稀饭，一边啃鸡腿一边吃牛肉拉面。中国人喜欢，外国人也喜欢。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;融合徐胜年多年心血和智慧的中西复合型新式快餐品牌——“澳德士”首家店开业了。徐胜年深知：西餐有缺憾，中餐有弊端，只有土洋结合、中西合璧的快餐经营模式，方为上上策。“澳德士”真正体现了以人为本和家庭般的温暖。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5元鸡腿加牛肉面，3天开店，7天回本，没经验，没学历，没技术，通通都不怕，中西复合式快餐。专家带店加原料直供，创业开店尽在掌握！集中西快餐之大全，口感绝佳，价格实惠，性价比超高。</div>
+			<div class="Tips">温馨提示：如果您对项目感兴趣，可留言或使用免费电话咨询！</div>
+		</div>
+	</section>		
+	</section>
+	<!--留言板-->
+	<section>
+		<div class="message">
+			<h3 class="tit">在线留言（客服将在第一时间与您联系）</h3>
+			<form id="form1" action="http://gb.78.cn/gbookadd_wap.php" name="form2" method="post">
+				<ul class="msg">
+					<li><label>姓 名：</label><input name="name" id="name" type="text" class="rodbd msgtxt">&nbsp;<font color="red">*</font></li>
+					<li><label>电 话：</label><input name="mobile" id="mobile" type="text" class="rodbd msgtxt">&nbsp;<font color="red">*</font></li>
+					<li><label>地 址：</label><input name="address" id="address" type="text" class="rodbd msgtxt"></li>
+					<li><label>内 容：</label><textarea name="content" cols="" rows="" class="rodbd msgtext"></textarea></li>
+					<li><label></label><input name="sub" type="submit" value="我要留言" class="msgbut1"></li>
+				</ul>
+			</form>
+			<div class="msgsm">声明：本公司绝不对外泄露用户信息！</div>
+		</div>
+	</section>
+	<!--拨打电话-->
+	<section>
+		<div class="phone">
+			<h3 class="tit">免费电话回呼!  无需话费，立即沟通！</h3>
+			<div class="telephone">
+				<p>请输入<i>你自己的</i>电话号码 ↓ </p>
+				<form id="form1" action="phoneadd.php" name="form1" method="post">
+					<p><input name="tb_mobile" type="tel" class="rodbd phtxt1" value=""></p>
+					<input type="submit" class="rodbd phbut1" value="" name="sub" id="sub">
+				</form>
+			</div>
+		</div>
+	</section>
+	<!--Foot Box-->
+	<footer role="contentinfo">
+		<div class="foot">
+			<div class="version"> <a href="#">简约版</a> <a href="#" class="on">触屏版</a> <a href="#">电脑版</a> <a href="#">客户端</a> </div>
+			<i class="toTop"><a href="javascript:scroll(0, 0);"><img src="images/totop.png" width="30" height="28" alt=""></a></i>
+			<div class="about">
+				<p><a href="#">关于我们</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">联系我们</a></p>
+				<p>©2005-2010,28.com. All rights reserved</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script type="text/javascript">
+
+	TouchSlide({ 
+		slideCell:"#focus",
+		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+		mainCell:".bd ul", 
+		effect:"left", 
+		autoPlay:false,//自动播放
+		autoPage:true, //自动分页
+		switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+	});
+	var tzt = 0;
+	var dzt = 1;
+	function showload(){
+		var ToHeight = 90;
+		if ( $(document).scrollTop() > ToHeight && tzt !=1) {
+			$(".toTop").css({display:"block"});
+			tzt = 1;
+			dzt = 0;
+		}else if( $(document).scrollTop() <= ToHeight && dzt != 1){
+			$(".toTop").css({display:"none"});
+			tzt = 0;
+			dzt = 1;
+		}
+	}
+	$(window).bind("scroll",function(){showload()});
+	$(function(){
+        $(".text :input").focus(function(){
+			 $(".logo").css({"display":"none"});
+             $(".search-form").css({"width":"98%"});
+        }).blur(function(){
+             $(".logo").css({"display":"block"});
+             $(".search-form").css({"width":"45%"});
+        });
+    })
+	$(".prolist li:last").css({"background":"none"});
+</script>
+</body>
+</html>

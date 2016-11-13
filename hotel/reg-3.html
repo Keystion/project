@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<title>美容SPA</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale = 1.0" >
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery.SuperSlide.2.1.js"></script>
+<script src="js/base.js"></script> 
+<!-- map.baidu.com Start -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=7jgAn6zYVGEoL2VxiC0CXiVo"></script>
+<!-- map.baidu.com End -->
+
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/iehack.css">
+<![endif]-->
+</head>
+
+<body>
+
+<div class="header">
+	<div class="container">
+		<!--<div class="logo big" id="logo">
+			<h1><a href="index.html"><img src="images/logo.jpg" alt="Logo"></a></h1>
+		</div>-->
+		<div class="info">
+			<ul>
+				<!--登录后显示本模块-->
+				<!--<li class="info-i user-name has-pulldown"> <em class="f-icon pull-arrow"></em> <a class="identity" href="javascript:viod(0);" target="_blank" title="头像"><img src="images/photo.jpg" alt=""></a> <span node-type="username" class="name top-username">Toby Wu</span>
+					<div class="pulldown user-info" id="sub_nav">
+						<ul class="clearfix">
+							<li class=""><a href="weiwanchengdingdan.html" title="未付款订单"><i class="i-unfinished"></i>未付款订单<em>（1）</em></a> </li>
+							<li class=""><a href="yiwanchengdingdan.html" title="已完成订单"><i class="i-completed"></i>已完成订单<em>（231）</em></a> </li>
+							<li class=""><a href="huodejiangli.html" title="获得的奖励"><i class="i-awards"></i>获得的奖励<em>（7）</em></a></li>
+							<li class=""><a href="gerenshezhi.html" title="管理账户"><i class="i-setting"></i>管理账户</a> </li>
+							<li class=""><a href="#" title="退出"><i class="i-logout"></i>退出</a> </li>
+						</ul>
+					</div>
+				</li>-->
+				<li class="info-i user-name"> <a href="login.html">登录</a> <a href="reg.html">注册</a></li>
+				<!-- 暂时隐藏以后需要自行添加-->
+				<!--<li class="info-i search-box">
+					<form class="search-form clearfix" action="javascript: void(0)" method="get">
+						<input style="width: 110px" autocomplete="off" class="search-query" name="q" onblur="if(this.value=='') this.value = this.defaultValue;" onfocus="this.value='';" value="关键词" spellchecking="off" type="text">
+						<input class="search-button" type="submit" value="">
+					</form>
+				</li>-->
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="main">
+	<div class="w" id="regist">
+		<div class="mt"><a href="http://jiudianjiudian.com/"><img src="images/logo_03.png" alt="酒店 酒店" width="121" height="25"></a><b>欢迎注册</b></div>
+		<div class="steps">
+			<div class="steps_ct">
+				<ul>
+					<li class="steps_li_01"><span class="icon"><i class="steps_i1_s"></i></span> <span class="icon_text">账户信息</span></li>
+					<li class="steps_li_02"><div class="boldline"></div></li>
+					<li class="steps_li_03"><span class="icon"><i class="steps_i2_s"></i></span> <span class="icon_text">填写用户信息</span></li>
+					<li class="steps_li_04"><div class="boldline"></div></li>
+					<li class="steps_li_05"><span class="icon"><i class="steps_i3_w"></i></span> <span class="icon_text">注册成功</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mc">
+			<form id="personRegForm" method="POST" onsubmit="return false;">
+				<div class="form">
+					<dl class="regForm-item">
+						<dt class="regForm-item-tit"><img src="images/reg_ok.png" alt=""></dt>
+						<dd class="regForm-item-ct">
+							<div class="mob-supt reg-ok">
+								<em>吴腾飞</em><strong>恭喜您注册成功 ！</strong>
+							</div>
+						</dd>
+					</dl>
+					<dl class="regForm-item">
+						<img src="images/reg_memBenefits.png" alt="会员优惠" style="margin-left:70px;">
+					</dl>
+					
+					<dl class="regForm-item">
+						<dt class="regForm-item-tit"></dt>
+						<dd class="regForm-item-ct">
+							<input type="button" class="btn" style="width:270px; float:none;" id="registsubmit" value="马上体验我们的服务" tabindex="8" onclick="">
+						</dd>
+					</dl>
+				</div>
+			</form>
+			<div class="phone">
+                <img width="220" height="241" src="images/big_tel.jpg">
+            </div>
+		</div>
+	</div><div class="clearfix"></div>
+	
+</div>
+<div class="footinfo">
+	<div class="container">
+		<div class="divNum div-1">
+			<dl>
+				<dt>随时掌控<br><strong>酒店最特价</strong></dt>
+				<dd class="erweima"><img src="images/icon-app.jpg" alt=""></dd>
+				<dd class="tips">*目前只支持安卓版本</dd>
+			</dl>
+		</div>
+		<div class="divNum div-2">
+			<dl>
+				<dt>H.H官方微信<br><strong>关注最新信息</strong></dt>
+				<dd class="erweima"><img src="images/icon-app.jpg" alt=""></dd>
+				<dd class="tips"></dd>
+			</dl>
+		</div>
+		<div class="divNum div-3"><img src="images/hezuo.png" alt="寻求合作"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footGrid about">
+			<h4><i></i><a href="#">关于酒店酒店</a></h4>
+			<ul>
+				<li><a href="#">我们的服务</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">网站声明</a></li>
+			</ul>
+		</div>
+		<div class="footGrid partners">
+			<h4><i></i><a href="#">渠道合作</a></h4>
+			<ul>
+				<li><a href="#">我们的合作酒店</a></li>
+				<li><a href="#">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="footGrid help">
+			<h4><i></i><a href="#">帮助中心</a></h4>
+			<ul>
+				<li><a href="#">如何使用酒店酒店</a></li>
+				<li><a href="#">酒店秘书服务介绍</a></li>
+			</ul>
+		</div>
+		<div class="footGrid sitemap">
+			<h4><i></i><a href="#">网站地图</a></h4>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+		<div class="footGrid service">
+			<h4><i></i>酒店秘书</h4>
+			<ul>
+				<li class="tel">400-8888-888</li>
+				<li>周一至周日09:00-18:00</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<p class="copyright">Copyright 2003-2013, 版权所有 <a href="http://jiudianjiudian.com/">jiudianjiudian.com</a></p>
+</div>
+</body>
+</html>

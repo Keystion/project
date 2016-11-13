@@ -1,0 +1,990 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>首页</title>
+<meta name=description  content="" />
+<meta name=keywords content="" />
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/industry.js" ></script>
+<script type="text/javascript" src="js/default.js"></script>
+<!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a , em , i ,span , s');
+    </script>
+<![endif]-->
+
+</head>
+<body>
+<h3 class="tips">
+	<a href="index.html">首页</a>
+    <a href="xm_index.html">项目加盟首页</a>
+    <a href="xm_shop.html">项目加盟店</a>
+    <a href="xm_news.html">项目加盟资讯</a>
+    <a href="xm_ask.html">项目加盟问答</a>
+    <a href="xm_pic.html">项目加盟图库</a>
+    <a href="xm_pic_show.html">项目加盟图库展示</a>
+    <a href="news.html">加盟资讯列表</a>
+    <a href="news_show.html">资讯展示页面</a>
+    <a href="ask.html">问答页面</a>
+	<a href="so.html">搜索页 列表页</a>
+    <a href="top.html">加盟店排行榜</a>
+    <a href="zt.html">专题项目</a>
+    <a href="404.html">404页面</a>
+    <a href="map.html">网站地图</a>
+</h3>
+<!--topbar-->
+<div id="topbar">
+	<div class="layout">
+		<div id="sd-nav" class="topbar-nav fr">
+			<ul>
+				<li><a href="#" id="" class="first">91加盟网</a></li>
+				<li><a href="#" id="site-btn-qqlog" rel="nofollow" class="" title="使用QQ帐号登录" target="_blank">QQ登录</a></li>
+				<li><a href="#" id="site-btn-weibolog" rel="nofollow" class="" title="使用微博帐号登录" target="_blank">新浪微博登录</a></li>
+				<li style="display:none"><a href="#" id="site-btn-rss" class="menu-slider"><i></i>订阅</a></li>
+				<li style="display:none"><a href="#" id="site-btn-weibo" class="menu-slider"><i></i>关注</a></li>
+				<li style="display:none"><a href="#" id="site-btn-help">联系客服</a></li>
+				<li><a style="padding-right:0" href="#" class="menu-slider" target="_blank">网站导航</a></li>
+			</ul>
+		</div>
+		<div id="site-nav" class="topbar-nav fl">
+			<input type="hidden" id="hd_brand_lname" value=""/>
+			<input type="hidden" id="hd_user_lname" value=""/>
+			<p class="login-info"> 您好，欢迎来91加盟网！ <span class="log-out"> <a href="#">请登录</a> <a href="#">免费注册</a> <a href="#">品牌商入口</a> </span> </p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<!--end--> 
+<!-- topicAd -->
+<div id="topicAd99060" style="background: #fff; overflow:hidden; padding:3px 0">
+	<div class="layout" style=" position:relative"> <a href="#" target="_blank"> <img src="images/990x60.jpg" alt="2013赚钱项目" /> </a> </div>
+</div>
+<!-- end --> 
+<!--header-->
+<div id="header">
+	<div class="layout">
+		<div id="jm-logo" class="fl pl10 mr10"><a href="#" title="就要加盟网"><img src="images/logo-v2.png" alt="就要加盟网" /></a></div>
+		<div id="jm-slogan" class="fl "><!--广告语update--></div>
+		<div id="jm-search" class="fl ">
+			<div class="jmsearch-switchable-nav"> 
+				<!--jmsearch-switchable-nav--> 
+			</div>
+			<div class="jmsearch-container">
+				<div class="jmsearch-screen fl"> <span class="btn-screen">综合<i></i></span>
+					<div class="curtlist" style="display:none">
+						<ul>
+						</ul>
+					</div>
+				</div>
+				<div class="jmsearch-keywords fl">
+					<input type="text" id="keyword" name="keyword" class="ui-autocomplete-input" autofocus="true" placeholder="请输入品牌关键字..." onkeydown="return enterSearchTop()" />
+				</div>
+				<div class="jmsearch-action fl">
+					<button type="submit" onclick="Search()"></button>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="hot-keyword-success">
+				<ul class="hot-keyword-list">
+					<li>热门搜索：</li>
+					<li><a href="#" data-searchtrace="家纺项目" class="highlight" title="家纺项目">家纺项目</a></li>
+					<li><a href="#" data-searchtrace="中逵钓具" title="中逵钓具">中逵钓具加盟</a></li>
+					<li><a href="#" data-searchtrace="多喜爱家纺" title="多喜爱家纺">多喜爱家纺加盟</a></li>
+					<li><a href="#" data-searchtrace="惠谊家纺" title="惠谊家纺">惠谊家纺加盟</a></li>
+					<li><a href="#" data-searchtrace="优贝施药妆" title="优贝施药妆">优贝施药妆加盟</a></li>
+					<li><a href="#" class="more">更多</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<!--end-->
+<div id="max-nav" class="">
+	<div class="layout"> 
+		<!--main-nav-->
+		<div id="jm-nav" class="">
+			<div class="sert-show fl" style=" position:relative">
+				<h2 class="sert-btn" title="加盟项目分类">加盟项目分类<i></i></h2>
+				<!--全部分类展开-->
+				<div class="menu jm_menu">
+					<ul>
+						<li class="item item1 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">餐饮</a> / <a href="#" target="_blank">小吃</a> / <a href="#" target="_blank">快餐</a></h3>
+							<p class="item-col  itemCol1 ">
+								<a href="#" target="_blank" title="婚庆项目">婚庆</a>
+								<a href="#" target="_blank" title="眼镜店项目">眼镜店</a>
+								<a href="#" target="_blank" title="电影院项目">电影院</a>
+							</p>
+						</li>
+						<li class="item item2 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">服装</a> / <a href="#" target="_blank">女装</a> / <a href="#" target="_blank">童装</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item3 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">美容</a> / <a href="#" target="_blank">美容院</a> / <a href="#" target="_blank">化妆品</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item4 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">家居</a> / <a href="#" target="_blank">家纺</a> / <a href="#" target="_blank">橱柜</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item5 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">教育</a> / <a href="#" target="_blank">早教</a> / <a href="#" target="_blank">少儿英语</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item6 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">饰品</a> / <a href="#" target="_blank">银饰</a> / <a href="#" target="_blank">韩国饰品</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item7 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">珠宝</a> / <a href="#" target="_blank">黄金</a> / <a href="#" target="_blank">翡翠</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item8 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">婴孕童</a> / <a href="#" target="_blank">母婴</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item9 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">五金</a> / <a href="#" target="_blank">建材</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item10 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">食品</a> / <a href="#" target="_blank">茶叶</a> / <a href="#" target="_blank">零食</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item11 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">商务休闲</a> / <a href="#" target="_blank">酒店</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item12 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">汽车服务</a> / <a href="#" target="_blank">汽车美容</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item13 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">干洗</a> / <a href="#" target="_blank">洗衣</a></h3>
+						</li>
+						<li class="item item14 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">酒水</a> / <a href="#" target="_blank">饮料</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+						<li class="item item15 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">零售</a> / <a href="#" target="_blank">超市</a> / <a href="#">便利店</a></h3>
+						</li>
+						<li class="item item16 jm_menuItem">
+							<h3 class="item-hd item-hd1"> <s></s><a href="#" target="_blank">新奇特</a> / <a href="#" target="_blank">物流速递</a></h3>
+							<p class="item-col  itemCol1 "><a href="#" target="_blank" title="婚庆项目">婚庆</a></p>
+						</li>
+					</ul>
+					<div class="arrow_bottom"></div>
+				</div>
+				<!--end--> 
+			</div>
+			<div class="jm-nav-list fl">
+				<ul>
+					<li class="first"><a href="/" style="cursor:hand" class="currented">首页</a></li>
+					<li><a href="#" title="餐饮项目" target="_blank">餐饮</a></li>
+					<li><a href="#" title="服装项目" target="_blank">服装</a></li>
+					<li><a href="#" title="家纺项目" target="_blank">家纺</a></li>
+					<li><a href="#" title="美容项目" target="_blank">美容</a></li>
+					<li><a href="#" title="家居项目" target="_blank">家居</a></li>
+					<li class="subnav"> <i></i>
+						<a href="#" title="加盟店排行榜" class="first" target="_blank">加盟店排行榜</a>
+						<a href="#" title="加盟资讯" target="_blank">加盟资讯</a>
+						<a href="#" title="就要问答"target="_blank">就要问答</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<!-- subCategory--> 
+			
+			<!--end--> 
+		</div>
+		<!--end--> 
+	</div>
+</div>
+<!--content-->
+<div id="content">
+	<div class="layout"> 
+		<!--mod-focus-->
+		<div id="mod-focus">
+			<div class="foucs-sliderimg fl ml10 mt10">
+				<div id="focus">
+					<ul>
+						<li>
+							<div style="left:0; top:0; width:540px; height:230px;">
+								<a href="#" title="【中逵钓具加盟】鱼天下 钓之家"  target="_blank" >
+								<img src="images/540x230.jpg" width="540" height="230" alt="【中逵钓具加盟】 鱼天下 钓之家" /></a> 
+							</div>
+						</li>
+						<li>
+							<div style="left:0; top:0; width:540px; height:230px;">
+								<a href="#" title="【中逵钓具加盟】鱼天下 钓之家"  target="_blank" >
+								<img src="images/540x230.jpg" width="540" height="230" alt="【中逵钓具加盟】 鱼天下 钓之家" /></a> 
+							</div>
+						</li>
+						<li>
+							<div style="left:0; top:0; width:540px; height:230px;">
+								<a href="#" title="【中逵钓具加盟】鱼天下 钓之家"  target="_blank" >
+								<img src="images/540x230.jpg" width="540" height="230" alt="【中逵钓具加盟】 鱼天下 钓之家" /></a> 
+							</div>
+						</li>
+						<li>
+							<div style="left:0; top:0; width:540px; height:230px;">
+								<a href="#" title="【中逵钓具加盟】鱼天下 钓之家"  target="_blank" >
+								<img src="images/540x230.jpg" width="540" height="230" alt="【中逵钓具加盟】 鱼天下 钓之家" /></a> 
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="foucs-slide-bt mt10">
+					<div class="hd-n-list">
+						<span>
+						<div class="interlayer-rotatelist" id="news_slides">
+							<div class="interlayer-rotatelist-list">
+								<ul class="ks-switchable-content slides_container">
+									<li> <a class="rotate" href=" #"> 北京市的张先生正在咨询<span>【罗莱家纺】</span>：请尽快寄资料给我... </a> </li>
+									<li> <a class="rotate" href=" #"> 北京市的张先生正在咨询<span>【罗莱家纺】</span>：请尽快寄资料给我... </a> </li>
+									<li> <a class="rotate" href=" #"> 北京市的张先生正在咨询<span>【罗莱家纺】</span>：请尽快寄资料给我... </a> </li>
+									<li> <a class="rotate" href=" #"> 北京市的张先生正在咨询<span>【罗莱家纺】</span>：请尽快寄资料给我... </a> </li>
+									<li> <a class="rotate" href=" #"> 北京市的张先生正在咨询<span>【罗莱家纺】</span>：请尽快寄资料给我... </a> </li>
+									<li> <a class="rotate" href=" #"> 北京市的张先生正在咨询<span>【罗莱家纺】</span>：请尽快寄资料给我... </a> </li>
+									<li> <a class="rotate" href=" #"> 北京市的张先生正在咨询<span>【罗莱家纺】</span>：请尽快寄资料给我... </a> </li>
+								</ul>
+							</div>
+							<span class="step">
+								<a href="javascript:void(0)" target="_self" class="prev"><s class="arrow arrow-lthin"><s></s></s></a>
+								<a href="javascript:void(0)" target="_self" class="next"><s class="arrow arrow-rthin"><s></s></s></a>
+							</span>
+						</div>
+						</span>
+						<b><a href="#">加盟动态</a></b>
+					</div>
+					<div class="bd-i-slides">
+						<div class="" id="news_slides_img">
+							<div class="interlayer-rotatelist-list sc_img">
+								<ul class="ks-switchable-content slides_container">
+									<li>
+										<a href="#" title="【清华优才加盟】 全新体验侵入式美国课堂"  target="_blank" > <img src="images/166x168.jpg" width="166" height="168" alt="清华优才加盟" /></a>
+										<a href="#" title="【清华优才加盟】 全新体验侵入式美国课堂"  target="_blank" > <img src="images/166x168.jpg" width="166" height="168" alt="清华优才加盟" /></a>
+										<a href="#" title="【清华优才加盟】 全新体验侵入式美国课堂"  target="_blank" > <img src="images/166x168.jpg" width="166" height="168" alt="清华优才加盟" /></a>
+									</li>
+									<li> 
+										<a href="#" title="【过江龙火锅加盟】精致营养，好吃不贵"  target="_blank" > <img src="images/166x168.jpg" width="166" height="168" alt="过江龙火锅加盟" /></a>
+										<a href="#" title="【过江龙火锅加盟】精致营养，好吃不贵"  target="_blank" > <img src="images/166x168.jpg" width="166" height="168" alt="过江龙火锅加盟" /></a>
+										<a href="#" title="【过江龙火锅加盟】精致营养，好吃不贵"  target="_blank" > <img src="images/166x168.jpg" width="166" height="168" alt="过江龙火锅加盟" /></a>
+									</li>
+									<li>
+										<a href="#" title="【图途户外用品加盟】做户外找图途"  target="_blank" > <img src="images/166x168.jpg" width="166" height="168" alt="图途户外用品加盟" /></a>
+										<a href="#" title="【图途户外用品加盟】做户外找图途"  target="_blank" > <img src="images/166x168.jpg" width="166" height="168" alt="图途户外用品加盟" /></a>
+										<a href="#" title="【图途户外用品加盟】做户外找图途"  target="_blank" > <img src="images/166x168.jpg" width="166" height="168" alt="图途户外用品加盟" /></a>
+									</li>
+								</ul>
+							</div>
+							<span class="step"> <a href="javascript:void(0)" target="_self" class="prev"></a> <a href="javascript:void(0)" target="_self" class="next"></a> </span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="fc-rightbar fl ml10 mt10"> 
+				<!--log-->
+				<div class="login">
+					<ul id="hp-sign-out" class="login-nav">
+						<li><a href="#" title="马上注册" class="register-btn" target="_blank">免费注册a</a></li>
+						<li><a href="#" title="马上登录，享受会员专属服务" class="login-btn" target="_blank">登录</a></li>
+					</ul>
+					<!--end--> 
+				</div>
+				<!--end--> 
+				<!--right-news-->
+				<div class="right-news mt10">
+					<div class="title" id="idtab_topnews">
+						<ul>
+							<li><a href="#n-t-1" class="selected">品牌聚焦</a></li>
+							<li><a href="#n-t-2">行业动态</a></li>
+							<li><a href="#n-t-3" class="last">加盟问答</a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<div class="container"> 
+						<!--品牌聚焦-->
+						<ul class="container-list" id="n-t-1" style="display:block">
+							<li><a href="#" title="让生活充满喜悦" target="_blank">让生活充满喜悦</a></li>
+							<li><a href="#" title="让生活充满喜悦" target="_blank">让生活充满喜悦</a></li>
+							<li><a href="#" title="让生活充满喜悦" target="_blank">让生活充满喜悦</a></li>
+							<li><a href="#" title="让生活充满喜悦" target="_blank">让生活充满喜悦</a></li>
+						</ul>
+						<!--行业动态-->
+						<ul class="container-list" id="n-t-2" style="display:none">
+							<li><a href="#" title="快乐星美食出众,备受消费者喜爱,吸引众多创业者加盟" target="_blank">快乐星美食出众,备受消费者喜爱,吸引众多创业者加盟</a></li>
+							<li><a href="#" title="快乐星美食出众,备受消费者喜爱,吸引众多创业者加盟" target="_blank">快乐星美食出众,备受消费者喜爱,吸引众多创业者加盟</a></li>
+							<li><a href="#" title="快乐星美食出众,备受消费者喜爱,吸引众多创业者加盟" target="_blank">快乐星美食出众,备受消费者喜爱,吸引众多创业者加盟</a></li>
+							<li><a href="#" title="快乐星美食出众,备受消费者喜爱,吸引众多创业者加盟" target="_blank">快乐星美食出众,备受消费者喜爱,吸引众多创业者加盟</a></li>
+						</ul>
+						<!--加盟问答-->
+						<ul class="container-list" id="n-t-3" style="display:none">
+							<li><a href="#" title="易贝乐怎样划分加盟区域?" target="_blank">易贝乐怎样划分加盟区域?</a></li>
+							<li><a href="#" title="易贝乐怎样划分加盟区域?" target="_blank">易贝乐怎样划分加盟区域?</a></li>
+							<li><a href="#" title="易贝乐怎样划分加盟区域?" target="_blank">易贝乐怎样划分加盟区域?</a></li>
+							<li><a href="#" title="易贝乐怎样划分加盟区域?" target="_blank">易贝乐怎样划分加盟区域?</a></li>
+						</ul>
+						<!--加盟数据-->
+						<div class="container-num">
+							<p>目前正有 <font>11920</font> 名创业者在线找商机</p>
+							<p>本日新增意向加盟者 <font>4595</font> 人/次</p>
+						</div>
+						<!--项目高级搜索-->
+						<div class="searchbar">
+							<ul>
+								<li> <span>感兴趣行业</span>
+									<select id="a_sel" name="a_sel">
+										<option value="0">加盟行业</option>
+									</select>
+								</li>
+								<li> <span>行业子分类</span>
+									<select id="b_sel" name="b_sel">
+										<option value="0">所属小类</option>
+									</select>
+								</li>
+								<li> <span>预投资金额</span>
+									<select id="c_sel" name="c_sel">
+										<option value="0">投资金额</option>
+										<option value="1">1万以下</option>
+										<option value="2">1~5万</option>
+										<option value="3">5~10万</option>
+										<option value="4">10~20万</option>
+										<option value="5">20~50万</option>
+										<option value="6">50~100万</option>
+										<option value="7">100万以上</option>
+									</select>
+								</li>
+								<li> <span>输入关键词</span>
+									<input class="input-text" name="txtKeyword" id="txtKeyword" type="text" value="请输入品牌关键字..." onkeydown="return enterSearch()" />
+								</li>
+								<li class="input-button">
+									<input class="input-btn" name="btnBrandSearch" id="btnBrandSearch" type="button" onclick="getBrandSearch()" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--end--> 
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--end--> 
+		<!-- ads Time -->
+		<div class="ads-990x70 mt20"> <a href="#" target="_blank" title="南粉北面加盟"> <img src="images/nfbm99070.jpg" width="990" height="70" alt="南粉北面加盟" /> </a> </div>
+		<!-- end --> 
+		<!-- ads Time -->
+		<div class="ads-990x70 mt20"> <a href="#" target="_blank" title="南粉北面加盟"> <img src="images/nfbm99070.jpg" width="990" height="70" alt="南粉北面加盟" /> </a> </div>
+		<!-- end --> 
+		<!-- ads Time -->
+		<div class="ads-990x70 mt20"> <a href="#" target="_blank" title="南粉北面加盟"> <img src="images/nfbm99070.jpg" width="990" height="70" alt="南粉北面加盟" /> </a> </div>
+		<!-- end --> 
+		<!--hot-event-->
+		<div class="hot_xm mod-maxDiv mt20" id="hot-event">
+			<div class="hr_blue"></div>
+			<div class="title tab">
+				<div class="ads"> <a href="#" target="_blank" title="1-5万">1-5万</a> <a href="#" title="5-10万">5-10万</a> <a href="#" target="_blank" title="10-20万">10-20万</a> <a href="#" target="_blank" title="20-50万">20-50万</a> <a href="#" target="_blank" title="50-100万">50-100万</a> <a href="#" target="_blank" title="100万以上">100万以上</a> </div>
+				<div class="hd"> <a href="#" title="热门项目">热门项目</a> </div>
+			</div>
+			<div class="container">
+				<div class="txt-bd">
+					<div id="hot-eve-1" class="sub-hot-box" style="display:block">
+						<div class="sub-hot-list">
+							<ul>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li class="last"><a href="#" title="卡乐滋加盟" target="_blank">卡乐滋加盟</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li class="last"><a href="#" title="卡乐滋加盟" target="_blank">卡乐滋加盟</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li><a href="#" title="外婆九味鸭" target="_blank">外婆九味鸭</a></li>
+								<li class="last"><a href="#" title="卡乐滋加盟" target="_blank">卡乐滋加盟</a></li>
+							</ul>
+						</div>
+						<div class="sub-acc-eve">
+							<div class="hd"> 最新活动 <a href="#" title="德意电器加盟" target="_blank" style="display:none">德意电器</a> </div>
+							<div class="bd">
+								<span class="img"> <a href="#" title="大学生创业项目" target="_blank" > <img src="images/228x124.jpg" width="228" height="124" alt="大学生创业项目" /></a> </span> 
+								<p> 放飞梦想，创我精彩,就要加盟网与大学生携手共走创业第一步...<a href="#" target="_blank">[查看详细]</a> </p>
+							</div>
+						</div>
+						<div class="star-bd">
+							<div class="hd fl"><i></i>明星品牌</div>
+							<div class="bd fl">
+								<ul class="bd-logo-list">
+									<li><a href="#" title="好缘喜糖加盟" target="_blank"><img src="images/hxt10077.jpg" width="100" height="77" alt="好缘喜糖加盟" /></a></li>
+									<li><a href="#" title="好缘喜糖加盟" target="_blank"><img src="images/hxt10077.jpg" width="100" height="77" alt="好缘喜糖加盟" /></a></li>
+									<li><a href="#" title="好缘喜糖加盟" target="_blank"><img src="images/hxt10077.jpg" width="100" height="77" alt="好缘喜糖加盟" /></a></li>
+									<li><a href="#" title="好缘喜糖加盟" target="_blank"><img src="images/hxt10077.jpg" width="100" height="77" alt="好缘喜糖加盟" /></a></li>
+									<li><a href="#" title="好缘喜糖加盟" target="_blank"><img src="images/hxt10077.jpg" width="100" height="77" alt="好缘喜糖加盟" /></a></li>
+									<li><a href="#" title="好缘喜糖加盟" target="_blank"><img src="images/hxt10077.jpg" width="100" height="77" alt="好缘喜糖加盟" /></a></li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end--> 
+		<!--Orange layer --> 
+		
+		<!--end--> 
+		<!--Yellow layer -->
+		<div class="mod-news mt20"> 
+			<!-- Acc_eve -->
+			<div class="gd750 grid fl Hot_xmtj">
+				<div class="hd"> <span><a href="#">更多>></a></span> 推荐项目 </div>
+				<div class="bd">
+					<div class="img_list">
+						<ul>
+							<li> <a href="#" target="_blank" title="金嘉利钻石加盟"> <img src="images/218x200.jpg" width="218" height="200" alt="" /> </a> </li>
+							<li> <a href="#" target="_blank" title="金嘉利钻石加盟"> <img src="images/218x200.jpg" width="218" height="200" alt="" /> </a> </li>
+							<li> <a href="#" target="_blank" title="金嘉利钻石加盟"> <img src="images/218x200.jpg" width="218" height="200" alt="" /> </a> </li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<div class="t_list">
+						<ul>
+							<li>
+								<ol>
+									<a href="#" title="魔石咕噜鱼加盟" target="_blank">药石养生馆 中国石锅鱼第一品牌</a>
+								</ol>
+								<ol class="rd">
+									<a href="#" title="卡乐滋加盟" target="_blank">大众看到危机 卡乐滋看到商机</a>
+								</ol>
+								<ol>
+									<a href="#" title="魔石咕噜鱼加盟" target="_blank">药石养生馆 中国石锅鱼第一品牌</a>
+								</ol>
+								<ol class="rd">
+									<a href="#" title="卡乐滋加盟" target="_blank">大众看到危机 卡乐滋看到商机</a>
+								</ol>
+								<ol>
+									<a href="#" title="魔石咕噜鱼加盟" target="_blank">药石养生馆 中国石锅鱼第一品牌</a>
+								</ol>
+							</li>
+							<li>
+								<ol>
+									<a href="#" title="魔石咕噜鱼加盟" target="_blank">药石养生馆 中国石锅鱼第一品牌</a>
+								</ol>
+								<ol class="rd">
+									<a href="#" title="卡乐滋加盟" target="_blank">大众看到危机 卡乐滋看到商机</a>
+								</ol>
+								<ol>
+									<a href="#" title="魔石咕噜鱼加盟" target="_blank">药石养生馆 中国石锅鱼第一品牌</a>
+								</ol>
+								<ol class="rd">
+									<a href="#" title="卡乐滋加盟" target="_blank">大众看到危机 卡乐滋看到商机</a>
+								</ol>
+								<ol>
+									<a href="#" title="魔石咕噜鱼加盟" target="_blank">药石养生馆 中国石锅鱼第一品牌</a>
+								</ol>
+							</li>
+							<li>
+								<ol>
+									<a href="#" title="魔石咕噜鱼加盟" target="_blank">药石养生馆 中国石锅鱼第一品牌</a>
+								</ol>
+								<ol class="rd">
+									<a href="#" title="卡乐滋加盟" target="_blank">大众看到危机 卡乐滋看到商机</a>
+								</ol>
+								<ol>
+									<a href="#" title="魔石咕噜鱼加盟" target="_blank">药石养生馆 中国石锅鱼第一品牌</a>
+								</ol>
+								<ol class="rd">
+									<a href="#" title="卡乐滋加盟" target="_blank">大众看到危机 卡乐滋看到商机</a>
+								</ol>
+								<ol>
+									<a href="#" title="魔石咕噜鱼加盟" target="_blank">药石养生馆 中国石锅鱼第一品牌</a>
+								</ol>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end --> 
+			
+			<!--jmRanking-->
+			<div class="sub-right fl">
+				<div class="sub-ranking">
+					<div class="hd"> <a href="#">06月综合品牌排行榜</a> </div>
+					<div id="rank" class="industry-con">
+						<ul class="ranking-list">
+							<li class="cf hover"> <em class="n1">1</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+							<li class=""> <em class="n2">2</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+							<li class=""> <em class="n3">3</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+							<li class=""> <em class="n4">4</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+							<li class=""> <em class="n5">5</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+							<li class=""> <em class="n6">6</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+							<li class=""> <em class="n7">7</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+							<li class=""> <em class="n8">8</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+							<li class=""> <em class="n9">9</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+							<li class=""> <em class="n10">10</em>
+								<div class="image">
+									<a class="d-img" title="童泰加盟" href="#" target="_blank"><img src="images/70x70.jpg" height="70" width="70" alt="童泰加盟" onerror="javascript:this.src='images/head_company.jpg';" /></a> <span> <a href="#" target="_blank">童泰</a>
+									<p>机不可失、时不再</p>
+									</span>
+								</div>
+								<div class="text"><a href="#" title="童泰加盟" target="_blank"><font>机不可失、时不再</font>童泰</a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--end--> 
+		<!-- topicAd -->
+		<div id="topicAd99060">
+			<div class="layout" style=" position:relative; margin-top:5px;"> <a href="#" target="_blank" title="多喜爱加盟"> <img src="images/dxa990X70.jpg" alt="多喜爱" /> </a> </div>
+		</div>
+		<!-- end --> 
+		<!--Green layer -->
+		<div class="greenLayer mt10">
+			<div class="grid gd750 fl hot-eve" style="height:543px; overflow:hidden">
+				<div class="hr_blue"></div>
+				<div class="hd"> <a href="#">人气品牌</a> </div>
+				<div class="bd picList750">
+					<ul>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<li> <a href="#" title="银库饰品加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="银库饰品加盟" /></a>
+							<p><a href="#" title="银库饰品加盟" target="_blank">银库饰品加盟</a></p>
+							<span><a href="#" target="_blank">饰品</a></span>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="grid gd230 pl10 fl" style="height:543px; overflow:hidden">
+				<div class="hr_blue"></div>
+				<div class="hd"> <span><a href="#" target="_blank">更多>></a></span> <a href="#" target="_blank">品牌动态</a> </div>
+				<div class="bd" style="height:303px; overflow:hidden">
+					<div class="bd_ads"> <a href="#" target="_blank"> <img src="images/200x100.jpg" width="200" height="100" alt="" /> </a> </div>
+					<div class="newslist">
+						<ul>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+							<li><a href="#" title="罗莱家纺2013春夏大片发布会隆重举行" target="_blank">罗莱家纺2013春夏大片发布会隆重举行</a> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="gd230ads mt10"> <a href="#" target="_blank"> <img src="images/230x160.jpg" width="230" height="160" alt="" /> </a> </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--end--> 
+		<!--Blue layer -->
+		<div class="blueLayer mt10">
+			<div class="hr_blue"></div>
+			<div class="Rec_Me">
+				<div class="grid gd750 fl">
+					<div class="hd"> <span><a href="javascript:void(0)" style="display:none">换一换</a></span> <a href="#" target="_blank">为我推荐</a> </div>
+					<div class="picList750">
+						<ul>
+							<li><a href="#" title="多米诺加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="多米诺加盟" /></a>
+								<p><a href="#" title="多米诺加盟" target="_blank">多米诺加盟</a></p>
+								<span><a href="#" target="_blank">餐饮</a></span>
+							</li>
+							<li>
+								<a href="#" title="多米诺加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="多米诺加盟" /></a>
+								<p><a href="#" title="多米诺加盟" target="_blank">多米诺加盟</a></p>
+								<span><a href="#" target="_blank">餐饮</a></span>
+							</li>
+							<li>
+								<a href="#" title="多米诺加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="多米诺加盟" /></a>
+								<p><a href="#" title="多米诺加盟" target="_blank">多米诺加盟</a></p>
+								<span><a href="#" target="_blank">餐饮</a></span>
+							</li>
+							<li>
+								<a href="#" title="多米诺加盟" target="_blank"><img src="images/163x100.jpg" width="163" height="100" alt="多米诺加盟" /></a>
+								<p><a href="#" title="多米诺加盟" target="_blank">多米诺加盟</a></p>
+								<span><a href="#" target="_blank">餐饮</a></span>
+							</li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="grid gd230 pl10 fl">
+					<div class="hd"> <span><a href="#" target="_blank">我要入驻>></a></span> <a href="#" target="_blank">最新入驻</a> </div>
+					<div class="">
+						<div class="links_list">
+							<ul>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+								<li>[餐饮]<a href="#" title="晶锅英雄餐吧" target="_blank"> 晶锅英雄餐吧</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--end--> 
+		<!-- ads 2013 02 27 -->
+		<div class="ads-990x70 mt10"> <a href="#" title="阿玛尼干洗加盟" target="_blank"> <img src="images/amngx99070.gif" alt="阿玛尼干洗加盟" /> </a> </div>
+		<!-- end --> 
+		<!--purple layer -->
+		<div class="purpleLayer mt10">
+			<div class="grid gd250 fl">
+				<div class="hr_blue"></div>
+				<div class="hd"> <span><a href="#">我要添加>></a></span> <strong>加盟店动态</strong> </div>
+				<div class="bd affstorelist">
+					<ul>
+						<li>
+							<span><a href="#" title="天津加盟店" target="_blank">罗莱家纺天津加盟店</a></span>
+							<p>06月08日 由 <b><a href="#" target="_blank">罗莱家纺</a></b> 添加</p>
+						</li>
+						<li>
+							<span><a href="#" title="天津加盟店" target="_blank">罗莱家纺天津加盟店</a></span>
+							<p>06月08日 由 <b><a href="#" target="_blank">罗莱家纺</a></b> 添加</p>
+						</li>
+						<li>
+							<span><a href="#" title="天津加盟店" target="_blank">罗莱家纺天津加盟店</a></span>
+							<p>06月08日 由 <b><a href="#" target="_blank">罗莱家纺</a></b> 添加</p>
+						</li>
+						<li>
+							<span><a href="#" title="天津加盟店" target="_blank">罗莱家纺天津加盟店</a></span>
+							<p>06月08日 由 <b><a href="#" target="_blank">罗莱家纺</a></b> 添加</p>
+						</li>
+						<li>
+							<span><a href="#" title="天津加盟店" target="_blank">罗莱家纺天津加盟店</a></span>
+							<p>06月08日 由 <b><a href="#" target="_blank">罗莱家纺</a></b> 添加</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="grid gd490 pl10 fl">
+				<div class="hr_blue"></div>
+				<div class="hd"> <span><a href="#" target="_blank">更多>></a></span> <a href="#" target="_blank">行业资讯</a> </div>
+				<div class="bd">
+					<div class="newslist">
+						<div class="news_img fl" style="padding-top:5px;">
+							<a href="#" class="news_i_link" target="_blank"> 信息化企业金手指人才 </a>
+							<a href="#" target="_blank"> <img src="images/160x132.jpg" width="160" height="132" alt="" /> </a>
+						</div>
+						<ul class="fl" style="padding-top:5px; width:309px;">
+							<li> <a href="#" title="餐饮动态">餐饮</a><font>|</font> <a href="#" title="新辣道正宗火锅美食,加盟店个个火爆">新辣道正宗火锅美食,加盟店个个火</a> </li>
+							<li> <a href="#" title="餐饮动态">餐饮</a><font>|</font> <a href="#" title="新辣道正宗火锅美食,加盟店个个火爆">新辣道正宗火锅美食,加盟店个个火</a> </li>
+							<li> <a href="#" title="餐饮动态">餐饮</a><font>|</font> <a href="#" title="新辣道正宗火锅美食,加盟店个个火爆">新辣道正宗火锅美食,加盟店个个火</a> </li>
+							<li> <a href="#" title="餐饮动态">餐饮</a><font>|</font> <a href="#" title="新辣道正宗火锅美食,加盟店个个火爆">新辣道正宗火锅美食,加盟店个个火</a> </li>
+							<li> <a href="#" title="餐饮动态">餐饮</a><font>|</font> <a href="#" title="新辣道正宗火锅美食,加盟店个个火爆">新辣道正宗火锅美食,加盟店个个火</a> </li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="newslist">
+						<ul>
+							<li> <a href="#" title="加盟资讯">加盟资讯</a><font>|</font> <a href="#" title="在经营童装童鞋加盟店时的注意事项">在经营童装童鞋加盟店时的注意事项</a> <a href="#" title="不凡品质铸就不凡价值,芭特尔芙莱深受消费者喜爱">不凡品质铸就不凡价值,芭特尔芙莱</a> </li>
+							<li> <a href="#" title="加盟资讯">加盟资讯</a><font>|</font> <a href="#" title="在经营童装童鞋加盟店时的注意事项">在经营童装童鞋加盟店时的注意事项</a> <a href="#" title="不凡品质铸就不凡价值,芭特尔芙莱深受消费者喜爱">不凡品质铸就不凡价值,芭特尔芙莱</a> </li>
+							<li> <a href="#" title="加盟资讯">加盟资讯</a><font>|</font> <a href="#" title="在经营童装童鞋加盟店时的注意事项">在经营童装童鞋加盟店时的注意事项</a> <a href="#" title="不凡品质铸就不凡价值,芭特尔芙莱深受消费者喜爱">不凡品质铸就不凡价值,芭特尔芙莱</a> </li>
+							<li> <a href="#" title="加盟资讯">加盟资讯</a><font>|</font> <a href="#" title="在经营童装童鞋加盟店时的注意事项">在经营童装童鞋加盟店时的注意事项</a> <a href="#" title="不凡品质铸就不凡价值,芭特尔芙莱深受消费者喜爱">不凡品质铸就不凡价值,芭特尔芙莱</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="grid gd230 pl10 fl">
+				<div class="hr_blue"></div>
+				<div class="hd"> <span><a href="#">我要找项目>></a></span> <strong>加盟动态</strong> </div>
+				<div class="bd" style="border:none;border-top:1px solid #d1d1d1; padding:0">
+					<div class="afflist">
+						<ul>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+							<li> <span>06月09日: </span>来自的河南省郑州市中原区武秋娥咨询了 <a href="#" target="_blank">餐饮</a> 类品牌 <a href="#" target="_blank">湘粉人家</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--end--> 
+		
+		<!--intesting last--> 
+		
+		<!--end--> 
+		<!--link--> 
+		
+		<!--st-->
+		<div class="mod-link mt20">
+			<div class="title"> <span class="fr qqgroup">创业交流群：<font>147443726</font></span> 合作媒体 <span class="lkssub">友链申请QQ：<font>1964366578</font></span> </div>
+			<div class="link-content-list">
+				<ul>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<li><a href="#" title="化妆品代理" target="_blank">化妆品代理</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<!--end--> 
+	</div>
+	<!--end--> 
+</div>
+<!--end-->
+
+<!--footer-->
+<div id="footer" style="">
+	<div class="layout" style="position:relative"> 
+		<!--<div style=" width:86px; height:126px; position:absolute; left:0;top:110px;"> <img src="images/codeWeixin.jpg"> </div>-->
+		<div class="footer-container-tip">
+			<div class="ft_list ml7">
+				<h5>加盟保障</h5>
+				<ul>
+					<li><!--<a href="#">--><em>选择加盟好项目</em><!--</a>--></li>
+					<li style=""><!--<a href="#">--><em>免费提供咨询</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌诚信档案</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>新手上路</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费注册会员</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>在线联系感兴趣的项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌商和您沟通</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="icon_xl"> 
+				<!--信任标题--> 
+			</div>
+			<div class="ft_list ml35">
+				<h5>特色服务</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费帮你看项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>加盟组团优惠中</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>申请诚信担保</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>商家入驻</h5>
+				<ul>
+					<li><!--<a href="#">--><em>立即加入</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>诚信认证</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>和投资者洽谈合作</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="footer-container mt10">
+			<div class="footer-jm-pages"> <a href="#" title="关于我们" target="_blank">关于我们</a> | <a href="#" title="会员服务" target="_blank">会员服务</a> | <a href="#" title="诚邀加盟" target="_blank">诚邀加盟</a> | <a href="#" title="免责声明" target="_blank">免责声明</a> | <a href="#" title="招聘信息" target="_blank">招聘信息</a> | <a href="#" title="联系我们" target="_blank">联系我们</a> | <a href="#" title="广告服务" target="_blank">广告服务</a></div>
+			<div class="footer-jm-copyright">
+				<p>Copyright@2011-2021 版权所有 www.91jm.com All Rights Reserved 沪ICP备12030781号-3</p>
+			</div>
+			<div class="footer-jm-tips">
+				<p> 友情提示：多打电话、多咨询、实地考察，可降低连锁加盟，创业投资风险。 全国服务热线：400-168-0091（免长途费） </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--end--> 
+<!--bottom-js--> 
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script> 
+<script type="text/javascript" language="javascript" src="js/slides.min.jquery.js"></script> 
+<script type="text/javascript" src="js/slider.js"></script> 
+<script type="text/javascript" src="js/attr_tab.js"></script> 
+<script type="text/javascript" src="js/jcarousellite_1.0.1c4.js"></script> 
+<script type="text/javascript">
+$(function() {
+	$(".afflist").jCarouselLite({
+		vertical: true,
+		hoverPause:true,
+		visible: 5,
+		auto:5000,
+		speed:1000
+	});
+	$(".links_list").jCarouselLite({
+		vertical: true,
+		hoverPause:true,
+		visible: 6,
+		auto:500,
+		speed:1000
+	});
+});
+</script> 
+<!--end-->
+</body>
+</html>

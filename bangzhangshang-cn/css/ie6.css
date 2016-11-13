@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header .nav UL.home_links{ width:650px; float:right;}
+.breadcrumbs .bd .rt{ float:left;}
+.breadcrumbs .bd .pull_left{ _width:1060px;}
+
+.pagination ul li{ margin:0 2px;}
+
+.hao315_msg .msg_line input{ width:125px;}
+
+.section4 .sec4_lt_box .bd .sec4_lt_inbox1,
+.section4 .sec4_lt_box .bd .sec4_lt_inbox2,
+.section4 .sec4_lt_box .bd .sec4_lt_inbox3,
+.section4 .sec4_lt_box .bd .sec4_lt_inbox6,
+.section4 .sec4_lt_box .bd .sec4_lt_inbox4,
+.section4 .sec4_lt_box .bd .sec4_lt_inbox5,
+.section4 .sec4_lt_box .bd .sec4_lt_inbox6{ height:85px; width:142px; padding:20px 15px; float:left; background:#ef3b42; margin:0 14px 14px 0; color:#FFFFFF;}
+.section4 .sec4_lt_box .bd .sec4_lt_inbox1{ background:#FFFFFF;}
+.section4 .sec4_lt_box .bd .sec4_lt_inbox3,
+.section4 .sec4_lt_box .bd .sec4_lt_inbox6{ margin-right:0px;}
+.section4 .sec4_lt_box .bd .sec4_lt_inbox4,
+.section4 .sec4_lt_box .bd .sec4_lt_inbox5,
+.section4 .sec4_lt_box .bd .sec4_lt_inbox6	{ margin-bottom:0px;}
+.section4 { height:900px;}
+.section4 .ft{ height:290px;}
+.section4 .sec4_ft_box{ height:290px;}
+
+.section4 .sec4_ft_inbox1,
+.section4 .sec4_ft_inbox2,
+.section4 .sec4_ft_inbox3,
+.section4 .sec4_ft_inbox4,
+.section4 .sec4_ft_inbox5,
+.section4 .sec4_ft_inbox6,
+.section4 .sec4_ft_inbox7,
+.section4 .sec4_ft_inbox8,
+.section4 .sec4_ft_inbox9{ float:left; margin:0 15px 15px 0; padding:15px 0;}
+.section4 .sec4_ft_inbox2,
+.section4 .sec4_ft_inbox3,
+.section4 .sec4_ft_inbox4{ _line-height:100%; _background:#ef3b42;}
+
+.section4 .sec4_rt_box .sec4_rt_inbox1,
+.section4 .sec4_rt_box .sec4_rt_inbox2,
+.section4 .sec4_rt_box .sec4_rt_inbox3,
+.section4 .sec4_rt_box .sec4_rt_inbox4,
+.section4 .sec4_rt_box .sec4_rt_inbox5,
+.section4 .sec4_rt_box .sec4_rt_inbox6,
+.section4 .sec4_rt_box .sec4_rt_inbox7,
+.section4 .sec4_rt_box .sec4_rt_inbox8{ position:absolute;}
+
+.waibao_box .three_inbox1,
+.waibao_box .three_inbox1,
+.waibao_box .three_inbox2,
+.waibao_box .three_inbox3,
+.waibao_box .three_inbox4,
+.waibao_box .three_inbox5,
+.waibao_box .three_inbox6,
+.waibao_box .three_inbox7,
+.waibao_box .three_inbox8,
+.waibao_box .three_inbox9{ padding:20px 0; float:left; background:#ef3b42; margin:0 15px 15px 0;}
+
+.waibao_box .four_box dl{ margin-right:9px;}
+.waibao_box .four_box dl.four_box_indl_03{ margin:0px;}
+.waibao_box .four_box dl dd.four_box_dd16{ height:80px;}
+
+.caseshow ul li a:hover img{ border:1px solid #E0E0E0; width:200px; height:103px;}

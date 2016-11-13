@@ -1,0 +1,41 @@
+@charset "utf-8";
+/**
+ * @fileOverview Global layout
+ */
+.topbar	{ height: 29px; width: 100%;}
+.head{ height: 118px; width:100%;}
+.foot{ height:95px; width:100%;}
+.wrap{ width:1000px; margin:0 auto;}
+.fl{ float: left !important; word-spacing: 1px; overflow: hidden;}
+.fr{ float: right !important; word-spacing: 1px; overflow: hidden;}
+.mt10 { margin-top: 10px !important;}
+.mr10 { margin-right: 10px !important;}
+.mb10 { margin-bottom: 10px !important;}
+.ml10 { margin-left: 10px !important;}
+
+/**
+ * @fileOverview Global Text Styles
+ */
+body{ font-family:"微软雅黑","\u5fae\u8f6f\u96c5\u9ed1";}
+a			{ text-decoration: none;color: #333;}
+a:hover		{ color: #5086ec; cursor: pointer;}
+a:active	{ color: #5086ec; cursor: pointer; }
+
+/**
+ * @fileOverview Global Header Styles
+ */
+.head{ background:#0099cc;}
+.head .logo{ width:484px; height:118px; background:url(../images/logo.jpg) no-repeat; float:left; text-indent:-200%; overflow: hidden;}
+.head .nav{ width:500px; height: 118px; line-height: 118px; }
+.head .nav ul{ float:right; font-size:16px; font-weight:300;}
+.head .nav ul li{ float:left; padding: 0 10px;}
+.head .nav ul li a{ color:#fff;}
+
+.wrap-full .logo{ margin-left:20px;}
+.wrap-full .nav{ margin-right:20px;}
+/**
+ * @fileOverview Global Footer Styles
+ */
+.foot{ background:#eeeeee; margin-top:10px;}
+.foot p{  width:100%; text-align:center; line-height:20px; }
+.foot .bomtop{ float:left; margin-top:20px; color:#5086ec;}

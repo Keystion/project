@@ -1,0 +1,194 @@
+*{ margin:0; padding:0;}
+body{ font-family:"微软雅黑",Arial,"宋体"; font-size:12px; color:#444; line-height:1.6em;}
+h1{line-height:1.3em;}
+a:hover img,img{ border:none;}
+ul{ list-style:none;}
+input,button,select,textarea{outline:none;font-family:Arial,"宋体"; font-size:12px;}
+table input,table button,table select,table textarea{ vertical-align:middle;}
+textarea{resize:none}
+table{ border-collapse:collapse;}
+a{ text-decoration:none; color:#444;}
+a:hover{ text-decoration:underline; color:#ff6600;}
+/*-------------------------结束公用样式--------------------------*/
+.clear_div { overflow:hidden; zoom:1;}
+.clear_div2{zoom: 1;}
+.clear_div2:after {content: ""; display: block;height: 0;clear: both;}
+input.checlass{ margin:0 5px; margin-left:0;vertical-align:middle; _vertical-align:baseline;}
+/*--------------------------------------star首页的样式*/
+html{ background:#fff;}
+/*------------star头文件*/
+div.h_box{ clear:both; width:812px; margin:50px auto;}
+div.header{ color:#fff; clear:both; background:url(../images/top.png) no-repeat; padding:5px 6px 0 6px; height:99px;}
+div.header a{ color:#fff;}
+div.header a:hover{ color:#fff900; text-decoration:none;}
+/*标志*/
+div.logo{ float:left; padding:0 0 0 5px;}
+div.logo a{ display:block; height:98px;}
+/*头文件右*/
+div.header_r{ float:right; text-align:right;}
+/*头文件文字*/
+div.header_text{ clear:both; height:28px;}
+dl.header_text{ float:right; padding:0 3px 0 0;}
+dl.header_text dt,dl.header_text dd{ float:left; line-height:28px; height:28px;}
+dl.header_text dt{ color:#fed8a1;}
+dl.header_text dt a{ margin:0 6px;}
+dl.header_text dd input{ width:33px; height:28px; line-height:28px; vertical-align:middle; border:none; cursor:pointer;}
+input.btn_1{ background:url(../images/tool_arrow.png) no-repeat;}
+input.btn_2{ background:url(../images/tool_arrow.png) no-repeat -33px top;}
+input.btn_3{ background:url(../images/tool_arrow.png) no-repeat -66px top;}
+input.btn_4{ background:url(../images/tool_arrow.png) no-repeat -99px top;}
+dl.header_text dd input.btn_4{ width:35px;}
+input.btn_1:hover{ background-position:left -28px;}
+input.btn_2:hover{ background-position:-33px -28px;}
+input.btn_3:hover{ background-position:-66px -28px;}
+input.btn_4:hover{ background-position:-99px -28px;}
+/*-----------------------star导航*/
+div.nav{ clear:both; padding:1px 0 0 0;}
+ul.nav{ clear:both; float:right; height:70px; line-height:70px; font-size:18px; padding:0 80px 0 0;}
+ul.nav li{ width:121px; text-align:center; margin:0 10px; float:left;}
+ul.nav li a{ display:inline-block; padding-left:30px;}
+#nav_hover01 a{ background:url(../images/t_1.png) no-repeat left center;}
+#nav_hover02 a{ background:url(../images/t_2.png) no-repeat left center;}
+#nav_hover03 a{ background:url(../images/t_3.png) no-repeat left center;}
+/*当前页*/
+#nav_btn01 #nav_hover01,#nav_btn02 #nav_hover02,#nav_btn03 #nav_hover03{ background:url(../images/nav_light.png) no-repeat center bottom;}
+/*--------------------star中间内容*/
+div.h_center{ clear:both; background:url(../images/con_bj.png) repeat-y left top; padding:0 6px;}
+div.center_bj{  padding:10px 0 15px 0; clear:both; background:url(../images/left_bj.gif) repeat-y left top;}
+div.h_left{ float:left; width:249px;}
+div.h_right{ float:right; width:520px; padding:0px 15px 0 0;}
+/*---------star左边*/
+/*标题*/
+dl.th_line{ clear:both; height:34px; line-height:31px; width:92%; margin:0 auto; overflow:hidden; background:url(../images/th_line.gif) repeat-x left bottom;}
+dl.th_line dd{ float:left; font-size:15px; padding-left:28px; background:url(../images/th_search.gif) no-repeat 3px 6px;}
+dl.th_line dt{ float:right; padding-right:10px;}
+/*搜索*/
+dl.l_search{ clear:both; background:url(../images/search.jpg) no-repeat; width:230px; height:30px; margin:14px auto 50px auto;}
+dl.l_search dt{ float:left;}
+dl.l_search dd{ float:right;}
+/*表单和按钮*/
+input.search_btn,input.search_text{vertical-align:middle;border:none;background:none;}
+input.search_btn{  cursor:pointer;  height:30px; line-height:30px; width:58px; text-align:center; }
+input.search_text{ height:16px; line-height:16px; padding:7px 0 7px 12px; width:160px; font-size:13px; color:#444;}
+/*文字*/
+ul.l_link{ clear:both; width:92%; margin:5px auto; font-size:14px; background:url(../images/text_line.gif) repeat;}
+ul.l_link li{ clear:both; line-height:38px; padding:0 5% 0 6%;}
+ul.l_link li a{ display:block; float:left; width:49.9%; height:38px; overflow:hidden; background:url(../images/gray_arrow.gif) no-repeat left 16px; text-indent:1em;}
+/*---------star右边*/
+/*标题*/
+dl.th_arrow{ clear:both; margin:0 0 8px 0; height:25px; line-height:25px; overflow:hidden;}
+dl.th_arrow dt{ float:right;}
+dl.th_arrow dd{ float:left; background:url(../images/th_arrow_d.gif) no-repeat 2px 10px; padding-left:18px; font-size:15px;}
+/*表格*/
+table.list_table{ font-size:13px; clear:both; width:100%; margin:8px 0; border:1px solid #e0e0e0; background:#fff;}
+table.list_table th{ color:#9e451e; font-size:13px; font-weight:normal; background:url(../images/table_th.gif) repeat-x left top; height:32px; line-height:32px; text-align:center;border:1px solid #e0e0e0;}
+table.list_table td{ border-right:1px solid #e0e0e0; line-height:2em; padding:5px 10px; text-align:center; vertical-align:middle;}
+table.list_table td.l_text{ text-align:left; padding:5px 20px;}
+table.even_table tr.even_bj{ background:#f7f7f7; border:1px solid #f0f0f0; border-left:none; border-right:none;}
+/*------------------------star我的帐户*/
+div.club_box{ clear:both; margin:25px auto; background:url(../images/s_c.gif) repeat-y left top; width:750px;}
+div.top_bj{ clear:both; background:url(../images/s_t.jpg) no-repeat left top;}
+div.down_bj{ clear:both; background:url(../images/s_d.gif) no-repeat left bottom;}
+/*内容*/
+ul.club_box{ clear:both; width:97%; background:url(../images/text_line_b.gif) repeat; line-height:52px; margin:0 auto; padding:10px 0;}
+ul.club_box li{ font-size:15px; color:#666;}
+ul.club_box li .l{ width:90%;}
+ul.club_box li .r{ padding-top:8px;_padding-top:4px;_padding-bottom:1px; text-align:right;}
+ul.club_box li .l font{ font-size:15px; float:left; width:30.3%; height:37px; line-height:37px; padding:1px 1.5% 14px 1.5%; overflow:hidden;}
+ul.club_box li em{ color:#ff6600; font-style:normal; margin:0 4px;}
+/*按钮*/
+input.money_btn{ vertical-align:middle; background:url(../images/money_btn.gif) no-repeat; width:55px; height:25px; line-height:25px; cursor:pointer; text-align:center; border:none;}
+input.money_btn:hover{ background-position:left -25px;}
+/*--------------star红包*/
+div.bao_box{ clear:both; width:750px; margin:25px auto; background:url(../images/y_c.gif) repeat-y left top;}
+div.bao_box div.top_bj{ background:url(../images/y_t.jpg) no-repeat left top;}
+div.bao_box div.down_bj{ background:url(../images/y_d.jpg) no-repeat left bottom;}
+dl.bao_box{ clear:both; text-align:center; padding:30px 0;}
+dl.bao_box dt{ clear:both; font-size:16px; line-height:1.3em;}
+dl.bao_box dt em{ font-size:22px; font-style:normal; line-height:1em; margin:0 3px;}
+dl.bao_box dt p{ clear:both; padding-top:16px;}
+dl.bao_box dd{ clear:both; padding-top:20px; text-align:center;}
+/*按钮*/
+input.bao_btn{ border:none; cursor:pointer; background:url(../images/bao_btn.png) no-repeat; width:150px; height:55px; line-height:55px; text-align:center;}
+input.bao_btn:hover{ background-position:left -55px;}
+/*------------------------star我要下单*/
+dl.i_search{ overflow:hidden; clear:both; margin:40px auto 25px auto; background:url(../images/search.png) no-repeat; width:512px; height:36px;}
+dl.i_search dd{ float:left;}
+dl.i_search dt{ float:right; width:166px;}
+/*表单和按钮*/
+input.search_btn_2,input.search_btn_1,input.search_text_o{ vertical-align:middle; border:none; background:none;}
+input.search_btn_2,input.search_btn_1{ cursor:pointer; text-align:center; height:36px; line-height:36px; color:#fff; width:78px;}
+input.search_btn_2:hover{ background:url(../images/search.png) no-repeat right -36px;}
+input.search_btn_1:hover{ background:url(../images/search.png) no-repeat -346px top;}
+input.search_text_o{ height:16px; line-height:16px; padding:10px 0 10px 23px; width:310px; color:#333; font-size:14px;}
+/*灰色标题*/
+dl.gray_th{ clear:both; background:url(../images/th.png) repeat-x left -70px; height:35px; line-height:35px; overflow:hidden; width:95%; margin:10px auto;}
+dl.gray_th dt{ float:right; height:100%; padding-right:15px; background:url(../images/th.png) no-repeat right -105px;}
+dl.gray_th dd{ float:left; font-size:15px; padding-left:38px; background:url(../images/th.png) no-repeat left top; height:100%;}
+/*商城*/
+ul.i_shop{ clear:both; margin:10px auto 45px auto; width:96%;}
+ul.i_shop li{ clear:both;}
+ul.i_shop li a{ float:left; width:16.6%; text-align:center; height:50px; margin:8px 0; overflow:hidden;}
+ul.i_shop li a img{ padding:5px; background:url(../images/pic_bj.png) no-repeat center top;}
+
+/*------------------star用户注册*/
+div.reg_box{ clear:both; width:368px; margin:50px auto;}
+/*标题*/
+dl.reg_th,dl.login_th{ clear:both; padding:4px 4px 0 4px; background:url(../images/reg_th.png) no-repeat; height:59px; overflow:hidden;}
+dl.reg_th dt,dl.login_th dt{ float:right;}
+dl.reg_th dd,dl.login_th dd{ text-indent:-9999999px; text-align:left; line-height:59px; float:left;}
+/*标题2*/
+dl.login_th{ background:url(../images/login_th.png) no-repeat;}
+/*按钮*/
+input.input_close{ border:none; cursor:pointer; vertical-align:middle; text-align:center; background:url(../images/close.png) no-repeat left -30px; width:28px; height:30px; line-height:30px;}
+input.input_close:hover{ background-position:left 0px;}
+/*---------star中间内容*/
+div.reg_box_c{ clear:both; margin:0; background:url(../images/login_c.png) repeat-y left top; padding:0 4px;}
+/*表格*/
+table.reg_table{ color:#575757; clear:both; margin:14px auto;}
+table.reg_table td{ vertical-align:middle; line-height:2em; padding:5px 5px;}
+table.reg_table td.r_text{ text-align:right;}
+table.reg_table td img{ margin:0 5px; vertical-align:middle;}
+table.reg_table tfoot td p{ clear:both; padding-top:10px; line-height:27px;}
+table.reg_table tfoot td em{ clear:both; display:block; padding-top:10px; font-style:normal; color:#666;}
+table.reg_table tfoot td em a{display:inline-block; vertical-align:middle; margin:0 4px; width:15px; height:17px; line-height:17px; overflow:hidden;}
+/*登录方式*/
+a.l_1{ background:url(../images/login.gif) no-repeat;}
+a.l_2{ background:url(../images/login.gif) no-repeat -15px top;}
+a.l_3{ background:url(../images/login.gif) no-repeat -32px top;}
+table.reg_table tfoot td em a.l_3{ width:17px;}
+a.l_4{ background:url(../images/login.gif) no-repeat -50px top;}
+a.l_5{ background:url(../images/login.gif) no-repeat -67px top;}
+table.reg_table tfoot td em a.l_5{ width:16px;}
+/*选中*/
+div.che{ float:left; cursor:pointer; background:url(../images/che.jpg) no-repeat left -15px; line-height:15px; height:15px; padding-left:20px;}
+div.che_light{ background-position:left top;}
+/*表单*/
+input.input_text{ vertical-align:middle; background:#ffffff; border:1px solid #b2b2b2; line-height:15px; height:15px; padding:4px 5px; width:170px;}
+input.input_text:hover{ border:1px solid #999; background:#f7f7f7;}
+/*按钮*/
+input.login_btn{ color:#fff; text-align:center; cursor:pointer; background:url(../images/login_btn.jpg) no-repeat; width:60px; height:27px; line-height:27px; vertical-align:middle; font-size:15px; border:none;}
+input.login_btn:hover{ background-position:left -27px;}
+/*下背景*/
+div.reg_down,div.h_down{ clear:both; font-size:0; height:10px; overflow:hidden; line-height:10px;}
+div.h_down{ height:12px; line-height:12px;}
+/*-------------------------star文字的样式*/
+/*标题文字*/
+.th{ font-family:"微软雅黑";}
+/*左右对齐*/
+.l{ float:left;}
+.r{ float:right;}
+/*蓝色*/
+.blue_link_line a{ color:#0278c3; text-decoration:underline;}
+.blue_link_line a:hover{ color:#ff6600; text-decoration:none;}
+/*间距*/
+.margin_l{ margin-left:10px;}
+.margin_r{ margin-right:10px;}
+/*橘红*/
+.orange_link a,.orange_text{ color:#ff6600;}
+.orange_link a:hover{ color:#cc0000;}
+/*文字*/
+.text{ font-family:Arial,"宋体";}
+
+
+

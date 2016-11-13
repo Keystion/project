@@ -1,0 +1,997 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>首页</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery.SuperSlide.2.1.js"></script>
+<script src="js/base.js"></script> 
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/iehack.css">
+<![endif]-->
+</head>
+
+<body>
+<h3 class="tips">
+	<a href="index.html">首页</a>
+    <a href="class.html">一级分类</a>
+    <a href="sub_class.html">二级分类</a>
+    <a href="area.html">地区首页</a>
+    <a href="area_list.html">北京项目列表</a>
+    <a href="area_news.html">北京地区新闻页</a>
+    <a href="xm_index.html">项目页</a>
+    <a href="xm_newlist.html">项目_资讯列表页</a>
+    <a href="xm_newshow.html">项目_资讯内容展示页</a>
+    <a href="ask_index.html">问答首页</a>
+    <a href="wenti.html">问题页</a>
+    <a href="question.html">提问页</a>
+    <a href="ask_class.html">问答一级分类</a>
+    <a href="ask_sub_class.html">问答二级分类</a>
+    <a href="404.html">404页面</a>
+</h3>
+<div class="topbar">
+	<!-- 头部通知栏 -->
+	<div class="w">
+		<div class="pull_left"> <a href="#" target="_blank">经销</a> <a href="#" target="_blank">代理</a> <a href="#" target="_blank">商机</a> <a href="#" target="_blank">加盟</a> <a href="#" target="_blank">资讯</a> <a href="#" target="_blank">问答</a> <a href="#" target="_blank">专题</a> <a href="#" target="_blank">人群</a> <a href="#" target="_blank">地区</a> </div>
+		<div class="pull_right">
+			<div class="mini_login">
+				<label>用户名：</label>
+				<input type="text" name="username" id="username">
+				<label>密码：</label>
+				<input type="password" name="password" id="password">
+				<input class="button" type="button" value="登录" title="登录">&nbsp;<a href="#">忘记密码？</a> | <a href="#">免费注册</a>
+			</div>
+			<div class="mini_sharebox"> 
+				<!-- Baidu Button BEGIN -->
+				<div id="bdshare" style="float: right;" class="bdshare_t bds_tools get-codes-bdshare">
+				<a class="bds_qzone"></a>
+				<a class="bds_tsina"></a>
+				<a class="bds_tqq"></a>
+				<a class="bds_renren"></a>
+				<a class="bds_t163"></a>
+				<span class="bds_more">更多</span>
+				<a class="shareCount"></a>
+				</div>
+				<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=487552" ></script>
+				<script type="text/javascript" id="bdshell_js"></script>
+				<script type="text/javascript">
+				document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+				</script>
+				<!-- Baidu Button END -->
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="header"> 
+	<!-- 页面头部 -->
+	<div class="w">
+		<div class="logo">
+			<h1><a href="#" title="logo"><img src="images/logo_base.jpg" height="70" width="260"></a></h1>
+		</div>
+		<div class="sosobox">
+			<div class="soso_form">
+				<input class="soso_form_input" type="text" onBlur="if(this.value=='') this.value = this.defaultValue;" onFocus="this.value='';" value="想找什么项目？" name="tag">
+				<input class="soso_form_btn" type="submit" value="" title="搜商机">
+			</div>
+			<div class="soso_words"> <span>热门搜索：</span> <a href="#">童装加盟</a> | <a href="#">内衣加盟</a> | <a href="#">小吃加盟</a> | <a href="#">烧烤加盟</a> | <a href="#">烧烤加盟</a> </div>
+		</div>
+		<div class="head_rtbox">
+			<ul>
+				<li><strong>投资地区</strong><a href="#">北京</a><a href="#">重庆</a><a href="#">天津</a><a href="#">上海</a><a href="#">安徽</a><a href="#">合肥</a><a href="#">更多&gt;&gt;</a></li>
+				<li><strong>投资地区</strong><a href="#">北京</a><a href="#">重庆</a><a href="#">天津</a><a href="#">上海</a><a href="#">安徽</a><a href="#">合肥</a><a href="#">更多&gt;&gt;</a></li>
+			</ul>
+			<div class="erweima"> <img src="images/erweima.gif" height="50" width="50"> </div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="navboxs">
+	<!-- 全局导航 -->
+	<div class="w">
+		<div class="navbox">
+			<ul class="navlist" id="bdTBox">
+				<li class="home cur"><a href="#">首页</a></li>
+				<li><a href="#" target="_blank">服装 <i></i></a></li>
+				<li><a href="#" target="_blank">餐饮 <i></i></a></li>
+				<li><a href="#" target="_blank">饰品 <i></i></a></li>
+				<li><a href="#" target="_blank">家居 <i></i></a></li>
+				<li><a href="#" target="_blank">教育 <i></i></a></li>
+				<li><a href="#" target="_blank">美容 <i></i></a></li>
+				<li><a href="#" target="_blank">保健 <i></i></a></li>
+				<li><a href="#" target="_blank">科技 <i></i></a></li>
+				<li><a href="#" target="_blank">环保 <i></i></a></li>
+				<li><a href="#" target="_blank">娱乐 <i></i></a></li>
+				<li><a href="#" target="_blank">其他 <i></i></a></li>
+			</ul>
+			<div class="navrightbox pull_right"> <i class="i_l"></i>
+				<div class="navright"><a href="#" target="_blank">创业资讯</a> | <a href="#" target="_blank">创业百科</a> | <a href="#" target="_blank">致富问答</a> | <a href="#" target="_blank">创业商机</a></div>
+				<i class="i_r"></i> </div>
+		</div>
+		<div id="bdulBox"> 
+			<!--首页下的搜索-->
+			<div class="subnavboxs">
+				<strong>热门分类：</strong>
+				<a href="#" target="_blank">1服装加盟</a>丨 <a href="#" target="_blank">1服装加盟</a>丨 <a href="#" target="_blank">1服装加盟</a>丨 <a href="#" target="_blank">1服装加盟</a>丨 <a href="#" target="_blank">1服装加盟</a>丨 <a href="#" target="_blank">1服装加盟</a>
+			</div>
+			<!--其它页下的搜索-->
+			<div class="subnavboxs">
+				<strong>热门分类：</strong>
+				<a href="#" target="_blank">2服装加盟</a>丨 <a href="#" target="_blank">2服装加盟</a>丨 <a href="#" target="_blank">2服装加盟</a>丨 <a href="#" target="_blank">2服装加盟</a>丨 <a href="#" target="_blank">2服装加盟</a>丨 <a href="#" target="_blank">2服装加盟</a>
+			</div>
+			<script>
+			for(var i = 3; i < 13; i++){
+				document.write('<div class="subnavboxs">				<strong>热门分类：</strong>				<a href="#" target="_blank">'+i+'服装加盟</a>丨 <a href="#" target="_blank">'+i+'服装加盟</a>丨 <a href="#" target="_blank">'+i+'服装加盟</a>丨 <a href="#" target="_blank">'+i+'服装加盟</a>丨 <a href="#" target="_blank">'+i+'服装加盟</a>丨 <a href="#" target="_blank">'+i+'服装加盟</a>			</div>');
+			}
+			</script>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="inads"> 
+	<!-- 广告位 -->
+	<div class="w"> 
+		<!--通栏-->
+		<div class="adsline"> <a href="#" target="_blank" title="广告位"><img src="images/pic1_1.gif" alt="广告位"></a> </div>
+		<!--两栏-->
+		<div class="adsline">
+			<div class="pull_left"> <a href="#" target="_blank" title="广告位"><img src="images/pic1_2.gif" alt="广告位"></a> </div>
+			<div class="pull_right"> <a href="#" target="_blank" title="广告位"><img src="images/pic1_2.gif" alt="广告位"></a> </div>
+		</div>
+		<!--四栏-->
+		<div class="adsline">
+			<div class="pull_left">
+				<div class="lt"><a href="#" target="_blank" title="广告位"><img src="images/pic1_4.gif" alt="广告位"></a></div>
+				<div class="rt"><a href="#" target="_blank" title="广告位"><img src="images/pic1_4.gif" alt="广告位"></a></div>
+			</div>
+			<div class="pull_right">
+				<div class="lt"><a href="#" target="_blank" title="广告位"><img src="images/pic1_4.gif" alt="广告位"></a></div>
+				<div class="rt"><a href="#" target="_blank" title="广告位"><img src="images/pic1_4.gif" alt="广告位"></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="focusbox"> 
+	<!-- 焦点模块 -->
+	<div class="w">
+		<div class="focushd">
+			<div class="pull_left"> 
+				<!-- 左侧焦点资讯主体 -->
+				<div class="focusnews">
+					<div class="focusnewhd"> <i class="icon_top"></i> <strong>商业头条</strong> </div>
+					<div class="focusnewbd">
+						<dl>
+							<dt><a href="#" target="_blank">西凤酒 国酒典范</a></dt>
+							<dd><a href="#" target="_blank">五粮液福满盛世</a><em>|</em><a href="#" target="_blank">茅台习福酱酒</a></dd>
+						</dl>
+						<script>
+					        for(var n = 2; n < 7; n++){
+					            document.write('<dl>					        <dt><a href="#" target="_blank">西凤酒 国酒典范</a></dt>					        <dd><a href="#" target="_blank">五粮液福满盛世</a><em>|</em><a href="#" target="_blank">茅台习福酱酒</a></dd>					    </dl>');
+					        }
+					    </script> 
+					</div>
+				</div>
+			</div>
+			<div class="pull_center"> 
+				<!-- 中间焦点图主体 -->
+				<div class="focuspic">
+					<div class="focuspics" style="margin:0 auto">
+						<div class="hd">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="bd">
+							<ul>
+								<li><a href="#" target="_blank"><img src="images/nopic.png" /></a></li>
+								<li><a href="#" target="_blank"><img src="images/nopic1.png" /></a></li>
+								<li><a href="#" target="_blank"><img src="images/nopic.png" /></a></li>
+								<li><a href="#" target="_blank"><img src="images/nopic1.png" /></a></li>
+								<li><a href="#" target="_blank"><img src="images/nopic.png" /></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="focusinfo">
+					<div class="finfotitle"><a href="#" target="_blank">怎样经营礼品店更赚钱? 吐血分享！！</a></div>
+					<ul class="finfolist">
+						<li><em> · </em><a href="#" target="_blank">佰车吉打造掘金新热点 安全产品优势多</a></li>
+						<li><em> · </em><a href="#" target="_blank">佰车吉打造掘金新热点 安全产品优势多</a></li>
+						<li><em> · </em><a href="#" target="_blank">佰车吉打造掘金新热点 安全产品优势多</a></li>
+						<li><em> · </em><a href="#" target="_blank">佰车吉打造掘金新热点 安全产品优势多</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="pull_right"> 
+				<!-- 右侧焦点模块主体 -->
+				<div class="hot_search"> <a class="send" href="#" target="_blank" title="发布商机">发布商机</a> <a class="find" href="#" target="_blank" title="寻找商机">寻找商机</a> <a class="pioneer" href="#" target="_blank" title="创业问答">创业问答</a> </div>
+				<div class="hot_touzi"> <strong>热点投资</strong>
+					<dl>
+						<dt class="dtstyle1">投资</dt>
+						<dd><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a></dd>
+					</dl>
+					<dl>
+						<dt class="dtstyle2">招商</dt>
+						<dd><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a></dd>
+					</dl>
+					<dl>
+						<dt class="dtstyle3">创业</dt>
+						<dd><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a></dd>
+					</dl>
+					<dl>
+						<dt class="dtstyle4">问答</dt>
+						<dd><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a><a href="#" target="_blank">这是标题</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="focusft"> 
+			<!-- 底部焦点项目主体 -->
+			<ul class="p_i_show h_c1">
+				<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>
+				<script>
+                    for( var p = 2; p < 10; p++){
+                        document.write('<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>');
+                    }
+                </script>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="sec s1"> 
+	<!-- 项目信息模块一 -->
+	<div class="w">
+		<div class="pull_left"> 
+			<!-- 左侧主体模块 -->
+			<div class="sechead">
+				<div class="lt">
+					<h2><a href="#" target="_blank">服装</a></h2>
+					<h2><a href="#" target="_blank">餐饮</a></h2>
+					<h2><a href="#" target="_blank">饰品</a></h2>
+				</div>
+				<div class="rt"><strong>热门推荐</strong><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮</a></div>
+			</div>
+			<div class="secbody">
+				<ul class="p_i_show h_c2">
+					<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>
+					<script>
+                        for( var n = 2; n < 19; n++){
+                            document.write('<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>');
+                        }
+                    </script>
+				</ul>
+				<div class="s1_news">
+					<ul class="ul_1">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_2">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_3">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_4">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_5">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_6">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="pull_right"> 
+			<!-- 右侧主体模块 -->
+			<div class="hot_dzs"> <strong>热点投资</strong>
+				<div class="hot_dzs_bd"><a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a><a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a><a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a><a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a></div>
+			</div>
+			<div class="tzdx"> <strong>热点投资 <em> - 爱帮分析</em></strong>
+				<div class="tzdx_bd">
+					<ul class="lt">
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+					</ul>
+					<ul class="rt">
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="inads"> 
+	<!-- 通栏广告 -->
+	<div class="w">
+		<div class="adsline"> <a href="#" target="_blank" title="广告位"><img src="images/pic1_1.gif" alt="广告位"></a> </div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="sec s2"> 
+	<!-- 项目信息模块二 -->
+	<div class="w">
+		<div class="pull_left"> 
+			<!-- 左侧主体模块 -->
+			<div class="sechead">
+				<div class="lt">
+					<h2><a href="#" target="_blank">服装</a></h2>
+					<h2><a href="#" target="_blank">餐饮</a></h2>
+					<h2><a href="#" target="_blank">饰品</a></h2>
+				</div>
+				<div class="rt"><strong>热门推荐</strong><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮</a></div>
+			</div>
+			<div class="secbody">
+				<ul class="p_i_show h_c2">
+					<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>
+					<script>
+                        for( var n = 2; n < 19; n++){
+                            document.write('<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>');
+                        }
+                    </script>
+				</ul>
+				<div class="s1_news">
+					<ul class="ul_1">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_2">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_3">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_4">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_5">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_6">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="pull_right"> 
+			<!-- 右侧主体模块 -->
+			<div class="hot_dzs"> <strong>热点投资</strong>
+				<div class="hot_dzs_bd"> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> </div>
+			</div>
+			<div class="tzdx"> <strong>热点投资 <em> - 爱帮分析</em></strong>
+				<div class="tzdx_bd">
+					<ul class="lt">
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+					</ul>
+					<ul class="rt">
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="inads"> 
+	<!-- 通栏广告 -->
+	<div class="w">
+		<div class="adsline"> <a href="#" target="_blank" title="广告位"><img src="images/pic1_1.gif" alt="广告位"></a> </div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="sec s3"> 
+	<!-- 项目信息模块三 -->
+	<div class="w">
+		<div class="pull_left"> 
+			<!-- 左侧主体模块 -->
+			<div class="sechead">
+				<div class="lt">
+					<h2><a href="#" target="_blank">服装</a></h2>
+					<h2><a href="#" target="_blank">餐饮</a></h2>
+					<h2><a href="#" target="_blank">饰品</a></h2>
+				</div>
+				<div class="rt"><strong>热门推荐</strong><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮</a></div>
+			</div>
+			<div class="secbody">
+				<ul class="p_i_show h_c2">
+					<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>
+					<script>
+                        for( var n = 2; n < 19; n++){
+                            document.write('<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>');
+                        }
+                    </script>
+				</ul>
+				<div class="s1_news">
+					<ul class="ul_1">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_2">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_3">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_4">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_5">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_6">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="pull_right"> 
+			<!-- 右侧主体模块 -->
+			<div class="hot_dzs"> <strong>热点投资</strong>
+				<div class="hot_dzs_bd"> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> </div>
+			</div>
+			<div class="tzdx"> <strong>热点投资 <em> - 爱帮分析</em></strong>
+				<div class="tzdx_bd">
+					<ul class="lt">
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+					</ul>
+					<ul class="rt">
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="inads"> 
+	<!-- 广告位 -->
+	<div class="w">
+		<div class="adsline"> <a href="#" target="_blank" title="广告位"><img src="images/pic1_1.gif" alt="广告位"></a> </div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="sec s4"> 
+	<!-- 项目信息模块4 -->
+	<div class="w">
+		<div class="pull_left"> 
+			<!-- 左侧主体模块 -->
+			<div class="sechead">
+				<div class="lt">
+					<h2><a href="#" target="_blank">服装</a></h2>
+					<h2><a href="#" target="_blank">餐饮</a></h2>
+					<h2><a href="#" target="_blank">饰品</a></h2>
+				</div>
+				<div class="rt"><strong>热门推荐</strong><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮品店</a><a href="#" target="_blank" title="烧仙茶语饮品店">烧仙茶语饮</a></div>
+			</div>
+			<div class="secbody">
+				<ul class="p_i_show h_c2">
+					<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>
+					<script>
+                        for( var n = 2; n < 19; n++){
+                            document.write('<li><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>');
+                        }
+                    </script>
+				</ul>
+				<div class="s1_news">
+					<ul class="ul_1">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_2">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_3">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_4">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_5">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+					<ul class="ul_6">
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+						<li><em> · </em><a href="#" target="_blank">标题要长长的才能显示出来！</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="pull_right"> 
+			<!-- 右侧主体模块 -->
+			<div class="hot_dzs"> <strong>热点投资</strong>
+				<div class="hot_dzs_bd"> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> <a href="#" target="_blank"><img src="images/nopic3.png" alt=""></a> </div>
+			</div>
+			<div class="tzdx"> <strong>热点投资 <em> - 爱帮分析</em></strong>
+				<div class="tzdx_bd">
+					<ul class="lt">
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+					</ul>
+					<ul class="rt">
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+						<li><a href="#" target="_blank">标题要长长的才能显示出来!</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="ishow ppsb"> 
+	<!-- 排行榜展示 -->
+	<div class="w">
+		<ul class="itemshow">
+			<li><a href="#" target="_blank"><img src="images/nopic4.png" alt=""></a></li>
+			<script>
+                for( var o = 2; o < 25; o++){
+                    document.write('<li><a href="#" target="_blank"><img src="images/nopic4.png" alt=""></a></li>');
+                }
+            </script>
+		</ul>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="secft"> 
+	<!-- 滚动切换模块 -->
+	<div class="w">
+		<div class="pull_left"> 
+			<!-- 左侧主体模块 --> 
+			<strong class="tit">加盟快讯 <em> Topics for Startups </em></strong>
+			<div class="m_wnews" style="margin:0 auto">
+				<div id="miniNewsRegion">
+					<ul>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+						<li><strong class="wy">网友1010</strong> 对 <strong class="sj">比尼童装</strong> 提问 ：我这里有加盟店吗？比尼童装加盟费是多少？<em class="result">未解决</em> <a href="#" class="rob" target="_blank">我要抢答</a></li>
+					</ul>
+				</div>
+				<div class="pagesize"> <a href="javascript:void(0)" class="prev">上一条</a> <a href="javascript:void(0)" class="next">下一条</a> </div>
+			</div>
+		</div>
+		<div class="pull_center"> 
+			<!-- 中间主体模块 -->
+			<div class="slideTxtBox">
+				<div class="hd">
+					<ul>
+						<li class="cur1">商机看点</li>
+						<li class="cur2">商机看点</li>
+						<li class="cur3">商机看点</li>
+						<li class="cur4">商机看点</li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul class="cur1_ul">
+						<li>
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+								</ol>
+							</div>
+						</li>
+						<li>
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+								</ol>
+							</div>
+						</li>
+						<li class="end">
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+								</ol>
+							</div>
+						</li>
+					</ul>
+					<ul class="cur2_ul">
+						<li>
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+								</ol>
+							</div>
+						</li>
+						<li>
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+								</ol>
+							</div>
+						</li>
+						<li class="end">
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+								</ol>
+							</div>
+						</li>
+					</ul>
+					<ul class="cur3_ul">
+						<li>
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+								</ol>
+							</div>
+						</li>
+						<li>
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+								</ol>
+							</div>
+						</li>
+						<li class="end">
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+								</ol>
+							</div>
+						</li>
+					</ul>
+					<ul class="cur4_ul">
+						<li>
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+								</ol>
+							</div>
+						</li>
+						<li>
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟 2013让您尽情赚 品牌红酒代理批发 德威</a></li>
+								</ol>
+							</div>
+						</li>
+						<li class="end">
+							<div class="lt"><img src="images/nopic4.png" alt="" /></div>
+							<div class="rt"> <strong>2013年创业好商机 小本创业好项目</strong>
+								<ol>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+									<li><a href="#" target="_blank">王氏捞吧火锅加盟</a></li>
+								</ol>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="pull_right">
+			<!-- 右侧主体模块 --> 
+			<strong class="tit">加盟快讯 <em> Topics for Startups </em></strong>
+			<div class="m_wnews" style="margin:0 auto">
+				<div id="miniNewsRegion">
+					<ul>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+						<li>来自哈尔滨的严女士了解项目<em class="sj"> 香磨五谷 </em>：欲投资20万加盟项目，想更多的了解 <em class="time"> [三分钟前] </em></li>
+					</ul>
+				</div>
+				<div class="pagesize"> <a href="javascript:void(0)" class="prev">上一条</a> <a href="javascript:void(0)" class="next">下一条</a> </div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="inads"> 
+	<!-- 广告位 -->
+	<div class="w">
+		<div class="adsline"> <a href="#" target="_blank" title="广告位"><img src="images/pic1_1.gif" alt="广告位"></a> </div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="linkbox"> 
+	<!--友情链接-->
+	<div class="w"> <span>友情链接：<em>权重相当，内容健康；联系QQ：<a target="_blank"  style=" cursor:pointer;" href="http://wpa.qq.com/msgrd?v=3&uin=790062246&site=qq&menu=yes" title="友情链接服务">790062246</a></em></span>
+		<div class="link"> <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> </div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footer"> 
+	<!-- 页尾 -->
+	<div class="ftnav">
+		<div class="w">
+			<ul>
+				<li><a href="#" target="_blank" title="">小本创业网</a></li>
+				<li><a href="#" target="_blank" title="">技术支持</a></li>
+				<li><a href="#" target="_blank" title="">关于我们</a></li>
+				<li><a href="#" target="_blank" title="">广告服务</a></li>
+				<li><a href="#" target="_blank" title="">法律声明</a></li>
+				<li><a href="#" target="_blank" title="">信息举报</a></li>
+				<li><a href="#" target="_blank" title="">联系我们</a></li>
+				<li><a href="#" target="_blank" title="">网站地图</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="w">
+		<p> 技术支持:北京商务地带信息技术有限公司	CopyRight (c) 2003-2013 91cy.cn All right rederved.<br>
+			ICP备案号：京ICP备11001013号-22	京公安网安备：11010602004070号-1<br>
+			本站部分信息来自互联网，若侵犯了您的版权，请及时联系本站（QQ：<a target="_blank"  style=" cursor:pointer;" href="http://wpa.qq.com/msgrd?v=3&uin=1870683034&site=qq&menu=yes" title="版权服务">1870683034</a>）我们会在第一时间删除！谢谢！ </p>
+		<p class="icp"> <a href="#" class="icp1">ICP备案号：京ICP备11001013号-22</a> <a href="#" class="icp2">经营性网站备案信息</a> <a href="#" class="icp3">网络110报警服务</a> <a href="#" class="icp4">可信网站点击验证</a> </p>
+	</div>
+</div>
+<script type="text/javascript">
+    jQuery(".focuspics").slide({ mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:200 });
+    jQuery(".m_wnews").slide({ mainCell:"#miniNewsRegion ul", effect:"topLoop", autoPlay:true,vis:5});
+    jQuery(".slideTxtBox").slide({trigger:"click"});
+	var topHd = new ShowTab("bdTBox","li","bdulBox","div");topHd.show();
+	$("#bdTBox li a").hover(function(){
+		$(this).parent().addClass("cur").siblings().removeClass("cur");
+	})
+</script>
+</body>
+</html>

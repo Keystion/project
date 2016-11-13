@@ -1,0 +1,101 @@
+body, h1, h2, dl, dt, dd, ul, ol, li {
+	margin: 0;
+	padding: 0
+}
+ul, ol { list-style: none }
+fieldset, img { border: 0 }
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+html { color: #000 }
+h3 { font-size: 14px }
+a { text-decoration: none }
+body, button, input, select, textarea {
+	font-size: 12px;
+	font-family: arial, tahoma, \5b8b\4f53, sans-serif
+}
+.cf:after, .clearfix:after {
+	content: '\0020';
+	display: block;
+	height: 0;
+	clear: both
+}
+.cf, .clearfix { *zoom:1
+}
+.clear { clear: both }
+
+body{ background:#9F9F9F;}
+
+.global_nav{ height:30px; width:100%; background:#D6D6D6;}
+.global_nav h1{ height:30px; width:35px; background:url(../images/logo.png) 5px 6px no-repeat; text-indent:-100px; float:left; margin:0px; padding:0px;}
+.global_nav .nav{ width:585px; float:left; height: 30px; line-height: 30px; margin-left:3px; margin-right:3px;}
+	.global_nav .nav ul{display: block;height: 30px;line-height: 30px;}
+	.global_nav .nav ul li{ float:left; height:20px; margin-top:5px;}
+	.global_nav .nav ul li a{ width:56px; height:18px; border:1px solid #D6D6D6; display:block; line-height:18px; text-align:center; color:#000;text-shadow:1px 1px 0 rgba(255, 255, 255, 0.25);}
+	.global_nav .nav ul li a:hover{
+		border:1px solid #7c7c7c;
+		background-color: #f2f2f2;
+		background-image: -moz-linear-gradient(top, #FFFFFF, #E8E8E8);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#E8E8E8));
+		background-image: -webkit-linear-gradient(top, #FFFFFF, #E8E8E8);
+		background-image: -o-linear-gradient(top, #FFFFFF, #E8E8E8);
+		background-image: linear-gradient(to bottom, #FFFFFF, #E8E8E8);
+		background-repeat: repeat-x;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+.global_nav .sub_nav{ width:200px; float:left; height: 30px; line-height: 30px; background:url(../images/nv_lt_bg.png) 0px 5px no-repeat;}
+	.global_nav .sub_nav ul{ display:block; height:30px; line-height:30px; margin-left:11px;}
+	.global_nav .sub_nav ul li{ float:left; height:20px; margin-top:5px; margin-right:8px;}
+	.global_nav .sub_nav ul li a{ width:32px; height:18px; border:1px solid #D6D6D6; display:block; line-height:18px;}
+	.global_nav .sub_nav ul li a i{ background:url(../images/s.png) no-repeat; display:block; height:14px; width:24px; margin:2px 0px 0px 6px;}
+	.global_nav .sub_nav ul li a i.icon-media{ background-position:0 0;}
+	.global_nav .sub_nav ul li a i.icon-set{ background-position:0 -14px;}
+	.global_nav .sub_nav ul li a i.icon-site{ background-position:0 -28px;}
+	.global_nav .sub_nav ul li a:hover{
+		border:1px solid #7c7c7c;
+		background-color: #f1f1f1;
+		background-image: -moz-linear-gradient(top, #FCFCFC, #DFDFDF);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FCFCFC), to(#DFDFDF));
+		background-image: -webkit-linear-gradient(top, #FCFCFC, #DFDFDF);
+		background-image: -o-linear-gradient(top, #FCFCFC, #DFDFDF);
+		background-image: linear-gradient(to bottom, #FCFCFC, #DFDFDF);
+		background-repeat: repeat-x;
+		/*-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;*/
+	}
+
+.global_nav .mo_nav{ width:133px; float:left; height: 30px; line-height: 30px; background:url(../images/nv_lt_bg.png) 0px 5px no-repeat;}
+	.global_nav .mo_nav ul{ display:block; height:30px; line-height:30px; margin:0 3px 0 5px;}
+	.global_nav .mo_nav ul li{ float:left; height:20px; margin-top:5px;}
+	.global_nav .mo_nav ul li a{ width:120px; height:18px; border:1px solid #D6D6D6; display:block; line-height:18px; text-align:center; color:#000;text-shadow:1px 1px 0 rgba(255, 255, 255, 0.25);}
+	.global_nav .mo_nav ul li a i{ float:right; background:url(../images/down.png) 0px 8px no-repeat; display:block; height:14px; width:6px; margin:0px 4px 0px 4px;}
+	.global_nav .mo_nav ul li a:hover{
+		border:1px solid #7c7c7c;
+		background-color: #f1f1f1;
+		background-image: -moz-linear-gradient(top, #FCFCFC, #DFDFDF);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FCFCFC), to(#DFDFDF));
+		background-image: -webkit-linear-gradient(top, #FCFCFC, #DFDFDF);
+		background-image: -o-linear-gradient(top, #FCFCFC, #DFDFDF);
+		background-image: linear-gradient(to bottom, #FCFCFC, #DFDFDF);
+		background-repeat: repeat-x;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

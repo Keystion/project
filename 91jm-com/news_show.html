@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>资讯展示页面</title>
+<meta name=description content="" />
+<meta name=keywords content="" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('div, ul, img, li, input , a , em , i ,span , s');
+</script>
+<![endif]-->
+
+</head>
+<body>
+<h3 class="tips">
+	<a href="index.html">首页</a>
+    <a href="xm_index.html">项目加盟首页</a>
+    <a href="xm_shop.html">项目加盟店</a>
+    <a href="xm_news.html">项目加盟资讯</a>
+    <a href="xm_ask.html">项目加盟问答</a>
+    <a href="xm_pic.html">项目加盟图库</a>
+    <a href="xm_pic_show.html">项目加盟图库展示</a>
+    <a href="news.html">加盟资讯列表</a>
+    <a href="news_show.html">资讯展示页面</a>
+    <a href="ask.html">问答页面</a>
+	<a href="so.html">搜索页 列表页</a>
+    <a href="top.html">加盟店排行榜</a>
+    <a href="zt.html">专题项目</a>
+    <a href="404.html">404页面</a>
+    <a href="map.html">网站地图</a>
+</h3>
+<!-- topbar -->
+<div id="topbar">
+	<div class="layout">
+		<div id="sd-nav" class="topbar-nav fr">
+			<ul>
+				<li><a href="#" id="" class="first">91加盟网</a></li>
+				<li><a href="#" id="site-btn-qqlog" rel="nofollow" class="" title="使用QQ帐号登录" target="_blank">QQ登录</a></li>
+				<li><a href="#" id="site-btn-weibolog" rel="nofollow" class="" title="使用微博帐号登录" target="_blank">新浪微博登录</a></li>
+				<li style="display:none"><a href="#" id="site-btn-rss" class="menu-slider"><i></i>订阅</a></li>
+				<li style="display:none"><a href="#" id="site-btn-weibo" class="menu-slider"><i></i>关注</a></li>
+				<li style="display:none"><a href="#" id="site-btn-help">联系客服</a></li>
+				<li><a style="padding-right:0" href="#" class="menu-slider" target="_blank">网站导航</a></li>
+			</ul>
+		</div>
+		<div id="site-nav" class="topbar-nav fl">
+			<input type="hidden" id="hd_brand_lname" value=""/>
+			<input type="hidden" id="hd_user_lname" value=""/>
+			<p class="login-info"> 您好，欢迎来91加盟网！ <span class="log-out"> <a href="#">请登录</a> <a href="#">免费注册</a> <a href="#">品牌商入口</a> </span> </p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<!--end--> 
+<!-- topicAd -->
+<div id="topicAd99060" style="overflow:hidden; padding:3px 0">
+	<div class="layout" style=" position:relative"> <a href="#" target="_blank"> <img src="images/990x60.jpg" alt="2013赚钱项目" /> </a> </div>
+</div>
+<!-- end --> 
+
+<!--header-->
+<div id="head-mod">
+	<div class="layout mt10">
+		<div class="head-mod-logo fl"><a href="#" title="就要加盟网"><img src="images/logo-v2.png" alt="就要加盟网" width="186" /></a></div>
+		<div class="head-mod-nav fl">
+			<div class="nav_2 nav_pro">
+				<ul>
+					<li><a href="#">餐饮</a></li>
+					<li><a href="#">服装</a></li>
+					<li><a href="#">美容</a></li>
+					<li><a href="#">家居</a></li>
+					<li><a href="#">教育</a></li>
+					<li><a href="#">珠宝</a></li>
+					<li><a href="#">母婴</a></li>
+					<li><a href="#">五金</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">建材</a></li>
+					<li><a href="#">饰品</a></li>
+					<li><a href="#">酒店</a></li>
+					<li><a href="#">汽车</a></li>
+					<li><a href="#">干洗</a></li>
+					<li><a href="#">酒水</a></li>
+					<li><a href="#">零售</a></li>
+					<li><a href="#">新奇</a></li>
+				</ul>
+			</div>
+			<div class="nav_3 nav_pro">
+				<ul>
+					<li><a href="#" title="加盟项目查询">找项目<i class="ico-eve"></i></a></li>
+					<li><a href="#" title="加盟店排行榜">排行榜<i class="ico-rank"></i></a></li>
+					<li><a href="#" title="加盟资讯">看资讯<i class="ico-news"></i></a></li>
+					<li><a href="#" title="就要问答">搜问答<i class="ico-ask"></i></a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script type="text/javascript">
+	//搜索
+	function sokeyword(){
+		var skeyword = $("#txtkeyword").val();
+		if(skeyword=="请输入关键词")
+		{
+			skeyword="";
+		}
+		window.location.href="http://so.91jm.com/0-0-0-1.htm?q="+skeyword;
+	}
+</script>
+		<div class="head-mod-search fl">
+			<div class="project-search-box fl">
+				<input class="input-search" id="txtkeyword" type="text" value="请输入关键词" onfocus="if(this.value=='请输入关键词')this.value=''">
+			</div>
+			<button class="btn-search fl" name="" type="submit" value="提交" onclick="sokeyword()"></button>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<!--end--> 
+<!--content--> 
+
+<!--end--> 
+
+<!--content-->
+<div id="content">
+	<div class="layout"> 
+		<!--mod-news--> 
+		<!-- ==================CHANNEL NEWS INFO==================== -->
+		<div class="mod-news-channel-info"> 
+			<!-- search for news --> 
+			<!-- <div class="search-news"> <i></i>
+        <input type="text" class="ipt-search-news" value="请输入关键字" />
+        <input type="submit" class="btn-search-news" value="搜新闻" />
+      </div> --> 
+			<!-- end --> 
+			<!-- current -->
+			<div id="mod-crumbs"> <a href="#">首页</a> <em>&gt;</em><a href="#">加盟资讯</a> <em>&gt;</em>罗兰佩蒂自然绿色,值得消费者信赖的美容品牌</div>
+			<!-- end --> 
+			<!-- left -->
+			<div class="mod-news-left fl">
+				<div class="news-mainContrain">
+					<div class="title">
+						<h1>罗兰佩蒂自然绿色,值得消费者信赖的美容品牌</h1>
+						<div class="sd-bar"> <span>2013-06-07 13:11:10</span> <span><font>来源:</font> 91加盟网</span> <span><font>阅读：</font>23次</span> </div>
+						<div class="sd-share"> 
+							<!-- Baidu Button BEGIN -->
+							<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"> <a class="bds_tsina"></a> <a class="bds_tqq"></a> <a class="bds_renren"></a> <a class="bds_t163"></a> <a class="bds_qzone"></a> <span class="bds_more">更多</span> </div>
+							<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" ></script> 
+							<script type="text/javascript" id="bdshell_js"></script> 
+							<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script> 
+							<!-- Baidu Button END --> 
+						</div>
+					</div>
+					<div class="digest mt20">
+						<p>美容美体SPA行业近几年发展很快，美容美体SPA行业那个品牌好，罗兰佩蒂美容美体SPA连锁加盟店是行业内第一品牌，罗兰佩蒂美容美体SPA连锁加盟店产品种类繁多，涵盖生活的各个方面，时尚的造型设计赢得了广大消费者的喜爱，很多世界知名的设计大师也倍加赞赏。 </p>
+					</div>
+					<!--info-->
+					<div class="news-main-info">
+						<p>
+						<p> <span style="font-size:14px;">　　美容美体SPA行业近几年发展很快，美容美体SPA行业那个品牌好，罗兰佩蒂美容美体SPA连锁加盟店是行业内第一品牌，罗兰佩蒂美容美体SPA连锁加盟店产品种类繁多，涵盖生活的各个方面，时尚的造型设计赢得了广大消费者的喜爱，很多世界知名的设计大师也倍加赞赏。</span> </p>
+						<p> <span style="font-size:14px;">　　罗兰佩蒂美容美体SPA连锁加盟店作为代表中国美容行业公信力的权威机构，是值得信赖的美容品牌，真正做到自然绿色美容美体SPA。力求把罗兰佩蒂普及到全国，让国人都能享受高品质的美容生活。</span> </p>
+						<p> <span style="font-size:14px;">　　罗兰佩蒂美容美体SPA为我们的美容着想，让女性更好的享受美容的生活。罗兰佩蒂美容美体SPA期待更多人的加盟，为了美好的明天，让我们一起努力，把罗兰佩蒂美容美体SPA做到更好，更强大。</span> </p>
+						<p> <span style="font-size:14px;">　　罗兰佩蒂美容美体SPA期待您的加盟，罗兰佩蒂美容美体SPA因为有了您的加盟，才会变得更好，才能得到更高的殊荣，加盟罗兰佩蒂美容美体SPA，是我们成功的选择。</span> </p>
+						<p> <span style="font-size:14px;">　　罗兰佩蒂：</span><a href="http://447.91jm.com/"><span style="font-size:14px;">http://447.91jm.com/</span></a> </p>
+						</p>
+					</div>
+					<!--end-->
+					<div class="news-bd-shell"> 
+						<!-- 将此标记放在您希望显示like按钮的位置 -->
+						<div class="bdlikebutton"></div>
+						
+						<!-- 将此代码放在适当的位置，建议在body结束前 --> 
+						<script id="bdlike_shell"></script> 
+						<script>
+                    var bdShare_config = {
+                        "type":"large",
+                        "color":"blue",
+                        "share":"yes"
+                    };
+                    document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=" + Math.ceil(new Date()/3600000);
+                    </script> 
+					</div>
+					<div class="news-bd-pages"> <a href="#" class="next_news fr" title="不凡品质铸就不凡价值,芭特尔芙莱深受消费者喜爱">下一篇：不凡品质铸就不凡价值,芭特尔芙...</a> <a href="#" class="prve_news fl" title="轻松投资维客特加盟连锁，致富无限未来生活">上一篇：轻松投资维客特加盟连锁，致富无...</a> </div>
+				</div>
+				<div class="mt10"> 
+					<!--weibo add--> 
+					<script type="text/javascript">document.write('<iframe width="670" height="187" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=3039975447&wide=1&color=E2E2E2,FFFFFF,0082CB,666666&showtitle=1&showinfo=0&sense=1&verified=1&count=1&refer='+encodeURIComponent(location.href)+'&dpc=1"></iframe>')</script> <!--end--> 
+				</div>
+				<!-- links news -->
+				<div class="links-news mt10">
+					<div class="hd"> <b>相关阅读</b> </div>
+					<div class="bd">
+						<ul class="">
+							<li><a href="#">[加盟资讯] </a><a href="#">经营战略是根据经营环境及趋势所制定的</a> <span>2012-12-16 12:50</span></li>
+							<li><a href="#">[加盟资讯] </a><a href="#">选址:店铺经营成功的关键</a> <span>2012-12-16 12:53</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end --> 
+				<!-- acc eve -->
+				<div class="links-eve mt10">
+					<div class="hd"> <b>商机在线</b> </div>
+					<div class="bd">
+						<ul>
+							<li><a href="#" title="远红一家" target="_blank"> <img src="images/130x130.jpg" width="130" height="130" alt="远红一家" /> </a> <a href="#" title="远红一家" target="_blank">小本投资，巨额商机</a></li>
+							<li><a href="#" title="远红一家" target="_blank"> <img src="images/130x130.jpg" width="130" height="130" alt="远红一家" /> </a> <a href="#" title="远红一家" target="_blank">小本投资，巨额商机</a></li>
+							<li><a href="#" title="远红一家" target="_blank"> <img src="images/130x130.jpg" width="130" height="130" alt="远红一家" /> </a> <a href="#" title="远红一家" target="_blank">小本投资，巨额商机</a></li>
+							<li><a href="#" title="远红一家" target="_blank"> <img src="images/130x130.jpg" width="130" height="130" alt="远红一家" /> </a> <a href="#" title="远红一家" target="_blank">小本投资，巨额商机</a></li>
+							<div class="clear"></div>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!-- end --> 
+			</div>
+			<!-- end --> 
+			<!-- right -->
+			<div class="mod-news-right fl"> 
+				<!-- hot-news -->
+				<div class="news-tplist hot-news">
+					<div class="hd"> 
+						<!-- <span class="fr"><i></i>热度</span> --> 
+						<a title="热点资讯">热点资讯</a> </div>
+					<div class="bd">
+						<ul>
+							<li> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行业,开创</a> </li>
+							<li> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行业,开创</a> </li>
+							<li> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行业,开创</a> </li>
+							<li> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行业,开创</a> </li>
+							<li> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行业,开创</a> </li>
+							<li> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行业,开创</a> </li>
+							<li> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行业,开创</a> </li>
+							<li> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行业,开创</a> </li>
+						</ul>
+					</div>
+				</div>
+				<!-- end --> 
+				<!-- acc-eve -->
+				<div class="news-tplist acc-eve">
+					<div class="hd"> <span class="fr"></span> <a href="#" title="精品推荐">精品推荐</a> </div>
+					<div class="bd">
+						<ul>
+							<li> <a href="#" title="铁锅门" target="_blank"><img src="images/135x92.jpg" width="135" height="92" alt="铁锅门" /></a> <a href="http://tgmxlg.91jm.com/" title="铁锅门" target="_blank">走进铁锅门，都是铁哥们 </a> </li>
+							<li> <a href="#" title="铁锅门" target="_blank"><img src="images/135x92.jpg" width="135" height="92" alt="铁锅门" /></a> <a href="http://tgmxlg.91jm.com/" title="铁锅门" target="_blank">走进铁锅门，都是铁哥们 </a> </li>
+							<li> <a href="#" title="铁锅门" target="_blank"><img src="images/135x92.jpg" width="135" height="92" alt="铁锅门" /></a> <a href="http://tgmxlg.91jm.com/" title="铁锅门" target="_blank">走进铁锅门，都是铁哥们 </a> </li>
+							<li> <a href="#" title="铁锅门" target="_blank"><img src="images/135x92.jpg" width="135" height="92" alt="铁锅门" /></a> <a href="http://tgmxlg.91jm.com/" title="铁锅门" target="_blank">走进铁锅门，都是铁哥们 </a> </li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</div>
+				<!-- end --> 
+				<!-- last-news -->
+				<div class="news-tplist last-news">
+					<div class="hd"> <a title="最新资讯">最新资讯</a> </div>
+					<div class="bd">
+						<ul>
+							<li> <span class="">2013-06-13</span> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行</a> </li>
+							<li> <span class="">2013-06-13</span> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行</a> </li>
+							<li> <span class="">2013-06-13</span> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行</a> </li>
+							<li> <span class="">2013-06-13</span> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行</a> </li>
+							<li> <span class="">2013-06-13</span> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行</a> </li>
+							<li> <span class="">2013-06-13</span> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行</a> </li>
+							<li> <span class="">2013-06-13</span> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行</a> </li>
+							<li> <span class="">2013-06-13</span> <a href="#" title="加盟开心哈乐,轻松立足教育行业,开创美好财富人生">加盟开心哈乐,轻松立足教育行</a> </li>
+						</ul>
+					</div>
+				</div>
+				<!-- end --> 
+				
+			</div>
+			
+			<!-- end -->
+			<div class="clear"></div>
+		</div>
+		<!-- ==================CHANNEL NEWS INFO ==================== --> 
+	</div>
+	<!--end--> 
+</div>
+<!--end-->
+</div>
+<!--footer-->
+<div id="footer" style="">
+	<div class="layout" style="position:relative"> 
+		<!--<div style=" width:86px; height:126px; position:absolute; left:0;top:110px;"> <img src="images/codeWeixin.jpg"> </div>-->
+		<div class="footer-container-tip">
+			<div class="ft_list ml7">
+				<h5>加盟保障</h5>
+				<ul>
+					<li><!--<a href="#">--><em>选择加盟好项目</em><!--</a>--></li>
+					<li style=""><!--<a href="#">--><em>免费提供咨询</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌诚信档案</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>新手上路</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费注册会员</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>在线联系感兴趣的项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌商和您沟通</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="icon_xl"> 
+				<!--信任标题--> 
+			</div>
+			<div class="ft_list ml35">
+				<h5>特色服务</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费帮你看项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>加盟组团优惠中</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>申请诚信担保</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>商家入驻</h5>
+				<ul>
+					<li><!--<a href="#">--><em>立即加入</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>诚信认证</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>和投资者洽谈合作</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div style="clear:both"></div>
+			</div>
+		<div class="footer-container mt10">
+			<div class="footer-jm-pages"> <a href="#" title="关于我们" target="_blank">关于我们</a> | <a href="#" title="会员服务" target="_blank">会员服务</a> | <a href="#" title="诚邀加盟" target="_blank">诚邀加盟</a> | <a href="#" title="免责声明" target="_blank">免责声明</a> | <a href="#" title="招聘信息" target="_blank">招聘信息</a> | <a href="#" title="联系我们" target="_blank">联系我们</a> | <a href="#" title="广告服务" target="_blank">广告服务</a></div>
+			<div class="footer-jm-copyright">
+				<p>Copyright@2011-2021 版权所有 www.91jm.com All Rights Reserved 沪ICP备12030781号-3</p>
+			</div>
+			<div class="footer-jm-tips">
+				<p> 友情提示：多打电话、多咨询、实地考察，可降低连锁加盟，创业投资风险。 全国服务热线：400-168-0091（免长途费） </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--end--> 
+<!--bottom-js--> 
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script> 
+<script type="text/javascript" language="javascript" src="js/slides.min.jquery.js"></script> 
+<script type="text/javascript" src="js/slider.js"></script> 
+<script type="text/javascript" src="js/attr_tab.js"></script> 
+<!--end--> 
+</body>
+</html>

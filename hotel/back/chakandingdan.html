@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<title>查看订单</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale = 1.0" >
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/iehack.css">
+<![endif]-->
+</head>
+
+<body>
+<h3 class="tips"> <a href="index.html">首页</a> <a href="login.html">登录</a> <a href="reg.html">注册</a> <a href="getpwd.html">找回密码</a> <a href="zaixiandingfang.html">在线订房</a> <a href="jiudianhuiyi.html">酒店会议</a> <a href="kefangyuding.html">开放预订</a> <a href="weiwanchengdingdan.html">未付款订单</a> <a href="yiwanchengdingdan.html">已完成订单</a> <a href="huodejiangli.html">获得的奖励</a> <a href="gerenshezhi.html">个人设置</a> <a href="xiugaimima.html">修改密码</a> <a href="other.html">关于我们模板</a> <a href="fangjiangoumai.html">房间购买</a> <a href="querenxinxi.html">确认信息</a> <a href="chakandingdan.html">查看订单</a></h3>
+<div class="header">
+	<div class="container">
+		<div class="logo big" id="logo">
+			<h1><a href="index.html"><img src="images/logo01.jpg" alt="Logo"></a></h1>
+		</div>
+		<div class="logo small" id="logo" style="display:none;">
+			<h1><a href="index.html"><img src="images/s_logo.png" alt="Logo"></a></h1>
+		</div>
+		<div class="info">
+			<ul>
+				<li class="info-i user-name has-pulldown"> <em class="f-icon pull-arrow"></em> <a class="identity" href="javascript:viod(0);" target="_blank" title="头像"><img src="images/photo.jpg" alt=""></a> <span node-type="username" class="name top-username">Toby Wu</span>
+					<div class="pulldown user-info"> </div>
+				</li>
+				<li class="info-i search-box">
+					<form class="search-form clearfix" action="javascript: void(0)" method="get">
+						<input style="width: 110px" autocomplete="off" class="search-query" name="q" onblur="if(this.value=='') this.value = this.defaultValue;" onfocus="this.value='';" value="关键词" spellchecking="off" type="text">
+						<input class="search-button" type="submit" value="">
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="main">
+	<div class="container">
+		<div class="aside">
+			<div class="aside-service"><img src="images/big_tel.jpg" alt="服务热线：400-8888-888"></div>
+		</div>
+		<div class="content">
+			<div class="navigation">
+				<!--
+					选中 状态  <a> 标签 添加 class = “ active ”
+				-->
+				<ul id="nav" class="nav">
+					<li class="nav-li-01 nav-Reservation"><a href="#" class=" active" title="客房预订">客房预订</a></li>
+					<li class="nav-li-02 nav-FoodChoice"><a href="#" title="美食臻选">美食臻选</a></li>
+					<li class="nav-li-03 nav-SportsFitness"><a href="#" title="康体健身">康体健身</a></li>
+					<li class="nav-li-04 nav-Spa"><a href="#" title="美容、SPA">美容、SPA</a></li>
+					<li class="nav-li-05 nav-Meeting"><a href="#" title="会议会展">会议会展</a></li>
+					<li class="nav-li-06 nav-SpecialPreferred"><a href="#" title="特惠优选">特惠优选</a></li>
+				</ul>
+			</div>
+			<div class="memBenefits">
+				<div class="fl"><img src="images/youhui.png" alt="icon">
+					<dl>
+						<dt>会员免费住宿计划</dt>
+						<dd>( 成功预定10次酒店，即可享一晚免费住宿 )</dd>
+					</dl>
+				</div>
+				<ul class="fr">
+					<li class="memBook memBooking">1</li>
+					<li class="memBook memBooking">2</li>
+					<li class="memBook memBooking">3</li>
+					<li class="memBook memBooking">4</li>
+					<li class="memBook">5</li>
+					<li class="memBook">6</li>
+					<li class="memBook">7</li>
+					<li class="memBook">8</li>
+					<li class="memBook">9</li>
+					<li class="memBook">10</li>
+				</ul>
+			</div>
+			<div>
+				<table class="tb tb-1" width="740" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr class="title">
+							<td width="150"><strong>订单信息</strong></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>-  订单号:</td>
+							<td>#8445641</td>
+						</tr>
+						<tr>
+							<td>-  商户名称:</td>
+							<td>北京饭店</td>
+						</tr>
+						<tr>
+							<td>-  商品名称:</td>
+							<td>自助餐</td>
+						</tr>
+						<tr>
+							<td>-  商品价格:</td>
+							<td>￥322</td>
+						</tr>
+						<tr>
+							<td>-  数量:</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>-  总金额:</td>
+							<td>￥322332</td>
+						</tr>
+						<tr class="title">
+							<td width="150"><strong>用户信息</strong></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>-  姓名:</td>
+							<td>User Name</td>
+						</tr>
+						<tr>
+							<td>-  手机:</td>
+							<td>18610383842</td>
+						</tr>
+						<tr class="title">
+							<td width="150"><strong>发票信息</strong></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>-  发票抬头:</td>
+							<td>北京欣然互动科技有限公司</td>
+						</tr>
+						<tr>
+							<td>-  邮寄地址:</td>
+							<td> 北京市 朝阳区 酒仙桥北路7号C#1</td>
+						</tr>
+						<tr>
+							<td>-  邮政编码:</td>
+							<td>100058</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="goshop">
+					<img src="images/goshop.png" alt="">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footinfo">
+	<div class="container">
+		<div class="divNum div-1"><img src="images/app.png" alt="手机客户端"></div>
+		<div class="divNum div-2"><img src="images/weixin.png" alt="官方微信"></div>
+		<div class="divNum div-3"><img src="images/hezuo.png" alt="寻求合作"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footGrid about">
+			<h4><i></i><a href="#">关于酒店酒店</a></h4>
+			<ul>
+				<li><a href="#">我们的服务</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">网站声明</a></li>
+			</ul>
+		</div>
+		<div class="footGrid partners">
+			<h4><i></i><a href="#">渠道合作</a></h4>
+			<ul>
+				<li><a href="#">我们的合作酒店</a></li>
+				<li><a href="#">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="footGrid help">
+			<h4><i></i><a href="#">帮助中心</a></h4>
+			<ul>
+				<li><a href="#">如何使用酒店酒店</a></li>
+				<li><a href="#">酒店秘书服务介绍</a></li>
+			</ul>
+		</div>
+		<div class="footGrid sitemap">
+			<h4><i></i><a href="#">网站地图</a></h4>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+		<div class="footGrid service">
+			<h4><i></i>酒店秘书</h4>
+			<ul>
+				<li class="tel">400-8888-888</li>
+				<li>周一至周日09:00-18:00</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<p class="copyright">Copyright 2003-2013, 版权所有 <a href="http://jiudianjiudian.com/">jiudianjiudian.com</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/*  HTML5 Boilerplate Reset  */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,	footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; /* outline:0; */ font-size:100%; vertical-align:baseline; background:transparent; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+html { overflow-y: scroll; }
+
+ul, ol { margin: 0; list-style: none; }
+
+small { font-size: 85%; }
+strong { font-weight: bold; }
+em { font-style: oblique; }
+
+::-moz-selection{ background: #ddd; color: #000; text-shadow: none; }
+::selection { background: #ddd; color: #000; text-shadow: none; }
+
+.clearfix:before, .clearfix:after, .row:after, .row:before { content: ""; display: table; }
+.clearfix:after, .row:after { clear: both; }
+.clearfix, .row { *zoom: 1; }
+
+.visuallyhidden {
+  border: 0;
+  margin: 0 -1px -1px 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+
+:focus {
+  outline-color: rgb(83, 144, 210);
+  outline-color: rgba(83, 144, 210, 0.55);
+  outline-offset: 1px;
+  outline-width: 2px;
+  outline-style: solid;
+  -moz-outline-radius: 3px;
+}

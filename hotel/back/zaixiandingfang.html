@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<title>在线订房</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale = 1.0" >
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/iehack.css">
+<![endif]-->
+</head>
+
+<body>
+<h3 class="tips"> <a href="index.html">首页</a> <a href="login.html">登录</a> <a href="reg.html">注册</a> <a href="getpwd.html">找回密码</a> <a href="zaixiandingfang.html">在线订房</a> <a href="jiudianhuiyi.html">酒店会议</a> <a href="kefangyuding.html">开放预订</a> <a href="weiwanchengdingdan.html">未付款订单</a> <a href="yiwanchengdingdan.html">已完成订单</a> <a href="huodejiangli.html">获得的奖励</a> <a href="gerenshezhi.html">个人设置</a> <a href="xiugaimima.html">修改密码</a> <a href="other.html">关于我们模板</a> <a href="fangjiangoumai.html">房间购买</a> <a href="querenxinxi.html">确认信息</a> <a href="chakandingdan.html">查看订单</a></h3>
+<div class="header">
+	<div class="container">
+		<div class="logo big" id="logo">
+			<h1><a href="index.html"><img src="images/logo01.jpg" alt="Logo"></a></h1>
+		</div>
+		<div class="logo small" id="logo" style="display:none;">
+			<h1><a href="index.html"><img src="images/s_logo.png" alt="Logo"></a></h1>
+		</div>
+		<div class="info">
+			<ul>
+				<li class="info-i user-name has-pulldown"> <em class="f-icon pull-arrow"></em> <a class="identity" href="javascript:viod(0);" target="_blank" title="头像"><img src="images/photo.jpg" alt=""></a> <span node-type="username" class="name top-username">Toby Wu</span>
+					<div class="pulldown user-info"> </div>
+				</li>
+				<li class="info-i search-box">
+					<form class="search-form clearfix" action="javascript: void(0)" method="get">
+						<input style="width: 110px" autocomplete="off" class="search-query" name="q" onblur="if(this.value=='') this.value = this.defaultValue;" onfocus="this.value='';" value="关键词" spellchecking="off" type="text">
+						<input class="search-button" type="submit" value="">
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="main">
+	<div class="container">
+		<div class="aside">
+			<div class="hotle-map">
+				<img src="images/hotel_map.png" alt="酒店地址">
+			</div>
+			<div class="picMarquee">
+				<div class="hd">推荐酒店</div>
+				<div class="picMarquee-top">
+					<a class="next"></a>
+					<div class="bd">
+						<ul class="picList">
+							<li>
+								<div class="pic"><a href="#" target="_blank"><img src="images/jiudian_10.jpg" /></a></div>
+								<div class="title"><a href="#" target="_blank">效果图1</a></div>
+							</li>
+							<li>
+								<div class="pic"><a href="#" target="_blank"><img src="images/jiudian_10.jpg" /></a></div>
+								<div class="title"><a href="#" target="_blank">效果图2</a></div>
+							</li>
+							<li>
+								<div class="pic"><a href="#" target="_blank"><img src="images/jiudian_10.jpg" /></a></div>
+								<div class="title"><a href="#" target="_blank">效果图3</a></div>
+							</li>
+							<li>
+								<div class="pic"><a href="#" target="_blank"><img src="images/jiudian_10.jpg" /></a></div>
+								<div class="title"><a href="#" target="_blank">效果图4</a></div>
+							</li>
+						</ul>
+					</div>
+					<a class="prev"></a>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="navigation">
+				<!--
+					选中 状态  <a> 标签 添加 class = “ active ”
+				-->
+				<ul id="nav" class="nav">
+					<li class="nav-li-01 nav-Reservation"><a href="#" class=" active" title="客房预订">客房预订</a></li>
+					<li class="nav-li-02 nav-FoodChoice"><a href="#" title="美食臻选">美食臻选</a></li>
+					<li class="nav-li-03 nav-SportsFitness"><a href="#" title="康体健身">康体健身</a></li>
+					<li class="nav-li-04 nav-Spa"><a href="#" title="美容、SPA">美容、SPA</a></li>
+					<li class="nav-li-05 nav-Meeting"><a href="#" title="会议会展">会议会展</a></li>
+					<li class="nav-li-06 nav-SpecialPreferred"><a href="#" title="特惠优选">特惠优选</a></li>
+				</ul>
+			</div>
+			<div class="h-infos">
+				<div class="h-i-des fl">
+					<!--
+						* 五星级		.i-start5
+						* 四星半		.i-start4-5
+						* 四星级		.i-start4
+						* 三星半		.i-start3-5
+						* 三星级		.i-start3
+						* 二星半		.i-start2-5
+						* 二星级		.i-start2
+						* 一星半		.i-start1-5
+						* 一星级		.i-start1
+					-->
+					<p><span class="h3">北京饭店</span><i class="i-start i-start5" title="五星级酒店"></i></p>
+					<p class="add">北京 东城区 东长安街33号 ( 天安门、王府井地区 近王府井大街 ) </p>
+					<!--
+						* 美容		.i-s-beauty
+						* wifi无线	.i-s-wifi
+						* 健身		.i-s-fitness
+						* 餐饮		.i-s-dining
+						* 会议		.i-s-meeting
+						* 停车		.i-s-parking
+					-->
+					<p><i class="i-s i-s-beauty" title="美容SPA"></i><i class="i-s i-s-wifi" title="Wifi热点"></i><i class="i-s i-s-fitness" title="健身"></i><i class="i-s i-s-dining" title="餐饮"></i><i class="i-s i-s-meeting" title="会议"></i><i class="i-s i-s-parking" title="停车厂"></i></p>
+				</div>
+				<div class="h-i-price fr">
+					<span><i class="i-rmb"></i><em>125</em>起</span>
+				</div>
+			</div>
+			<div class="h-picshow">
+				<div class="h-p-c h-p-c7">
+					<div class="h-p-01"><img src="images/jiudian_02.jpg" alt=""></div>
+					<div class="h-p-02"><img src="images/jiudian_02.jpg" alt=""></div>
+					<div class="h-p-03"><img src="images/jiudian_02.jpg" alt=""></div>
+					<div class="h-p-04"><img src="images/jiudian_02.jpg" alt=""></div>
+					<div class="h-p-05"><img src="images/jiudian_02.jpg" alt=""></div>
+					<div class="h-p-06"><img src="images/jiudian_02.jpg" alt=""></div>
+					<div class="h-p-07"><img src="images/jiudian_02.jpg" alt=""></div>
+				</div>
+			</div>
+			<div class="h-book-class">
+				<ul id="h-book-class" class="h-b-c-n">
+					<li class="h-b-c-n-li-01 nav-Reservation"><a href="javascript:viod(0)" class="active" title="客房预订">客房预订</a></li>
+					<li class="h-b-c-n-li-02 nav-FoodChoice"><a href="javascript:viod(0)" title="美食臻选">美食臻选</a></li>
+					<li class="h-b-c-n-li-03 nav-SportsFitness"><a href="javascript:viod(0)" title="康体健身">康体健身</a></li>
+					<li class="h-b-c-n-li-04 nav-Spa"><a href="javascript:viod(0)" title="美容、SPA">美容、SPA</a></li>
+					<li class="h-b-c-n-li-05 nav-Meeting"><a href="javascript:viod(0)" title="会议会展">会议会展</a></li>
+					<li class="h-b-c-n-li-06 nav-SpecialPreferred"><a href="javascript:viod(0)" title="特惠优选">特惠优选</a></li>
+				</ul>
+			</div>
+			<div class="h-book-soso">
+				<div class="controls-date">
+					<div class="controls input-append date form_date">
+						<label>入住</label>
+						<input size="16" id="starttime" class="input" name="starttime" type="text" value="11-7-28">
+						<span class="add-on"><i class="icon-th"></i></span>
+					</div>
+				</div>
+				<div class="controls-date">
+					<div class="controls">
+						<label>离开</label>
+						<input size="16" id="starttime" class="input" name="starttime" type="text" value="11-7-28">
+						<span class="add-on"><i class="icon-th"></i></span>
+					</div>
+				</div>
+			</div>
+			<div class="table">
+				<div class="table-tr thead">
+					<div class="table-td th1">房间类型</div>
+					<div class="table-td th2">商品详情 </div>
+					<div class="table-td th3">房价</div>
+					<div class="table-td th4">操作</div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><input type="button" class="btn btn-book"></div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><input type="button" class="btn btn-book"></div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><input type="button" class="btn btn-book"></div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><input type="button" name="" value="" class="btn btn-book"></div>
+				</div>
+			</div>
+			<div class="h-des">
+				<div class="h-des-head jieshao">酒店介绍</div>
+				<div class="h-des-body">
+					<p style="line-height:24px;">1900年开业  2008年装修  733间房  电话010-65137766 传真010-65137842</p>
+<p style="line-height:24px;">北京饭店位于市中心，毗邻王府井商业区，步行数分钟即可到达天安门广场和故宫博物院，地理位置得天独厚。饭店东侧与驰名中外的王府井商业街、东方广场商业区举步之遥；西侧与雄伟的天安门、恢弘的皇宫紫禁城相邻，尽享独特的地理优势。</p>
+				</div>
+			</div>
+			<div class="h-des">
+				<div class="h-des-head sheshi">酒店设施</div>
+				<div class="h-des-body">
+					<img src="images/jieshao.jpg" alt="">
+				</div>
+			</div>
+			<div class="h-des">
+				<div class="h-des-head zhengce">酒店政策</div>
+				<div class="h-des-body">
+					<img src="images/jieshao.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footinfo">
+	<div class="container">
+		<div class="divNum div-1"><img src="images/app.png" alt="手机客户端"></div>
+		<div class="divNum div-2"><img src="images/weixin.png" alt="官方微信"></div>
+		<div class="divNum div-3"><img src="images/hezuo.png" alt="寻求合作"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footGrid about">
+			<h4><i></i><a href="#">关于酒店酒店</a></h4>
+			<ul>
+				<li><a href="#">我们的服务</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">网站声明</a></li>
+			</ul>
+		</div>
+		<div class="footGrid partners">
+			<h4><i></i><a href="#">渠道合作</a></h4>
+			<ul>
+				<li><a href="#">我们的合作酒店</a></li>
+				<li><a href="#">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="footGrid help">
+			<h4><i></i><a href="#">帮助中心</a></h4>
+			<ul>
+				<li><a href="#">如何使用酒店酒店</a></li>
+				<li><a href="#">酒店秘书服务介绍</a></li>
+			</ul>
+		</div>
+		<div class="footGrid sitemap">
+			<h4><i></i><a href="#">网站地图</a></h4>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+		<div class="footGrid service">
+			<h4><i></i>酒店秘书</h4>
+			<ul>
+				<li class="tel">400-8888-888</li>
+				<li>周一至周日09:00-18:00</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<p class="copyright">Copyright 2003-2013, 版权所有 <a href="http://jiudianjiudian.com/">jiudianjiudian.com</a></p>
+</div>
+</body>
+</html>

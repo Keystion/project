@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<title>首页</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale = 1.0" >
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery.SuperSlide.2.1.js"></script>
+<script src="js/base.js"></script> 
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/iehack.css">
+<![endif]-->
+</head>
+
+<body>
+
+<div class="header">
+	<div class="container">
+		<div class="logo big" id="logo">
+			<h1><a href="index.html"><img src="images/logo.jpg" alt="Logo"></a></h1>
+		</div>
+		<div class="info">
+			<ul>
+				<!--登录后显示本模块-->
+				<li class="info-i user-name has-pulldown"> <em class="f-icon pull-arrow"></em> <a class="identity" href="javascript:viod(0);" target="_blank" title="头像"><img src="images/photo.jpg" alt=""></a> <span node-type="username" class="name top-username">Toby Wu</span>
+					<div class="pulldown user-info" id="sub_nav">
+						<ul class="clearfix">
+							<li class=""><a href="weiwanchengdingdan.html" title="未付款订单"><i class="i-unfinished"></i>未付款订单<em>（1）</em></a> </li>
+							<li class=""><a href="yiwanchengdingdan.html" title="已完成订单"><i class="i-completed"></i>已完成订单<em>（231）</em></a> </li>
+							<li class=""><a href="huodejiangli.html" title="获得的奖励"><i class="i-awards"></i>获得的奖励<em>（7）</em></a></li>
+							<li class=""><a href="gerenshezhi.html" title="管理账户"><i class="i-setting"></i>管理账户</a> </li>
+							<li class=""><a href="#" title="退出"><i class="i-logout"></i>退出</a> </li>
+						</ul>
+					</div>
+				</li>
+				<li class="info-i user-name"> <a href="login.html">登录</a> <a href="reg.html">注册</a></li>
+				<!-- 暂时隐藏以后需要自行添加-->
+				<li class="info-i search-box">
+					<form class="search-form clearfix" action="javascript: void(0)" method="get">
+						<input style="width: 110px" autocomplete="off" class="search-query" name="q" onblur="if(this.value=='') this.value = this.defaultValue;" onfocus="this.value='';" value="关键词" spellchecking="off" type="text">
+						<input class="search-button" type="submit" value="">
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="main home-page">
+	<div class="container">
+		<div class="aside">
+				<div class="aside-search">
+					<div class="hd">
+						<!--
+							$$:根据模块的数量递增
+						
+							鼠标点击标签<li> 添加 class: on;  显示效果：<li class="soItems_$$ on">
+							标签<li>添加 Class：on之后就会显示选中状态；
+							下面相对应模块DIV 添加 class：on； 显示效果：<div class="soItems soItems_$$_1 on">
+							显示点击<li>所需显示的的内容
+							
+							*注* li 所对应的模块 默认是隐藏的 通过添加class 显示
+						-->
+						<ul>
+							<li class="soItems_01"><label><input type="radio" name="type" value="0" id="room" checked="checked">客房预订</label></li>
+							<li class="soItems_02"><label><input type="radio" name="type" value="1" id="sport">美食甄选</label></li>
+							<li class="soItems_03"><label><input type="radio" name="type" value="2" id="spa">康体健身</label></li>
+							<li class="soItems_04"><label><input type="radio" name="type" value="3" id="food">美容SPA</label></li>
+							<li class="soItems_05"><label><input type="radio" name="type" value="4" id="meeting">会议会展</label></li>
+							<li class="soItems_06"><label><input type="radio" name="type" value="5" id="soItems_02">特惠优选</label></li>
+						</ul>
+					</div>
+					<!--DateTime Picker-->
+					<link href="js/calendar/jscal2.css" type="text/css" rel="stylesheet">
+					<link href="js/calendar/border-radius.css" type="text/css" rel="stylesheet">
+					<link href="js/calendar/gold.css" type="text/css" rel="stylesheet">
+					<script src="js/calendar/calendar.js" type="text/javascript"></script> 
+					<script src="js/calendar/lang/en.js" type="text/javascript"></script>
+					<!--DateTime Picker-->
+					<div class="bd">
+						<!--客房预订 开始-->
+						<div class="soItems soItems_01_1 room on">
+							<form action="" method="post" id="form1" name="room">
+								<div class="controls-date">
+									<div class="controls input-append date form_date">
+										<label>入住</label>
+										<input size="16" id="inttime-field" class="input" name="inttime" type="text" value="2013-12-19">
+										<span class="add-on" id="inttime-trigger"><i class="icon-th"></i></span>
+									</div>
+									<script type="text/javascript">
+										Calendar.setup({
+											weekNumbers: false,				//显示星期格式否 ture false
+											inputField : "inttime-field",
+											trigger    : "inttime-trigger",
+											dateFormat: "%Y-%m-%d",			//日期格式
+											showTime: false,				//显示小时否 ture false
+											minuteStep: 1,
+											onSelect   : function() {this.hide();}
+										});
+									</script>
+								</div>
+								<div class="controls-date">
+									<div class="controls">
+										<label>离开</label>
+										<input size="16" id="outtime-field" class="input" name="outtime" type="text" value="">
+										<span class="add-on" id="outtime-trigger"><i class="icon-th"></i></span>
+									</div>
+									<script type="text/javascript">
+										Calendar.setup({
+											weekNumbers: false,
+											inputField : "outtime-field",
+											trigger    : "outtime-trigger",
+											dateFormat: "%Y-%m-%d",
+											showTime: false, 
+											minuteStep: 1,
+											onSelect   : function() {this.hide();}
+										});
+									</script>
+	
+								</div>
+								<div class="soItems-btn">
+									<a class="btn soso-btn" href="" title="搜索">搜索</a>
+									<!--<a class="btn soso-btn" href="" title="搜索">搜索</a>-->
+								</div>
+							</form>
+						</div>
+						<!--客房预订 结束-->
+						<!--美食甄选 开始-->
+						<div class="soItems soItems_02_1 sport">
+							<form action="" method="post" id="form2" name="sport">
+								<ul class="sport-price">
+									<li class="s-price-li-s on">1-50 元<input type="radio" name="sport-price" value="0" id="food-price" checked="checked"></li>
+									<li class="s-price-li-s">51-200 元<input type="radio" name="sport-price" value="1" id="food-price"></li>
+									<li class="s-price-li-s">201-500 元<input type="radio" name="sport-price" value="2" id="food-price"></li>
+									<li class="s-price-li-s">501以上<input type="radio" name="sport-price" value="3" id="food-price"></li>
+								</ul>
+								<div class="soItems-btn">
+									<a class="btn soso-btn" href="" title="搜索">搜索</a>
+								</div>
+							</form>
+						</div>
+						<!--美食甄选 结束-->
+						<!--康体健身 开始-->
+						<div class="soItems soItems_03_1 spa">
+							<!-- 默认不显示 需添加 class：on -->
+							<form action="" method="post" id="form3" name="spa">
+								<ul class="spa-price">
+									<li class="s-price-li-spa on">1-50 元<input type="radio" name="spa-price" value="0" id="spa-price" checked="checked"></li>
+									<li class="s-price-li-spa">51-200 元<input type="radio" name="spa-price" value="1" id="spa-price"></li>
+									<li class="s-price-li-spa">201-500 元<input type="radio" name="spa-price" value="2" id="spa-price"></li>
+									<li class="s-price-li-spa">501以上<input type="radio" name="spa-price" value="3" id="spa-price"></li>
+								</ul>
+								<div class="soItems-btn">
+									<a class="btn soso-btn" href="" title="搜索">搜索</a>
+								</div>
+							</form>
+						</div>
+						<!--康体健身 结束-->
+						<!--美容SPA 开始-->
+						<div class="soItems soItems_04_1 meeting">
+							<!-- 默认不显示 需添加 class：on -->
+							<form action="" method="post" id="form4" name="meeting">
+								<ul class="meeting-price">
+									<li class="s-price-li-m on">1-50 元<input type="radio" name="meeting-price" value="0" id="meeting-price" checked="checked"></li>
+									<li class="s-price-li-m">51-200 元<input type="radio" name="meeting-price" value="1" id="meeting-price"></li>
+									<li class="s-price-li-m">201-500 元<input type="radio" name="meeting-price" value="2" id="meeting-price"></li>
+									<li class="s-price-li-m">501以上<input type="radio" name="meeting-price" value="3" id="meeting-price"></li>
+								</ul>
+								<div class="soItems-btn">
+									<a class="btn soso-btn" href="" title="搜索">搜索</a>
+								</div>
+							</form>
+						</div>
+						<!--美容SPA 结束-->
+						<!--会议会展 开始-->
+						<div class="soItems soItems_05_1 affordable">
+							<!-- 默认不显示 需添加 class：on -->
+							<form action="" method="post" id="form5" name="affordable">
+								<div class="controls-date">
+									<div class="controls input-append date form_date">
+										<label>会议开始</label>
+										<input size="16" id="starttime-field" class="input" name="starttime" type="text" value="2013-12-19">
+										<span class="add-on" id="starttime-trigger"><i class="icon-th"></i></span>
+									</div>
+									<P class="radio">
+										<label><input type="radio" name="time01" value="0" id="time_01">上午</label><br>
+										<label><input type="radio" name="time01" value="1" id="time_01">下午</label>
+									</P>
+									<script type="text/javascript">
+										Calendar.setup({
+											weekNumbers: false,				//显示星期格式否 ture false
+											inputField : "starttime-field",
+											trigger    : "starttime-trigger",
+											dateFormat: "%Y-%m-%d",			//日期格式
+											showTime: false,				//显示小时否 ture false
+											minuteStep: 1,
+											onSelect   : function() {this.hide();}
+										});
+									</script>
+								</div>
+								<div class="controls-date">
+									<div class="controls">
+										<label>会议结束</label>
+										<input size="16" id="endtime-field" class="input" name="starttime" type="text" value="">
+										<span class="add-on" id="endtime-trigger"><i class="icon-th"></i></span>
+									</div>
+									<P class="radio">
+										<label><input type="radio" name="time" value="0" id="time_02">上午</label><br>
+										<label><input type="radio" name="time" value="1" id="time_02">下午</label>
+									</P>
+									<script type="text/javascript">
+										Calendar.setup({
+											weekNumbers: false,				//显示星期格式否 ture false
+											inputField : "endtime-field",
+											trigger    : "endtime-trigger",
+											dateFormat: "%Y-%m-%d",			//日期格式
+											showTime: false,				//显示小时否 ture false
+											minuteStep: 1,
+											onSelect   : function() {this.hide();}
+										});
+									</script>
+								</div>
+								<div class="soItems-btn">
+									<button class="btn soso-btn" type="submit" title="搜索"></button>
+								</div>
+							</form>
+						</div>
+						<!--会议会展 结束-->
+						<!--特惠优选 开始-->
+						<div class="soItems soItems_06_1 food">
+							<!-- 默认不显示 需添加 class：on -->
+							<form action="#" method="post" id="form6" name="food">
+								<ul class="food-price">
+									<li class="s-price-li-f on">1-50 元<input type="radio" name="food-price" value="0" id="food-price" checked="checked"></li>
+									<li class="s-price-li-f">51-200 元<input type="radio" name="food-price" value="1" id="food-price"></li>
+									<li class="s-price-li-f">201-500 元<input type="radio" name="food-price" value="2" id="food-price"></li>
+									<li class="s-price-li-f">501以上<input type="radio" name="food-price" value="3" id="food-price"></li>
+								</ul>
+								<div class="soItems-btn">
+									<button class="btn soso-btn" type="submit" title="搜索"></button>
+								</div>
+							</form>
+						</div>
+						<!--特惠优选 结束-->
+					</div>
+				</div>
+			<div class="aside-service"><img src="images/big_tel.jpg" alt="服务热线：400-8888-888"></div>
+			<div class="aside-sns">
+				<div class="hd">
+					<!--
+						通过点击<li> 添加 class：on;  显示效果：<li class="sina/qq on"></li>
+						
+					-->
+					<ul>
+						<li class="sina on" title="新浪微博"></li>
+						<li class="qq" title="腾讯微博"></li>
+					</ul>
+					<!--<ul>
+						<li class="sina"></li>
+						<li class="qq on"></li>
+					</ul> -->
+				</div>
+				<div class="bd">
+					<div class="weibo sina on">
+						<!--  新浪微博API解析
+						
+							*注* isFans=0&  uid=1764909347   &verifier=1ca93bbd&dpc=1
+							
+							只需要替换 uid=1764909347  即可  把[1764909347] 您的微博帐号！ 
+						-->
+						<iframe width="100%" height="345" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=360&fansRow=1&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1764909347&verifier=1ca93bbd&dpc=1"></iframe>
+						</div>
+					<div class="weibo qq">
+						<!--  腾许微博API解析
+						
+							*注* c=show&a=index&   n=w3cvip    &w=218&h=548
+							
+							只需要替换 n=w3cvip  即可  把[w3cvip] 您的微博帐号！ 
+						-->
+						<iframe frameborder="0" scrolling="no" src="http://show.v.t.qq.com/index.php?c=show&a=index&n=w3cvip&w=218&h=332&fl=2&l=4&o=17&co=0" width="218" height="332"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="navigation">
+				<!--
+					鼠标点击标签 <a> 添加Class .active  代码显示 <a class="active">
+					鼠标经过 有鼠标经过的效果  a:hover{}
+				-->
+				<ul id="nav" class="nav">
+					<li class="nav-li-01 nav-Reservation"><a href="#" title="客房预订">客房预订</a></li>
+					<li class="nav-li-02 nav-FoodChoice"><a href="#" title="美食臻选">美食臻选</a></li>
+					<li class="nav-li-03 nav-SportsFitness"><a href="#" title="康体健身">康体健身</a></li>
+					<li class="nav-li-04 nav-Spa"><a href="#" title="美容、SPA">美容、SPA</a></li>
+					<li class="nav-li-05 nav-Meeting"><a href="#" title="会议会展">会议会展</a></li>
+					<li class="nav-li-06 nav-SpecialPreferred"><a href="#" title="特惠优选">特惠优选</a></li>
+				</ul>
+			</div>
+			<div class="focusBox" style="margin:0 auto">
+				<ul class="pic">
+					<li><a href="#" target="_blank"><img src="images/banner_01.jpg"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/banner_02.jpg"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/banner_03.jpg"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/banner_01.jpg"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/banner_02.jpg"/></a></li>
+					<li><a href="#" target="_blank"><img src="images/banner_03.jpg"/></a></li>
+				</ul>
+				<a class="prev" href="javascript:void(0)"></a> <a class="next" href="javascript:void(0)"></a>
+				<ul class="hd">
+					<li class="on">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+				</ul>
+			</div>
+			<div class="rt-mod">
+				<div class="rt-mod-innbox rt-mod-innbox-01">
+					<div class="hd">
+						<h3><i class="i-Reservation"></i>客房预订<i class="i-arrow">&gt;</i></h3><a href="#" class="more">更多</a>
+					</div>
+					<div class="bd">
+					<!--
+						图片大小 ：
+							1、238*150 （单位：px【像素】）
+							2、112*70
+							3、112*70
+					-->
+						<div class="rt-mod-innbox-pic big"> <img src="images/jiudian_01.jpg" alt="">
+							<div class="title"><strong>北京饭店套房</strong><span><strong>￥</strong><em>125</em>起</span></div>
+						</div>
+						<div class="rt-mod-innbox-pic"> <img src="images/jiudian_02.jpg" alt=""> </div>
+						<div class="rt-mod-innbox-pic"> <img src="images/jiudian_03.jpg" alt=""> </div>
+					</div>
+				</div>
+				<div class="rt-mod-innbox rt-mod-innbox-02">
+					<div class="hd">
+						<h3><i class="i-FoodChoice"></i>美食臻选<i class="i-arrow">&gt;</i></h3><a href="#" class="more">更多</a>
+					</div>
+					<div class="bd">
+						<div class="rt-mod-innbox-pic big"> <img src="images/meishi_01.jpg" alt="">
+							<div class="title"><strong>丽都饭店自助餐</strong><span><strong>￥</strong><em>125</em>起</span></div>
+						</div>
+						<div class="rt-mod-innbox-pic"> <img src="images/meishi_02.jpg" alt=""> </div>
+						<div class="rt-mod-innbox-pic"> <img src="images/meishi_03.jpg" alt=""> </div>
+					</div>
+				</div>
+				<div class="rt-mod-innbox rt-mod-innbox-03">
+					<div class="hd">
+						<h3><i class="i-SportsFitness"></i>康体健身<i class="i-arrow">&gt;</i></h3><a href="#" class="more">更多</a>
+					</div>
+					<div class="bd">
+						<div class="rt-mod-innbox-pic big"> <img src="images/jianshen_01.jpg" alt="">
+							<div class="title"><strong>希尔顿饭店健身中心</strong><span><strong>￥</strong><em>125</em>起</span></div>
+						</div>
+						<div class="rt-mod-innbox-pic"> <img src="images/jianshen_02.jpg" alt=""> </div>
+						<div class="rt-mod-innbox-pic"> <img src="images/jianshen_03.jpg" alt=""> </div>
+					</div>
+				</div>
+				<div class="rt-mod-innbox rt-mod-innbox-04">
+					<div class="hd">
+						<h3><i class="i-Spa"></i>美容 SPA<i class="i-arrow">&gt;</i></h3><a href="#" class="more">更多</a>
+					</div>
+					<div class="bd">
+						<div class="rt-mod-innbox-pic big"> <img src="images/meirong_01.jpg" alt="">
+							<div class="title"><strong>香格里拉SPA</strong><span><strong>￥</strong><em>125</em>起</span></div>
+						</div>
+						<div class="rt-mod-innbox-pic"> <img src="images/meirong_02.jpg" alt=""> </div>
+						<div class="rt-mod-innbox-pic"> <img src="images/meirong_03.jpg" alt=""> </div>
+					</div>
+				</div>
+				<div class="rt-mod-innbox rt-mod-innbox-05">
+					<div class="hd">
+						<h3><i class="i-Meeting"></i>会议会展<i class="i-arrow">&gt;</i></h3><a href="#" class="more">更多</a>
+					</div>
+					<div class="bd">
+						<div class="rt-mod-innbox-pic big"> <img src="images/huiyi_01.jpg" alt="">
+							<div class="title"><strong>香格里拉饭店会议室</strong><span><strong>￥</strong><em>125</em>起</span></div>
+						</div>
+						<div class="rt-mod-innbox-pic"> <img src="images/huiyi_02.jpg" alt=""> </div>
+						<div class="rt-mod-innbox-pic"> <img src="images/huiyi_03.jpg" alt=""> </div>
+					</div>
+				</div>
+				<div class="rt-mod-innbox rt-mod-innbox-06">
+					<div class="hd">
+						<h3><i class="i-SpecialPreferred"></i>特惠优选<i class="i-arrow">&gt;</i></h3><a href="#" class="more">更多</a>
+					</div>
+					<div class="bd">
+						<div class="rt-mod-innbox-pic big"> <img src="images/tehui_01.jpg" alt="">
+							<div class="title"><strong>禄蠹饭店自助餐</strong><span><strong>￥</strong><em>125</em>起</span></div>
+						</div>
+						<div class="rt-mod-innbox-pic"> <img src="images/tehui_02.jpg" alt=""> </div>
+						<div class="rt-mod-innbox-pic"> <img src="images/tehui_03.jpg" alt=""> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="cooperation container">
+		<div class="ohbox">
+			<ul class="piclist">
+				<li><a href="#" target="_blank"><img src="images/hotel_01.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_02.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_03.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_04.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_05.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_01.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_02.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_03.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_04.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_05.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_01.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_02.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_03.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_04.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_05.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_01.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_02.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_03.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_04.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_05.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_01.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_02.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_03.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_04.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_05.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_01.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_02.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_03.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_04.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/hotel_05.jpg" alt="" /></a></li>
+			</ul>
+		</div>
+		<div class="pageBtn"> <span class="prev">&lt;</span> <span class="next">&gt;</span> </div>
+	</div>
+</div>
+<div class="footinfo">
+	<div class="container">
+		<div class="divNum div-1">
+			<dl>
+				<dt>随时掌控<br><strong>酒店最特价</strong></dt>
+				<dd class="erweima"><img src="images/icon-app.jpg" alt=""></dd>
+				<dd class="tips">*目前只支持安卓版本</dd>
+			</dl>
+		</div>
+		<div class="divNum div-2">
+			<dl>
+				<dt>H.H官方微信<br><strong>关注最新信息</strong></dt>
+				<dd class="erweima"><img src="images/icon-app.jpg" alt=""></dd>
+				<dd class="tips"></dd>
+			</dl>
+		</div>
+		<div class="divNum div-3"><img src="images/hezuo.png" alt="寻求合作"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footGrid about">
+			<h4><i></i><a href="#">关于酒店酒店</a></h4>
+			<ul>
+				<li><a href="#">我们的服务</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">网站声明</a></li>
+			</ul>
+		</div>
+		<div class="footGrid partners">
+			<h4><i></i><a href="#">渠道合作</a></h4>
+			<ul>
+				<li><a href="#">我们的合作酒店</a></li>
+				<li><a href="#">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="footGrid help">
+			<h4><i></i><a href="#">帮助中心</a></h4>
+			<ul>
+				<li><a href="#">如何使用酒店酒店</a></li>
+				<li><a href="#">酒店秘书服务介绍</a></li>
+			</ul>
+		</div>
+		<div class="footGrid sitemap">
+			<h4><i></i><a href="#">网站地图</a></h4>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+		<div class="footGrid service">
+			<h4><i></i>酒店秘书</h4>
+			<ul>
+				<li class="tel">400-8888-888</li>
+				<li>周一至周日09:00-18:00</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<p class="copyright">Copyright 2003-2013, 版权所有 <a href="http://jiudianjiudian.com/">jiudianjiudian.com</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-cn" class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale = 1.0" >
+<!--	不允许用户缩放比例 
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale = 1.0" >-->
+<title>列表页</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/base/jquery.js"></script>
+<script src="js/base/modernizr-2.6.2.min.js"></script>
+<script src="js/TouchSlide.1.0.js"></script>
+</head>
+
+<body>
+<div class="content" id="content"> 
+	<!--Header Box Start-->
+	<header class="hd"  role="banner">
+		<h1 class="logo"><a href="index.html"><img src="images/logo.png" title="78.cn创业商机网"></a></h1>
+		<!--Search Box-->
+		<div class="search-form" style="border:0;">
+		<!-- action为URL+?from=index -->
+			<form action="" id="searchForm">
+				<div class="search-bar">
+					<div class="text"><input id="searchText" type="search" value=""></div>
+					<div class="btn"><input type="button" id="searchBtn" value=" " class="olp-bg-search"></div>
+				</div>
+			</form>
+		</div>
+	</header>
+	<!--Navigation Box Start-->
+	<nav class="site" role="navigation">
+		<ul id="header_nav">
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+			<li><a href="list.html">餐饮小吃</a></li>
+		</ul>
+	</nav>
+	<section role="region">
+		<ul class="breadcrumb">
+			<li><a href="index.html"><i></i>首页</a><span class="divider">&gt;</span></li>
+			<li class="active">餐饮小吃</li>
+		</ul>
+	</section>
+	<section role="list">
+		<div class="project">
+			<ul class="prolist">
+				<li>
+					<h4><a href="show.html">女人尖叫男人掏钱 美容谁干谁挣</a><i><img src="images/Iocn1.png" height="17" width="17"></i></h4>
+					<p><a href="show.html">北京卓妆企业管理有限公司</a><i>1万—3万</i></p>
+				</li>
+				<li>
+					<h4><a href="show.html">美体养颜，女人的钱最好赚！</a><i><img src="images/Iocn1.png" height="17" width="17"></i></h4>
+					<p><a href="show.html">迈肯智威国际投资顾问（北京）...</a><i>5千—1万</i></p>
+				</li>
+				<li>
+					<h4><a href="show.html">自热地板只需15分钟,冬天不怕冷!</a><i><img src="images/Iocn1.png" height="17" width="17"></i></h4>
+					<p><a href="show.html">北京优卡优国际家居用品有限公...</a><i>5万以上</i></p>
+				</li>
+				<li>
+					<h4><a href="show.html">10元彩虹球 风靡全球 赚钱快！</a><i></i></h4>
+					<p><a href="show.html">武汉缤尚科技有限公司</a><i>5千以下</i></p>
+				</li>
+				<li>
+					<h4><a href="show.html">派蒙防辐射手机壳，小饰品好做</a><i></i></h4>
+					<p><a href="show.html">安徽宇航派蒙防辐射科技有限公...</a><i>3万—5万</i></p>
+				</li>
+				<li>
+					<h4><a href="show.html">开婚庆公司 结婚狂潮 稳赚不赔！</a><i></i></h4>
+					<p><a href="show.html">苏州市欧可巧克力食品有限公司</a><i>3万—5万</i></p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!--Foot Box-->
+	<footer role="contentinfo">
+		<div class="foot">
+			<div class="version"> <a href="#">简约版</a> <a href="#" class="on">触屏版</a> <a href="#">电脑版</a> <a href="#">客户端</a> </div>
+			<i class="toTop"><a href="javascript:scroll(0, 0);"><img src="images/totop.png" width="30" height="28" alt=""></a></i>
+			<div class="about">
+				<p><a href="#">关于我们</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">联系我们</a></p>
+				<p>©2005-2010,28.com. All rights reserved</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script type="text/javascript">
+	var tzt = 0;
+	var dzt = 1;
+	function showload(){
+		var ToHeight = 90;
+		if ( $(document).scrollTop() > ToHeight && tzt !=1) {
+			$(".toTop").css({display:"block"});
+			tzt = 1;
+			dzt = 0;
+		}else if( $(document).scrollTop() <= ToHeight && dzt != 1){
+			$(".toTop").css({display:"none"});
+			tzt = 0;
+			dzt = 1;
+		}
+	}
+	$(window).bind("scroll",function(){showload()});
+	$(function(){
+        $(".text :input").focus(function(){
+			 $(".logo").css({"display":"none"});
+             $(".search-form").css({"width":"98%"});
+        }).blur(function(){
+             $(".logo").css({"display":"block"});
+             $(".search-form").css({"width":"45%"});
+        });
+    })
+	$(".prolist li:last").css({"background":"none"});
+</script>
+</body>
+</html>

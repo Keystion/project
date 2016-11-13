@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>问答页面</title>
+<meta name=description content="就要问答是就要加盟网旗下的权威连锁加盟问答社区，致力于解决加盟连锁从业者关于加盟过程中涉及到的全部问题。提供品牌加盟问答,创业指南,开店选址,加盟店经营管理等加盟连锁行业相关问题。" />
+<meta name=keywords content="就要问答,加盟知道,加盟问答" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.maxlength.js"></script>
+<script type="text/javascript" src="js/jquery.topctrl.js"></script>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<!--[if lte IE 6]>
+	<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+	    <script type="text/javascript">
+	        DD_belatedPNG.fix('div, ul, img, li, input , a , em , i');
+	    </script>
+	<![endif]-->
+</head>
+<body style="background:#fff">
+<h3 class="tips">
+	<a href="index.html">首页</a>
+    <a href="xm_index.html">项目加盟首页</a>
+    <a href="xm_shop.html">项目加盟店</a>
+    <a href="xm_news.html">项目加盟资讯</a>
+    <a href="xm_ask.html">项目加盟问答</a>
+    <a href="xm_pic.html">项目加盟图库</a>
+    <a href="xm_pic_show.html">项目加盟图库展示</a>
+    <a href="news.html">加盟资讯列表</a>
+    <a href="news_show.html">资讯展示页面</a>
+    <a href="ask.html">问答页面</a>
+	<a href="so.html">搜索页 列表页</a>
+    <a href="top.html">加盟店排行榜</a>
+    <a href="zt.html">专题项目</a>
+    <a href="404.html">404页面</a>
+    <a href="map.html">网站地图</a>
+</h3>
+<!--topbar--> 
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript">	
+//展开关注
+		$(function(){
+			$("#show-weibo").hover(function(){
+				$(".follow-weibo").slideDown("fast")
+				},function(){
+				$(".follow-weibo").css("display","none")
+				}
+				)
+			})	
+</script> 
+<script type="text/javascript" src="js/slider.js"></script> 
+<script type="text/javascript">
+//加入收藏
+        function AddFavorite(sURL, sTitle) {
+            sURL = encodeURI(sURL); 
+        try{   
+            window.external.addFavorite(sURL, sTitle);   
+        }catch(e) {   
+            try{   
+                window.sidebar.addPanel(sTitle, sURL, "");   
+            }catch (e) {   
+                alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+            }   
+        }
+    }
+	// show TopicAd
+		$(function(){
+            setTimeout('showTopic()',500)
+			$("#closeTopicAd").click(function(){
+			$("#topicAd99060").hide()
+			})
+		})	
+		function showTopic(){
+			$("#topicAd99060").slideDown();
+		}
+
+</script>
+<style>
+.ask-top-nav{ margin-left:125px;}
+.jm-nav-list{ width:990px;}
+.jm-nav-list li a{ width:110px}
+#topbar .topbar-nav li .follow_btn_line a{ line-height:14px; height:22px; padding:0; background:none}
+#topbar .topbar-nav li .follow_data a{ line-height:22px;}
+</style>
+<div id="topbar">
+	<div class="layout">
+		<div id="sd-nav" class="topbar-nav fr">
+			<ul>
+				<li><a href="#" id="" class="first">91加盟网</a></li>
+				<li id="show-weibo"><a href="javascript:void(0)" id="site-btn-weibo" class="menu-slider"><i></i>关注</a>
+					<div class="follow-weibo topbar-slideMenu" style="display:none"> <span class="col-weibo">
+						<wb:follow-button uid="3039975447" type="red_2" width="136" height="24" ></wb:follow-button>
+						</span> </div>
+				</li>
+				<li><a href="#" id="site-btn-qqlog"  onclick="location.href='#';"  class="" title="使用QQ帐号登录">QQ登录</a></li>
+				<li><a href="#" id="site-btn-weibolog"  onclick="#"  class="" title="使用微博帐号登录">新浪微博登录</a></li>
+				<li><a href="javascript:void(0)" id="site-btn-fav" onclick="AddFavorite('http://www.91jm.com','就要加盟网')" title="加入收藏">加入收藏</a></li>
+				<li><a style="padding-right:0;" href="#" class="menu-slider" target="_blank">网站导航</a></li>
+			</ul>
+		</div>
+		<div id="site-nav" class="topbar-nav fl">
+			<p class="login-info"> 您好，欢迎来91加盟网！ <span class="log-out"> <a href="#">请登录</a> <a href="#">免费注册</a> <a href="#">品牌商入口</a> </span> </p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<!--end--> 
+<!-- topicAd -->
+<div id="topicAd99060" style="background: #fff; overflow:hidden; padding:3px 0">
+	<div class="layout" style=" position:relative"> <a href="#" target="_blank"> <img src="images/990x60.jpg" alt="2013赚钱项目" /> </a> </div>
+</div>
+<!-- end --> 
+<!--header--> 
+<script type="text/javascript">
+//回车搜索
+function enterSeach(){
+	if (event.keyCode == 13) {
+		searchwen();
+    }
+}
+
+//搜索
+function searchwen(){
+	var skeyword = $("#asktitle").val();
+	if(skeyword=="请输入关键词")
+	{
+		skeyword="";
+	}
+	window.location.href="/list/0-1.htm?w="+skeyword;
+	//window.open("search.php?w="+skeyword);
+}
+
+//去提问
+function toQuestion()
+{
+	var skeyword = $("#asktitle").val();//.replace(/(^\s*)|(\s*$)/g,'');
+	if(skeyword=="请输入关键词")
+	{
+		skeyword="";
+	}
+	//window.location.href="addask.php?qt="+skeyword;
+	window.open("/ask/?qt="+skeyword);
+}
+</script>
+<div id="head-ask">
+	<div class="layout">
+		<div class="head-mod-logo fl"><a href="#" title="就要加盟网"><img src="images/logo-v2.png" alt="就要加盟网" /></a></div>
+		<div class="head-mod-nav fl">
+			<div class="ask-top-nav">
+				<ul>
+					<li><a href="#" title="回到首页">首页</a><em>|</em></li>
+					<li><a href="#" target="_blank" title="加盟店排行榜">加盟店排行榜</a><em>|</em></li>
+					<li><a href="#" target="_blank" title="加盟资讯">加盟资讯</a><em>|</em></li>
+					<li><a href="#" target="_blank" title="加盟知道">加盟知道</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="head-mod-search fl">
+			<div class="project-search-box fl">
+				<input class="input-search" id="asktitle" type="text" value="请输入关键词" onfocus="topcls()" onblur="topres()">
+			</div>
+			<button class="btn-search fl" type="button" value="提交" onclick="searchwen()">搜答案</button>
+			<div class="clear"></div>
+		</div>
+		<input type="hidden" id="session" value="0" />
+		<button class="btn-search btn-ask-t fl" type="button" value="提交" onclick="toQuestion()">提问题</button>
+		<div class="clear"></div>
+	</div>
+</div>
+<div id="max-nav" class="">
+	<div class="layout cf"> 
+		<!--main-nav-->
+		<div id="jm-nav">
+			<div class="jm-nav-list ask-nav">
+				<ul>
+					<li class="first"><a class="currented" href="#" style="cursor: hand" title="问答首页">问答首页</a></li>
+					<li><a href="#" title="品牌专区">加盟致富经</a></li>
+					<li><a href="#" title="品牌专区">品牌专区</a></li>
+					<li><a href="#" title="行业指南">行业指南</a></li>
+					<li><a href="#" title="投资行情">投资行情</a></li>
+					<li><a href="#" title="开店选址">开店选址</a></li>
+					<li><a href="#" title="日常经营">日常经营</a></li>
+					<li><a href="#" title="网店">网店</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--end--> 
+	</div>
+</div>
+
+<!--end--> 
+<!--content-->
+<div id="content" style="background:#fff">
+<div class="layout cf mt20">
+<!--mod-ranking-->
+<div class="mod-ask-view">
+<!--知道-内容页-->
+<div class="mod-ask-main fl"> 
+	<!--ask-focus-->
+	<div class="mod-blueborder">
+		<div class="ask-focus">
+			<div class="ask-slider-img fl">
+				<ul>
+					<li><a href="http://costore.91jm.com/" target="_blank" title="妆点"> <img src="images/300x188.jpg" height="188" width="300" alt="妆点" /></a></li>
+				</ul>
+			</div>
+			<div class="ask-jd-news fl">
+				<div class="hd"><!--<span><a href="asklist.php">更多</a></span>-->焦点话题</div>
+				<div class="bd">
+					<dl class="ask-acc-list">
+						<dt> <a href="#" title="开一家华祖堂参茸店加盟店大约需要多少投资？" target="_blank">开一家华祖堂参茸店加盟店大约需...</a> </dt>
+						<dd> <span> jessica </span> <a href="#" title="没有开店经验,能否加盟经营好悸动奶茶店?" target="_blank">没有开店经验,能否加盟经营好悸动奶茶店?</a> </dd>
+						<dd> <span> ashley </span> <a href="#" title="燕塘牛奶加盟条件有哪些？" target="_blank">燕塘牛奶加盟条件有哪些？</a> </dd>
+						<dd> <span> quentus </span> <a href="#" title="加盟长沙臭豆腐，技术传授包括什么?" target="_blank">加盟长沙臭豆腐，技术传授包括什么?</a> </dd>
+						<dd> <span> cindy </span> <a href="#" title="屈臣氏可以加盟吗？" target="_blank">屈臣氏可以加盟吗？</a> </dd>
+						<dd> <span> hunk </span> <a href="#" title="从未涉及餐饮业、快餐业，加盟全统永和的成功率如何？" target="_blank">从未涉及餐饮业、快餐业，加盟全统永和的...</a> </dd>
+					</dl>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!--end--> 
+	
+	<!--ask-submit-->
+	<div class="mod-ask-topbar mt10">
+		<form action="" method="get">
+			<input type="hidden" id="hdsanswer" value="" />
+			<label><span class="ask-q-charsLeft">70</span>/70</label>
+			<input value="输入您的问题，尽量详细，以便达到更详细更专业的解答。" onfocus="cls()" id="txtTitle" name="txtTitle" onblur="res()" type="text" maxlength="70" class="ipt-ask-topbar" />
+			<button value="" type="submit" class="btn-ask-topbar" onclick="submitask()"></button>
+		</form>
+	</div>
+	<script type="text/javascript">
+     //提交回答
+     	function submitask(){
+     		var ask = $("#txtTitle").val().replace(/(^\s*)|(\s*$)/g,'');
+     		if(ask == "输入您的问题，尽量详细，以便达到更详细更专业的解答。"){
+     			ask =" ";
+     			
+     		}
+     		else if(ask.length<10){
+     			alert(" 提问内容不得少于10个字！");
+     			
+     		}
+     		window.open("addask.php?qt="+ask);
+     	}
+       </script> 
+	
+	<!--end--> 
+	<!--ask-mod-c-->
+	<div class="mod-ask-c mt10">
+		<div class="left-ask fl">
+			<div class="sub-ask-cert sub-ask-left">
+				<div class="hd"> <i></i> 所有问题分类 </div>
+				<div class="bd">
+					<dl>
+						<dt><a href="#" title="加盟致富经" target="_blank">加盟致富经</a></dt>
+						<dd> <a href="#" title="加盟经验" target="_blank">加盟经验</a> <a href="#" title="加盟经验" target="_blank">加盟经验</a> <a href="#" title="加盟经验" target="_blank">加盟经验</a> <a href="#" title="加盟经验" target="_blank">加盟经验</a> <a href="#" title="加盟经验" target="_blank">加盟经验</a> <a href="#" title="加盟经验" target="_blank">加盟经验</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="#" title="行业指南" target="_blank">行业指南</a></dt>
+						<dd> <a href="#" title="餐饮" target="_blank">餐饮</a> <a href="#" title="餐饮" target="_blank">餐饮</a> <a href="#" title="餐饮" target="_blank">餐饮</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="#" title="投资行情" target="_blank">投资行情</a></dt>
+						<dd> <a href="#" title="行业前景" target="_blank">行业前景</a> <a href="#" title="行业前景" target="_blank">行业前景</a> <a href="#" title="行业前景" target="_blank">行业前景</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="#" title="开店选址" target="_blank">开店选址</a></dt>
+						<dd> <a href="#" title="策划" target="_blank">策划</a> <a href="#" title="策划" target="_blank">策划</a> <a href="#" title="策划" target="_blank">策划</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="#" title="日常经营" target="_blank">日常经营</a></dt>
+						<dd> <a href="#" title="销售技巧" target="_blank">销售技巧</a> <a href="#" title="销售技巧" target="_blank">销售技巧</a> <a href="#" title="销售技巧" target="_blank">销售技巧</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="#" title="网店" target="_blank">网店</a></dt>
+						<dd> <a href="#" title="经营" target="_blank">经营</a> <a href="#" title="经营" target="_blank">经营</a> <a href="#" title="经营" target="_blank">经营</a> </dd>
+					</dl>
+				</div>
+			</div>
+			<div class="sub-ask-evsearch sub-ask-left mt10">
+				<div class="hd"> <i></i> 大家都在搜 </div>
+				<div class="bd">
+					<div class="hot-tags pt0"> <strong> <a class="blf16" href="#">加盟项目</a></strong> <strong><a class="blf12" href="#">服装</a></strong> <strong><a class="blf18" href="#">加盟</a></strong> <strong><a class="blf14" href="#">经营</a></strong> <strong><a class="blf12" href="#">选址筹备</a></strong> <strong><a class="blf16" href="#">行业前景</a></strong> <strong><a class="blf12" href="#">商机</a></strong> <strong><a class="blf18" href="#">教育</a></strong> <strong><a class="blf14" href="#">培训</a></strong></div>
+				</div>
+			</div>
+		</div>
+		<div class="main-ask-c fl">
+			<div id="banner-main-ask"> <a href="#" target="_blank" title="精典妆家"> <img src="images/538x85.jpg" height="85" width="538" alt="精典妆家" /></a> </div>
+			<div class="sub_question new-question mt10">
+				<div class="hd"> <!--<span><a href="asklist.php">更多</a></span>--> <i></i> 待回答问题 </div>
+				<div class="bd">
+					<ul class="sub_tmp_asklist">
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+						<li><span>0个回答</span><a href="#" title="想开桂林米粉店！不懂去哪家" target="_blank">想开桂林米粉店！不懂去哪家学习米粉技术好？</a><em><a href="#" target="_blank">加盟致富经</a></em></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub_question acc-question mt10">
+				<div class="hd"> <!--<span><a href="asklist.php">更多</a></span>--> <i></i> 精华问题 </div>
+				<div class="bd">
+					<ul class="sub_tmp_asklist">
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+						<li><span>1个回答</span><a href="#" title="开一家华祖堂参茸店加盟店大约需" target="_blank">开一家华祖堂参茸店加盟店大约需要多少投资？</a><em><a href="#" target="_blank">投资行情</a></em></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!--end--> 
+</div>
+<!--end--> 
+<!--right bar-->
+<div class="sub-right fl">
+	<div class="mod-login-btns"> <a href="#" class="btn-ask-log fl">登录</a> <a href="#" class="btn-ask-reg fl ml10">注册</a> </div>
+	<div class="mod-right-block mt10">
+		<div class="gg_mod">
+			<div class="hd">公告</div>
+			<div class="bd">
+				<ul>
+					<li class="last"><a href="#" title="热烈庆祝就要加盟问答平台上线">热烈庆祝就要加盟问答平台上线</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="mod_brand_trend mt5">
+			<div class="hd">品牌动态</div>
+			<div class="bd" style=" position:relative">
+				<div class="bd-right-ads"> <a href="#" title="多喜爱家纺" target="_blank"><img src="images/48x48.jpg" width="48" height="48" alt="多喜爱家纺" /></a> <a href="#" title="多喜爱家纺" target="_blank"><img src="images/48x48.jpg" width="48" height="48" alt="多喜爱家纺" /></a> <a href="#" title="多喜爱家纺" target="_blank"><img src="images/48x48.jpg" width="48" height="48" alt="多喜爱家纺" /></a> <a href="#" title="多喜爱家纺" target="_blank"><img src="images/48x48.jpg" width="48" height="48" alt="多喜爱家纺" /></a> </div>
+				<!--for dl-->
+				
+				<dl>
+					<dd><a href="#" title="欧彩墙纸" target="_blank">欧彩墙纸</a>回答了<span><a href="#" title="我是刚毕业的大学生,手上没多少钱?不知道有什么好项目可做?" target="_blank">我是刚毕业的大学生,</a></span></dd>
+				</dl>
+				<dl>
+					<dd><a href="#" title="欧彩墙纸" target="_blank">欧彩墙纸</a>回答了<span><a href="#" title="我是刚毕业的大学生,手上没多少钱?不知道有什么好项目可做?" target="_blank">我是刚毕业的大学生,</a></span></dd>
+				</dl>
+				<dl>
+					<dd><a href="#" title="欧彩墙纸" target="_blank">欧彩墙纸</a>回答了<span><a href="#" title="我是刚毕业的大学生,手上没多少钱?不知道有什么好项目可做?" target="_blank">我是刚毕业的大学生,</a></span></dd>
+				</dl>
+				<dl>
+					<dd><a href="#" title="欧彩墙纸" target="_blank">欧彩墙纸</a>回答了<span><a href="#" title="我是刚毕业的大学生,手上没多少钱?不知道有什么好项目可做?" target="_blank">我是刚毕业的大学生,</a></span></dd>
+				</dl>
+				
+				<!--end--> 
+			</div>
+		</div>
+		<div class="mod-jfrank mt5">
+			<div class="hd">积分排行榜</div>
+			<div class="bd">
+				<ul>
+					<li><span>736</span><a href="#" target="_blank">bill</a></li>
+					<li><span>666</span><a href="#" target="_blank">cary</a></li>
+					<li><span>658</span><a href="#" target="_blank">dennis</a></li>
+					<li><span>600</span><a href="#" target="_blank">aron</a></li>
+					<li><span>520</span><a href="#" target="_blank">sarah</a></li>
+					<li><span>507</span><a href="#" target="_blank">quentus</a></li>
+					<li><span>504</span><a href="#" target="_blank">jennifer</a></li>
+					<li><span>504</span><a href="#" target="_blank">francis</a></li>
+					<li><span>492</span><a href="#" target="_blank">megan</a></li>
+					<li><span>485</span><a href="#" target="_blank">nicole</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--end-->
+<div class="clear"></div>
+
+<!-- adLinks -->
+<div class="layout"> 
+	<!--st-->
+	<div class="mod-link mt20">
+		<div class="title">友情链接</div>
+		<div class="link-content-list"> 
+			<!--list-->
+			<ul>
+				<li><a href="#" target="_blank" title="就要加盟网">就要加盟网</a></li>
+				<li><a href="#" target="_blank" title="加盟项目">加盟项目</a></li>
+				<li><a href="#" target="_blank" title="加盟项目">加盟店排行榜</a></li>
+				<li><a href="#" target="_blank" title="加盟资讯">加盟资讯</a></li>
+				<li><a href="#" target="_blank" title="就要问答">就要问答</a></li>
+			</ul>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+	<!--end--> 
+</div>
+<!-- end --> 
+
+<!--footer-->
+
+<div id="footer" style="">
+	<div class="layout" style="position:relative"> 
+		<!--<div style=" width:86px; height:126px; position:absolute; left:0;top:110px;"> <img src="images/codeWeixin.jpg"> </div>-->
+		<div class="footer-container-tip">
+			<div class="ft_list ml7">
+				<h5>加盟保障</h5>
+				<ul>
+					<li><!--<a href="#">--><em>选择加盟好项目</em><!--</a>--></li>
+					<li style=""><!--<a href="#">--><em>免费提供咨询</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌诚信档案</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>新手上路</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费注册会员</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>在线联系感兴趣的项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌商和您沟通</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="icon_xl"> 
+				<!--信任标题--> 
+			</div>
+			<div class="ft_list ml35">
+				<h5>特色服务</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费帮你看项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>加盟组团优惠中</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>申请诚信担保</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>商家入驻</h5>
+				<ul>
+					<li><!--<a href="#">--><em>立即加入</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>诚信认证</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>和投资者洽谈合作</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="footer-container mt10">
+			<div class="footer-jm-pages"> <a href="#" title="关于我们" target="_blank">关于我们</a> | <a href="#" title="会员服务" target="_blank">会员服务</a> | <a href="#" title="诚邀加盟" target="_blank">诚邀加盟</a> | <a href="#" title="免责声明" target="_blank">免责声明</a> | <a href="#" title="招聘信息" target="_blank">招聘信息</a> | <a href="#" title="联系我们" target="_blank">联系我们</a> | <a href="#" title="广告服务" target="_blank">广告服务</a></div>
+			<div class="footer-jm-copyright">
+				<p>Copyright@2011-2021 版权所有 www.91jm.com All Rights Reserved 沪ICP备12030781号-3</p>
+			</div>
+			<div class="footer-jm-tips">
+				<p> 友情提示：多打电话、多咨询、实地考察，可降低连锁加盟，创业投资风险。 全国服务热线：400-168-0091（免长途费） </p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--bottom-script--> 
+<script type="text/javascript" src="js/cssctrl.js"></script> 
+<!--end-->
+
+</body>
+</html>

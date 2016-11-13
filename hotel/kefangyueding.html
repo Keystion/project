@@ -1,0 +1,503 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<title>客房约定</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale = 1.0" >
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery.SuperSlide.2.1.js"></script>
+<script src="js/base.js"></script> 
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/iehack.css">
+<![endif]-->
+</head>
+
+<body>
+
+<div class="header">
+	<div class="container">
+		<div class="logo big" id="logo">
+			<h1><a href="index.html"><img src="images/logo.jpg" alt="Logo"></a></h1>
+		</div>
+		<div class="info">
+			<ul>
+				<!--登录后显示本模块-->
+				<li class="info-i user-name has-pulldown"> <em class="f-icon pull-arrow"></em> <a class="identity" href="javascript:viod(0);" target="_blank" title="头像"><img src="images/photo.jpg" alt=""></a> <span node-type="username" class="name top-username">Toby Wu</span>
+					<div class="pulldown user-info" id="sub_nav">
+						<ul class="clearfix">
+							<li class=""><a href="weiwanchengdingdan.html" title="未付款订单"><i class="i-unfinished"></i>未付款订单<em>（1）</em></a> </li>
+							<li class=""><a href="yiwanchengdingdan.html" title="已完成订单"><i class="i-completed"></i>已完成订单<em>（231）</em></a> </li>
+							<li class=""><a href="huodejiangli.html" title="获得的奖励"><i class="i-awards"></i>获得的奖励<em>（7）</em></a></li>
+							<li class=""><a href="gerenshezhi.html" title="管理账户"><i class="i-setting"></i>管理账户</a> </li>
+							<li class=""><a href="#" title="退出"><i class="i-logout"></i>退出</a> </li>
+						</ul>
+					</div>
+				</li>
+				<li class="info-i user-name"> <a href="login.html">登录</a> <a href="reg.html">注册</a></li>
+				<!-- 暂时隐藏以后需要自行添加-->
+				<li class="info-i search-box">
+					<form class="search-form clearfix" action="javascript: void(0)" method="get">
+						<input style="width: 110px" autocomplete="off" class="search-query" name="q" onblur="if(this.value=='') this.value = this.defaultValue;" onfocus="this.value='';" value="关键词" spellchecking="off" type="text">
+						<input class="search-button" type="submit" value="">
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="main">
+	<div class="container">
+		<div class="aside">
+			<div class="aside-search">
+				<div class="hd">
+					<!--
+						$$:根据模块的数量递增
+					
+						鼠标点击标签<li> 添加 class: on;  显示效果：<li class="soItems_$$ on">
+						标签<li>添加 Class：on之后就会显示选中状态；
+						下面相对应模块DIV 添加 class：on； 显示效果：<div class="soItems soItems_$$_1 on">
+						显示点击<li>所需显示的的内容
+						
+						*注* li 所对应的模块 默认是隐藏的 通过添加class 显示
+					-->
+					<ul>
+						<li class="soItems_01"><label><input type="radio" name="type" value="0" id="room" checked="checked">客房预订</label></li>
+						<li class="soItems_02"><label><input type="radio" name="type" value="1" id="sport">美食甄选</label></li>
+						<li class="soItems_03"><label><input type="radio" name="type" value="2" id="spa">康体健身</label></li>
+						<li class="soItems_04"><label><input type="radio" name="type" value="3" id="food">美容SPA</label></li>
+						<li class="soItems_05"><label><input type="radio" name="type" value="4" id="meeting">会议会展</label></li>
+						<li class="soItems_06"><label><input type="radio" name="type" value="5" id="soItems_02">特惠优选</label></li>
+					</ul>
+				</div>
+				<!--DateTime Picker-->
+				<link href="js/calendar/jscal2.css" type="text/css" rel="stylesheet">
+				<link href="js/calendar/border-radius.css" type="text/css" rel="stylesheet">
+				<link href="js/calendar/gold.css" type="text/css" rel="stylesheet">
+				<script src="js/calendar/calendar.js" type="text/javascript"></script> 
+				<script src="js/calendar/lang/en.js" type="text/javascript"></script>
+				<!--DateTime Picker-->
+				<div class="bd">
+					<!--客房预订 开始-->
+					<div class="soItems soItems_01_1 room on">
+						<form action="" method="post" id="form1" name="room">
+							<div class="controls-date">
+								<div class="controls input-append date form_date">
+									<label>入住</label>
+									<input size="16" id="inttime-field" class="input" name="inttime" type="text" value="2013-12-19">
+									<span class="add-on" id="inttime-trigger"><i class="icon-th"></i></span>
+								</div>
+								<script type="text/javascript">
+									Calendar.setup({
+										weekNumbers: false,				//显示星期格式否 ture false
+										inputField : "inttime-field",
+										trigger    : "inttime-trigger",
+										dateFormat: "%Y-%m-%d",			//日期格式
+										showTime: false,				//显示小时否 ture false
+										minuteStep: 1,
+										onSelect   : function() {this.hide();}
+									});
+								</script>
+							</div>
+							<div class="controls-date">
+								<div class="controls">
+									<label>离开</label>
+									<input size="16" id="outtime-field" class="input" name="outtime" type="text" value="">
+									<span class="add-on" id="outtime-trigger"><i class="icon-th"></i></span>
+								</div>
+								<script type="text/javascript">
+									Calendar.setup({
+										weekNumbers: false,
+										inputField : "outtime-field",
+										trigger    : "outtime-trigger",
+										dateFormat: "%Y-%m-%d",
+										showTime: false, 
+										minuteStep: 1,
+										onSelect   : function() {this.hide();}
+									});
+								</script>
+
+							</div>
+							<div class="soItems-btn">
+								<a class="btn soso-btn" href="" title="搜索">搜索</a>
+								<!--<a class="btn soso-btn" href="" title="搜索">搜索</a>-->
+							</div>
+						</form>
+					</div>
+					<!--客房预订 结束-->
+					<!--美食甄选 开始-->
+					<div class="soItems soItems_02_1 sport">
+						<form action="" method="post" id="form2" name="sport">
+							<ul class="sport-price">
+								<li class="s-price-li-s on">1-50 元<input type="radio" name="sport-price" value="0" id="food-price" checked="checked"></li>
+								<li class="s-price-li-s">51-200 元<input type="radio" name="sport-price" value="1" id="food-price"></li>
+								<li class="s-price-li-s">201-500 元<input type="radio" name="sport-price" value="2" id="food-price"></li>
+								<li class="s-price-li-s">501以上<input type="radio" name="sport-price" value="3" id="food-price"></li>
+							</ul>
+							<div class="soItems-btn">
+								<a class="btn soso-btn" href="" title="搜索">搜索</a>
+							</div>
+						</form>
+					</div>
+					<!--美食甄选 结束-->
+					<!--康体健身 开始-->
+					<div class="soItems soItems_03_1 spa">
+						<!-- 默认不显示 需添加 class：on -->
+						<form action="" method="post" id="form3" name="spa">
+							<ul class="spa-price">
+								<li class="s-price-li-spa on">1-50 元<input type="radio" name="spa-price" value="0" id="spa-price" checked="checked"></li>
+								<li class="s-price-li-spa">51-200 元<input type="radio" name="spa-price" value="1" id="spa-price"></li>
+								<li class="s-price-li-spa">201-500 元<input type="radio" name="spa-price" value="2" id="spa-price"></li>
+								<li class="s-price-li-spa">501以上<input type="radio" name="spa-price" value="3" id="spa-price"></li>
+							</ul>
+							<div class="soItems-btn">
+								<a class="btn soso-btn" href="" title="搜索">搜索</a>
+							</div>
+						</form>
+					</div>
+					<!--康体健身 结束-->
+					<!--美容SPA 开始-->
+					<div class="soItems soItems_04_1 meeting">
+						<!-- 默认不显示 需添加 class：on -->
+						<form action="" method="post" id="form4" name="meeting">
+							<ul class="meeting-price">
+								<li class="s-price-li-m on">1-50 元<input type="radio" name="meeting-price" value="0" id="meeting-price" checked="checked"></li>
+								<li class="s-price-li-m">51-200 元<input type="radio" name="meeting-price" value="1" id="meeting-price"></li>
+								<li class="s-price-li-m">201-500 元<input type="radio" name="meeting-price" value="2" id="meeting-price"></li>
+								<li class="s-price-li-m">501以上<input type="radio" name="meeting-price" value="3" id="meeting-price"></li>
+							</ul>
+							<div class="soItems-btn">
+								<a class="btn soso-btn" href="" title="搜索">搜索</a>
+							</div>
+						</form>
+					</div>
+					<!--美容SPA 结束-->
+					<!--会议会展 开始-->
+					<div class="soItems soItems_05_1 affordable">
+						<!-- 默认不显示 需添加 class：on -->
+						<form action="" method="post" id="form5" name="affordable">
+							<div class="controls-date">
+								<div class="controls input-append date form_date">
+									<label>会议开始</label>
+									<input size="16" id="starttime-field" class="input" name="starttime" type="text" value="2013-12-19">
+									<span class="add-on" id="starttime-trigger"><i class="icon-th"></i></span>
+								</div>
+								<P class="radio">
+									<label><input type="radio" name="time01" value="0" id="time_01">上午</label><br>
+									<label><input type="radio" name="time01" value="1" id="time_01">下午</label>
+								</P>
+								<script type="text/javascript">
+									Calendar.setup({
+										weekNumbers: false,				//显示星期格式否 ture false
+										inputField : "starttime-field",
+										trigger    : "starttime-trigger",
+										dateFormat: "%Y-%m-%d",			//日期格式
+										showTime: false,				//显示小时否 ture false
+										minuteStep: 1,
+										onSelect   : function() {this.hide();}
+									});
+								</script>
+							</div>
+							<div class="controls-date">
+								<div class="controls">
+									<label>会议结束</label>
+									<input size="16" id="endtime-field" class="input" name="starttime" type="text" value="">
+									<span class="add-on" id="endtime-trigger"><i class="icon-th"></i></span>
+								</div>
+								<P class="radio">
+									<label><input type="radio" name="time" value="0" id="time_02">上午</label><br>
+									<label><input type="radio" name="time" value="1" id="time_02">下午</label>
+								</P>
+								<script type="text/javascript">
+									Calendar.setup({
+										weekNumbers: false,				//显示星期格式否 ture false
+										inputField : "endtime-field",
+										trigger    : "endtime-trigger",
+										dateFormat: "%Y-%m-%d",			//日期格式
+										showTime: false,				//显示小时否 ture false
+										minuteStep: 1,
+										onSelect   : function() {this.hide();}
+									});
+								</script>
+							</div>
+							<div class="soItems-btn">
+								<button class="btn soso-btn" type="submit" title="搜索"></button>
+							</div>
+						</form>
+					</div>
+					<!--会议会展 结束-->
+					<!--特惠优选 开始-->
+					<div class="soItems soItems_06_1 food">
+						<!-- 默认不显示 需添加 class：on -->
+						<form action="#" method="post" id="form6" name="food">
+							<ul class="food-price">
+								<li class="s-price-li-f on">1-50 元<input type="radio" name="food-price" value="0" id="food-price" checked="checked"></li>
+								<li class="s-price-li-f">51-200 元<input type="radio" name="food-price" value="1" id="food-price"></li>
+								<li class="s-price-li-f">201-500 元<input type="radio" name="food-price" value="2" id="food-price"></li>
+								<li class="s-price-li-f">501以上<input type="radio" name="food-price" value="3" id="food-price"></li>
+							</ul>
+							<div class="soItems-btn">
+								<button class="btn soso-btn" type="submit" title="搜索"></button>
+							</div>
+						</form>
+					</div>
+					<!--特惠优选 结束-->
+				</div>
+			</div>
+			<div class="aside-service"><img src="images/big_tel.jpg" alt="服务热线：400-8888-888"></div>
+		</div>
+		<div class="content">
+			<div class="navigation">
+				<!--
+					选中 状态  <a> 标签 添加 class = “ active ”
+				-->
+				<ul id="nav" class="nav">
+					<li class="nav-li-01 nav-Reservation"><a href="#" class=" active" title="客房预订">客房预订</a></li>
+					<li class="nav-li-02 nav-FoodChoice"><a href="#" title="美食臻选">美食臻选</a></li>
+					<li class="nav-li-03 nav-SportsFitness"><a href="#" title="康体健身">康体健身</a></li>
+					<li class="nav-li-04 nav-Spa"><a href="#" title="美容、SPA">美容、SPA</a></li>
+					<li class="nav-li-05 nav-Meeting"><a href="#" title="会议会展">会议会展</a></li>
+					<li class="nav-li-06 nav-SpecialPreferred"><a href="#" title="特惠优选">特惠优选</a></li>
+				</ul>
+			</div>
+			<p class="price-sort">
+				<a href="javascript:viod(0)" class="btn btn-price-sort">价格排序</a>
+			</p>
+		<!--  01 开始  -->
+			<div class="h-list h-list2">
+				<div class="h-list-pic fl">
+					<img src="images/jiudian_10.png" alt="">
+				</div>
+				<div class="h-list-infos fr">
+					<div class="h-i-des">
+						<p><span class="h3">北京饭店</span><i class="i-start i-start5" title="五星级酒店"></i></p>
+						<p class="add">北京 东城区 东长安街33号 ( 天安门、王府井地区 近王府井大街 ) </p>
+						<p><i class="i-s i-s-beauty" title="美容SPA"></i><i class="i-s i-s-wifi" title="Wifi热点"></i><i class="i-s i-s-fitness" title="健身"></i><i class="i-s i-s-dining" title="餐饮"></i><i class="i-s i-s-meeting" title="会议"></i><i class="i-s i-s-parking" title="停车厂"></i></p>
+					</div>
+					<div class="h-i-price fr">
+						<span><i class="i-rmb"></i><em>125</em>起</span>
+					</div>
+				</div>
+			</div>
+			<div class="table">
+				<div class="table-tr thead">
+					<div class="table-td th1">房间类型</div>
+					<div class="table-td th2">商品详情 </div>
+					<div class="table-td th3">房价</div>
+					<div class="table-td th4">操作</div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing"><em>下单立减</em><strong>￥850</strong></div></div>
+					<div class="table-td th4"><a href="#" class="btn btn-book">预定</a></div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><a href="#" class="btn btn-book">预定</a></div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><a href="#" class="btn btn-book">预定</a></div>
+				</div>
+			</div>
+		<!--  01 结束  -->
+		<!--  02 开始  -->
+			<div class="h-list h-list2">
+				<div class="h-list-pic fl">
+					<img src="images/jiudian_10.png" alt="">
+				</div>
+				<div class="h-list-infos fr">
+					<div class="h-i-des">
+						<p><span class="h3">北京饭店</span><i class="i-start i-start5" title="五星级酒店"></i></p>
+						<p class="add">北京 东城区 东长安街33号 ( 天安门、王府井地区 近王府井大街 ) </p>
+						<p><i class="i-s i-s-beauty" title="美容SPA"></i><i class="i-s i-s-wifi" title="Wifi热点"></i><i class="i-s i-s-fitness" title="健身"></i><i class="i-s i-s-dining" title="餐饮"></i><i class="i-s i-s-meeting" title="会议"></i><i class="i-s i-s-parking" title="停车厂"></i></p>
+					</div>
+					<div class="h-i-price fr">
+						<span><i class="i-rmb"></i><em>125</em>起</span>
+					</div>
+				</div>
+			</div>
+			<div class="table">
+				<div class="table-tr thead">
+					<div class="table-td th1">房间类型</div>
+					<div class="table-td th2">商品详情 </div>
+					<div class="table-td th3">房价</div>
+					<div class="table-td th4">操作</div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing"><em>下单立减</em><strong>￥850</strong></div></div>
+					<div class="table-td th4"><a href="#" class="btn btn-book">预定</a></div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><a href="#" class="btn btn-book">预定</a></div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><a href="#" class="btn btn-book">预定</a></div>
+				</div>
+			</div>
+		<!--  02 结束  -->
+		<!--  03 开始  -->
+			<div class="h-list h-list2">
+				<div class="h-list-pic fl">
+					<img src="images/jiudian_10.png" alt="">
+				</div>
+				<div class="h-list-infos fr">
+					<div class="h-i-des">
+						<p><span class="h3">北京饭店</span><i class="i-start i-start5" title="五星级酒店"></i></p>
+						<p class="add">北京 东城区 东长安街33号 ( 天安门、王府井地区 近王府井大街 ) </p>
+						<p><i class="i-s i-s-beauty" title="美容SPA"></i><i class="i-s i-s-wifi" title="Wifi热点"></i><i class="i-s i-s-fitness" title="健身"></i><i class="i-s i-s-dining" title="餐饮"></i><i class="i-s i-s-meeting" title="会议"></i><i class="i-s i-s-parking" title="停车厂"></i></p>
+					</div>
+					<div class="h-i-price fr">
+						<span><i class="i-rmb"></i><em>125</em>起</span>
+					</div>
+				</div>
+			</div>
+			<div class="table">
+				<div class="table-tr thead">
+					<div class="table-td th1">房间类型</div>
+					<div class="table-td th2">商品详情 </div>
+					<div class="table-td th3">房价</div>
+					<div class="table-td th4">操作</div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing"><em>下单立减</em><strong>￥850</strong></div></div>
+					<div class="table-td th4"><a href="#" class="btn btn-book">预定</a></div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><a href="#" class="btn btn-book">预定</a></div>
+				</div>
+				<div class="table-tr tbody">
+					<div class="table-td th1">
+						<img src="images/jiudian_03.jpg" alt=""><span>标准房 大床房</span>
+					</div>
+					<div class="table-td th2"><em>单早</em><em>宽带免费</em></div>
+					<div class="table-td th3"><span class="price"><em class="list-price">￥1280</em> / <em class="now-price">￥430</em></span><div class="pricing">下单立减<strong>￥850</strong></div></div>
+					<div class="table-td th4"><a href="#" class="btn btn-book">预定</a></div>
+				</div>
+			</div>
+		<!--  03 结束  -->
+		<!--  分页  -->
+			<div class="pagination">
+				<ul class="pages">
+					<li class="prev"><a href="#">上一页</a></li>
+					<li class="active"><a href="javasvript:viod(0)">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li><a href="#">11</a></li>
+					<li><a href="#">12</a></li>
+					<li><a href="#">13</a></li>
+					<li class="next"><a href="#">下一页</a></li>
+				</ul>
+			</div>
+		<!--  分页  -->
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footinfo">
+	<div class="container">
+		<div class="divNum div-1">
+			<dl>
+				<dt>随时掌控<br><strong>酒店最特价</strong></dt>
+				<dd class="erweima"><img src="images/icon-app.jpg" alt=""></dd>
+				<dd class="tips">*目前只支持安卓版本</dd>
+			</dl>
+		</div>
+		<div class="divNum div-2">
+			<dl>
+				<dt>H.H官方微信<br><strong>关注最新信息</strong></dt>
+				<dd class="erweima"><img src="images/icon-app.jpg" alt=""></dd>
+				<dd class="tips"></dd>
+			</dl>
+		</div>
+		<div class="divNum div-3"><img src="images/hezuo.png" alt="寻求合作"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footGrid about">
+			<h4><i></i><a href="#">关于酒店酒店</a></h4>
+			<ul>
+				<li><a href="#">我们的服务</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">网站声明</a></li>
+			</ul>
+		</div>
+		<div class="footGrid partners">
+			<h4><i></i><a href="#">渠道合作</a></h4>
+			<ul>
+				<li><a href="#">我们的合作酒店</a></li>
+				<li><a href="#">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="footGrid help">
+			<h4><i></i><a href="#">帮助中心</a></h4>
+			<ul>
+				<li><a href="#">如何使用酒店酒店</a></li>
+				<li><a href="#">酒店秘书服务介绍</a></li>
+			</ul>
+		</div>
+		<div class="footGrid sitemap">
+			<h4><i></i><a href="#">网站地图</a></h4>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+		<div class="footGrid service">
+			<h4><i></i>酒店秘书</h4>
+			<ul>
+				<li class="tel">400-8888-888</li>
+				<li>周一至周日09:00-18:00</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<p class="copyright">Copyright 2003-2013, 版权所有 <a href="http://jiudianjiudian.com/">jiudianjiudian.com</a></p>
+</div>
+</body>
+</html>

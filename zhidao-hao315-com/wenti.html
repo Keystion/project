@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>问题列表</title>
+<link href="images/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="images/dh.js"></script>
+<script src="images/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+function xianshi(l){
+	for(i=1;i<6;i++){
+		if(i==l){
+			document.getElementById('bai'+i).className='zw';
+			document.getElementById('xian'+i).style.display='block';
+		}else{
+			document.getElementById('bai'+i).className='';
+			document.getElementById('xian'+i).style.display='none';
+			}
+	}
+}
+</script>
+</head>
+
+<body>
+<h3 class="tips">
+	<a href="index.html">首页</a>
+	<a href="all_xiangmu_index.html">全部项目</a>
+	<a href="wenti.html">问题列表</a>
+    <a href="new_list.html">项目首页1</a>
+	<a href="xiangmu_index.html">项目首页2</a>
+	<a href="xiangmu_index_list.html">项目列表</a>
+</h3>
+<div class="top">
+	<div class="heard">
+		<div class="logo"> <img src="images/logo.gif" width="305" height="64" /> </div>
+		<div class="soso">
+			<div class="ss">
+				<form action="/serch/" method="POST">
+					<input class="ss_text" type="text" name="pnames" value="请输入搜索内容" onfocus="this.value='';" onblur="if(this.value=='') this.value = this.defaultValue;">
+					<input class="ss_but" type="submit" value="" name="submit">
+				</form>
+			</div>
+			<div class="soso_text"> <span>热门搜索：</span>
+				<h2> <a href="#" target="_blank">圆珠笔</a>丨<a href="#" target="_blank">养殖</a>丨<a href="#" target="_blank">种植</a>丨<a href="#" target="_blank">视力保健</a>丨<a href="#" target="_blank">节能灯</a> </h2>
+			</div>
+		</div>
+		<div class="hd_poster">
+			<h2>加盟开店你问我答</h2>
+			<p>连锁加盟我知道：创业问一问加盟更放心</p>	
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="nav">
+	<div class="nav_nr">
+		<div class="nav_left">
+			<ul>
+				<li class="ative"><a href="#" target="_blank">首页</a></li>
+				<li><a href="#" target="_blank">服装加盟</a></li>
+				<li><a href="#" target="_blank">餐饮加盟</a></li>
+				<li><a href="#" target="_blank">家具加盟</a></li>
+				<li><a href="#" target="_blank">教育加盟</a></li>
+				<li><a href="#" target="_blank">网店加盟</a></li>
+				<li><a href="#" target="_blank">养殖加盟</a></li>
+				<li><a href="#" target="_blank">机械加盟</a></li>
+				<li><a href="#" target="_blank">美容加盟</a></li>
+			</ul>
+		</div>
+		<div class="nav_right">
+			<ul>
+				<li><a href="#" target="_blank">童装加盟</a></li>
+				<li><a href="#" target="_blank">内衣加盟</a></li>
+				<li><a href="#" target="_blank">小吃加盟</a></li>
+				<li><a href="#" target="_blank">烧烤加盟</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="pic"> <a href="#" target="_blank"><img class="mb" src="images/pic1.gif" /></a> <a href="#" target="_blank"><img src="images/pic2.gif" /></a> </div>
+<div class="weizhi"> <strong>您现在的位置：</strong><a href="#" target="_blank">：好315知道</a>>><a href="#" target="_blank">全部问题</a> </div>
+<div class="chaxun">
+	<div class="chaxun_bt"> <strong>按行业查询</strong> </div>
+	<div class="chaxun_nr">
+		<div class="cxnr_h"> <strong>行业类别<em></em></strong>
+			<div id="Tab2">
+				<div id="Tab21" class="Menubox2">
+					<ul>
+						<li class="hover">全部</li>
+						<li>餐饮娱乐</li>
+						<li>汽车美容</li>
+						<li>家居用品</li>
+						<li>节能环保</li>
+						<li>美容养生</li>
+						<li>教育建站</li>
+						<li>品牌服饰</li>
+						<li>饰品玩具</li>
+						<li>建材装饰</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div id="Tab22" class="Contentbox2">
+					<div style="display:none"></div>
+					<div class="xl_font" style="display:none">
+						<ul>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+							<li><a href="#">西餐</a></li>
+						</ul>
+					</div>
+					<div class="xl_font" style="display:none">
+						<ul>
+							<li><a href="#">汽车用品</a></li>
+							<li><a href="#">汽车用品</a></li>
+							<li><a href="#">汽车用品</a></li>
+							<li><a href="#">汽车用品</a></li>
+							<li><a href="#">汽车用品</a></li>
+							<li><a href="#">汽车用品</a></li>
+							<li><a href="#">汽车用品</a></li>
+							<li><a href="#">汽车用品</a></li>
+						</ul>
+					</div>
+					<div class="xl_font" style="display:none">
+						<ul>
+							<li><a href="#">灯饰</a></li>
+							<li><a href="#">灯饰</a></li>
+							<li><a href="#">灯饰</a></li>
+							<li><a href="#">灯饰</a></li>
+							<li><a href="#">灯饰</a></li>
+							<li><a href="#">灯饰</a></li>
+							<li><a href="#">灯饰</a></li>
+							<li><a href="#">灯饰</a></li>
+						</ul>
+					</div>
+					<div class="xl_font" style="display:none">
+						<ul>
+							<li><a href="#">燃油燃气</a></li>
+							<li><a href="#">燃油燃气</a></li>
+							<li><a href="#">燃油燃气</a></li>
+							<li><a href="#">燃油燃气</a></li>
+							<li><a href="#">燃油燃气</a></li>
+							<li><a href="#">燃油燃气</a></li>
+							<li><a href="#">燃油燃气</a></li>
+						</ul>
+					</div>
+					<div class="xl_font" style="display:none">
+						<ul>
+							<li><a href="#">香薰护肤</a></li>
+							<li><a href="#">香薰护肤</a></li>
+							<li><a href="#">香薰护肤</a></li>
+							<li><a href="#">香薰护肤</a></li>
+							<li><a href="#">香薰护肤</a></li>
+							<li><a href="#">香薰护肤</a></li>
+							<li><a href="#">香薰护肤</a></li>
+						</ul>
+					</div>
+					<div class="xl_font" style="display:none">
+						<ul>
+							<li><a href="#">网络商城</a></li>
+							<li><a href="#">网络商城</a></li>
+							<li><a href="#">网络商城</a></li>
+							<li><a href="#">网络商城</a></li>
+							<li><a href="#">网络商城</a></li>
+							<li><a href="#">网络商城</a></li>
+							<li><a href="#">网络商城</a></li>
+							<li><a href="#">网络商城</a></li>
+							<li><a href="#">网络商城</a></li>
+						</ul>
+					</div>
+					<div class="xl_font" style="display:none">
+						<ul>
+							<li><a href="#">女装</a></li>
+							<li><a href="#">女装</a></li>
+							<li><a href="#">女装</a></li>
+							<li><a href="#">女装</a></li>
+							<li><a href="#">女装</a></li>
+							<li><a href="#">女装</a></li>
+							<li><a href="#">女装</a></li>
+							<li><a href="#">女装</a></li>
+							<li><a href="#">女装</a></li>
+						</ul>
+					</div>
+					<div class="xl_font" style="display:none">
+						<ul>
+							<li><a href="#">小饰品</a></li>
+							<li><a href="#">小饰品</a></li>
+							<li><a href="#">小饰品</a></li>
+							<li><a href="#">小饰品</a></li>
+							<li><a href="#">小饰品</a></li>
+							<li><a href="#">小饰品</a></li>
+							<li><a href="#">小饰品</a></li>
+							<li><a href="#">小饰品</a></li>
+							<li><a href="#">小饰品</a></li>
+						</ul>
+					</div>
+					<div class="xl_font" style="display:none">
+						<ul>
+							<li><a href="#">玻璃画</a></li>
+							<li><a href="#">玻璃画</a></li>
+							<li><a href="#">玻璃画</a></li>
+							<li><a href="#">玻璃画</a></li>
+							<li><a href="#">玻璃画</a></li>
+							<li><a href="#">玻璃画</a></li>
+							<li><a href="#">玻璃画</a></li>
+							<li><a href="#">玻璃画</a></li>
+							<li><a href="#">玻璃画</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="cxnr_h"> <strong>投资额度<em></em></strong>
+			<div id="Tab3" class="tz_font">
+				<ul>
+					<li class="hover">全部</li>
+					<li><a href="#">1万以下</a></li>
+					<li><a href="#">1-2.5万</a></li>
+					<li><a href="#">2.5-5万</a></li>
+					<li><a href="#">5万以上</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var xy_name="",a="",b="",c="",d="",count = 0;
+				$('#Tab21 li').click(function(){count = $('#Tab21 li').index(this); goTo('Tab21',this,count);});
+				$('#Tab22 li').click(function(){goTo('Tab22',this)});
+				$('#Tab3 li').click(function(){goTo('Tab3',this)});
+				$('#Tab4 li').click(function(){goTo('Tab4',this)});
+				function goTo(id,obj,count){
+					if(id == 'Tab21'){			
+						$(obj).addClass("hover").siblings().removeClass('hover');
+						$("#Tab22 li").removeClass("hover");
+						$('.xl_font').eq(count-1).css('display','block').siblings().css('display','none');
+					}else{
+						$(obj).addClass('hover').siblings().removeClass('hover');
+					}
+					var str = "";
+					a=parseInt($('#Tab21 .hover').attr('value'),10);
+					b=parseInt($('#Tab22 .hover').attr('value'),10);
+					c=parseInt($('#Tab3 .hover').attr('value'),10);
+					d=parseInt($('#Tab4 .hover').attr('value'),10);
+					if(a>0)str +="&ity="+a;
+					if(b>0)str +="&ty="+b;
+					if(c>0)str +="&my="+c;
+					if(d>0)str +="&area="+d;
+				}
+			});
+		</script> 
+	</div>
+</div>
+<div class="zsxx">
+	<div class="zsxx_left">
+		<div class="wenti_list">
+			<div class="wenti_bt">
+				<div class="wenti_title">
+					<a href="javascript:void(0);" id="bai1" onclick="xianshi('1');" class="zw">待解决问题</a> 
+					<a href="javascript:void(0);" id="bai2" onclick="xianshi('2');" class="">已解决问题</a>
+					<a href="javascript:void(0);" id="bai3" onclick="xianshi('3');" class="">推荐问题</a>
+					<a href="javascript:void(0);" id="bai4" onclick="xianshi('4');" class="">全部问题</a>
+				</div>
+			</div>
+			<div class="wenti_zt" id="xian1" style="display: block;">
+				<div class="wenti_zt_tt">
+					<span class="fl">标题</span>
+					<span class="fr">提问者</span>
+				</div>
+				<ul class="wenti_zt_list">
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+				</ul>
+			</div>
+			<div class="wenti_zt" id="xian2" style="display: none;">
+				<div class="wenti_zt_tt">
+					<span class="fl">标题</span>
+					<span class="fr">提问者</span>
+				</div>
+				<ul class="wenti_zt_list">
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+				</ul>
+			</div>
+			<div class="wenti_zt" id="xian3" style="display: none;">
+				<div class="wenti_zt_tt">
+					<span class="fl">标题</span>
+					<span class="fr">提问者</span>
+				</div>
+				<ul class="wenti_zt_list">
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">中国移动宽带，用手机号和密码拨号上网的，请问可以装路...</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+				</ul>
+			</div>
+			<div class="wenti_zt" id="xian4" style="display: none;">
+				<div class="wenti_zt_tt">
+					<span class="fl">标题</span>
+					<span class="fr">提问者</span>
+				</div>
+				<ul class="wenti_zt_list">
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+					<li>
+						<span class="let">
+							<h3><a href="#" target="_blank">在线影视哪个好，哪个能给我介绍一下呀？</a></h3>
+							<p><a href="#" target="_blank">bobotli</a>、<a href="#" target="_blank">孔亚伟1992110</a>等3人参与了回答</p>
+						</span>
+						<span class="rig"> 1 分钟前</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="fenye"> <a href="#" target="_blank">上一页</a> <a href="#" target="_blank">1</a> <strong>2</strong> <a href="#" target="_blank">3</a> <a href="#" target="_blank">4</a> <a href="#" target="_blank">5</a> <em>...</em> <a href="#" target="_blank">145</a> <a href="#" target="_blank">下一页</a> <span>共4654页</span> </div>
+	</div>
+	<div class="zsxx_right">
+		<div class="tuig pinpai_top">
+			<div class="tuig_bt pinpai_bt"> <strong>可能对您有帮助的问题</strong> </div>
+			<div class="pinpai_nr">
+				<ul>
+					<li class="qians"> <em>1</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+					<li class="qians"> <em>2</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+					<li class="qians"> <em>3</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+					<li> <em>4</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+					<li> <em>5</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+					<li> <em>6</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+					<li> <em>7</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+					<li> <em>8</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+					<li> <em>9</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+					<li> <em>10</em> <a href="#" target="_blank">想开服装点怎么确定自己的风格...</a> </li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="tuig pinpai_top">
+			<div class="tuig_bt pinpai_bt"> <strong>企业知道排行榜</strong> </div>
+			<div class="pinpai_nr">
+				<ul>
+					<li class="qians"> <em>1</em> <a href="#" target="_blank">小米企业平台</a> </li>
+					<li class="qians"> <em>2</em> <a href="#" target="_blank">三星数字服务平台</a> </li>
+					<li class="qians"> <em>3</em> <a href="#" target="_blank">戴尔企业平台</a> </li>
+					<li> <em>4</em> <a href="#" target="_blank">联想企业平台</a> </li>
+					<li> <em>5</em> <a href="#" target="_blank">三星数字服务平台</a> </li>
+					<li> <em>6</em> <a href="#" target="_blank">三星数字服务平台</a> </li>
+					<li> <em>7</em> <a href="#" target="_blank">三星数字服务平台</a> </li>
+					<li> <em>8</em> <a href="#" target="_blank">三星数字服务平台</a> </li>
+					<li> <em>9</em> <a href="#" target="_blank">三星数字服务平台</a> </li>
+					<li> <em>10</em> <a href="#" target="_blank">三星数字服务平台</a> </li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="fooder">
+	<div class="fooder_nav"> <a href="#" target="_blank">关于我们</a>丨<a href="#" target="_blank">免责声明</a>丨<a href="#" target="_blank">版权信息</a>丨<a href="#" target="_blank">联系我们</a>丨<a href="#" target="_blank">投诉建设</a>丨<a href="#" target="_blank">友情链接</a>丨<a href="#" target="_blank">地区分类地图</a>丨<a href="#" target="_blank">分类地图</a>丨<a href="#" target="_blank">地区地图</a>丨<a href="#" target="_blank">网站地图</a>丨<a href="#" target="_blank">创业论坛</a> </div>
+	<div class="fooder_nr"> 9355开心创业网(www.9355.com)拥有先进的运营模式、良好的服务体系、完备的市场推广和各大网站、媒体紧密合作，为企业品牌招商、加盟招商、合作招商、代理招商构建营销渠道， <br>
+		为有投资需求的企业和个人提供投资创业项目、资讯、指导、交流等服务。每天汇聚百万投资者，致富加盟招商信息传递速度快、费用低、传播广、效果好。开心创 <br>
+		业网以严格的项目审核程序，完善的跟踪机制，融合权威的创业指导、最新的创业资讯，为创业者与招商品牌之间建立起信息沟通的桥梁。 <br>
+		本站资源来自网络用户，如有侵权请通知我们（QQ：1764783777），我们会及时处理，感谢您的支持！ <br>
+		京公网安备110106100078号  京ICP备09024829号-5 </div>
+	<div class="fod_pic"><img src="images/fooder_pic.gif"></div>
+</div>
+</body>
+</html>

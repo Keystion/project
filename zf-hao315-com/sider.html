@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="http://newnet.91cy.cn/js/jquery-1.7.2.js"></script>
+<script src="http://zf.hao315.com/js/jquery.SuperSlide.2.1.js"></script>
+<script>
+$(function(){
+	//首页焦点图
+	jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+	//网站首页焦点图
+	jQuery(".slide").slide({mainCell:".bd ul",autoPage:false,effect:"leftLoop",autoPlay:true,vis:12});
+})
+</script>
+</head>
+
+<body>
+
+<style>
+/**
+ * 网站首页焦点图
+ */
+.slideBox{ width:450px; height:180px; overflow:hidden; position:relative; margin-left:8px;}
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:5px;  width:15px; height:15px; line-height:14px; text-align:center; background:#ccc; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#d50000; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:450px; height:180px; display:block;}
+</style>
+<div class="slideBox">
+	<div class="hd">
+		<ul><li>1</li><li>2</li><li>3</li></ul>
+	</div>
+	<div class="bd">
+		<ul>
+			<li><a href="#" target="_blank"><img src="http://newnet.91cy.cn/upload/ad/14-04-14/201404141422115.png" /></a></li>
+			<li><a href="#" target="_blank"><img src="http://newnet.91cy.cn/upload/ad/14-04-14/201404141422115.png" /></a></li>
+			<li><a href="#" target="_blank"><img src="http://newnet.91cy.cn/upload/ad/14-04-14/201404141422115.png" /></a></li>
+		</ul>
+	</div>
+</div>
+
+
+<style>
+ul,li{ list-style:none; margin:0; padding:0;}
+
+/**
+ * 网站首页小图滚动
+ */
+.slide{ height:58px; position:relative;}
+.slide .prev{ display:block; width:30px; height:58px; background:url(http://newnet.91cy.cn/images/lr_bg.png) no-repeat left top; float:left; cursor:pointer;}
+.slide .next{ display:block; width:30px; height:58px; background:url(http://newnet.91cy.cn/images/lr_bg.png) no-repeat -30px top; float:right; cursor:pointer;}
+.slide .bd{ float:left; position:relative; width:900px; height:58px; overflow:hidden;}
+.slide .bd ul{ position:absolute; left:0px; top:0px;}
+.slide .bd ul li{ width:64px; height:56px; border:1px solid #f2f1ec; float:left; border:1px solid #f2f1ec; margin-left:8px; _display:inline;}
+.slide .bd ul li img{ width:64px; height:56px;}
+</style>
+<div class="slide box mt"> <span class="prev"></span>
+	<div class="bd">
+		<ul>
+			<li><a target="_blank" href="dongyameilianbuyi/"><img src="http://newnet.91cy.cn/upload/11-11-07/13206475424774.jpg"></a></li>
+			<li><a target="_blank" href="longhuayicixingcanju/"><img src="http://newnet.91cy.cn/upload/11-10-31/13200425212652.jpg"></a></li>
+			<li><a target="_blank" href="leidiyananshineiyi/"><img src="http://newnet.91cy.cn/upload/12-06-05/13388821906614.jpg"></a></li>
+			<li><a target="_blank" href="aibojiayebiye/"><img src="http://newnet.91cy.cn/upload/12-02-27/13303091524237.jpg"></a></li>
+			<li><a target="_blank" href="aoyoulantianhkpw/"><img src="http://newnet.91cy.cn/upload/13-05-28/13697081613079.jpg"></a></li>
+			<li><a target="_blank" href="luosimeineiyi/"><img src="http://newnet.91cy.cn/upload/12-06-05/13388840534447.jpg"></a></li>
+			<li><a target="_blank" href="haosinianyl/"><img src="http://newnet.91cy.cn/upload/12-11-27/13539847812055.jpg"></a></li>
+			<li><a target="_blank" href="xingyunwanshishangyushi/"><img src="http://newnet.91cy.cn/upload/11-11-07/13206475646771.jpg"></a></li>
+			<li><a target="_blank" href="weichuangmeichenbiye/"><img src="http://newnet.91cy.cn/upload/12-02-27/13303095774256.jpg"></a></li>
+			<li><a target="_blank" href="bilutefushi/"><img src="http://newnet.91cy.cn/upload/11-10-31/13200425398662.jpg"></a></li>
+			<li><a target="_blank" href="siyuyangfaguan/"><img src="http://newnet.91cy.cn/upload/12-08-29/13462233766469.jpg"></a></li>
+			<li><a target="_blank" href="huachenyashineiyi/"><img src="http://newnet.91cy.cn/upload/12-06-05/13388864271941.jpg"></a></li>
+			<li><a target="_blank" href="yinghualajichuliqi/"><img src="http://newnet.91cy.cn/upload/12-06-05/13388865424594.jpg"></a></li>
+			<li><a target="_blank" href="guangzhouboyahuazhuangpin/"><img src="http://newnet.91cy.cn/upload/11-11-07/13206477373706.jpg"></a></li>
+			<li><a target="_blank" href="qimeishipin/"><img src="http://newnet.91cy.cn/upload/12-11-27/13539837568511.jpg"></a></li>
+			<li><a target="_blank" href="mengnalishashuziyouhua/"><img src="http://newnet.91cy.cn/upload/11-10-31/13200427983647.jpg"></a></li>
+			<li><a target="_blank" href="kaoshanghuangshaokao/"><img src="http://newnet.91cy.cn/upload/11-10-21/13191802704841.jpg"></a></li>
+			<li><a target="_blank" href="qicainvhaishipin/"><img src="http://newnet.91cy.cn/upload/11-11-07/13206483455698.jpg"></a></li>
+			<li><a target="_blank" href="bolangkongqinengesq/"><img src="http://newnet.91cy.cn/upload/12-10-09/13497493011710.jpg"></a></li>
+			<li><a target="_blank" href="panduolayinpin/"><img src="http://newnet.91cy.cn/upload/12-11-27/13539822517349.jpg"></a></li>
+		</ul>
+	</div>
+	<class class="next"></span>
+</div>
+</body>
+</html>

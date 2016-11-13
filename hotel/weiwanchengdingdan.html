@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<title>未完成订单</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale = 1.0" >
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery.SuperSlide.2.1.js"></script>
+<script src="js/base.js"></script> 
+<!-- map.baidu.com Start -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=7jgAn6zYVGEoL2VxiC0CXiVo"></script>
+<!-- map.baidu.com End -->
+
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/iehack.css">
+<![endif]-->
+</head>
+
+<body>
+
+<div class="header">
+	<div class="container">
+		<div class="logo big" id="logo">
+			<h1><a href="index.html"><img src="images/logo.jpg" alt="Logo"></a></h1>
+		</div>
+		<div class="info">
+			<ul>
+				<!--登录后显示本模块-->
+				<li class="info-i user-name has-pulldown"> <em class="f-icon pull-arrow"></em> <a class="identity" href="javascript:viod(0);" target="_blank" title="头像"><img src="images/photo.jpg" alt=""></a> <span node-type="username" class="name top-username">Toby Wu</span>
+					<div class="pulldown user-info" id="sub_nav">
+						<ul class="clearfix">
+							<li class=""><a href="weiwanchengdingdan.html" title="未付款订单"><i class="i-unfinished"></i>未付款订单<em>（1）</em></a> </li>
+							<li class=""><a href="yiwanchengdingdan.html" title="已完成订单"><i class="i-completed"></i>已完成订单<em>（231）</em></a> </li>
+							<li class=""><a href="huodejiangli.html" title="获得的奖励"><i class="i-awards"></i>获得的奖励<em>（7）</em></a></li>
+							<li class=""><a href="gerenshezhi.html" title="管理账户"><i class="i-setting"></i>管理账户</a> </li>
+							<li class=""><a href="#" title="退出"><i class="i-logout"></i>退出</a> </li>
+						</ul>
+					</div>
+				</li>
+				<!--<li class="info-i user-name"> <a href="login.html">登录</a> <a href="reg.html">注册</a></li>
+-->				<!-- 暂时隐藏以后需要自行添加-->
+				<!--<li class="info-i search-box">
+					<form class="search-form clearfix" action="javascript: void(0)" method="get">
+						<input style="width: 110px" autocomplete="off" class="search-query" name="q" onblur="if(this.value=='') this.value = this.defaultValue;" onfocus="this.value='';" value="关键词" spellchecking="off" type="text">
+						<input class="search-button" type="submit" value="">
+					</form>
+				</li>-->
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="main">
+	<div class="container">
+		<div class="aside">
+			<div id="myhotel" class="m">
+				<div class="mt">
+					<dl class="mod-account">
+						<dt class="mod-account-avatar"> <a class="account-avatar-panel" href="#" target="_blank"> <img class="account-avatar-show" src="images/user.png" width="42" height="42"></a> </dt>
+						<dd class="mod-account-info">
+							<div class="mod-personal-name" id="displayUsername" title="Toby Wu">登陆名：Toby Wu</div>
+						</dd>
+					</dl>
+					<!--<dl class="mod-account">
+						<dt class="mod-account-avatar"> <a class="account-avatar-panel" href="#" target="_blank"> <img class="account-avatar-show" src="images/user.png" width="42" height="42"> <span class="account-avatar-edit" title="修改头像">修改头像</span> </a> </dt>
+						<dd class="mod-account-info">
+							<div class="mod-personal-name" id="displayUsername" title="Toby Wu">登陆名：Toby Wu</div>
+							<p class="mod-personal-edit"> <a href="#" title="修改资料">修改资料</a> </p>
+						</dd>
+					</dl>-->
+				</div>
+				<div class="mc" id="sub_nav">
+					<ul class="clearfix">
+						<li class="active"><a href="weiwanchengdingdan.html" title="未付款订单"><i class="i-unfinished"></i>未付款订单<em>（1）</em></a> </li>
+						<li class=""><a href="yiwanchengdingdan.html" title="已完成订单"><i class="i-completed"></i>已完成订单<em>（231）</em></a> </li>
+						<li class=""><a href="huodejiangli.html" title="获得的奖励"><i class="i-awards"></i>获得的奖励<em>（7）</em></a></li>
+						<li class=""><a href="gerenshezhi.html" title="管理账户"><i class="i-setting"></i>管理账户</a> </li>
+						<li class=""><a href="#" title="退出"><i class="i-logout"></i>退出</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="navigation">
+				<ul id="nav" class="nav">
+					<li class="nav-li-01 nav-Reservation"><a href="#" class=" active" title="客房预订">客房预订</a></li>
+					<li class="nav-li-02 nav-FoodChoice"><a href="#" title="美食臻选">美食臻选</a></li>
+					<li class="nav-li-03 nav-SportsFitness"><a href="#" title="康体健身">康体健身</a></li>
+					<li class="nav-li-04 nav-Spa"><a href="#" title="美容、SPA">美容、SPA</a></li>
+					<li class="nav-li-05 nav-Meeting"><a href="#" title="会议会展">会议会展</a></li>
+					<li class="nav-li-06 nav-SpecialPreferred"><a href="#" title="特惠优选">特惠优选</a></li>
+				</ul>
+			</div>
+			<div class="memBenefits">
+				<div class="fl"><img src="images/youhui.png" alt="icon">
+					<dl>
+						<dt>会员免费住宿计划</dt>
+						<dd>( 成功预定10次酒店，即可享一晚免费住宿 )</dd>
+					</dl>
+				</div>
+				<ul class="fr">
+					<li class="memBook memBooking">1</li>
+					<li class="memBook memBooking">2</li>
+					<li class="memBook memBooking">3</li>
+					<li class="memBook memBooking">4</li>
+					<li class="memBook">5</li>
+					<li class="memBook">6</li>
+					<li class="memBook">7</li>
+					<li class="memBook">8</li>
+					<li class="memBook">9</li>
+					<li class="memBook">10</li>
+				</ul>
+			</div>
+			<table class="tb" width="742" border="0" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th class="col-1" scope="col">序号</th>
+						<th class="col-2" scope="col">订单号</th>
+						<th class="col-3" scope="col">商户名称</th>
+						<th class="col-4" scope="col">商品名称</th>
+						<th class="col-5" scope="col">总金额</th>
+						<th class="col-6" scope="col">订单状态</th>
+						<th class="col-7" scope="col">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="col-1">1</td>
+						<td class="col-2">1234567890123456</td>
+						<td class="col-3">希尔顿大饭店</td>
+						<td class="col-4">标准房 大床房</td>
+						<td class="col-5">￥2100</td>
+						<td class="col-6">已付款未使用</td>
+						<td class="col-7"><a href="#">查看订单</a><a href="#">支付订单</a></td>
+					</tr>
+					<script>
+						for(var i = 2; i < 10 ;i++){
+							document.write('<tr>						<td class="col-1">'+i+'</td>						<td class="col-2">1234567890123456</td>						<td class="col-3">希尔顿大饭店</td>						<td class="col-4">标准房 大床房</td>						<td class="col-5">￥2100</td>						<td class="col-6">已付款未使用</td>						<td class="col-7"><a href="#">查看订单</a><a href="#">支付订单</a></td>					</tr>');	
+						}
+					</script>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footinfo">
+	<div class="container">
+		<div class="divNum div-1">
+			<dl>
+				<dt>随时掌控<br><strong>酒店最特价</strong></dt>
+				<dd class="erweima"><img src="images/icon-app.jpg" alt=""></dd>
+				<dd class="tips">*目前只支持安卓版本</dd>
+			</dl>
+		</div>
+		<div class="divNum div-2">
+			<dl>
+				<dt>H.H官方微信<br><strong>关注最新信息</strong></dt>
+				<dd class="erweima"><img src="images/icon-app.jpg" alt=""></dd>
+				<dd class="tips"></dd>
+			</dl>
+		</div>
+		<div class="divNum div-3"><img src="images/hezuo.png" alt="寻求合作"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footGrid about">
+			<h4><i></i><a href="#">关于酒店酒店</a></h4>
+			<ul>
+				<li><a href="#">我们的服务</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">网站声明</a></li>
+			</ul>
+		</div>
+		<div class="footGrid partners">
+			<h4><i></i><a href="#">渠道合作</a></h4>
+			<ul>
+				<li><a href="#">我们的合作酒店</a></li>
+				<li><a href="#">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="footGrid help">
+			<h4><i></i><a href="#">帮助中心</a></h4>
+			<ul>
+				<li><a href="#">如何使用酒店酒店</a></li>
+				<li><a href="#">酒店秘书服务介绍</a></li>
+			</ul>
+		</div>
+		<div class="footGrid sitemap">
+			<h4><i></i><a href="#">网站地图</a></h4>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+		<div class="footGrid service">
+			<h4><i></i>酒店秘书</h4>
+			<ul>
+				<li class="tel">400-8888-888</li>
+				<li>周一至周日09:00-18:00</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<p class="copyright">Copyright 2003-2013, 版权所有 <a href="http://jiudianjiudian.com/">jiudianjiudian.com</a></p>
+</div>
+</body>
+</html>

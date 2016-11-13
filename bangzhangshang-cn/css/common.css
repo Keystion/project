@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*
+ * 页面整体排版
+ * 时  间：2013-11-19 13：00 Author：Syantao
+ */
+body			{ background:#F9F9F9; font-size:14px;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td
+				{ line-height:1.6;}
+a				{ text-decoration: none;color: #333;}
+a:hover			{ color: #f13a3a;cursor: pointer;text-decoration:none;text-decoration: underline; }
+a:active		{ color: #10486d;cursor: pointer; }
+a.underline		{ text-decoration:underline;}
+i				{ display:block;}
+
+
+.container		{ width:1190px;margin: 0 auto;}
+.pull_left,.lt 	{ float: left;word-spacing: 1px;overflow: hidden;}
+.pull_center	{ float: left;word-spacing: 1px;overflow: hidden;}
+.pull_right,.rt { float: right;word-spacing: 1px;overflow: hidden;}
+
+p.indent{ text-indent:2em;}
+
+/*
+ * 全局 CSS3 效果切换淡入淡出效果
+ * 时  间：2013-11-19 13：00 Author：Syantao
+ */
+* {
+		-webkit-transition	: all 0.18s ease-in-out;
+		-moz-transition		: all 0.18s ease-in-out;
+		-ms-transition		: all 0.18s ease-in-out;
+		-o-transition		: all 0.18s ease-in-out;
+		transition			: all 0.18s ease-in-out;}
+
+/*
+ * 全局导航
+ * 时  间：2013-11-19 13：00 Author：Syantao
+ */
+
+.header									{ padding-top: 92px; _padding-top:0px;}
+	.header .headbox					{ background:#FFFFFF; border-top:3px solid #E60001;border-bottom: 1px solid #E60001;position: fixed;top: 0;right: 0;left: 0;z-index: 9999;transition: all .1s linear;height: 55px; padding:16px 0 18px 0;
+											-webkit-box-shadow	: 0 0 5px #d2d2d2; 
+											-moz-box-shadow		: 0 0 5px #d2d2d2; 
+											-ms-box-shadow		: 0 0 5px #d2d2d2;
+											-o-box-shadow		: 0 0 5px #d2d2d2; 
+											box-shadow			: 0 0 5px #d2d2d2; }
+	.header .pull_left,
+	.header .pull_right,
+	.header .nav						{ height:55px;}
+	.header .pull_left a				{ display:block;}
+	.header	.pull_left a img			{ line-height:55px;}
+	.header .nav ul.home_links			{ display:block; height:55px;}
+	.header .nav ul.home_links li		{ float:left;}
+	.header .nav ul.home_links li a		{ line-height:55px; font-size:14px; margin:0 5px;}
+
+/*
+ * 全局底部  旗下其他站点 && 联系方式 && 微信
+ * 时  间：2013-11-19 13：00 Author：Syantao
+ */
+.foot_info								{ height:328px; border-top:1px solid #E5E5E5; border-bottom:1px solid #E4E4E4; background:#FFFFFF;}
+	.foot_info .pull_left				{ width:455px;}
+	.foot_info .pull_center				{ width:455px;}
+	.foot_info .pull_right				{ width: 280px;}
+	
+	.foot_info dl dt					{ font-size:16px; font-weight:bold; line-height:88px;}
+	.foot_info dl dd					{ width:225px; float:left;}
+	.foot_info dl dd .sub_website 		{height: 24px; margin:6px 0;width: 225px; overflow:hidden;}
+	.foot_info dl dd img				{ float:left; width:85px;}
+	.foot_info dl dd p					{ float:left; font-size:14px; line-height:26px;}
+	.foot_info dl dd a p				{ color:#1570a6; margin:0px;}
+	.foot_info dl dd p.tell				{ text-indent:5em;}
+	
+	.foot_info .pull_center dl dd		{ width:445px;}
+	
+	.foot_info .pull_right dl dd		{ float:inherit;text-align: center;}
+	.foot_info .pull_right dl dd img	{ float:inherit; border:1px solid #E5E5E5; padding:5px;}
+	.foot_info .pull_right dl dd p		{ float:inherit;}
+
+/*
+ * 全局底部备案等信息 CopyRight 
+ * 时  间：2013-11-19 13：00 Author：Syantao
+ */
+.footer									{ height:auto; width:100%; padding:15px 0; text-align:center; background:#E60012; border-top:1px solid #F2F2F2;}
+	.footer p							{ line-height:24px; font-size:12px; overflow:hidden; color:#FFFFFF;}
+	.footer p a							{ color:#FFFFFF;}
+
+/*
+ * 招商外包 || 
+ * 招商咨询 || 
+ * 服务团队 || 
+ * 媒体资源 || 
+ * 新闻中心 || 
+ * 客户案例 || 
+ * 管理系统 || 
+ * 招商执行 || 
+ * 在线申请
+ */
+
+/*
+ * 面包屑
+ * 时  间：2013-11-19 13：00 Author：Syantao
+ */
+.breadcrumbs							{ height:214px; border-top:1px solid #dadada; border-bottom:1px solid #dadada; background:#FFFFFF;}
+	.breadcrumbs .hd					{ height:124px;}
+	.breadcrumbs .hd img				{ width:1190px; height:124px;}
+	.breadcrumbs .bd					{ height:90px;}
+	.breadcrumbs .bd em					{ text-transform:uppercase; color:#EF3B42;}
+	.breadcrumbs .bd h2					{ font-weight:inherit; margin:0 10px; color:#666666;}
+	.breadcrumbs .bd em,
+	.breadcrumbs .bd h2					{ float:left; font-size:30px; line-height:90px; }
+	.breadcrumbs .bd .rt				{ padding:25px 0;}
+	.breadcrumbs .bd p					{ line-height:20px;}
+	.breadcrumbs .bd p.en				{ text-transform:capitalize; color:#999999;}
+	.breadcrumbs .bd .pull_right		{ padding: 0 10px; widows:124px;}
+	.breadcrumbs .bd .pull_right a		{ line-height: 90px;}
+
+/*
+ * 新闻页面分页模块
+ * 时  间：2013-11-19 13：00 Author：Syantao
+ */
+.pagination							{ margin:20px 0 10px 0;text-align: center;}
+	.pagination ul.pages			{ margin:0 auto; *display:block !important; *width:600px !important;}
+	.pagination ul li				{ display: inline-block; width:auto; height:24px; border:1px solid #dfdfdf; padding:0 10px; *width:auto !important; *float:left !important;}
+	.pagination ul li a				{ display:inline-block; height:25px; line-height:25px; width:auto; padding:0 5px;}
+	.pagination ul li.active span	{ display:block; padding:0 10px; }
+	.pagination ul li.active a		{ color:#E60001; font-weight:bold;}
+
+/*
+ * 内容主体模块
+ * 时  间：2013-11-19 13：00 Author：Syantao
+ */
+.content										{ width:100%; height:auto; background:url(../images/content_bg.png) top center repeat-y;}
+	.content .main								{ width:840px; padding:30px 20px;}
+	.content .aside								{ width:280px; padding:15px;}
+	
+	.apply											{ width:280px; height:auto;}
+	.apply p										{ width:280px; float:left;}
+	.apply p.ads_1									{ margin:10px 0;}
+	.apply p label									{ cursor:pointer;}
+	.hao315_msg 									{ width:280px; height:auto; background:#f1f1f1; font-size:14px; font-family:"Microsoft YaHei",Tahoma,Helvetica,Georgia,Arial,"sans serif"; margin:0 auto; padding:5px 0; float: left; border-radius:10px;}
+		.hao315_msg .msg_line						{ line-height:24px; margin:10px 0; padding: 0 20px}
+		.hao315_msg .msg_line.msg_line_submit		{ text-align:center;}
+		.hao315_msg .msg_line label					{ width: 70px;text-align: left;height: 24px;line-height: 24px;font-size: 12px;display: inline;float: left;}
+		.hao315_msg .msg_line input					{ border:2px solid #c9c9c9; width:135px;}
+		.hao315_msg .msg_line input.p-sub			{ background:#f0f0f0 url(../images/btn.png);width:146px; cursor:pointer;}
+		.hao315_msg .msg_line span 					{ font-size:12px; display: inline-block;}
+		.hao315_msg .msg_line span.msg_line_tips	{ float:right; min-width:30px; _width:30px; text-align:center;}
+		.hao315_msg .msg_line span.msg_line_tips em	{ font-style:normal; color:#F00;height:24px; width:12px;}
+
+	.ebook			{ height: 295px; width:278px; float:left; border:1px solid #dcdcdc;}
+	.ebook .hd		{ height:40px; line-height:40px; padding:0 10px; float:left; width:258px;}
+	.ebook .hd i	{ background:url(../images/ebook_icon.png) center center no-repeat; height:40px; width:20px; float:left;}
+	.ebook .bd		{ height:225px; width:248px; padding:15px; text-align:center; float:left;}
+	.ebook .bd p	{ width:248px; margin:10px 0;}
+	.ebook .bd a	{ height:24px; line-height:24px; width:100px; background:#E60001; display:inline-block; margin:0 10px; color:#FFFFFF;}
+	
+
+.scroll{position:fixed;_position:absolute;z-index:999;right:30px;bottom:-200px;_display:none;_bottom:auto;transition:bottom 0.9s}
+a.btnBackTop{cursor:pointer;display:block;width:42px;height:42px; background:url(../images/totop.png);background-position:0 0;line-height:42em;overflow:hidden}

@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+/*@import url("common.css");*/
+
+.m-aside{ width:272px;}
+.m-main{ width:718px;}
+.aside, .main{ min-height:150px; background-color: #ccc;}
+
+.row:after{ content:"\0020";display:block;height:0;clear:both;}
+.row{ *zoom:1;}
+/**
+ * 首页左侧模块
+ */
+
+/** 登录模块 **/
+.login{ width:270px; height:300px; float:left;  border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px;}
+	.login .hd{  height:42px; text-align:center; line-height:42px;}
+	.login .hd strong{ font-size:16px;}
+	.login ul li{ height:39px; margin:12px 14px 0px 14px;  line-height:39px; overflow:hidden;}
+	
+	.login ul li .input{ display:block; float:left; border:#e5eff8 solid 1px; line-height:24px; height:34px; padding:0 5px; outline:0;}
+	.login ul li .input-t{  width:160px;}
+	
+	.login ul li .input-pwd{ width:160px;}
+	.login ul li .input-code{ width:60px;}
+	.login ul li .codepic{ float: right; margin: 2px 10px; margin-right:0; width: 70px;}
+	
+	.login ul li .label{ display:block; float:left; width:70px; height:40px; line-height:40px; text-align:center; font-size:14px;}
+	.login .btn{ display:block; width:240px; height:40px; margin:auto; background:#0072c6; color:#FFF; font-size:14px; border: 0; cursor:pointer;}
+	.login .last{ height:40px; margin:0 15px; line-height:40px;}
+	.login .last a{ color:#535353; float:left;}
+	.login .last a.zc{ color:#6496be; float:right;}
+
+/** 公告栏 **/
+.m-mulletin{ width:270px; height:200px; float:left; line-height:30px; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px;}
+	.m-mulletin .hd{ width:250px; height:30px; line-height:30px; padding:0 10px;}
+	.m-mulletin .hd strong{ font-size:14px;}
+	.m-mulletin ul{ width:235px; padding-left:20px;}
+	.m-mulletin li{ line-height:26px; background:url(../images/li_dot_3.gif) left center no-repeat; text-indent:.8em; height:26px; overflow:hidden;}
+
+/**
+ * 首页右侧模块
+ */
+
+/** 功能介绍 **/
+.m-functions{ width:420px; height:300px; float:left; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px;}
+	.m-functions .hd{  height:30px; padding-left:20px; line-height:30px;}
+	.m-functions .hd strong{ font-size:14px;}
+	.m-functions .con{ width:400px; height:250px; line-height:36px; margin:auto; text-indent:2em; font-size:14px; position:relative; }
+	.m-functions .con img{ float:left;  margin-right:10px; }
+	.m-functions .con a{  color:#ff0000; float:right; position:absolute; right:10px; bottom:0px; line-height:30px;}
+
+/**
+ * 首页服务资费
+ */
+.m-service{ width:284px; height:300px; float:right; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px;}
+	.m-service .hd{  height:30px; background:#e5eff8; line-height:30px; font-size:14px; padding:0 10px;}
+	.m-service .hd strong{ display:block; float:left;}
+	.m-service .hd a.more{ display:block; float:right; color:#000;}
+	.m-service .content{ width:259px; height:105px; margin:auto; line-height:20px; margin-top:5px;}
+	.m-service .content p{ text-indent:2em;}
+
+/**
+ * 首页查找打印业务
+ */
+.m-mod-s{ width:270px; height:72px; line-height:30px; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px; overflow:hidden;}
+	.m-mod-s i{ display:block; width:55px; height:53px; background:url(../images/con2_l_img1.jpg) 0 0 no-repeat; float:left; margin-left:10px; margin-top:10px;
+		-webkit-transition: all 0.18s ease-in-out;
+		-moz-transition: all 0.18s ease-in-out;
+		-ms-transition: all 0.18s ease-in-out;
+		-o-transition: all 0.18s ease-in-out;
+		transition: all 0.18s ease-in-out;
+		_margin-left:7px;
+		_margin-top:7px;
+	}
+	.m-mod-s i.icon-search{}
+	.m-mod-s i.icon-print{ background-position:0 -53px;}
+	.m-mod-s a{ display:inline-block; height:72px; color:#535353;}
+	.m-mod-s dl{ float:right; line-height:20px; margin-left:15px; margin-top:15px; _margin-left:12px; _margin-top:12px;}
+	.m-mod-s dl dt{ width:180px; font-size:16px;}
+	.m-mod-s dl dd{ width:180px;}
+	.m-mod-s a:hover{ /*background-color:#e5eff8;*/}
+	.m-mod-s a:hover i.icon-search{ background-position:-55px 0;}
+	.m-mod-s a:hover i.icon-print{ background-position:-55px -53px;}
+	.m-mod-s a:hover dt, .m-mod-s a:hover dd{ text-decoration:underline;}
+
+/**
+ * 办理流程
+ */
+.m-handlingGuide{ width:715px; height:372px; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px;}
+	.m-handlingGuide .hd{ height:30px; line-height:30px; padding:0 10px;}
+	.m-handlingGuide .hd strong{ font-size:14px; font-weight:700;}
+	.m-handlingGuide .bd{ padding:10px 20px 0 20px;}
+	.m-handlingGuide .bd .row{ position:relative;}
+	.m-handlingGuide .bd .next-step{ height:28px; width:31px; position:absolute; background:url(../images/liucheng-arrow.png) 0 0 no-repeat; overflow: hidden; text-indent:-100%; z-index:10; *zoom:1;}
+	.m-handlingGuide .bd .n-s-o{ background-position: 0 0; top:58px; left:323px;}
+	.m-handlingGuide .bd .n-s-t{ background-position: 0 -28px; top:145px; right:145px;}
+	.m-handlingGuide .bd .n-s-t2{ background-position: 0 -56px; bottom:58px; left:323px;}
+	
+	.m-hguide{ width:258px; height:88px; background:#f6f6f6; float:left; padding:24px 28px 28px 28px;}
+	.m-hguide i{ display:block; float: left; width: 87px; height: 87px; background:#fff url(../images/liucheng.png) 0 0 no-repeat;
+		-webkit-transition: all 0.18s ease-in-out;
+		-moz-transition: all 0.18s ease-in-out;
+		-ms-transition: all 0.18s ease-in-out;
+		-o-transition: all 0.18s ease-in-out;
+		transition: all 0.18s ease-in-out;
+	}
+	.m-hguide i.icon-hg-one{ background-position:0 0;}
+	.m-hguide i.icon-hg-two{ background-position:0 -88px;}
+	.m-hguide i.icon-hg-three{ background-position:0 -176px;}
+	.m-hguide i.icon-hg-four{ background-position:0 -264px;}
+	.m-hguide a{ display:inline-block; height:88px; width:258px;}
+	
+	.m-hguide dl{ float:right; line-height:24px; position:relative;}
+	.m-hguide dl dt{ width:160px; font-size:16px; font-weight:400; color:#000; margin-bottom:10px;}
+	.m-hguide dl dd{ width:160px; letter-spacing: 2px;}
+	.m-hguide dl dd.more{ position:absolute; right:0px; bottom:0; width:60px; font-family:"宋体";}
+	
+	.m-hguide a:hover i.icon-hg-one{ background-position:8px 0;}
+	.m-hguide a:hover i.icon-hg-two{ background-position:8px -88px;}
+	.m-hguide a:hover i.icon-hg-three{ background-position:8px -176px;}
+	.m-hguide a:hover i.icon-hg-four{ background-position:8px -264px;}
+	.m-hguide a:hover dl dt, .m-hguide a:hover dl dd { text-decoration:underline;}
+	

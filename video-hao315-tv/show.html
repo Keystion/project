@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>视频列表页</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/msg.css">
+<link rel="stylesheet" type="text/css" href="css/jscrollpane2.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+
+<body>
+<h3 class="tips">
+	<a href="index.html">首页</a>
+    <a href="list.html">视频列表页</a>
+    <a href="show.html">视频展示页</a>
+</h3>
+<div class="topnavbar">
+	<div class="container">
+		<div class="fl">欢迎来到致富经视频网，为您提供cctv7致富经视频、农广天地视频、生财有道视频！<a href="#" target="_blank" title="">[登录]</a><a href="#" target="_blank" title="">[注册]</a></div>
+		<div class="fr"><a href="#" target="_blank" title="">致富经商机</a>&nbsp;|&nbsp;<a href="#" target="_blank" title="">致富经商机</a>&nbsp;|&nbsp;<a href="#" target="_blank" title="">致富经商机</a>&nbsp;|&nbsp;<a href="#" target="_blank" title="">致富经商机</a></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="header">
+	<div class="container"> <span class="logo"><a href="#" title="视频"><img src="images/logo2013.gif"></a></span>
+		<div class="soso">
+			<form action="#" onSubmit="return so(this);" method="GET">
+				<span class="search_word">
+				<input class="soso_input" name="search" id="search" type="text" value="请输入关键词">
+				</span> <span class="search">
+				<input class="soso_btn" name="search" type="submit" value="">
+				</span>
+			</form>
+			<span class="soso_detail" title="点击查看详细搜索">详细搜索</span>
+			<div class="soso_keyword" style="display:none">
+				<p><span>所属行业</span><a href="#" target="_blank">服饰箱包</a><a href="#" target="_blank">美容保健</a><a href="#" target="_blank">酒水饮料</a><a href="#" target="_blank">家居环保</a><a href="#" target="_blank">餐饮娱乐</a><a href="#" target="_blank">教育培训</a><a href="#" target="_blank">新奇特</a></p>
+				<p><span>投资金额</span><a href="#" target="_blank">5-10万</a> <a href="#" target="_blank">10-30万</a> <a href="#" target="_blank">30-50万</a> <a href="#" target="_blank">50万以上</a> </p>
+				<p><span>招商形式</span><a href="#" target="_blank">门店加盟</a> <a href="#" target="_blank">特许经营</a> <a href="#" target="_blank">经销</a> <a href="#" target="_blank">代理</a></p>
+			</div>
+		</div>
+		<div class="login"> <a href="#" title="登陆">登陆</a>&nbsp;|&nbsp;<a href="#" title="注册">注册</a><br>
+			<a href="#" title="上传">上传</a>&nbsp;|&nbsp;<a href="#" title="足迹">足迹</a> </div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="breadcrumbs">
+	<div class="container">您现在的位置： <a href="#">致富经视频网</a> &gt; <a href="#">致富经视频</a> &gt; <em>酒水饮料</em></div>
+</div>
+<div class="v_show_box">
+	<div class="container">
+		<div class="v_show">
+			<p class="v_title">上海交通大学领衔教育品牌</p>
+			<div class="v_s_box">
+				<div class="v_p_lt">
+					<div class="playbox">
+					
+					</div>
+				</div>
+				<div class="v_p_fr">
+					<div class="v_mod">
+						<div class="v_hd">
+							<h3><strong>鱼一个宝塔锅王</strong>相关问答</h3>
+						</div>
+						<div class="v_bd">
+							<div id="jp-container" class="jp-container" style="border:none;">
+								<ul>
+									<li>
+										<a href="#" target="_blank" title="">
+											<div class="v_list_pic"><img src="images/pic015.gif" width="110" height="78"><em>02:30</em><div class="masktime" style="display: block;"></div></div>
+											<span class="v_list_info"><h4>瑞余瓦缸烤鱼堂</h4><p>行业：烧烤、小吃、餐饮</p><p>日期：2013-08-05</p><p>热度：<em>5245</em></p></span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" title="">
+											<div class="v_list_pic"><img src="images/pic015.gif" width="110" height="78"><em>02:30</em><div class="masktime" style="display: block;"></div></div>
+											<span class="v_list_info"><h4>瑞余瓦缸烤鱼堂</h4><p>行业：烧烤、小吃、餐饮</p><p>日期：2013-08-05</p><p>热度：<em>5245</em></p></span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" title="">
+											<div class="v_list_pic"><img src="images/pic015.gif" width="110" height="78"><em>02:30</em><div class="masktime" style="display: block;"></div></div>
+											<span class="v_list_info"><h4>瑞余瓦缸烤鱼堂</h4><p>行业：烧烤、小吃、餐饮</p><p>日期：2013-08-05</p><p>热度：<em>5245</em></p></span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" title="">
+											<div class="v_list_pic"><img src="images/pic015.gif" width="110" height="78"><em>02:30</em><div class="masktime" style="display: block;"></div></div>
+											<span class="v_list_info"><h4>瑞余瓦缸烤鱼堂</h4><p>行业：烧烤、小吃、餐饮</p><p>日期：2013-08-05</p><p>热度：<em>5245</em></p></span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" title="">
+											<div class="v_list_pic"><img src="images/pic015.gif" width="110" height="78"><em>02:30</em><div class="masktime" style="display: block;"></div></div>
+											<span class="v_list_info"><h4>瑞余瓦缸烤鱼堂</h4><p>行业：烧烤、小吃、餐饮</p><p>日期：2013-08-05</p><p>热度：<em>5245</em></p></span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" title="">
+											<div class="v_list_pic"><img src="images/pic015.gif" width="110" height="78"><em>02:30</em><div class="masktime" style="display: block;"></div></div>
+											<span class="v_list_info"><h4>瑞余瓦缸烤鱼堂</h4><p>行业：烧烤、小吃、餐饮</p><p>日期：2013-08-05</p><p>热度：<em>5245</em></p></span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" title="">
+											<div class="v_list_pic"><img src="images/pic015.gif" width="110" height="78"><em>02:30</em><div class="masktime" style="display: block;"></div></div>
+											<span class="v_list_info"><h4>瑞余瓦缸烤鱼堂</h4><p>行业：烧烤、小吃、餐饮</p><p>日期：2013-08-05</p><p>热度：<em>5245</em></p></span>
+										</a>
+									</li>
+								</ul>
+								<div class="clr"></div>
+							</div>
+							<script type="text/javascript" src="js/case.js"></script>
+						</div>
+						<div class="newScroll">
+							<div class="bd">
+								<ul class="infoList">
+									<li><a href="#" target="_blank" title="">中国打破了世界软件巨头规则中国打破了世界软件巨头巨头规则</a></li>
+									<li><a href="#" target="_blank" title="">施强：高端专业语言教学高端专业语言教学</a></li>
+									<li><a href="#" target="_blank" title="">新加坡留学，国际双语课程国际双语课程</a></li>
+									<li><a href="#" target="_blank" title="">国际双语课程国际双语课程国际双语课程</a></li>
+									<li><a href="#" target="_blank" title="">教育培训行业优势资源推介教育培训行业优势资源推介</a></li>
+									<li><a href="#" target="_blank" title="">女友坚持警局完婚不抛弃女友坚持警局完婚不抛弃</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container_bt"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="v_box">
+	<div class="container">
+		<div class="v_content">
+			<div class="v_c_fl">
+				<div class="video_box_left">
+					<div class="video_box_time">
+						<ul>
+							<li class="seetime">时间：<em>2012-12-31</em></li>
+							<li class="share"> 
+								<!-- Baidu Button BEGIN  -->
+								<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"> <a class="bds_qzone"></a> <a class="bds_tsina"></a> <a class="bds_tqq"></a> <a class="bds_renren"></a> <a class="bds_t163"></a> <span class="bds_more"></span> <a class="shareCount"></a> </div>
+								<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=487552" ></script> 
+								<script type="text/javascript" id="bdshell_js"></script> 
+								<script type="text/javascript">
+								document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+								</script>
+								<!-- Baidu Button END --> 
+							</li>
+							<li class="d"> <em class="fn"></em> </li>
+							<li class="playtime">播放：<b>788</b>次</li>
+						</ul>
+						<div class="panels">
+							<div class="panel panel_share" id="panel_share">
+								<div class="d_s"></div>
+								<div class="close" id="handle_share" title="关闭"></div>
+								<div class="panel_con">
+									<div class="p1">
+										<div class="item"><span class="label">视频地址: </span>
+											<input type="text" class="form_input form_input_s" id="link1" value="http://video.hao315.tv">
+											<input type="button" class="form_btn form_btn_text" value="复制">
+										</div>
+										<div class="item"><span class="label">flash地址: </span>
+											<input type="text" class="form_input form_input_s" id="link2" value="http://video.hao315.tv">
+											<input type="button" class="form_btn form_btn_text" value="复制">
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="video_box_cont"> <strong> 视频简介：</strong>
+						<p>昂立集团由原上海交通大学党委书记王宗光全力打造，目前已经成为民营幼儿教育领域的第一品牌，昂立无决珠心算课程是昂立教育花费多年时间研发而成的，从视频中，可以看到通过珠心算训练后孩子令人吃惊的运算能力，经过珠心算训练后大脑的不同变化，大幅开发孩子的智能。昂立珠心算目前已经有2000余家分校，到底昂立珠心算加盟校情况如何，视频里的介绍更全面。</p>
+						<div class="video_mess_tel">
+							<div style="float:left; width:100%;">免费招商直通车：</div><br><b style="float:left; color:#000; width:100%;">4001000875</b></div>
+					</div>
+				</div>
+			</div>
+			<div class="v_c_fr">
+				<div class=" msg_box"> <strong>我要留言</strong>
+					<div class="ui-grid" id="J_uiGrid">
+						<div class="ui-msg">
+							<h3>生意街温馨提醒</h3>
+							<h4>留言不会产生任何费用，并且可以提高成功合作加盟的可能。</h4>
+						</div>
+						<form class="ui-form" name="leaveMsg" id="J_msgForm">
+							<fieldset>
+								<legend>leave message</legend>
+								<div class="ui-form-inner">
+									<div class="ui-form-inner-box">
+										<div class="ui-form-item">
+											<p class="ui-form-explain"></p>
+											<div class="ui-form-item-border fn-clear">
+												<label for="visitorName" class="ui-label"><em class="ui-form-required">*</em>姓名</label>
+												<input class="ui-input" value="" type="text" id="visitorName" necessary="necessary" datatype="nickname" nullmsg="请输入您的姓名" errormsg="仅支持1-12位中文、字母、数字、下划线或减号" name="visitorName">
+											</div>
+										</div>
+										<div class="ui-form-item">
+											<p class="ui-form-explain"></p>
+											<div class="ui-form-item-border fn-clear">
+												<label for="visitorMobile" class="ui-label"><em class="ui-form-required">*</em>手机</label>
+												<input class="ui-input" value="" type="text" id="visitorMobile" necessary="necessary" datatype="phone" nullmsg="请输入您经常使用的手机号" errormsg="手机号码有误或者格式不正确，请重新输入" name="visitorMobile">
+											</div>
+										</div>
+										<div class="ui-form-item">
+											<p class="ui-form-explain"></p>
+											<div class="ui-form-item-border fn-clear">
+												<label class="ui-label"><em class="ui-form-required">*</em>留言</label>
+												<textarea class="ui-textarea" name="messageContent" value="" id="messageContent" necessary="necessary"></textarea>
+												<ul class="ui-list preinstall-msg" id="J_preinstallMsg" style="display: none;">
+													<li class="ui-list-item">此项目很好，请尽快联系我详谈。</li>
+													<li class="ui-list-item">请问我所在的地区有加盟商了吗？</li>
+													<li class="ui-list-item">我已留下邮箱，请将详细资料发邮件给我</li>
+													<li class="ui-list-item">做为此项目的代理加盟商能得到哪些支持？</li>
+													<li class="ui-list-item">请问投资此项目所需要的费用有哪些？</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="ui-form-item ui-form-last fn-clear">
+										<div class="ui-button ui-submit-btn" id="J_msgSubmit">提交留言</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="ads_box">
+	<div class="container"> <a href="#" aid="1263" target="_blank" title="整合全球八顶尖大酒庄资源"><img src="images/pic014.gif" alt=""></a>
+		<div class="container_bt"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="v_v_box">
+	<div class="container">
+		<div class="h_video">
+			<div class="tab-hd">
+				<h1><strong>除了</strong>鱼一哥宝塔锅王 <em>或许您还喜欢</em></h1>
+				<div class="pullrt"><span class="step"> <a href="javascript:void(0)" class="prev"><s class="arrow arrow-lthin"><s></s></s></a> <a href="javascript:void(0)" class="next"><s class="arrow arrow-rthin"><s></s></s></a> </span><ul></ul><em>您还可以点击切换一组</em>
+				</div>
+			</div>
+			<div class="tab-bd">
+				<div class="tab-bd-in">
+					<ul class="hot_list">
+						<li> <a href="#" aid="1204" target="_blank"> <img src="images/pic011.gif" alt="上海交通大学领衔教育品牌" width="180" height="100"> <span>上海交通大学领衔教育品牌</span> <em>02:30</em>
+							<div class="masktime"></div>
+							<div class="mask"> <span>全国2000家分校盈利</span> <span>投资金额：￥5-10万</span> <span class="look">查看视频</span> </div>
+							</a>
+							<p>全国2000家分校盈利</p>
+						</li>
+						<script>
+						for(var i = 2; i < 11; i++){
+							document.write('<li><a href="#" aid="1204" target="_blank"><img src="images/pic011.gif" alt="上海交通大学领衔教育品牌" width="180" height="100"><span>上海交通大学领衔教育品牌</span><em>02:30</em><div class="masktime"></div><div class="mask"><span>全国2000家分校盈利</span><span>投资金额：￥5-10万</span><span class="look">查看视频</span></div></a><p>全国2000家分校盈利</p></li>');
+						}
+						</script>
+					</ul>
+					<ul class="hot_list">
+						<li> <a href="#" aid="1204" target="_blank"> <img src="images/pic011.gif" alt="上海交通大学领衔教育品牌" width="180" height="100"> <span>上海交通大学领衔教育品牌</span> <em>02:30</em>
+							<div class="masktime"></div>
+							<div class="mask"> <span>全国2000家分校盈利</span> <span>投资金额：￥5-10万</span> <span class="look">查看视频</span> </div>
+							</a>
+							<p>全国2000家分校盈利</p>
+						</li>
+						<script>
+						for(var i = 2; i < 11; i++){
+							document.write('<li><a href="#" aid="1204" target="_blank"><img src="images/pic011.gif" alt="上海交通大学领衔教育品牌" width="180" height="100"><span>上海交通大学领衔教育品牌</span><em>02:30</em><div class="masktime"></div><div class="mask"><span>全国2000家分校盈利</span><span>投资金额：￥5-10万</span><span class="look">查看视频</span></div></a><p>全国2000家分校盈利</p></li>');
+						}
+						</script>
+					</ul>
+					<ul class="hot_list">
+						<li> <a href="#" aid="1204" target="_blank"> <img src="images/pic011.gif" alt="上海交通大学领衔教育品牌" width="180" height="100"> <span>上海交通大学领衔教育品牌</span> <em>02:30</em>
+							<div class="masktime"></div>
+							<div class="mask"> <span>全国2000家分校盈利</span> <span>投资金额：￥5-10万</span> <span class="look">查看视频</span> </div>
+							</a>
+							<p>全国2000家分校盈利</p>
+						</li>
+						<script>
+						for(var i = 2; i < 11; i++){
+							document.write('<li><a href="#" aid="1204" target="_blank"><img src="images/pic011.gif" alt="上海交通大学领衔教育品牌" width="180" height="100"><span>上海交通大学领衔教育品牌</span><em>02:30</em><div class="masktime"></div><div class="mask"><span>全国2000家分校盈利</span><span>投资金额：￥5-10万</span><span class="look">查看视频</span></div></a><p>全国2000家分校盈利</p></li>');
+						}
+						</script>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container_bt"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="leav_box">
+	<div class="container">
+		<div class="v_content">
+			<div class="v_c_fl">
+				<div class="c_mod">
+					<div class="c_hd">
+						<h3><strong>鱼一个宝塔锅王</strong>相关评论</h3>
+					</div>
+					<div class="c_bd">
+						<div class="c_bd_h"><em class="ne">最新发布 |</em> 评论总数：(<em> 92 </em>)条 <a href="javascript:void(0);" class="pinglun_s" title="我要评论">我要评论</a></div>
+						<div class="pinglun" id="pinglun">
+							<div class="pingin" style="display:none">
+								<div class="pclose" id="handle_share" title="关闭"></div>
+								<div class="pinfo">
+									<h3><strong>鱼一个宝塔锅王</strong>相关问答</h3>
+									<p>写下您想说的话，和大家一起互动吧！</p>
+									<textarea class="ptextarea" id="ptextarea" name="ptextarea"></textarea>
+									<p class="warm">写下您想说的话，和大家一起互动吧！</p>
+									<p class="plcz"><input type="submit" class="fabu" value="发布"><input type="button" class="quxiao" value="取消"></p>
+								</div>
+							</div>
+						</div>
+						<ul class="msg_list">
+							<li>
+								<div class="u_pic"><img src="images/u_pic.gif" height="49" width="50" alt=""></div>
+								<div class="u_info">
+									<dl>
+										<dt><em>网友1001</em>说：</dt>
+										<dd>不错啊，这个，怎么加盟呢？我很想知道。</dd>
+									</dl>
+									<div class="u_bt"><em>2013-08-07</em> <a href="#" title="顶一下">顶(10)</a> <a href="#" title="踩一下">踩(0)</a></div>
+								</div>
+							</li>
+							<script>
+							for(var i = 0; i < 7; i++){
+								document.write('<li><div class="u_pic"><img src="images/u_pic.gif" height="49" width="50" alt=""></div><div class="u_info"><dl><dt><em>网友1001</em>说：</dt><dd>不错啊，这个，怎么加盟呢？我很想知道。</dd></dl><div class="u_bt"><em>2013-08-07</em> <a href="#" title="顶一下">顶(10)</a> <a href="#" title="踩一下">踩(0)</a></div></div></li>');
+							}
+							</script>
+						</ul>
+						<p class="page"> <span>首页</span> <span>上一页</span> <strong>1</strong> <a href="#">2</a> <a href="#" rel="next" class="next">下一页</a> <a href="#" rel="last" class="last">尾页</a> </p>
+					</div>
+				</div>
+			</div>
+			<div class="v_c_fr mb_20">
+				<div class="c_mod">
+					<div class="c_hd">
+						<h3><strong>鱼一个宝塔锅王</strong>相关问答</h3>
+					</div>
+					<div class="c_bd">
+						<ul class="zx_list">
+							<li><i></i><a href="#" target="_blank" title="">迪兰朵国际产后恢复机构加盟，享受健康自然生活</a></li>
+							<script>
+							for(var i = 0; i < 9; i++){
+								document.write('<li><i></i><a href="#" target="_blank" title="">迪兰朵国际产后恢复机构加盟，享受健康自然生活</a></li>');
+							}
+							</script>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="v_c_fr">
+				<div class="c_mod">
+					<div class="c_hd">
+						<h3><strong>鱼一个宝塔锅王</strong>相关问答</h3>
+					</div>
+					<div class="c_bd">
+						<ul class="zx_list">
+							<li><i></i><a href="#" target="_blank" title="">迪兰朵国际产后恢复机构加盟，享受健康自然生活</a></li>
+							<script>
+							for(var i = 0; i < 9; i++){
+								document.write('<li><i></i><a href="#" target="_blank" title="">迪兰朵国际产后恢复机构加盟，享受健康自然生活</a></li>');
+							}
+							</script>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="flinks">
+	<div class="container">
+		<div class="links"> <strong>友情链接：</strong>（快照隔天，权重相当；QQ790062246）<br>
+			<a href="#" target="_blank" title="">创业项目</a><script>
+			for(var i = 0; i < 20; i++){
+				document.write('<a href="#" target="_blank" title="">创业项目</a>');
+			}
+			</script><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a><a href="#" target="_blank" title="">创业项目</a> </div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="ads_box">
+	<div class="container"> <a href="#" aid="1263" target="_blank" title="整合全球八顶尖大酒庄资源"><img src="images/pic014.gif" alt=""></a>
+		<div class="container_bt"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div id="shadow"></div>
+<div class="fixbox">
+	<div id="close_lamp" class="close_lamp"></div>
+	<div id="shear_lamp" class="shear_lamp">
+		<!-- Baidu Button BEGIN -->
+		<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" style=" margin:25px 0 0 2px; display:none;">
+			<span class="bds_more"></span>
+		</div>
+		<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=487552" ></script>
+		<script type="text/javascript" id="bdshell_js"></script>
+		<script type="text/javascript">
+		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+		</script>
+		<!-- Baidu Button END -->
+	</div>
+	<div id="com_lamp" class="com_lamp"></div>
+	<div id="topcontrol" class="gotop"><a href="#">&nbsp;</a></div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="foot_nav"> <a href="#" target="_blank">关于生意街</a>| <a href="#" target="_blank">服务条款</a>| <a href="#" target="_blank">网站地图</a>| <a href="#" target="_blank">帮助中心</a>| <a href="#" target="_blank">联系我们</a>| <a href="#" target="_blank">诚信招商平台 </a>| <a href="#" target="_blank">广告投放</a>| <a href="#" target="_blank">旧版生意街</a> </div>
+		<p class="cp">版权所有：互通八达网络信息技术（北京）有限公司  广告热线：18801026998<br>
+			CopyRight (c) 2003-2012 hao315.tv All right rederved.<br>
+			ICP备案号：苏ICP备12056623号-1 </p>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(".h_video").slide({ mainCell:".tab-bd-in", titCell:".tab-hd ul", effect:"top", delayTime:400,interTime:3000,pnLoop:true,autoPage:true,autoPlay:true,easing:"easeOutCubic" });
+	jQuery(".newScroll").slide({mainCell:".bd ul",effect:"topLoop",autoPlay:true});
+</script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane2.js"></script>
+</body>
+</html>

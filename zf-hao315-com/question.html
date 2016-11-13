@@ -1,0 +1,346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>提问页面</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<h3 class="tips">
+	<div class="container">
+		<a href="index.html">首页</a>
+		<a href="xm-index.html">项目首页</a>
+		<a href="xm-jieshao.html">项目页_介绍_优势_政策</a>
+		<a href="xm-chanpinzhanshi.html">项目页_产品展示页</a>
+		<a href="xm-liebiao.html">项目页_项目列表</a>
+		<a href="xm-tupianliebiao.html">项目页_项目图片列表</a>
+		<a href="xm-tupianzhanshi.html">项目页_项目图片展示页面</a>
+		<a href="xm-xinwenliebiao.html">项目页_新闻列表页</a>
+		<a href="xm-xinwenye.html">项目页_新闻页</a>
+		<a href="xm-zhaoshanghaibao.html">项目页_招商海报</a>
+		<a href="xm-zhaoshangshipin.html">项目页_招商视频</a>
+		<a href="xm-zhifuwendaliebiao.html">项目页_致富问答列表</a>
+		<a href="xm-zhuanjiadianping.html">项目页_专家点评</a>
+		<a href="ask_index.html">问答首页</a>
+		<a href="wenti.html">问题页</a>
+		<a href="question.html">提问页</a>
+		<a href="ask_class.html">问答一级分类</a>
+	</div>
+</h3>
+<div class="topbar">
+	<div class="container">
+		<div class="pull-left"><a href="#">首页</a> <a href="#">经销</a> <a href="#">代理</a> <a href="#">加盟</a> <a href="#">商机</a> <a href="#">资讯</a> <a href="#">问答</a> <a href="#">专家</a> <a href="#">专题</a> <a href="#">行业 </a></div>
+		<div class="pull-right" style="overflow:inherit">
+			<ul class="u-list">
+				<li id="u-login">
+					<form id="form" method="get" name="form">
+						<label for="uname">用户名
+							<input type="text" class="inp-t" name="uname" id="uname">
+						</label>
+						<label for="upwd">密码
+							<input type="text" class="inp-t" name="upwd" id="upwd">
+						</label>
+						<input type="button" class="inp-btn" value="登录" title="登录">
+					</form>
+				</li>
+				<li id="u-weixin"> <img src="images/weixin.gif" alt="" class="weixin">
+					<div class="weixin_pic"><img src="images/weixin2.gif" width="63" height="62"><em>微信二维码扫一扫</em></div>
+				</li>
+				<li id="u-txweibo">
+					<iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&appkey=801491111&sign=ebee3646&v=2&name=keystion&style=5&t=1395886910466&f=0" frameborder="0" scrolling="auto" width="57" height="24" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+				</li>
+				<li id="u-weibo">
+					<wb:follow-button uid="2991975565" type="gray_1" width="67" height="24" ></wb:follow-button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="header clearfix">
+	<div class="container">
+		<div class="head-wrap">
+			<div class="m-search">
+				<div class="m-search-wrap">
+					<div class="m-search-bd">
+						<form action="/serch" method="post">
+							<div class="m-search-button">
+								<button class="btn-search" type="submit">搜索</button>
+							</div>
+							<div class="m-search-panel">
+								<input id="q" name="q" class="inp-t" type="text" aria-label="请输入搜索文字" accesskey="s" autocomplete="off" aria-haspopup="true" aria-combobox="list" role="combobox" x-webkit-grammar="builtin:translate" onblur="if(this.value=='') this.value = this.defaultValue;" onfocus="this.value='';" value="想找什么项目？">
+							</div>
+						</form>
+					</div>
+					<div class="m-search-ft">
+						<div class="search-hots"> <a href="#">招商加盟</a> <a href="">项目品牌</a> <a href="">连锁加盟</a> <a href="">商机排行榜</a> <a href="">创业加盟论</a> </div>
+					</div>
+				</div>
+			</div>
+			<div class="m-logo">
+				<div class="m-logo-img">
+					<h1><a href="index.html" title="好315网 致富频道"><img src="images/logo.png" alt="Logo"></a></h1>
+				</div>
+				<div class="m-logo-subtitle">致富<em>频道</em></div>
+			</div>
+			<div class="m-top-hot">
+				<dl class="hd_hot">
+					<dt>创业热点</dt>
+					<dd><a href="#">网店代理</a> <a href="#">冰淇淋加盟</a> <a href="#">童装加盟</a> <a href="#">家居用品</a> </dd>
+					<dt>投资热点</dt>
+					<dd> <a href="#">环保机械</a> <a href="#">教育加盟</a> <a href="#">天麻种植</a> <a href="#">农村致富</a> </dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="nav clearfix">
+	<div class="container">
+		<div class="nav-warp">
+			<dl class="nav-first">
+				<dt>热门行业</dt>
+				<dd><a href="#" title="">服装</a> <a href="#" title="">餐饮</a> <a href="#" title="">饰品</a> <a href="#" title="">教育</a> <a href="#" title="">建材</a> <a href="#" title="">机械</a></dd>
+			</dl>
+			<dl class="nav-second">
+				<dt>潜力行业</dt>
+				<dd><a href="#" title="">服装</a> <a href="#" title="">餐饮</a> <a href="#" title="">饰品</a> <a href="#" title="">教育</a> <a href="#" title="">建材</a> <a href="#" title="">机械</a></dd>
+			</dl>
+			<dl class="nav-third">
+				<dt>创业人群</dt>
+				<dd><a href="#" title="">80后创业</a> <a href="#" title="">白领兼职</a> <a href="#" title="">大学生创业</a> <a href="#" title="">二次创业</a> <a href="#" title="">女性投资</a> <a href="#" title="">农民工</a></dd>
+			</dl>
+			<dl class="nav-fourth">
+				<dt>特色栏目</dt>
+				<dd><a href="#" title="">致富商机</a> <a href="#" title="">如何创业</a> <a href="#" title="">开店指南</a> <a href="#" title="">农村致富</a> <a href="#" title="">小本创业</a> <a href="#" title="">融资技巧</a></dd>
+			</dl>
+			<dl class="nav-fifth">
+				<dt>致富学院</dt>
+				<dd><a href="#" title="">创业故事</a> <a href="#" title="">创业指南</a> <a href="#" title="">投资参考</a> <a href="#" title="">经验交流</a> <a href="#" title="">开店筹备</a> <a href="#" title="">店铺经营</a> <a href="#" title="">人员管理</a> <a href="#" title="">市场行情</a></dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<div class="hot-items clearfix">
+	<div class="container">
+		<ul>
+			<li class="hot-items-li-1"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-2"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-3"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-4"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-5"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-6"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-7"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-8"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-9"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+			<li class="hot-items-li-10"><a href="#"><img src="images/nopic2.png" alt=""></a></li>
+		</ul>
+	</div>
+</div>
+<div class="ishow-one clearfix"> 
+	<!-- 排行榜展示 -->
+	<div class="container"> <em></em>
+		<ul>
+			<li><a href="#" target="_blank"><img src="images/nopic4.png" alt=""></a></li>
+			<script>
+                for( var o = 2; o < 11; o++){
+                    document.write('<li><a href="#" target="_blank"><img src="images/nopic4.png" alt=""></a></li>');
+                }
+            </script>
+		</ul>
+	</div>
+</div>
+<div class="ask_class clearfix">
+	<div class="container">
+		<div class="pull-left">
+			<div class="breadcrumbs_small"> 您现在的位置： <a href="#">小本创业网</a> &gt; <em>全国连锁加盟项目</em> </div>
+			<div class="recommend_items">
+				<ul class="p_i_show q_c1">
+					<li class="c1_li_1"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+					<script>
+						for( var p = 2; p < 8; p++){
+							document.write('<li class="c1_li_'+p+'"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>');
+						}
+					</script>
+				</ul>
+			</div>
+			<div class="ask_question tiwen">
+				<div class="tiwen_hd"><strong>你问我答</strong> 帮助成千上万个创业者答疑解惑</div>
+				<div class="tiwen_bd">
+					<div class="tiwen_line"> <span class="tiwen_line_tips"> <em>* 此项必填</em> </span>
+						<label>问题标题：</label>
+						<input id="names" type="text" size="60" value="" name="names">
+					</div>
+					<div class="tiwen_line"> <span class="tiwen_line_tips"> <em>* 此项必填</em> </span>
+						<label>投资地区：</label>
+						<select name="" id="">
+							<option value="0">地区一级</option>
+							<option value="1">地区一级</option>
+							<option value="2">地区一级</option>
+						</select>
+						省
+						<select name="" id="">
+							<option value="0">地区一级</option>
+							<option value="1">地区一级</option>
+							<option value="2">地区一级</option>
+						</select>
+						市 </div>
+					<div class="tiwen_line"> <span class="tiwen_line_tips"> <em>* 此项必填</em> </span>
+						<label>投资金额：</label>
+						<select name="" id="">
+							<option value="0">投资金额</option>
+							<option value="1">投资金额</option>
+							<option value="2">投资金额</option>
+						</select>
+					</div>
+					<div class="tiwen_line"> <span class="tiwen_line_tips"> <em>* 此项必填</em> </span>
+						<label>问题性质：</label>
+						<select name="" id="">
+							<option value="0">问题性质</option>
+							<option value="1">问题性质</option>
+							<option value="2">问题性质</option>
+						</select>
+					</div>
+					<div class="tiwen_line"> <span class="tiwen_line_tips"> <em>* 此项必填</em> </span>
+						<label>投资行业：</label>
+						<select name="" id="">
+							<option value="0">一级行业</option>
+							<option value="1">一级行业</option>
+							<option value="2">一级行业</option>
+						</select>
+						<select name="" id="">
+							<option value="0">二级行业</option>
+							<option value="1">二级行业</option>
+							<option value="2">二级行业</option>
+						</select>
+					</div>
+					<div class="tiwen_line"> <span class="tiwen_line_tips"> <em>* 此项必填</em> </span>
+						<label>创业人群：</label>
+						<select name="" id="">
+							<option value="0">创业人群</option>
+							<option value="1">创业人群</option>
+							<option value="2">创业人群</option>
+						</select>
+					</div>
+					<div class="tiwen_line" style="height:auto;"> <span class="tiwen_line_tips"> <em>* 此项必填</em> 可输入200字</span>
+						<label class="tiwen_label_msg">问题描述：</label>
+						<textarea id="text_content" rows="4" cols="60" name="text_content"></textarea>
+					</div>
+					<div class="tiwen_line notice">
+						<label>温馨提示：</label>
+						请完整填写以上各分类信息，使您的问题更有效的得到解</div>
+					<div class="tiwen_line submits">
+						<input class="submit" type="image" src="images/wytw.gif" width="166" height="45">
+						<a href="#">DIY致富商机>></a> </div>
+				</div>
+			</div>
+			<div class="recommend_items">
+				<ul class="p_i_show q_c2">
+					<li class="c1_li_1"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+					<script>
+						for( var p = 2; p < 22; p++){
+							document.write('<li class="c1_li_'+p+'"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片"><p>标题要长些才行！</p></a></li>');
+						}
+					</script>
+				</ul>
+			</div>
+		</div>
+		<div class="pull-right">
+			<div class="zxcywt">
+				<div class="hd"><i></i>
+					<h3>最新创业问题</h3>
+				</div>
+				<div class="bd">
+					<ul class="zxcywt_list">
+						<li class="zxcywt_list_li_1"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_2"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_3"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_4"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_5"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_6"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_7"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_8"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_9"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_10"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="related_items">
+				<ul class="p_i_show q_c3">
+					<li class="c2_li_1"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+					<li class="c2_li_2"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+					<li class="c2_li_3"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+					<li class="c2_li_4"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+					<li class="c2_li_5"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+					<li class="c2_li_6"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+					<li class="c2_li_7"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+					<li class="c2_li_8"><a href="#" target="_blank"><img src="images/nopic2.png" alt="暂无图片">
+						<p>标题要长些才行！</p>
+						</a></li>
+				</ul>
+			</div>
+			<div class="zxcywt">
+				<div class="hd"><i></i>
+					<h3>最新创业问题</h3>
+				</div>
+				<div class="bd">
+					<ul class="zxcywt_list">
+						<li class="zxcywt_list_li_1"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_2"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_3"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_4"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_5"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_6"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_7"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_8"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_9"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+						<li class="zxcywt_list_li_10"><em> · </em><a href="#">标题信息要长才行的！</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="inads clearfix"> 
+	<!-- 广告位 -->
+	<div class="container">
+		<div class="adsline"> <a href="#" target="_blank" title="广告位"><img src="images/pic1_1.gif" alt="广告位"></a> </div>
+	</div>
+</div>
+<div class="linkbox clearfix"> 
+	<!--友情链接-->
+	<div class="container"> <span>友情链接：<em>权重相当，内容健康；联系QQ：<a target="_blank"  style=" cursor:pointer;" href="http://wpa.qq.com/msgrd?v=3&uin=790062246&site=qq&menu=yes" title="友情链接服务">790062246</a></em></span>
+		<div class="link"> <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> | <a href="#" target="_blank">创业加盟</a> </div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footer-warp"> <a href="#" target="_blank">网站首页</a> | <a href="" target="_blank" >关于我们</a> | <a href="#" target="_blank">联系我们</a> | <a href="#" target="_blank">法律声明</a> | <a href="http://open.qq.com/" target="_blank">查看留言</a> <br>
+			<span style="line-height:30px;"><a href="#" target="_blank">ICP备案号：京ICP备12003963号-1</a> </span><br>
+			<span style="font-family:Arial;">Copyright © 2003 - 2014 hao315.com All right rederved. </span> </div>
+	</div>
+</div>
+<script src="js/base.js"></script>
+</body>
+</html>

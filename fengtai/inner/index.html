@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>首页</title>
+<link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/common.css" />
+<link type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/datepicker/bs-datepicker.js"></script>
+
+
+<style>
+#t{ height:118px; width:100%; z-index:6; position:relative;}
+	#t #top{ width:100%; background:none; height:118px;}
+#m{ height:auto; width:100%; position:relative; z-index:5; top:-4px; background-color:#f8f8f8;}
+	#l{ width:210px; float:left;background: #FFF url(images/sidebar.png) 0 0 repeat-y;}
+		#l #frmleft{ width:200px;}
+	#r{ margin-left:220px;}
+		#r #frmright{ width:100%; height:100%;}
+/**
+ * 隐藏功能菜单侧边栏
+ */
+.page-switcher {
+	-webkit-transition: width 150ms, right 150ms, background-color 150ms;
+	background-color: #dfe8e5;
+	border: none;
+	bottom: 0;
+	font-size: 40px;
+	line-height:40px;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	position:fixed;
+	_position:absolute;
+	left: 200px;
+	top: 40%;
+	z-index: 5;
+	color: rgba(0,0,0, 0.5);
+	width: 16px;
+	height:86px;
+	padding-bottom: 0px;
+}
+.page-switcher:hover, .page-switcher:focus, .page-switcher.drag-target {background-color: #9dd6c5;}
+</style>
+</head>
+
+<body>
+<div id="t">
+	<iframe frameborder="0" id="top" name="top" scrolling="no" src="top.html"></iframe>
+</div>
+<div id="m" class="wrap">
+	<div id="l">
+		<iframe frameborder="0" id="frmleft" name="frmleft" src="left.html"  allowtransparency="true"></iframe>
+	</div>
+	<div id="r">
+		<iframe frameborder="0" id="frmright" name="frmright" scrolling="yes" src="info.html"></iframe>
+	</div>
+</div>
+
+<button id="page-switcher-start" title="隐藏显示侧边栏" class="page-switcher">‹</button>
+<script>
+$(function() {
+	
+	$(".table tbody tr:even").addClass("pure-table-odd");
+	var i=0;
+	function sH(){
+		var h = $(document).height()-118;
+		var w = $(document).width()-500;
+		$("#l,#frmleft").height(h);
+		$("#r").height(h);
+	};sH();
+	
+	$("#page-switcher-start").click(function(){
+		var ww = $(document).width()-50;
+		var ws = $(document).width()-250;
+		if(i==0){
+			$("#l").animate({"margin-left":"-200px"});
+			$("#r").animate({"margin-left":"20px"});
+			$(this).animate({"left":"0"});
+			$(this).text("›");
+			i=1;
+		}else{
+			$("#l").animate({"margin-left":"0"});
+			$("#r").animate({"margin-left":"220px"});
+			$(this).animate({"left":"200"});
+			$(this).text("‹");
+			i=0;
+		}
+	});	
+	var isIE=!!window.ActiveXObject;
+	var isIE6=isIE&&!window.XMLHttpRequest;
+	if (isIE) { if (!isIE6) { $(window).resize(function() { sH();}) }}
+	else{ $(window).resize(function() { sH();})	}
+});
+</script>
+</body>
+</html>

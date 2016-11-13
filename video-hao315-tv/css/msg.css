@@ -1,0 +1,458 @@
+html {
+    background-color: transparent;
+}
+
+/* ui-form */
+#J_uiGrid {
+    width: 300px;
+}
+
+.ui-grid {
+    background-color: transparent;
+    font-family: "\5B8B\4F53", "\9ED1\4F53", Arial, tahoma;
+}
+
+.ui-page-loading {
+    font-size: 20px;
+    text-align: center;
+    left: 200px;
+    position: absolute;
+    top: 0;
+}
+
+.ui-msg {
+    background-color: #fffee6;
+    padding: 10px;
+    margin: 0 auto;
+    width: 260px;
+    border: 1px solid #f1e0c9;
+    border-radius: 5px;
+}
+
+.ui-msg h3 {
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ui-msg h4 {
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+.ui-form {
+    color: #333;
+    padding: 0;
+}
+
+.ui-form-inner {
+    padding: 0px 5px 0;
+}
+
+.ui-form-inner-box {
+    width: 290px;
+    position: relative;
+}
+
+.ui-form input,
+.ui-form img {
+    vertical-align: middle;
+}
+
+.ui-form fieldset {
+    background: none repeat scroll 0 0 transparent;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ui-form legend {
+    background: none repeat scroll 0 0 transparent;
+    color: #fff;
+    display: none;
+}
+
+.ui-form label,
+.ui-form label:focus,
+.ui-form label:hover,
+.ui-form label:active {
+    border: 0 none;
+    outline: medium none;
+}
+
+.ui-form .ui-radio,
+.ui-form .ui-checkbox {
+    vertical-align: middle;
+}
+
+.ui-form-item {
+    padding: 20px 5px 0 5px;
+    position: relative;
+}
+
+.ui-form-last {
+    padding: 0;
+    margin-top: 15px;
+}
+
+.ui-form-item-border {
+    border: 1px solid #ccc;
+    padding: 5px 0 5px 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.ui-form-item .ui-form-item-inner {
+    position: relative;
+    width: 195px;
+}
+
+.ui-form-required {
+    color: #ff0000;
+    font-family: SimSun;
+    font-size: 12px;
+    margin-right: 13px;
+    display: none;
+}
+
+.ui-form-list {
+
+}
+
+.ui-label {
+    float: left;
+    font-size: 12px;
+    text-align: left;
+    width: 25px;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+.ui-input, .ui-textarea {
+    padding: 3px;
+    font-family: Tahoma;
+    line-height: normal;
+    border: 0 none;
+    background-color: transparent;
+}
+
+.ui-input {
+    width: 230px;
+}
+
+.ui-form-explain {
+    color: #666;
+    font-size: 12px;
+    line-height: 18px;
+    position: absolute;
+    top: 0;
+    left: 14px;
+}
+
+.ui-radio {
+
+}
+
+.ui-radio-label, .ui-checkbox-label {
+    margin: 0 10px 0 2px;
+    font-family: Tahoma;
+
+}
+
+.ui-radio-label {
+    margin: 0 5px 0 2px;
+    vertical-align: middle;
+}
+
+.ui-checkbox {
+
+}
+
+.ui-checkbox-label {
+    margin: 0 5px 0 2px;
+}
+
+.ui-select {
+    padding: 2px;
+    border: 1px solid #cccccc;
+    border-bottom-color: #fff;
+    background-color: #fff;
+}
+
+.ui-select option {
+    margin: 2px 0;
+    background-color: #fff;
+}
+
+.ui-textarea {
+    line-height: 1.3;
+    font-size: 12px;
+    overflow: hidden;
+    width: 230px;
+    height: 15px;
+    resize: none;
+    color: #333;
+    padding-top:3px;
+}
+
+.ui-form textarea:focus,
+.ui-textarea-focus {
+    color: #333;
+}
+
+.ui-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.ui-submit-btn,
+.ui-submit-btn-hover {
+    width: 127px;
+    height: 32px;
+}
+
+.ui-submit-btn {
+    width: 280px;
+    margin: 0 auto;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #ca0c05;
+    border-top: 1px solid #d15536;
+    border-left: 1px solid #e25833;
+    border-right: 1px solid #e12515;
+	background-color:red;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f45a38), to(#e13417));
+    background: -moz-linear-gradient( top,#f45a38,#e13417);
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px #f98453;
+    -moz-border-radius: 5px;
+    -moz-box-shadow: inset 0 1px #f98453;
+    border-radius: 5px;
+    box-shadow: inset 0 1px #f98453;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.ui-submit-btn-hover {
+
+}
+
+.ui-reset-btn {
+    width: 72px;
+    height: 36px;
+    margin-top: 20px;
+    background: url("../images/ui-btn-reset.png") 0 0 no-repeat transparent;
+}
+
+.ui-form-loading {
+    width: 72px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.ui-page-jump,
+.ui-systip {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    color: #3da134;
+    font-size: 12px;
+}
+
+.ui-systip {
+    color: #ff0000;
+    width: 280px;
+}
+
+.ui-other-info {
+    padding-right: 5px;
+}
+
+.ui-input-text {
+    width: 252px;
+    vertical-align: middle;
+}
+
+.ui-input-vcode {
+    width: 100px;
+    vertical-align: middle;
+}
+
+.ui-select-amount {
+    width: 290px;
+}
+
+.ui-list {
+
+}
+
+.preinstall-msg {
+    zoom: 1;
+    position: absolute;
+    left: 10px;
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 5px;
+    width: 260px;
+    display: none;
+    overflow: hidden;
+}
+
+.ui-list-item {
+    margin-bottom: 1px;
+}
+
+.preinstall-msg .ui-list-item {
+    list-style: square;
+    list-style-position: inside;
+    cursor: pointer;
+    z-index: 10000;
+    padding: 2px 0 2px 5px;
+}
+
+/* 报错信息 */
+.ui-form-error .ui-form-explain {
+    color: #ff0000;
+}
+
+.ui-form-error .ui-input {
+    border-color: #ff0000;
+}
+
+.ui-form-error .ui-textarea {
+    border-color: #ff0000;
+}
+
+.ui-input-error {
+    border-color: #ff0000;
+    border-width: 2px;
+}
+
+.ui-explain-error {
+    color: #ff0000;
+}
+
+/* 成功提示信息 */
+.ui-tip {
+    background-color: #0088CC;
+    border: 1px solid #ddd;
+    padding: 5px;
+    position: absolute;
+    width: 400px;
+    display: none;
+}
+
+.ui-tip-text {
+    color: #fff;
+    line-height: 20px;
+    text-indent: 2em;
+}
+
+/* 确认对话框样式 */
+#alert-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 9888;
+    background-color: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+
+}
+
+#alert-container {
+    border-radius: 5px;
+    color: #333;
+    padding: 10px;
+    width: 390px;
+    position: fixed;
+    _position: absolute;
+    border: 1px solid #666;
+    background-color: #eee;
+    line-height: 25px;
+    z-index: 10000;
+}
+
+#alert-container #alert-title {
+    font-size: 15px;
+    height: 30px;
+    line-height: 25px;
+    padding: 0 10px;
+    position: relative;
+    font-weight: bold;
+    cursor: move;
+}
+
+#alert-container #alert-close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    cursor: pointer;
+    right: 2px;
+    top: 0px;
+}
+
+#alert-container .alert-button {
+    padding: 5px 10px;
+    text-align: right;
+}
+
+#alert-container #alert-content {
+    background: #F1F1F1;
+    border-top: 1px solid #B9B9B9;
+    border-bottom: 1px solid #B9B9B9;
+    padding: 10px 15px;
+}
+
+#alert-container .alert-box {
+    padding: 0 6px;
+}
+
+#alert-container  button {
+    padding: 5px;
+    border: 1px solid #CCC;
+    margin: auto 5px;
+    border-radius: 2px;
+    min-width: 60px;
+    cursor: pointer;
+}
+
+/* response error */
+.error-box {
+    width: 430px;
+    height: 545px;
+    background: url("../images/error-bg.png") 0 0 no-repeat transparent;
+    position: relative;
+}
+
+.error-icon {
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    width: 178px;
+    height: 166px;
+    background: url("../images/error-icon.png") 0 0 no-repeat transparent;
+}
+
+.error-tips {
+    position: absolute;
+    top: 340px;
+    left: 70px;
+    width: 360px;
+    height: 35px;
+    color: #555555;
+    font-size: 18px;
+    font-weight: normal;
+}

@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("common.css");
+/*-------------pwd1----------------------*/
+.content{ width:1000px; height:640px; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px; margin:auto; margin-top:10px;}
+.content .title1{ width:804px; height:20px; margin:auto; margin-top:30px;  line-height:20px;}
+.content .title1 .hr{ width:330px; height:1px; border-top:#b5cee4 solid 1px; float:left; margin-top:10px;}
+.content .title1 span{ width:140px; height:20px; text-align:center; float:left; font-size:18px; font-weight:300; color:#000;}
+.content .title2{ width:500px; height:20px; margin:auto; margin-top:50px; text-align:center;}
+.content .con{ width:565px; height:280px; margin:auto; margin-top:50px; }
+.content .con ul{ width:465px;  margin-left:100px;}
+.content .con ul li{ width:465px; height:35px; line-height:35px; margin-top:20px;}
+.content .con ul li span{ width:80px; display:block; float:left; line-height:35px; height:35px; letter-spacing:6px;}
+.content .con ul li input{ float:left; width:240px; height:33px; border:#b5cee4 solid 1px; border-radius:3px;}
+.content .con ul li .text1{ width:130px;}
+.content .con ul li .text2{ width:100px; margin-left:8px;}
+.content .con ul li a{ display:block; float:left; width:100px; height:35px; color:#0099cc; margin-left:20px; text-decoration:underline;}
+.content .con ul li .xing{ color:#F00; text-decoration:none;}
+.content .con .btn{ width:240px; height:35px; background:#ee7700; margin-top:40px; margin-left:180px; color:#FFF;}
+
+
+
+/*-------------pwd3----------------------*/
+.content .con3{ width:565px; height:280px; margin:auto; margin-top:50px; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px; }
+.content .con3 .title{ width:565px; height:50px; line-height:48px;}
+.content .con3 .title span{ display:block; float:left; width:350px; height:48px; margin-left:15px; font-size:20px; font-weight:200px; }
+.content .con3 .title a{ display:block; float:right; width:150px; height:48px; margin-right:10px; color:#446db2;}
+.content .con3 ul{ width:350px; margin-left:127px; margin-top:30px;}
+.content .con3 ul li{ width:350px; height:35px; line-height:35px; margin-top:3px;}
+.content .con3 ul li span{ display:block; float:left; width:80px; height:35px;}
+.content .con3 ul li .yz{ letter-spacing:5px; }
+.content .con3 ul li a{ color:#535353;}
+.content .con3 ul li .btn{ width:80px; height:22px; background:#5bc4be; border-radius:4px; color:#FFF;}
+.content .con3 ul li .text{ width:195px; height:33px; border:#e5eff8 solid 1px; border-radius:3px;}
+.content .con3 .con3btn{ width:300px; height:35px; margin-left:207px; margin-top:30px;}
+.content .con3 .con3btn input{ width:90px; height:35px; background:#446db2; border-radius:4px;}
+.content .con3 .con3btn a{ color:#446db2; margin-left:45px; cursor:pointer;}
+
+/*-------------pwd4----------------------*/
+.content .con4{ width:565px; height:280px; margin:auto; margin-top:50px; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px; }
+.content .con4 .title{ width:565px; height:50px; line-height:48px;}
+.content .con4 .title span{ display:block; float:left; width:350px; height:48px; margin-left:15px; font-size:20px; font-weight:200px; }
+.content .con4 .title a{ display:block; float:right; width:150px; height:48px; margin-right:10px; color:#446db2;}
+.content .con4 ul{ width:350px; margin:auto; margin-top:30px;}
+.content .con4 ul li{ width:350px; height:35px; line-height:35px; margin-top:3px;}
+.content .con4 ul li span{ display:block; float:left; width:100px; height:35px;}
+.content .con4 ul li a{ color:#535353;}
+.content .con4 ul li .btn{ width:80px; height:22px; background:#5bc4be; border-radius:4px; color:#FFF;}
+.content .con4 ul li .text{ width:195px; height:33px; border:#e5eff8 solid 1px; border-radius:3px;}
+.content .con4 .con3btn{ width:300px; height:35px; margin-left:207px; margin-top:30px;}
+.content .con4 .con3btn input{ width:90px; height:35px; background:#446db2; border-radius:4px;}
+.content .con4 .con3btn a{ color:#446db2; margin-left:45px; cursor:pointer;}
+
+/*-------------pwd5----------------------*/
+.content .con5{ width:565px; height:280px; margin:auto; margin-top:50px; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px; }
+.content .con5 .title{ width:565px; height:50px; line-height:48px;}
+.content .con5 .title span{ display:block; float:left; width:400px; height:48px; margin-left:15px; font-size:20px; font-weight:200px; }
+.content .con5 .title a{ display:block; float:right; width:150px; height:48px; margin-right:10px; color:#446db2;}
+.content .con5 ul{ width:530px; margin-left:20px; margin-top:30px;}
+.content .con5 ul li{ width:530px; height:35px; line-height:35px; margin-top:20px;}
+.content .con5 ul li span{ display:block; float:left; width:80px; height:35px;}
+.content .con5 ul li span.tishi{ color:#ff0000; width:270px; float:left; margin-left:8px;}
+.content .con5 ul li span.xinmi{ letter-spacing:5px;}
+.content .con5 ul li .text{ width:150px; height:33px; float:left; border:#e5eff8 solid 1px; border-radius:3px;}
+.content .con5 .con3btn{ width:300px; height:35px; margin-left:207px; margin-top:30px;}
+.content .con5 .con3btn input{ width:90px; height:35px; background:#446db2; border-radius:4px;}
+.content .con5 .con3btn a{ color:#446db2; margin-left:45px; cursor:pointer;}
+
+/*-------------pwd6----------------------*/
+.content .con6{ width:565px; height:280px; margin:auto; margin-top:50px; border:#e5eff8 solid 1px; border-top:#0099cc solid 1px; border-bottom:#e5eff8 solid 3px; }
+.content .con6 .con6con{ width:450px; margin:auto; margin-top:40px;}
+.content .con6 .con6con p{ float:left; width:97px; height:104px; background:url(../images/ok.jpg) no-repeat;}
+.content .con6 .con6con dl{ float:left; height:120px; margin-top:30px; margin-left:30px;}
+.content .con6 .con6con dl dt{ width:300px; height:30px; font-size:20px; font-weight:200; line-height:30px;}
+.content .con6 .con6con dl dd{ width:300px; height:20px; line-height:20px; margin-top:10px;}
+.content .con6 .btn{ display:block;  width:116px; height:35px; background:#446db2; margin:auto; font-size:20px; color:#FFF; border-radius:4px;}
+
+/**
+ * 注册页面
+ */
+.layout-wrap{ width:998px; min-height: 530px; margin:0 auto; border:1px solid #e5eff8; border-top-color:#0099cc; border-bottom-width:3px;}
+.layout-wrap .hd{ height:auto; margin:5em 100px 0em 100px; line-height:24px;}
+.layout-wrap .hd .hr{ width: 100%; height:24px; float:left; background:url(../images/line_1.gif) left center repeat-x; text-align: center; position:relative;}
+.layout-wrap .hd .hr span{ height:24px; text-align:center; font-size:18px; font-weight:300; color:#000; background-color: #fff; padding:0 15px;}
+.layout-wrap .hd .hr span.fr{ font-size:12px; line-height:24px; position:absolute; right:-80px; top:0;}
+.layout-wrap .hd p{ text-align:center; padding:2em 0; float:left; width:100%; color:#737373;}
+
+.m-list{ margin:3em 100px;}
+.m-list li{ width:100%; min-height:34px; line-height:34px; margin-bottom:20px; overflow: hidden;}
+.m-list li.last{ padding-bottom:50px;}
+.m-list li .col-1{ width:265px; float:left; padding:0 5px; text-align:right; padding:0 5px; color:#737373;}
+.m-list li .col-2{ width:240px; float:left; padding:0 5px;}
+.m-list li .col-3{ width:220px; float:left; padding:0 5px;}
+.m-list li .col-3 .tips{ font-size:12px; font-weight:100; color:#737373;}
+.m-list li .col-3 .tips em{ color:#f00; font-weight:700; font-size:16px; font-family:"宋体"}
+.m-list li .col-3 a{ color:#5086ec;}
+.m-list li input{ width:95%; height:34px; line-height:24px; padding-left:5px; border:#e5eff8 solid 1px; float:left;}
+.m-list li .rSelect{ width:98%; height:34px; border:#e5eff8 solid 1px; float:left;}
+.m-list li .rCcode{ width:55%;}
+.m-list li .rCodepic{ float:right; margin-right:5px; height: 34px;}
+.m-list li .btn{ width:100%; height:34px; color:#fff; font-size:14px; font-weight:bold; background:#f79209; margin:auto; display:block; outline:0;}
+.m-list li .btn:hover{ background-color: #ee7700;}
+.m-list li .btn:active{background-color: #d96c00;}
+
+/**
+ * 找回密码 选择方式
+ */
+.m-findPwd-two .m-findPwd-box .btn:hover,
+.m-list-2 li .sbtn:hover{ background-color: #5bc4be; text-decoration:none;}
+.m-findPwd-two .m-findPwd-box .btn:active,
+.m-list-2 li .sbtn:active{ background-color: #1ABC9C;}
+ 
+.m-findPwd-two{ width:584px; height:246px; margin:auto;}
+.m-findPwd-two *{
+	-webkit-transition: all 0.18s ease-in-out;
+	-moz-transition: all 0.18s ease-in-out;
+	-ms-transition: all 0.18s ease-in-out;
+	-o-transition: all 0.18s ease-in-out;
+	transition: all 0.18s ease-in-out;
+}
+.m-findPwd-two .m-findPwd-box{ width:270px; height:168px; padding-top:70px; padding-left:15px; border:1px solid #e5eff8; border-top-color:#0099cc; border-bottom-width:3px; background-color: #fff;}
+.m-findPwd-two .m-findPwd-box i{ background:url(../images/pwd2.png) 0 0 no-repeat; width:43px; height:43px; display:inline-block; float:left;}
+.m-findPwd-two .m-findPwd-box i.icon-question{ background-position:0 0;}
+.m-findPwd-two .m-findPwd-box i.icon-email{ background-position:0 -43px;}
+.m-findPwd-two .m-findPwd-box:hover{ background-color:#f9f9f9;}
+.m-findPwd-two .m-findPwd-box:hover i.icon-question{ background-position:-43px 0;}
+.m-findPwd-two .m-findPwd-box:hover i.icon-email{ background-position:-43px -43px;}
+.m-findPwd-two .m-findPwd-box dl{ height:60px; float:left; margin-left:28px;}
+.m-findPwd-two .m-findPwd-box dl dt{ font-size:20px; font-weight:200px;}
+.m-findPwd-two .m-findPwd-box .row{ overflow:hidden;}
+.m-findPwd-two .m-findPwd-box .btn{ display:block; width:162px; height:34px; line-height:34px; text-align: center; font-size:16px; background:#446db2; border-radius:3px; color:#FFF; margin:auto; border:0; cursor:pointer;}
+
+.m-findPwd-three{ width:565px; height:auto; margin:auto; padding-bottom:20px; border:1px solid #e5eff8; border-top-color:#0099cc; border-bottom-width:3px;}
+.m-findPwd-three .t-hd{ height:40px; line-height:40px; padding:0 10px;}
+.m-findPwd-three .t-hd strong{ font-size:20px; font-weight:100;}
+.m-findPwd-three .t-hd a.more{ float:right; color:#446db2;}
+
+.m-list-2{}
+.m-list-2 li{ width:100%; min-height:34px; line-height:34px; padding-bottom:10px; margin-top:20px; overflow: hidden;}
+.m-list-2 li span{ float:left; padding:0 5px;}
+.m-list-2 li .col-1{ width:180px; text-align:right; color:#737373;}
+.m-list-2 li .col-2{ width: 180px;}
+.m-list-2 li .col-3{ width:160px; line-height:24px; color:#737373;}
+.m-list-2 li .col-3 strong{ font-weight:100;}
+.m-list-2 li .col-3 strong em{ color:#f00; font-weight:700; font-size:16px; font-family:"宋体"}
+.m-list-2 li .col-3 a{ color:#5086ec; line-height:34px;}
+.m-list-2 li input[type="text"],
+.m-list-2 li input[type="password"],
+.m-list-2 li .sbtn{ width:95%; height:34px; line-height:24px; padding-left:5px; border:#e5eff8 solid 1px; float:left;}
+.m-list-2 li .sbtn{ background-color: #446db2; color:#fff; line-height:34px; text-align:center;}
+/** 发送邮件按钮 **/
+.btn_email_code{display: inline-block; zoom: 1; width: 116px; height: 26px; line-height: 26px; padding: 0; text-align: center; color: #404040; font-size: 12px; font-weight: normal;  border: none;background: url(../images/btn_email_code.png) no-repeat 0 0; cursor: pointer;overflow: hidden;}
+.btn_email_code:active{ background-position:0 -26px;}
+	/** 提示信息 **/
+.msg.hide { visibility: hidden!important;}
+.msg.show { visibility: visible!important;}
+.msg .msg-default { padding: 2px 5px; position: relative; min-height: 20px; _height: 20px; overflow: visible; zoom: 1; display: inline-block;}
+.msg .msg-icon { float: left; width: 16px; height: 16px; margin: 8px 5px 1px 0; font-size: 0; line-height: 0; background: url(../images/icon_ok.png) no-repeat 0 0;}
+.msg .msg-content {display: inline;}
+
+.m-f-ok{}
+.m-f-ok{ width:450px; margin:auto; margin-top:40px;}
+.m-f-ok .row{ overflow:hidden; margin-bottom: 30px;}
+.m-f-ok i.icon-ok{ float:left; width:97px; height:104px; background:url(../images/ok.jpg) no-repeat; display:block;}
+.m-f-ok dl{ float:left; height:75px; margin-top:30px; margin-left:30px;}
+.m-f-ok dl dt{ width:300px; height:30px; font-size:20px; font-weight:200; line-height:30px;}
+.m-f-ok dl dd{ width:300px; height:20px; line-height:20px; margin-top:10px;}
+.m-f-ok .btn{ display:block;  width:116px; height:34px; line-height:34px; text-align: center; background:#446db2; margin:auto; font-size:20px; color:#FFF; border-radius:4px;}
+
+
+

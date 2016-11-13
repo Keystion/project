@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>left</title>
+<link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/common.css" />
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<div id="sidebar">
+	<div id="sub_nav">
+		<ul>
+			<li><a href="info.html" target="frmright" title="新建申报项目"><i class="xjxm"></i>新建申报项目</a></li>
+			<li><a href="info.html" target="frmright"  title="我的申报管理"><i class="sb"></i>我的申报管理</a></li>
+			<li><a href="info.html" target="frmright"  title="修改个人信息"><i class="xgxx"></i>修改个人信息</a></li>
+			<li><a href="uppwd.html" target="frmright"  title="修改登录密码"><i class="xgmm"></i>修改登录密码</a></li>
+			<li><a href="info.html" target="frmright" title="信息交流平台"><i class="xxjl"></i>信息交流平台</a></li>
+			<li><a href="info.html" target="frmright"  title="退出"><i class="tc"></i>退出</a></li>
+		</ul>
+	</div>
+</div>
+<script>
+$(function(){
+	$("#sub_nav a").click(function(){
+		$(this).parent().addClass("cur").siblings().removeClass("cur");
+	})
+})
+</script>
+</body>
+</html>

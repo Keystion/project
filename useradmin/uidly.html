@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--[if IE 9]><html class="html"><![endif]-->
+<!--[if IE 8]><html class="html"><![endif]-->
+<!--[if IE 7]><html class="html"><![endif]-->
+<!--[if IE 6]><html class="html"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>uidly</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<div id="main">
+	<div class="tips"><strong>温馨提示</strong>：点删除按钮将删除所选定的用户；此操作是不可逆的；默认为当天的</div>
+	<p class="m_title">留言详细查看</p>
+	<div class="submain">
+		<div class="soso">
+			<form method="post" action="">
+				<ul>
+					<li>选着查询时间段：</li>
+					<li>
+						<div class="controls-date">
+							<div class="controls input-append date form_date" data-date="" data-date-format="yyyy-MM-dd" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
+								<input size="16" id="starttime" class="input" name="starttime" type="text" value="">
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+							<input type="hidden" id="dtp_input1" value="" />
+						</div>
+					</li>
+					<li class="sash">-</li>
+					<li>
+						<div class="controls-date">
+							<div class="controls input-append date form_date" data-date="" data-date-format="yyyy-MM-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+								<input size="16" id="endtime" name="endtime" class="input" type="text" value="">
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+							<input type="hidden" id="dtp_input2" value="" />
+						</div>
+					</li>
+					<li>
+						<input id="" name="" class="tj_btn" type="submit" value="提交" title="提交">
+					</li>
+				</ul>
+			</form>
+		</div>
+		<div class="s_bd">
+			<form action="" method="post" enctype="application/x-www-form-urlencoded" name="form1" target="_self">
+				<table class="pure-table table" width="100%">
+					<thead>
+						<tr align="center">
+							<th style="width:26px;">ID号</th>
+							<th style="width:120px;">留言时间</th>
+							<th style="width:40px;">姓名</th>
+							<th style="width:145px;">E-mail</th>
+							<th>地址</th>
+							<th style="width:75px;">电话</th>
+							<th style="width:100px;">用户IP</th>
+							<th>回访</th>
+							<th>留言内容</th>
+							<th style="width:45px;">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>2013-09-03 16:29:35</td>
+							<td>王某某</td>
+							<td>xxxxxxxx@example.com</td>
+							<td>北京市丰台区莲花池西里11号</td>
+							<td>1886668888</td>
+							<td>127.127.127.127</td>
+							<td>随时</td>
+							<td>请给我打电话，并寄加盟资料。</td>
+							<td><input name="userid" type="checkbox" class="checkbox" value="">
+								删除</td>
+						</tr>
+						<script>
+						for(var i = 2; i < 20; i++){
+							document.write('<tr>						<td>'+i+'</td>						<td>2013-09-03 16:29:35</td>						<td>王某某</td>						<td>xxxxxxxx@example.com</td>						<td>北京市丰台区莲花池西里11号</td>						<td>1886668888</td>						<td>127.127.127.127</td>						<td>随时</td>						<td>请给我打电话，并寄加盟资料。</td>						<td><input name="userid" type="checkbox" class="checkbox" value=""> 删除</td>					</tr>');
+						}
+						</script>
+					</tbody>
+				</table>
+				<table class="subtable" width="100%">
+					<tr>
+						<td colspan="10"><div class="paginator">
+								<ol class="">
+									<li><span class="title">总共:13</span></li>
+									<li><span class="title">1/13</span></li>
+									<li><a href="" class="prev">«</a></li>
+									<li><span class="page current">1</span></li>
+									<li><a href="" title="2" class="page">2</a></li>
+									<li><a href="" title="3" class="page">3</a></li>
+									<li><a href="" title="4" class="page">4</a></li>
+									<li><a href="" title="5" class="page">5</a></li>
+									<li><a href="" title="6" class="page">6</a></li>
+									<li><a href="" title="7" class="page">7</a></li>
+									<li><span class="gap">...</span></li>
+									<li><a href="" title="13" class="page">13</a></li>
+									<li><a href="" class="next">»</a></li>
+								</ol>
+							</div></td>
+					</tr>
+					<tr>
+						<td colspan="9" align="center">请选择您需要进行的操作：
+							<input name="useraction" type="radio" class="radio" value="del" checked="checked">
+							删除</td>
+						<td>全部选定：
+							<input type="checkbox" class="checkbox" value="on" name="chkall" onClick="CheckAll(this.form)">
+							<input type="hidden" name="idvalue" id="idvalue"></td>
+					</tr>
+					<tr>
+						<td colspan="10" align="center"><input type="button" class="tj_btn button" name="submit" value="执行选定的操作" onClick="caozuo();"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	<p class="copyright">CopyRight (c) 2003-2013 hao315.com All right rederved.</p>
+</div>
+<script>
+$(function(){ $(".table tbody tr:even").addClass("pure-table-odd");})
+</script>
+<script type="text/javascript" src="js/datepicker/bs-datepicker.js"></script>
+</body>
+</html>

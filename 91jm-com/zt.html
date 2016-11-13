@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>专题项目</title>
+<meta name=description  content="热门创业项目,特色餐饮,家居生活,美容保健，汽车美容">
+<meta name=keywords content="放飞梦想，创我精彩,就要加盟网与大学生携手共走创业第一步。">
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/default.js"></script>
+<script type="text/javascript">
+var a="canyin";
+var b="+and+industry%3D1";
+function skip()
+{
+	var pageNum=$("#skippage").val();
+	if(isNaN(pageNum))
+	{
+		alert("请输入数字！");
+		$("#skippage").val("");
+	}
+	else
+	{
+		window.location.href ="/0-1-0-1-"+pageNum+".htm";
+		return;
+	}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="css/css-topic.css"/>
+</head>
+<body>
+<h3 class="tips">
+	<a href="index.html">首页</a>
+    <a href="xm_index.html">项目加盟首页</a>
+    <a href="xm_shop.html">项目加盟店</a>
+    <a href="xm_news.html">项目加盟资讯</a>
+    <a href="xm_ask.html">项目加盟问答</a>
+    <a href="xm_pic.html">项目加盟图库</a>
+    <a href="xm_pic_show.html">项目加盟图库展示</a>
+    <a href="news.html">加盟资讯列表</a>
+    <a href="news_show.html">资讯展示页面</a>
+    <a href="ask.html">问答页面</a>
+	<a href="so.html">搜索页 列表页</a>
+    <a href="top.html">加盟店排行榜</a>
+    <a href="zt.html">专题项目</a>
+    <a href="404.html">404页面</a>
+    <a href="map.html">网站地图</a>
+</h3>
+<!--topbar-->
+<div id="topbar">
+	<div class="layout">
+		<div id="sd-nav" class="topbar-nav fr">
+			<ul>
+				<li><a href="#" id="" class="first">91加盟网</a></li>
+				<li><a href="#" id="site-btn-qqlog" rel="nofollow" class="" title="使用QQ帐号登录" target="_blank">QQ登录</a></li>
+				<li><a href="#" id="site-btn-weibolog" rel="nofollow" class="" title="使用微博帐号登录" target="_blank">新浪微博登录</a></li>
+				<li style="display:none"><a href="#" id="site-btn-rss" class="menu-slider"><i></i>订阅</a></li>
+				<li style="display:none"><a href="#" id="site-btn-weibo" class="menu-slider"><i></i>关注</a></li>
+				<li style="display:none"><a href="#" id="site-btn-help">联系客服</a></li>
+				<li><a style="padding-right:0" href="#" class="menu-slider" target="_blank">网站导航</a></li>
+			</ul>
+		</div>
+		<div id="site-nav" class="topbar-nav fl">
+			<input type="hidden" id="hd_brand_lname" value=""/>
+			<input type="hidden" id="hd_user_lname" value=""/>
+			<p class="login-info"> 您好，欢迎来91加盟网！ <span class="log-out"> <a href="#">请登录</a> <a href="#">免费注册</a> <a href="#">品牌商入口</a> </span> </p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<!--end--> 
+
+<!--header-->
+<div id="header">
+	<div class="layout">
+		<div id="jm-logo" class="fl pl10 mr10"><a href="http://www.91jm.com" title="就要加盟网"><img src="http://www.91jm.com/images/logo-v2.png" alt="就要加盟网" /></a></div>
+		<div id="jm-slogan" class="fl "><!--广告语update--></div>
+		<div id="jm-search" class="fl ">
+			<div class="jmsearch-switchable-nav"> 
+				<!--jmsearch-switchable-nav--> 
+			</div>
+			<div class="jmsearch-container">
+				<div class="jmsearch-screen fl"> <span class="btn-screen">综合<i></i></span> </div>
+				<div class="jmsearch-keywords fl">
+					<input type="text" id="keyword" name="keyword" class="ui-autocomplete-input" autofocus="true" placeholder="请输入品牌关键字..." onkeydown="return enterSearchTop()" />
+				</div>
+				<div class="jmsearch-action fl">
+					<button type="button" onclick="Search()"></button>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="hot-keyword-success">
+				<ul class="hot-keyword-list">
+					<li>热门搜索：</li>
+					<li><a href="http://so.91jm.com/0-40-0-1.htm" class="highlight" target="_blank">化妆品</a></li>
+					<li><a href="http://so.91jm.com/0-48-0-1.htm" target="_blank">床上用品</a></li>
+					<li><a href="http://so.91jm.com/0-19-0-1.htm" target="_blank">火锅</a></li>
+					<li><a href="http://so.91jm.com/0-1-0-1.htm" target="_blank">冰淇淋</a></li>
+					<li><a href="http://so.91jm.com/0-66-0-1.htm" target="_blank">时尚饰品</a></li>
+					<li><a href="http://so.91jm.com" class="more" target="_blank">更多</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<!--end--> 
+<!--main-nav-->
+<div id="max-nav" class="">
+	<div class="layout"> 
+		<!--main-nav-->
+		<div id="jm-nav" class="" style="position:relative">
+			<div class="sert-show fl" style=" position:relative">
+				<h2 class="sert-btn" title="加盟项目分类">加盟项目分类<i></i></h2>
+				<!--全部分类展开-->
+				<div class="jm_menu_t2" style="display:none">
+					<ul class="j_t2-col fl first">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="餐饮项目">餐饮项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="母婴项目">母婴项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="服装项目">服装项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="/0-9-0-1.htm" target="_blank" title="建材项目">建材项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="美容项目">美容项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="食品项目">食品项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="家居项目">家居项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="商务项目">商务项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="教育项目">教育项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="汽车服务项目">汽车服务项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="饰品项目">饰品项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="干洗项目">干洗项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<ul class="j_t2-col fl">
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="珠宝项目">珠宝项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="j_t2-item">
+							<div class="hd"><a href="#" target="_blank" title="酒水项目">酒水项目</a></div>
+							<div class="bd">
+								<ul>
+									<li> <a href="#" target="_blank" title="小吃项目">小吃</a> </li>
+									<li> <a href="#" target="_blank" title="快餐项目">快餐</a> </li>
+									<li> <a href="#" target="_blank" title="火锅项目">火锅</a> </li>
+									<li> <a href="#" target="_blank" title="烧烤项目">烧烤</a> </li>
+									<li> <a href="#" target="_blank" title="面包项目">面包</a> </li>
+									<li> <a href="#" target="_blank" title="饮品项目">饮品</a> </li>
+									<li> <a href="#" target="_blank" title="西餐项目">西餐</a> </li>
+									<li> <a href="#" target="_blank" title="拉面项目">拉面</a> </li>
+									<li> <a href="#" target="_blank" title="熟食项目">熟食</a> </li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+					<div class=" clear"></div>
+				</div>
+				<!--end--> 
+			</div>
+			<div class="jm-nav-list fl">
+				<ul>
+					<li class="first"><a href="#" style="cursor:hand" class="currented">首页</a></li>
+					<li><a href="#" title="餐饮">餐饮</a></li>
+					<li><a href="#" title="服装">服装</a></li>
+					<li><a href="#" title="家纺">家纺</a></li>
+					<li><a href="#" title="美容">美容</a></li>
+					<li><a href="#" title="家居">家居</a></li>
+					<li class="subnav"> <i></i> 
+						<a href="#" title="加盟店排行榜" class="first" target="_blank">加盟店排行榜</a> 
+						<a href="#" title="加盟资讯" target="_blank">加盟资讯</a> 
+						<a href="#" title="就要问答" class="last" target="_blank">就要问答</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--end--> 
+	</div>
+</div>
+<!--end-->
+<div id="topic">
+	<div class="t-slogan"></div>
+	<div class="topic-wrapper">
+		<div class="t-box">
+			<div class="t-floor">
+				<div class="hd"><img src="images/1.jpg" width="989" height="43" /></div>
+				<div class="bd list clearfix">
+					<ul>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="t-floor">
+				<div class="hd"><img src="images/2.jpg" width="989" height="43" /></div>
+				<div class="bd list clearfix">
+					<ul>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="t-floor">
+				<div class="hd"><img src="images/3.jpg" width="989" height="43" /></div>
+				<div class="bd list clearfix">
+					<ul>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="t-floor">
+				<div class="hd"><img src="images/4.jpg" width="989" height="43" /></div>
+				<div class="bd list clearfix">
+					<ul>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="t-floor">
+				<div class="hd"><img src="images/5.jpg" width="989" height="43" /></div>
+				<div class="bd list clearfix">
+					<ul>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+						<li> <span class="img"><a href="#" target="_blank" title="红豆IDF依迪菲加盟"><img src="images/174x197.jpg" width="174" height="197" alt="" /></a></span>
+							<div class="link"> <span class="href"><a href="#" target="_blank">红豆IDF依迪菲</a></span> <span class="con">全国二百余家成功样板店</span> </div>
+							<b>投资金额：20万以上</b> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="t-history" style=" background:#dfdeda; padding-bottom:10px;">
+	<div class="layout">
+		<div class="hd">往期回顾</div>
+		<a href="#" target="_blank"><img src="images/990x60.jpg" width="990" height="60" /></a> <a href="#" target="_blank"><img src="images/990x60.jpg" width="990" height="60" /></a> </div>
+</div>
+<!--footer-->
+<div id="footer" style="">
+	<div class="layout" style="position:relative"> 
+		<!--<div style=" width:86px; height:126px; position:absolute; left:0;top:110px;"> <img src="images/codeWeixin.jpg"> </div>-->
+		<div class="footer-container-tip">
+			<div class="ft_list ml7">
+				<h5>加盟保障</h5>
+				<ul>
+					<li><!--<a href="#">--><em>选择加盟好项目</em><!--</a>--></li>
+					<li style=""><!--<a href="#">--><em>免费提供咨询</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌诚信档案</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>新手上路</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费注册会员</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>在线联系感兴趣的项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>品牌商和您沟通</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="icon_xl"> 
+				<!--信任标题--> 
+			</div>
+			<div class="ft_list ml35">
+				<h5>特色服务</h5>
+				<ul>
+					<li><!--<a href="#">--><em>免费帮你看项目</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>加盟组团优惠中</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>申请诚信担保</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div class="ft_list ml35">
+				<h5>商家入驻</h5>
+				<ul>
+					<li><!--<a href="#">--><em>立即加入</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>诚信认证</em><!--</a>--></li>
+					<li><!--<a href="#">--><em>和投资者洽谈合作</em><!--</a>--></li>
+				</ul>
+			</div>
+			<div style="clear:both"></div>
+			</div>
+		<div class="footer-container mt10">
+			<div class="footer-jm-pages"> <a href="#" title="关于我们" target="_blank">关于我们</a> | <a href="#" title="会员服务" target="_blank">会员服务</a> | <a href="#" title="诚邀加盟" target="_blank">诚邀加盟</a> | <a href="#" title="免责声明" target="_blank">免责声明</a> | <a href="#" title="招聘信息" target="_blank">招聘信息</a> | <a href="#" title="联系我们" target="_blank">联系我们</a> | <a href="#" title="广告服务" target="_blank">广告服务</a></div>
+			<div class="footer-jm-copyright">
+				<p>Copyright@2011-2021 版权所有 www.91jm.com All Rights Reserved 沪ICP备12030781号-3</p>
+			</div>
+			<div class="footer-jm-tips">
+				<p> 友情提示：多打电话、多咨询、实地考察，可降低连锁加盟，创业投资风险。 全国服务热线：400-168-0091（免长途费） </p>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(".sert-btn , .jm_menu_t2 , .subCategory").hover(function(){		
+		$(".jm_menu_t2").show();
+		},function(){
+				$(".jm_menu_t2").hide()
+			})
+</script> 
+
+</body>
+</html>

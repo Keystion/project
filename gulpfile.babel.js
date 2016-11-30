@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 const juicer = require('juicer');
 const url = require('url');
 const path = require('path');
-const rootUrl = '';
+const rootUrl = 'case/';
 
 function getDemoList(dir) {
     return new Promise(function (resolve, reject) {
@@ -37,7 +37,8 @@ function getPageIndex(dir) {
             })
         })
         .then(function (str) {
-            let writeFile = path.join(dir,'index.html');
+            let writeFile = 'index.html';
+            // let writeFile = path.join(dir,'index.html');
             fs.writeFile(writeFile, str, function () {
                 gUtil.log(`create ${writeFile} success!!`);
             });
@@ -46,7 +47,7 @@ function getPageIndex(dir) {
 
 gulp.task('default', function (done) {
     getPageIndex('./CSS3UI');
-    return getPageIndex('./');
+    return getPageIndex('./case/');
 })
 
 gulp.task('serve', function () {

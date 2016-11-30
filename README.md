@@ -3,19 +3,24 @@
 
 ## 生成列表
 
-```zsh
+```
 node index.js
+```
+
+## 安装依赖
+
+```
+npm i 
 ```
 
 ## 生成一个首页 index.html
 
-```zsh
-npm i 
-npm start
+```
+npm run build
 ```
 
 ## 启动一个本地 serve
 
-```zsh
-gulp serve
+```
+npm run serve
 ```

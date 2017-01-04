@@ -17,7 +17,7 @@ var root = __dirname,
 //
 function readDir() {
 	return new Promise(function(resolve, reject) {
-		fs.readdir(root + '/item/', function(err, res) {
+		fs.readdir(root + '/case/', function(err, res) {
 			if(!err) {
 				resolve(res);
 			} else {

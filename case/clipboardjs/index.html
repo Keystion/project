@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clipboardjs demo</title>
+    <style type="text/css">
+        [data-tooltip] {
+            position: relative;
+            cursor: pointer;
+        }
+
+        [data-tooltip]:before {
+            background-color: #333;
+            border-radius: 2px;
+            bottom: 100%;
+            color: #fff;
+            content: attr(data-tooltip);
+            font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-size: 0.6rem;
+            left: 50%;
+            line-height: 1.2;
+            opacity: 0;
+            padding: 0.5em 0.6em;
+            pointer-events: none;
+            position: absolute;
+            text-align: center;
+            -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
+            -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+            -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+            visibility: hidden;
+            white-space: nowrap
+        }
+
+        [data-tooltip]:hover:before {
+            opacity: 1;
+            -webkit-transform: translateX(-50%) translateY(-4px);
+            transform: translateX(-50%) translateY(-4px);
+            visibility: visible
+        }
+
+        [data-tooltip].is-copied:before {
+            background: #23d160;
+            content: "已复制！"
+        }
+
+        .clipboardjs {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 2rem 3rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="clipboardjs">
+        <code class="example-value" data-tooltip="点击复制" data-clipboard-text="border-bottom-width: 4px;">border-bottom-width: 4px;</code>
+    </div>
+    <script type="text/javascript" src="libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            // Property: Copy to clipboard
+            var clipboard = new Clipboard('.example-value');
+
+            Array.prototype.forEach.call(document.querySelectorAll('.example-value'), function($el) {
+                $el.addEventListener('mouseenter', function(e) {
+                    e.target.classList.remove('is-copied');
+                });
+            });
+
+            clipboard.on('success', function(e) {
+                e.clearSelection();
+                e.trigger.classList.add('is-copied');
+            });
+        });
+    </script>
+</body>
+</html>

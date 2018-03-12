@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>名优特产</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <ul id="mytc">
+        
+    </ul>
+</body>
+<script type="text/javascript" src="../js/jquery.min.2.0.1.js"></script>
+<script type="text/javascript">
+$(function () {
+    $.ajax({
+            url: '../data/mytc.json',
+            type: 'GET',
+            dataType: 'json'
+        })
+        .done(function (res) {
+            var _html = '';
+            console.log(res);
+            for (var i = 0; i < res.data.length; i++) {
+                if (i < 9) {
+                    _html += '<li>' +
+                        '<img alt="' + res.data[i].name + '" title="' + res.data[i].name + '" src="' + res.data[i].img + '">' +
+                        '<span class="title">' + res.data[i].name + '</span>' +
+                        '<span class="intro">' + res.data[i].intro + '</span>' +
+                        '</li>';
+                }
+            }
+            $('#mytc').html('').html(_html)
+        })
+        .fail(function () {
+            console.log("error");
+        })
+        .always(function () {
+            console.log("complete");
+        });
+
+});
+
+</script>
+</html>

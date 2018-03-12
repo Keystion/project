@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文物古迹 - 魅力邯郸</title>
+    <meta name="keywords" content="邯郸,魅力邯郸" />
+    <meta name="description" content="我的家乡魅力邯郸">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body id="page-msgj">
+    <header>
+        <div class="container clearfix">
+            <div class="site-logo pull-left" title="魅力邯郸"><a href="index.html">魅力邯郸</a></div>
+            <div class="pull-right">
+                <nav class="site-nav">
+                    <li><a href="index.html" title="首页">首页</a></li>
+                    <li><a href="about.html" title="关于邯郸">关于邯郸</a></li>
+                    <li><a href="wwgj.html" title="文物古迹">文物古迹</a></li>
+                    <li><a href="hdcy.html" title="邯郸成语">邯郸成语</a></li>
+                    <li><a href="mytc.html" title="名优特产">名优特产</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-banner">
+            <div class="container">
+                <img src="assets/image/banner.jpg">
+            </div>
+        </section>
+        <section class="section section-msgj">
+            <div class="container">
+                <div class="section-hd">文物古迹</div>
+                <div class="section-bd">
+                    <ul class="clearfix" id="msgj">
+                        <li>
+                            <a href="./wwgj.html?id=">
+                                <img src="http://placehold.it/121x75">
+                                <span>无标题</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>
+                <a href="index.html" title="返回首页">返回首页</a>
+                <a href="about.html" title="关于邯郸">关于邯郸</a>
+                <a href="wwgj.html" title="文物古迹">文物古迹</a>
+                <a href="hdcy.html" title="邯郸成语">邯郸成语</a>
+                <a href="mytc.html" title="名优特产">名优特产</a>
+            </p>
+            <p>魅力邯郸 <a href="http://www.miitbeian.gov.cn/" title="冀ICP备88888888号-1">冀ICP备88888888号-1</a> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13042002000523"><img src="assets/image/beian.png" style="vertical-align: middle;">冀公网安备 88888888888888号</a></p>
+        </div>
+    </footer>
+    <div style="text-align: center;"><p style="color: #f00">提示：学生结课作业，禁止商用<br />
+            201803考试批次《网页制作》结课作业：制作家乡介绍网页<br />学生姓名：商艳涛 学习中心：北京 学       号：160904211020233   考       号：0061045 专       业：计算机科学与技术  年级层次：高起专</p></div>
+</body>
+<script type="text/javascript" src="assets/js/jquery.min.2.0.1.js"></script>
+<script type="text/javascript">
+$(function () {
+    function getQuery(name) {
+        var result = window.location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
+        if (result == null || result.length < 1)
+            return undefined;
+        return decodeURIComponent(result[1]);
+    }
+
+    $.ajax({
+            url: './assets/data/guji.json',
+            type: 'GET',
+            dataType: 'json'
+        })
+        .done(function (res) {
+            var _html = '';
+            var _id = getQuery('id') || 0;
+            var _item = res.data[_id] || res.data[0];
+                _html += '<li style="margin-left: 41%; margin-bottom: 8%;">' +
+                    '<a href="javascript:;">' +
+                    '<img src="' + _item.img + '">' +
+                    '<span>' + _item.name + '</span>' +
+                    '</a>' +
+                    '</li>';
+            document.title = '文物古迹：' + _item.name + '魅力邯郸';
+            $('#msgj').html('').html(_html)
+            $('.content').html(_item.content);
+        })
+        .fail(function () {
+            console.log("error");
+        })
+        .always(function () {
+            console.log("complete");
+        });
+
+});
+
+</script>
+
+</html>

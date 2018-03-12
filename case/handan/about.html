@@ -59,7 +59,7 @@
     <footer>
         <div class="container">
             <p>
-                <a href="index.html" title="返回首页">返回首页</a>
+                <a href="index.html" title="首页">首页</a>
                 <a href="about.html" title="关于邯郸">关于邯郸</a>
                 <a href="wwgj.html" title="文物古迹">文物古迹</a>
                 <a href="hdcy.html" title="邯郸成语">邯郸成语</a>
@@ -69,38 +69,6 @@
         </div>
     </footer>
     <div style="text-align: center;"><p style="color: #f00">提示：学生结课作业，禁止商用<br />
-            201803考试批次《网页制作》结课作业：制作家乡介绍网页<br />学生姓名：商艳涛 学习中心：北京 学       号：160904211020233   考       号：0061045 专       业：计算机科学与技术  年级层次：高起专</p></div>
+            201803考试批次《网页制作》结课作业：制作家乡介绍网页</div>
 </body>
-<script type="text/javascript" src="assets/js/jquery.min.2.0.1.js"></script>
-<script type="text/javascript">
-$(function () {
-    $.ajax({
-            url: './assets/data/guji.json',
-            type: 'GET',
-            dataType: 'json'
-        })
-        .done(function (res) {
-            var _html = '';
-            console.log(res);
-            for (var i = 0; i < res.data.length; i++) {
-                _html += '<li>' +
-                    '<a href="./wwgj.html?id=">' +
-                    '<img src="' + res.data[i].img + '">' +
-                    '<span>' + res.data[i].name + '</span>' +
-                    '</a>' +
-                    '</li>';
-            }
-            $('#msgj').html('').html(_html)
-        })
-        .fail(function () {
-            console.log("error");
-        })
-        .always(function () {
-            console.log("complete");
-        });
-
-});
-
-</script>
-
 </html>

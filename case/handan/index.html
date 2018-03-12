@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div id="tips"></div>
     <header>
         <div class="container clearfix">
             <div class="site-logo pull-left" title="魅力邯郸"><a href="index.html">魅力邯郸</a></div>
@@ -137,7 +136,7 @@
     <footer>
         <div class="container">
             <p>
-                <a href="index.html" title="返回首页">返回首页</a>
+                <a href="index.html" title="首页">首页</a>
                 <a href="about.html" title="关于邯郸">关于邯郸</a>
                 <a href="wwgj.html" title="文物古迹">文物古迹</a>
                 <a href="hdcy.html" title="邯郸成语">邯郸成语</a>
@@ -148,21 +147,14 @@
     </footer>
     <div style="text-align: center;">
         <p style="color: #f00">提示：学生结课作业，禁止商用
-            <br /> 201803考试批次《网页制作》结课作业：制作家乡介绍网页
-            <br />学生姓名：商艳涛 学习中心：北京 学 号：160904211020233 考 号：0061045 专 业：计算机科学与技术 年级层次：高起专</p>
+            <br /> 201803考试批次《网页制作》结课作业：制作家乡介绍网页</p>
     </div>
 </body>
 <script type="text/javascript" src="assets/js/jquery.min.2.0.1.js"></script>
 <script type="text/javascript">
 $(function () {
-    if(window.location.protocol === 'file:'){
-        $('#tips').css({
-            'font-size': '22px',
-            'color': '#f00'
-        }).html('作品了用ajax');
-    }
     $.ajax({
-            url: 'assets/data/guji.json',
+            url: 'http://f2e.name/handan/assets/data/guji.json',
             type: 'GET',
             dataType: 'json'
         })
@@ -189,7 +181,7 @@ $(function () {
         });
 
     $.ajax({
-            url: 'assets/data/hdcy.json',
+            url: 'http://f2e.name/handan/assets/data/hdcy.json',
             type: 'GET',
             dataType: 'json'
         })
